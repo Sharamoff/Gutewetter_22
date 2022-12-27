@@ -1,0 +1,120 @@
+// media
+
+$m-min:									290px;
+$m-max:									1080px;
+
+
+
+// colors
+
+$c-white:               rgb(255, 255, 255);
+$c-black:               rgb(0, 0, 0);
+
+$c-gray-bk:             #F5F5F7;
+$c-border:              #C3C3C7;
+$c-gray-invert:         #C3C3C7;
+$c-gray-light:					#6E6E73;
+$c-gray:								#1D1D1F;
+$c-fixbar-gray:         rgb(29, 29, 31, 0.93);
+$c-blue:                #008BD2;
+$c-red:                 #B42D5B;
+
+$color-bk-body:         $c-white;
+$color-bk-gray:         $c-gray-bk;
+$color-text:            $c-gray;
+$color-link:            $c-blue;
+$color-link-hover:      $c-black;
+$color-hdr:      			  $c-black;
+$color-note:						$c-gray-light;
+$color-placeholder:     $c-gray-light;
+$color-border:					$c-border;
+$color-border-hover:		$c-gray-light;
+$color-bk-dropdown:     $c-black;
+$color-hr-dropdown:     #555559;
+$color-bk-search:       #1d1d1f;
+$color-bk-modal:        rgba(245, 245, 247, 1);
+
+
+
+// fonts
+
+$font-family-base:      Inter, Arial, Helvetica, sans-serif;
+$fontawesome:						'Font Awesome 5 Pro';
+
+$f-size-base-xxl:       10px;
+$f-size-base-xl:        10px;
+$f-size-base-lg:        10px;
+$f-size-base-md:        10px;
+$f-size-base-sm:        10px;
+$f-size-base-xs:        10px;
+
+$font-size-base:        1.7rem;
+$font-size-base-md:     1.5rem;
+$font-size-base-sm:     1.5rem;
+
+$font-size-basemin:     1.3rem;
+$font-size-basemin-md:  1.3rem;
+$font-size-basemin-sm:  1.2rem;
+
+$font-size-basemed:     1.5rem;
+$font-size-basemed-md:  1.4rem;
+$font-size-basemed-sm:  1.3rem;
+
+$font-size-basemax:     2.1rem;
+$font-size-basemax-md:  1.9rem;
+$font-size-basemax-sm:  1.7rem;
+
+$font-size-fixed:       13px;
+$font-size-fixed-sm:    12px;
+$font-size-fixed-min:   10px;
+
+$font-size-h2:          4.8rem;
+$font-size-h2-md:       3.8rem;
+$font-size-h2-sm:       3.2rem;
+
+$font-size-h3:          2.8rem;
+$font-size-h3-md:       2.1rem;
+$font-size-h3-sm:       1.9rem;
+
+$line-height:           1.2;
+$line-height-min:       1.1;
+$line-height-p:         1.47;
+$line-height-h:         1.1;
+
+$font-base:             $font-size-base $font-family-base;
+$font-base-md:          $font-size-base-md $font-family-base;
+$font-base-sm:          $font-size-base-sm $font-family-base;
+
+$font-basemin:          $font-size-basemin $font-family-base;
+$font-basemin-md:       $font-size-basemin-md $font-family-base;
+$font-basemin-sm:       $font-size-basemin-sm $font-family-base;
+
+$font-basemed:          $font-size-basemed $font-family-base;
+$font-basemed-md:       $font-size-basemed-md $font-family-base;
+$font-basemed-sm:       $font-size-basemed-sm $font-family-base;
+
+$font-basemax:          $font-size-basemax $font-family-base;
+$font-basemax-md:       $font-size-basemax-md $font-family-base;
+$font-basemax-sm:       $font-size-basemax-sm $font-family-base;
+
+$font-h2:               $font-size-h2/$line-height-h $font-family-base;
+$font-h2-md:            $font-size-h2-md/$line-height-h $font-family-base;
+$font-h2-sm:            $font-size-h2-sm/$line-height-h $font-family-base;
+
+$font-h3:               $font-size-h3/$line-height-h $font-family-base;
+$font-h3-md:            $font-size-h3-md/$line-height-h $font-family-base;
+$font-h3-sm:            $font-size-h3-sm/$line-height-h $font-family-base;
+
+$font-topmenu:          $font-size-fixed $font-family-base;
+
+$font-footer:           $font-size-basemin $font-family-base;
+$font-footer-md:        $font-size-basemin-md $font-family-base;
+$font-footer-sm:        $font-size-basemin-sm $font-family-base;
+
+
+$border-radius:         0.4rem;
+
+
+$transition-all:        0.3s;
+
+

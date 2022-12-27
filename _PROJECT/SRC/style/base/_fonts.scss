@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Regular.woff2') format('woff2'),
+  url('../fonts/Inter-Regular.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Medium.woff2') format('woff2'),
+  url('../fonts/Inter-Medium.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-SemiBold.woff2') format('woff2'),
+  url('../fonts/Inter-SemiBold.woff') format('woff');
+  font-weight: 600;
+}
+
+
+
+* {
+  letter-spacing: -0.03em;
+}
+
+
+
+HTML {
+  @include media-breakpoint-only(xs)  { font-size: $f-size-base-xs; }
+  @include media-breakpoint-only(sm)  { font-size: $f-size-base-sm; }
+  @include media-breakpoint-only(md)  { font-size: $f-size-base-md; }
+  @include media-breakpoint-only(lg)  { font-size: $f-size-base-lg; }
+  @include media-breakpoint-only(xl)  { font-size: $f-size-base-xl; }
+  @include media-breakpoint-only(xxl) { font-size: $f-size-base-xxl; }
+}
+
+BODY {
+  font-weight: 400;
+  font: $font-base;
+
+  @include media-breakpoint-down(md) {
+    font: $font-base-md;
+  }
+
+  @include media-breakpoint-down(md) {
+    font: $font-base-sm;
+  }
+
+}

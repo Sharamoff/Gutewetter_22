@@ -1,0 +1,220 @@
+BODY {
+	background-color: $color-bk-body;
+	color: $color-text;
+	height: auto !important;
+	min-height: 80vh;
+	line-height: $line-height;
+	overflow-y: scroll;
+
+	&.modal-open {
+		overflow: hidden;
+		position:fixed;
+		width: 100%;
+
+		@include media-breakpoint-up(md) {
+			padding-right: 17px !important;
+		}
+
+	}
+
+}
+
+
+
+.header-compensator {
+	height: 4.4rem;
+
+	@include media-breakpoint-down(md) {
+		height: 4rem;
+	}
+
+}
+
+
+
+section {
+	@include clearfix;
+}
+
+.pagesection {
+	position: relative;
+	padding: 8rem 15px;
+
+	@include media-breakpoint-down(md) {
+		padding: 6rem 15px;
+	}
+
+	@include media-breakpoint-down(sm) {
+		padding: 4rem 15px;
+	}
+
+}
+
+.container-fluid {
+	max-width: $m-max;
+	position: relative;
+}
+
+.row {
+	position: relative;
+
+	&.row--margined {
+
+		> [class*="col-"] {
+			margin-bottom: 4rem;
+		}
+
+	}
+
+	&.row--stretched {
+
+		> [class*="col-"] {
+			display: flex;
+			align-items: stretch;
+
+			@include media-breakpoint-only(xs) {
+				display: block;
+				margin-bottom: 10px;
+			}
+
+		}
+
+	}
+
+	&.row--aligned {
+
+		> [class*="col-"] {
+			display: flex;
+			align-items: center;
+
+			@include media-breakpoint-only(xs) {
+				display: block;
+			}
+
+		}
+
+	}
+
+}
+
+
+
+.hidden-min {
+	@media (max-width: 289.98px) {
+		display: none !important;
+	}
+}
+
+.hidden-xs {
+	@include media-breakpoint-only(xs) {
+		display: none !important;
+	}
+}
+
+.hidden-sm {
+	@include media-breakpoint-only(sm) {
+		display: none !important;
+	}
+}
+
+.hidden-md {
+	@include media-breakpoint-only(md) {
+		display: none !important;
+	}
+}
+
+.hidden-lg {
+	@include media-breakpoint-only(lg) {
+		display: none !important;
+	}
+}
+
+.hidden-xl {
+	@include media-breakpoint-only(xl) {
+		display: none !important;
+	}
+}
+
+.hidden-xxl {
+	@include media-breakpoint-only(xxl) {
+		display: none !important;
+	}
+}
+
+.hidden-xs-down {
+	@include media-breakpoint-only(xs) {
+		display: none !important;
+	}
+}
+
+.hidden-sm-down {
+	@include media-breakpoint-down(sm) {
+		display: none !important;
+	}
+}
+
+.hidden-md-down {
+	@include media-breakpoint-down(md) {
+		display: none !important;
+	}
+}
+
+.hidden-lg-down {
+	@include media-breakpoint-down(lg) {
+		display: none !important;
+	}
+}
+
+.hidden-xl-down {
+	@include media-breakpoint-down(xl) {
+		display: none !important;
+	}
+}
+
+.hidden-sm-up {
+	@include media-breakpoint-up(sm) {
+		display: none !important;
+	}
+}
+
+.hidden-md-up {
+	@include media-breakpoint-up(md) {
+		display: none !important;
+	}
+}
+
+.hidden-lg-up {
+	@include media-breakpoint-up(lg) {
+		display: none !important;
+	}
+}
+
+.hidden-xl-up {
+	@include media-breakpoint-up(xl) {
+		display: none !important;
+	}
+}
+
+
+
+
+.overlay {
+	display: none;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background: transparentize($c-gray, 0.9);
+	z-index: 998;
+	opacity: 0;
+}
+
+.overlay.active {
+	display: block;
+	opacity: 1;
+}
+
+
+
+.sticked {
+	margin-bottom: 4rem;
+}

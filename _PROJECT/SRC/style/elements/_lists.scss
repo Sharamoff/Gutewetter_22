@@ -1,0 +1,33 @@
+// lists
+
+
+
+UL {
+	padding-left: 2rem;
+	margin-bottom: 4rem;
+
+	@include media-breakpoint-down(md) {
+		margin-bottom: 2rem;
+	}
+
+	> ul {
+		padding-left: 2rem;
+
+		> li {
+			margin: 0.3rem 0;
+		}
+
+	}
+
+	> LI {
+		margin: 0.6rem 0;
+	}
+
+}
+
+UL.ul--nolist {
+	padding-left: 0;
+	list-style: none;
+}
+
+

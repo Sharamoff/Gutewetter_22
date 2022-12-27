@@ -1,0 +1,198 @@
+.barbtm {
+	position: fixed;
+	z-index: $zindex-fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 4.4rem;
+	background-color: $c-fixbar-gray;
+	color: $c-gray-invert;
+	font-size: $font-size-fixed;
+	padding: 0 15px;
+
+	@include media-breakpoint-down(md) {
+		height: 4rem;
+	}
+
+	.container-fluid {
+		display: flex;
+		height: 100%;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	ul {
+		padding: 0;
+		margin: 0 1rem 0 0;
+		list-style: none;
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+
+		> li {
+			display: block;
+			margin: 0;
+			padding: 0;
+			line-height: 1;
+		}
+
+	}
+
+	a {
+		color: $c-gray-invert;
+
+		&:hover {
+			color: $c-white;
+			text-decoration: none;
+		}
+
+	}
+
+}
+
+.barbtm__contact {
+
+	.contact-tel {
+		display: flex;
+		white-space: nowrap;
+		align-items: center;
+		font-size: $font-size-base;
+		margin-right: 2rem;
+
+		@include media-breakpoint-down(md) {
+			font-size: $font-size-base-md;
+		}
+
+		@include media-breakpoint-down(sm) {
+			font-size: $font-size-base-sm;
+		}
+
+		@include media-breakpoint-only(xs) {
+			margin-right: 1rem;
+		}
+
+	}
+
+	.contact-email {
+		display: flex;
+		white-space: nowrap;
+		align-items: center;
+		font-size: $font-size-basemed;
+
+		@include media-breakpoint-down(md) {
+			font-size: $font-size-basemed-md;
+		}
+
+		@include media-breakpoint-down(sm) {
+			font-size: $font-size-basemed-sm;
+		}
+
+	}
+
+	.contact-ico {
+		width: 2.6rem;
+		height: 2.6rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: solid 1px $border-color;
+		border-radius: 50%;
+	}
+
+	a:hover .contact-ico {
+		border-color: $c-white;
+	}
+
+}
+
+.barbtm__soc {
+
+	a {
+		width: 2.6rem;
+		height: 2.6rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $c-gray-invert;
+		border-radius: 50%;
+		background-repeat: no-repeat;
+		margin-right: 1rem;
+
+		&:hover {
+			background-color: $c-white;
+		}
+
+	}
+
+	img {
+		width: 26px;
+		height: auto;
+	}
+
+}
+
+.barbtm__tools {
+
+	a {
+		display: flex;
+		align-items: center;
+		margin-right: 1rem;
+		white-space: nowrap;
+
+		img {
+			width: 26px;
+			height: auto;
+		}
+
+	}
+
+}
+
+.barbtm__cart {
+
+	a {
+		display: flex;
+		align-items: center;
+		white-space: nowrap;
+		color: $c-white;
+
+		img {
+			width: 26px;
+			height: auto;
+		}
+
+	}
+
+	i {
+		font-size: 10px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

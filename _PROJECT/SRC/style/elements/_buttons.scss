@@ -1,0 +1,69 @@
+//buttons
+
+
+
+button {
+	transition: $transition-all;
+}
+
+button.disabled,
+button.disabled:hover {
+	background-color: $c-gray-light;
+	color: $c-black;
+	box-shadow: none;
+}
+
+.b-btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 2rem;
+	min-width: 15rem;
+	gap: 10px;
+	border: none;
+	background: $c-gray;
+	box-shadow: 0 0.2rem 0.4rem rgba(29, 29, 31, 0.3);
+	border-radius: $border-radius;
+	color: $c-white;
+
+	@include media-breakpoint-down(md) {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		font-size: $font-size-base;
+
+		span {
+			display: none;
+		}
+
+	}
+
+	@include media-breakpoint-only(xs) {
+		width: 100%;
+	}
+
+	&.btn--blue {
+		background: $color-link;
+		box-shadow: 0 0.2rem 0.4rem rgba(10, 54, 77, 0.3);
+	}
+
+	&:hover {
+		background: $c-gray-light;
+		box-shadow: inset 0 0.2rem 0.4rem rgba(29, 29, 31, 0.1);
+	}
+
+	i {
+		position: relative;
+		top: 0.1rem;
+		margin-right: 0.6rem;
+	}
+
+}
+
+
+
+
+
+
+
+

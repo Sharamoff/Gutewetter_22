@@ -1,0 +1,77 @@
+// headers
+
+
+
+h2,
+.mainhdr {
+	font: $font-h2;
+	font-weight: 600;
+	color: $c-gray;
+	margin-top: 0;
+	margin-bottom: 4rem;
+	line-height: $line-height-h;
+
+	@include media-breakpoint-down(md) {
+		font: $font-h2-md;
+		margin-bottom: 3rem;
+	}
+
+	@include media-breakpoint-down(sm) {
+		font: $font-h2-sm;
+		margin-bottom: 2rem;
+	}
+
+	& + h3 {
+		margin-top: -3rem;
+		margin-bottom: 3rem;
+
+		@include media-breakpoint-down(md) {
+			margin-top: -2.5rem;
+			margin-bottom: 2.5rem;
+		}
+
+		@include media-breakpoint-down(sm) {
+			margin-top: -1.5rem;
+			margin-bottom: 1.5rem;
+		}
+
+	}
+
+	span {
+		color: $c-gray-light;
+	}
+
+}
+
+h3 {
+	font: $font-h3;
+	font-weight: 500;
+	margin-bottom: 0.8rem;
+
+	@include media-breakpoint-down(md) {
+		font: $font-h3-md;
+	}
+
+	@include media-breakpoint-down(sm) {
+		font: $font-h3-sm;
+	}
+
+}
+
+.h--centered {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.h--centered-md {
+
+	@include media-breakpoint-down(md) {
+		display: block;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}

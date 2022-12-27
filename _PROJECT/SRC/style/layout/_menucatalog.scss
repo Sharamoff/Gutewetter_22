@@ -1,0 +1,132 @@
+.menucatalog {
+  margin-top: 4.4rem;
+
+  &.show{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .modal-dialog {
+    min-width: 100%;
+    margin: 0;
+
+    @include media-breakpoint-down(md) {
+      height: 100vh;
+    }
+
+  }
+
+  .modal-content {
+    font: $font-basemed;
+    background-color: $color-bk-dropdown !important;
+    border: none;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.15);
+    filter: drop-shadow(0 0.2rem 0.4rem rgba(0, 0, 0, 0.15));
+    backdrop-filter: blur(5px);
+    color: $c-white;
+    transition: $transition-all;
+  }
+
+  .btn-close {
+    background-image: escape-svg(url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#C3C3C7'><path d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/></svg>"));
+    font-size: $font-size-base;
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+
+  }
+
+  .modal-body {
+    padding: 4rem 1rem 6rem 0.5rem !important;
+  }
+
+  .container-fluid {
+    display: block;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+  }
+
+  a {
+    color: $c-gray-invert;
+
+    &:hover {
+      color: $c-white;
+      text-decoration: underline;
+    }
+
+  }
+
+}
+
+.menucatalog__configurator {
+  margin: 0 auto 3rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include media-breakpoint-only(xs) {
+    margin-left: 1rem;
+    justify-content: flex-start;
+  }
+
+  img {
+    height: 33px;
+    width: auto;
+    margin-right: 1rem;
+  }
+
+}
+
+.menucatalog__menu {
+  display: flex;
+  flex-wrap: nowrap;
+
+  img {
+    width: 50px;
+    height: 50px;
+    margin-right: 0.5rem;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+    margin: 0 1rem 2rem 0;
+    width: 100%;
+
+    > li {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+
+      a {
+        display: block;
+      }
+
+    }
+
+  }
+
+  .menu-hdr {
+    font-weight: 700;
+    color: $c-white;
+    line-height: $line-height-h;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

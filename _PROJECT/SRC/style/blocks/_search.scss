@@ -1,0 +1,72 @@
+.block-search {
+  margin: 4rem auto 0 auto;
+  text-align: center;
+
+  h3 {
+    font-weight: 700;
+    margin-bottom: 3rem;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 1.5rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 2.1rem !important;
+      margin-bottom: 1rem;
+    }
+
+  }
+
+  &__catalog-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    @include media-breakpoint-down(md) {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
+    @include media-breakpoint-only(xs) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+
+    &__btn {
+      height: 5.5rem;
+      width: 5rem;
+      background: $c-white url("../img/lupa-catalog.svg") center center no-repeat;
+      border: solid 1px $color-border;
+      border-right: none;
+      border-radius: $border-radius 0 0 $border-radius;
+
+      @include media-breakpoint-down(md) {
+        height: 5rem;
+        width: 4rem;
+      }
+
+    }
+
+    &__fld {
+      height: 5.5rem;
+      width: 100%;
+      background: $c-white;
+      border: solid 1px $color-border;
+      border-left: none;
+      border-radius: 0 $border-radius $border-radius 0;
+      font-size: $font-size-base;
+      padding-left: 1rem;
+
+      @include media-breakpoint-down(md) {
+        height: 5rem;
+      }
+
+    }
+
+  }
+
+}
+

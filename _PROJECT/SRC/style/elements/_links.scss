@@ -1,0 +1,86 @@
+// links
+
+
+
+a {
+	color: $color-link;
+	transition: $transition-all;
+	text-decoration: none;
+
+	&:hover {
+		color: $color-link-hover;
+		text-decoration: underline;
+	}
+
+}
+
+a [href^="tel"] {
+	color: $c-gray;
+	text-decoration: none !important;
+	white-space: nowrap;
+}
+
+*:focus {
+	outline: none !important;
+	text-decoration: none !important;
+	box-shadow: none !important;
+}
+
+
+.alink {
+	display: inline-block;
+	font-weight: 400;
+	font-size: 2.1rem;
+
+	@include media-breakpoint-down(lg) {
+		font-size: 1.9rem;
+	}
+
+	@include media-breakpoint-down(md) {
+		font-size: 1.7rem;
+	}
+
+	@include media-breakpoint-down(sm) {
+		font-size: 1.5rem;
+	}
+
+	&:after {
+		font-family: $fontawesome;
+		font-size: 1.7rem;
+		content: "\f054";
+		margin-left: 0.8rem;
+
+		@include media-breakpoint-down(md) {
+			font-size: 1.5rem;
+			margin-left: 0.6rem;
+		}
+
+		@include media-breakpoint-down(sm) {
+			font-size: 1.4rem;
+		}
+
+	}
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	&.aink--centered {
+		display: block;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&.alink--centered-md {
+
+		@include media-breakpoint-down(md) {
+			display: block;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+	}
+
+}

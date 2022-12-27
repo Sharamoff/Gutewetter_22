@@ -1,0 +1,375 @@
+/* mymap */
+
+function init() {
+  var a_point = new Array();
+  var a_name = new Array();
+  var a_type = new Array();
+  var a_address = new Array();
+// Создаем кластеризатор c красной иконкой (по умолчанию используются синия)
+  var clusterer = new ymaps.Clusterer({preset: 'twirl#blueClusterIcons'});
+  var point;
+  var myPlacemark;
+  var bounds;
+  a_point[0] = [55.68548917752548,37.887918325891064];
+  a_name[0] = ""
+  a_name[0] += "<strong>ALATI - сертифицированный<br> интернет-магазин продукции GuteWetter</strong><br>г. Люберцы, ул. 65 лет Победы, дом 1, литера Д<br>Тел.: +7 (495) 646-25-66<br>WWW: <a href='http://www.alati.ru' target='_blank'>www.alati.ru</a><br>E-mail: <a href='mailto:info@alati.ru'>info@alati.ru</a><br>";
+  a_type[0] = "lightblue"
+  a_point[1] = [55.44204,37.613753];
+  a_name[1] = ""
+  a_name[1] += "<strong>ООО «АКВЭС»</strong><br>15-й км Симферопольского шоссе,<br> ТК Покров 1-й этаж<br>Тел.: +7 (495) 797-30-92<br>";
+  a_type[1] = "lightblue"
+  a_point[2] = [55.850959,37.679241];
+  a_name[2] = ""
+  a_name[2] += "<strong>ООО «Сантехника-Онлайн» сертифицированный интернет-магазин продукции GuteWetter</strong><br>м. Свиблово (СВАО), ул. Красная Сосна, д. 2А (ТЦ «Компас»)<br>Тел.: +7 (495) 665-70-75<br>WWW: <a href='http://www.santehnika-online.ru' target='_blank'>www.santehnika-online.ru</a><br>";
+  a_type[2] = "lightblue"
+  a_point[3] = [55.66526039,37.63231737];
+  a_name[3] = ""
+  a_name[3] += "<strong>Салон «Aqua Plaza»</strong><br>Каширское шоссе, д. 19, корпус 1,<br> ТК «Каширский Двор», пав. 3-В65 3-В66<br>Тел.: +7 (495) 120-07-74, доб. 6<br>";
+  a_type[3] = "lightblue"
+  a_point[4] = [55.671574,37.585205];
+  a_name[4] = ""
+  a_name[4] += "<strong>Салон «Aqua Plaza»</strong><br>Нахимовский просп., 24, стр. 1, <br>ТЦ Экспострой на Нахимовском <br>2 павильон, 2 этаж, стенд 254<br>Тел.: +7 (495) 142-60-69; +7 (977) 365-38-66<br>";
+  a_type[4] = "lightblue"
+  a_point[5] = [55.898737,37.674090];
+  a_name[5] = ""
+  a_name[5] += "<strong>Салон «Aqua Plaza»</strong><br>91-й км МКАД,<br> ТК «Твой дом» 2 этаж<br>Тел.: +7 (495) 120-07-74, доб. 5<br>";
+  a_type[5] = "lightblue"
+  a_point[6] = [55.587330,37.720494];
+  a_name[6] = ""
+  a_name[6] += "<strong>Салон «Aqua Plaza»</strong><br>24-й км МКАД,<br> ТК «Твой дом»<br>Тел.: +7 (495) 120-07-74, доб. 3<br>";
+  a_type[6] = "lightblue"
+  a_point[7] = [55.821104,37.391508];
+  a_name[7] = ""
+  a_name[7] += "<strong>Салон «Aqua Plaza»</strong><br>66-й км МКАД,<br> Крокус Сити, ТК «Твой дом»<br>Тел.: +7 (495) 120-07-74, доб. 4<br>";
+  a_type[7] = "lightblue"
+  a_name[7] += "<strong>«Виджи групп»</strong><br>66-й км МКАД,<br> Крокус Сити, ТК «Твой дом» 2 этаж<br>Тел.: +7 (926) 751-19-02<br>";
+  a_type[7] = "lightblue"
+  a_point[8] = [55.747423,37.707080];
+  a_name[8] = ""
+  a_name[8] += "<strong>Салон «Aqua Plaza»</strong><br>ш. Энтузиастов, д. 12, корп. 2,<br> ТЦ «Город» 3-й этаж, пав. 354<br>Тел.: +7 (495) 664-32-26<br>";
+  a_type[8] = "lightblue"
+  a_point[9] = [55.678660,37.781658];
+  a_name[9] = ""
+  a_name[9] += "<strong>Салон «Aqua Plaza»</strong><br>Тихорецкий бул., д. 1, стр. 2А,<br> ТК «Люблинское поле», пав. Т 140<br>Тел.: +7 (495) 120-07-74, доб. 2<br>";
+  a_type[9] = "lightblue"
+  a_point[10] = [55.608060,37.784591];
+  a_name[10] = ""
+  a_name[10] += "<strong>Фирменный магазин GuteWetter в Москве</strong><br>МО, Ленинский р-н, с. Беседы, Промышленный проезд, д.9, Индустриальный парк РЕАЛ<br>Тел.: +7 (495) 646-25-66; +7 (926) 192-02-31<br>WWW: <a href='http://alati.ru' target='_blank'>alati.ru</a><br>E-mail: <a href='mailto:t5@gutewetter.com'>t5@gutewetter.com</a><br>";
+  a_type[10] = "lightblue"
+  a_point[11] = [55.573923,37.600857];
+  a_name[11] = ""
+  a_name[11] += "<strong>«Elit-San»</strong><br>32-й км МКАД, Каширский двор 3,<br> пав. П6-4.  Магазин строительных товаров<br>Тел.: +7 (495) 505-49-96; +7 (905) 561-49-96<br>Факс: +7 (926) 521-49-96<br>";
+  a_type[11] = "lightblue"
+  a_point[12] = [55.588765,37.722302];
+  a_name[12] = ""
+  a_name[12] += "<strong>«Elit-San»</strong><br>25 км МКАД внешняя сторона,<br> ТК КОНСТРУКТОР, павильон Д 2.1<br>Тел.: +7 (495) 500-90-33; +7 (926) 607-77-75<br>Факс: +7 (926) 358-18-85<br>";
+  a_type[12] = "lightblue"
+  a_point[13] = [55.664588,37.634640];
+  a_name[13] = ""
+  a_name[13] += "<strong>«SANSTROY»</strong><br>Каширское шоссе, д. 19, корп. 2,<br> ТК Каширский двор, пав. 2-33<br>Тел.: +7 (929) 900-00-49<br>";
+  a_type[13] = "lightblue"
+  a_point[14] = [55.878929,37.543344];
+  a_name[14] = ""
+  a_name[14] += "<strong>«Абада Групп»</strong><br>Дмитровское шоссе, д. 107, стр. 1,<br> офис 14А<br>Тел.: +7 (495) 485-69-18<br>";
+  a_type[14] = "lightblue"
+  a_point[15] = [55.635242,37.436820];
+  a_name[15] = ""
+  a_name[15] += "<strong>«СантехМаг 187»</strong><br>Киевское шоссе, д. 1, БП Румянцево<br> корпус Г, 1-й этаж, пав. 145 Сантехника&плитка<br>Тел.: +7 (499) 340-02-10<br>";
+  a_type[15] = "lightblue"
+  a_point[16] = [55.702784,37.735862];
+  a_name[16] = ""
+  a_name[16] += "<strong>«Среда Комфорта»</strong><br>ул. Артюхиной 6Б, офис 505<br>Тел.: +7 (926) 495-35-50<br>";
+  a_type[16] = "lightblue"
+  a_point[17] = [43.435036,39.921589];
+  a_name[17] = ""
+  a_name[17] += "<strong>«KERAMA MARAZZI»</strong><br>ул. Молокова, 30 ТЦ Строй Сити<br>Тел.: +7 (8622) 40-11-82<br>";
+  a_type[17] = "lightblue"
+  a_point[18] = [54.906140,52.252681];
+  a_name[18] = ""
+  a_name[18] += "<strong>«KERAMA MARAZZI»</strong><br>ул. Ленина, д. 201<br>Тел.: +7 (8553) 42-41-01, +7 (939) 310-41-01<br>";
+  a_type[18] = "lightblue"
+  a_point[19] = [44.900085,37.342310];
+  a_name[19] = ""
+  a_name[19] += "<strong>ТД Пирамида</strong><br>Анапское ш., дом 1<br>Тел.: +7 (988) 318-63-63; +7 (988) 310-53-55<br>";
+  a_type[19] = "lightblue"
+  a_point[20] = [52.546012,103.913132];
+  a_name[20] = ""
+  a_name[20] += "<strong>Сантехника Мауро</strong><br>125 квартал, стр.1<br>Тел.: +7(3955) 67-48-43<br>";
+  a_type[20] = "lightblue"
+  a_point[21] = [46.351825,48.078606];
+  a_name[21] = ""
+  a_name[21] += "<strong>Азгард</strong><br>3-я Зеленгинская, 56<br>Тел.: +7 (8512) 605-605<br>";
+  a_type[21] = "lightblue"
+  a_point[22] = [51.519632,104.156692];
+  a_name[22] = ""
+  a_name[22] += "<strong>Сантехника Мауро</strong><br>микрорайон Гагарина, 207<br>Тел.: +7 (950) 111 14 45<br>";
+  a_type[22] = "lightblue"
+  a_point[23] = [50.263278,127.510841];
+  a_name[23] = ""
+  a_name[23] += "<strong>ТЦ «Сантехника ХХI век»</strong><br>ул. Мухина, 27<br>Тел.: +7 (4162) 51-99-42<br>";
+  a_type[23] = "lightblue"
+  a_point[24] = [56.149947,101.616759];
+  a_name[24] = ""
+  a_name[24] += "<strong>Сантехника Мауро</strong><br>ул. Мира, 17<br>Тел.: +7(3953) 41-21-35<br>";
+  a_type[24] = "lightblue"
+  a_point[25] = [56.167912,101.635549];
+  a_name[25] = ""
+  a_name[25] += "<strong>Сантехника Мауро</strong><br>ул. Возрождения, 30 Б<br>Тел.: +7(3953) 21-05-95<br>";
+  a_type[25] = "lightblue"
+  a_point[26] = [43.122687,131.904814];
+  a_name[26] = ""
+  a_name[26] += "<strong>Салон отделочных материалов «INTERIOS»</strong><br>ул. Гоголя, 30<br>Тел.: +7 (4232) 74-43-42<br>";
+  a_type[26] = "lightblue"
+  a_point[27] = [56.128299,40.391093];
+  a_name[27] = ""
+  a_name[27] += "<strong>«СТАТУС»</strong><br>ул.Дзержинского, д. 9<br>Тел.: +7 (4922)45-15-32<br>";
+  a_type[27] = "lightblue"
+  a_point[28] = [48.749197,44.548182];
+  a_name[28] = ""
+  a_name[28] += "<strong>Мир плитки</strong><br>пр. Ленина, 65к, ТВК «Стройград»<br>Тел.: +7 (8442) 24-08-71; +7 (8442) 24-06-09<br>";
+  a_type[28] = "lightblue"
+  a_point[29] = [48.669829,44.467558];
+  a_name[29] = ""
+  a_name[29] += "<strong>Посейдон</strong><br>ул. 25 лет Октября, 1<br>Тел.: +7 (8442) 50-41-15; +7 (8442) 26-07-69<br>";
+  a_type[29] = "lightblue"
+  a_point[30] = [51.70306407229015,39.17685899999998];
+  a_name[30] = ""
+  a_name[30] += "<strong>Студия сантехники IN CASA</strong><br>ул. Хользунова, 60Б<br>Тел.: +7 (4733) 33-01-54; +7 (920) 400-41-90<br>";
+  a_type[30] = "lightblue"
+  a_point[31] = [43.659743,39.662586];
+  a_name[31] = ""
+  a_name[31] += "<strong>«KERAMA MARAZZI»</strong><br>Батумское шоссе, 28А<br>Тел.: +7 (8622) 52-11-74<br>";
+  a_type[31] = "lightblue"
+  a_point[32] = [52.358165,35.353539];
+  a_name[32] = ""
+  a_name[32] += "<strong>KERAMIX</strong><br>ул. Энтузиастов, 10а<br>Тел.: +7 (47148) 5-15-00<br>";
+  a_type[32] = "lightblue"
+  a_point[33] = [56.958452,40.980300];
+  a_name[33] = ""
+  a_name[33] += "<strong>Фирменный магазин GuteWetter в Иваново</strong><br>просп. Текстильщиков 80, ТЦ Аксон<br>Тел.: +7 (493) 245-11-33<br>Факс: +7 (910) 018-88-88<br>E-mail: <a href='mailto:ivanovo@gutewetter.ru'>ivanovo@gutewetter.ru</a><br>";
+  a_type[33] = "lightblue"
+  a_point[34] = [52.316219,104.237586];
+  a_name[34] = ""
+  a_name[34] += "<strong>Сантехника Мауро</strong><br>ул. Трактовая, 18/1<br>Тел.: +7(3952) 48-46-55<br>";
+  a_type[34] = "lightblue"
+  a_point[35] = [52.298301,104.300117];
+  a_name[35] = ""
+  a_name[35] += "<strong>Сантехника Мауро</strong><br>ул. Радищева, 20<br>Тел.: +7(3952) 33-92-40<br>";
+  a_type[35] = "lightblue"
+  a_point[36] = [52.270858,104.328070];
+  a_name[36] = ""
+  a_name[36] += "<strong>Сантехника Мауро</strong><br>ул. Лыткина, 75 А<br>Тел.: +7(3952) 54-88-65<br>";
+  a_type[36] = "lightblue"
+  a_point[37] = [52.260686,104.203961];
+  a_name[37] = ""
+  a_name[37] += "<strong>Сантехника Мауро</strong><br>ул. Маршала Конева, 16<br>Тел.: +7(3952) 48-42-02<br>";
+  a_type[37] = "lightblue"
+  a_point[38] = [52.354095,104.176428];
+  a_name[38] = ""
+  a_name[38] += "<strong>Сантехника Мауро</strong><br>ул. Тухачевского, 3 A<br>Тел.: +(3952) 47-25-47<br>";
+  a_type[38] = "lightblue"
+  a_point[39] = [52.254414,104.336515];
+  a_name[39] = ""
+  a_name[39] += "<strong>Сантехника Мауро</strong><br>ул. Байкальская, 250/1, ТЦ «Цветной парк»<br>Тел.: +7(3952) 48-65-05<br>";
+  a_type[39] = "lightblue"
+  a_point[40] = [52.234202,104.301485];
+  a_name[40] = ""
+  a_name[40] += "<strong>Сантехника Мауро</strong><br>ул. Академическая, 27, рынок «Южный»<br>Тел.: +7(3952) 42-59-55<br>";
+  a_type[40] = "lightblue"
+  a_point[41] = [52.242403,104.289950];
+  a_name[41] = ""
+  a_name[41] += "<strong>Сантехника Мауро</strong><br>ул. Энергетиков, 3А<br>Тел.: +7 (3952) 42-11-11<br>";
+  a_type[41] = "lightblue"
+  a_point[42] = [55.774110,49.114333];
+  a_name[42] = ""
+  a_name[42] += "<strong>«KERAMA MARAZZI»</strong><br>ул.Ахтямова, д.19<br>Тел.: +7 (843) 278-23-53, +7 (917) 277-02-14<br>";
+  a_type[42] = "lightblue"
+  a_point[43] = [55.727677,49.174559];
+  a_name[43] = ""
+  a_name[43] += "<strong>«KERAMA MARAZZI»</strong><br>ул. Ахунова, д. 18<br>Тел.: +7 (843) 537-47-74, +7 (917) 255-24-40<br>";
+  a_type[43] = "lightblue"
+  a_point[44] = [55.818679,49.114567];
+  a_name[44] = ""
+  a_name[44] += "<strong>«KERAMA MARAZZI»</strong><br>ул. Чистопольская, д. 26/5<br>Тел.: +7 (843) 518-85-10, +7 (917) 298-85-10<br>";
+  a_type[44] = "lightblue"
+  a_point[45] = [56.342054,36.712402];
+  a_name[45] = ""
+  a_name[45] += "<strong>«СанИнтер»</strong><br>г. Клин, Ленинградское шоссе 84  км,<br> ТК КлинСтройДвор<br>Тел.: +7 (906) 093-67-77; +7 (926) 872-11-00<br>";
+  a_type[45] = "lightblue"
+  a_point[46] = [45.02129,39.0862477];
+  a_name[46] = ""
+  a_name[46] += "<strong>Керамик Клаб</strong><br>ул. Кубанская набережная,45<br>Тел.: +7 (861) 238-62-27<br>";
+  a_type[46] = "lightblue"
+  a_point[47] = [45.020761,38.940579];
+  a_name[47] = ""
+  a_name[47] += "<strong>ТЦ ART-HOUSE</strong><br>Тургеневское ш., д. 25/4<br>Тел.: +7 (861) 20-11-711, доб. 300, 301<br>";
+  a_type[47] = "lightblue"
+  a_point[48] = [45.040744,38.968620];
+  a_name[48] = ""
+  a_name[48] += "<strong>«Аквамир»</strong><br>ул. Северная д. 320, пав. 104, 121, 122, 132<br>Тел.: +7 (861) 253-51-53; +7 (861) 251-67-52 доб. 106;<br>  8 (800) 505-24-08<br>";
+  a_type[48] = "lightblue"
+  a_name[48] += "<strong>«Евроремонт»</strong><br>Улица Северная д. 320, офис 210<br>Тел.: +7 (861) 210-45-30<br>";
+  a_type[48] = "lightblue"
+  a_point[49] = [45.032903,39.048795];
+  a_name[49] = ""
+  a_name[49] += "<strong>«Аквамир»</strong><br>ул. Уральская, 77/7 ТЦ «Интерьер Сити - МЕБЕЛЬГРАД»<br>Тел.: +7 (861) 944-82-88<br>";
+  a_type[49] = "lightblue"
+  a_point[50] = [45.023093,38.940053];
+  a_name[50] = ""
+  a_name[50] += "<strong>«Аквамир»</strong><br>Тургеневское шоссе, 17 ТЦ «СТОЛПЛИТ»<br>Тел.: +7 (861) 297-00-90; +7 (861) 297-00-99<br>";
+  a_type[50] = "lightblue"
+  a_point[51] = [45.105161,38.994689];
+  a_name[51] = ""
+  a_name[51] += "<strong>«Аквамир»</strong><br>Ростовское шоссе, 30/3<br>Тел.: +7 (861) 210-45-09<br>";
+  a_type[51] = "lightblue"
+  a_point[52] = [42.969293,47.520465];
+  a_name[52] = ""
+  a_name[52] += "<strong>Магазин сантехники «ТОРТУГА»</strong><br>ул. Крылова, д. 4<br>Тел.: +7 (8722) 61-04-34, +7 (928) 554-0-554<br>";
+  a_type[52] = "lightblue"
+  a_point[53] = [55.740220,52.416478];
+  a_name[53] = ""
+  a_name[53] += "<strong>«KERAMA MARAZZI»</strong><br>пр. Хасана Туфана, д. 8<br>Тел.: +7 (8552) 91-07-05, +7 (960) 062-40-04<br>";
+  a_type[53] = "lightblue"
+  a_point[54] = [55.730780,52.392280];
+  a_name[54] = ""
+  a_name[54] += "<strong>«Verona»</strong><br>проспект Сююмбике, д. 2/19<br>Тел.: +7 (8552) 47-41-47, 36-64-20<br>";
+  a_type[54] = "lightblue"
+  a_point[55] = [55.646198,51.809136];
+  a_name[55] = ""
+  a_name[55] += "<strong>«KERAMA MARAZZI»</strong><br>ул. Мира, д. 53а<br>Тел.: +7 (8555) 24-58-08, +7 (917) 286-01-41<br>";
+  a_type[55] = "lightblue"
+  a_point[56] = [47.216576,39.612946];
+  a_name[56] = ""
+  a_name[56] += "<strong>ЗАО «БИЛД»</strong><br>ул. Малиновского 13Д/1<br>Тел.: +7 (863) 227-30-27<br>";
+  a_type[56] = "lightblue"
+  a_point[57] = [47.23759,39.745564];
+  a_name[57] = ""
+  a_name[57] += "<strong>ЗАО «БИЛД»</strong><br>пр. Шолохова, 30/48<br>Тел.: +7 (863) 227-30-27<br>";
+  a_type[57] = "lightblue"
+  a_point[58] = [47.250197,39.629564];
+  a_name[58] = ""
+  a_name[58] += "<strong>ЗАО «БИЛД»</strong><br>Элеваторный пер., 7<br>Тел.: +7 (863) 307-02-07<br>";
+  a_type[58] = "lightblue"
+  a_point[59] = [47.278119,39.685655];
+  a_name[59] = ""
+  a_name[59] += "<strong>Магазин керамической плитки Дом Плитки</strong><br>ул. Вавилова, 68<br>Тел.: +7 (863) 210-67-21; +7 (863) 273-26-53<br>";
+  a_type[59] = "lightblue"
+  a_point[60] = [47.245328,39.701205];
+  a_name[60] = ""
+  a_name[60] += "<strong>Магазин керамической плитки МТМ</strong><br>ул. Нансена, 103/1<br>Тел.: +7 (863) 244-33-33, +7 (863) 231-84-70<br>";
+  a_type[60] = "lightblue"
+  a_point[61] = [47.229170,39.720618];
+  a_name[61] = ""
+  a_name[61] += "<strong>Магазин сантехники «Кайрос»</strong><br>ул. Красноармейская, 188<br>Тел.: +7 (863) 299-01-00<br>";
+  a_type[61] = "lightblue"
+  a_point[62] = [47.289203,39.708429];
+  a_name[62] = ""
+  a_name[62] += "<strong>Филиал GuteWetter в Южном Федеральном Округе</strong><br>бул. Комарова 28/2, офис 331<br>Тел.: +7 (495) 646-26-26 доб. 420<br>E-mail: <a href='mailto:rostov@gutewetter.com'>rostov@gutewetter.com</a><br>";
+  a_type[62] = "red"
+  a_point[63] = [47.284537,39.844522];
+  a_name[63] = ""
+  a_name[63] += "<strong>Фирменный магазин GuteWetter в Ростове-на-Дону</strong><br>Аксайский пр-т 21,<br> ТЦ Мир Ремонта, ХДМ-ЮГ Аксай<br>Тел.: +7 (928) 22-99-683<br>E-mail: <a href='mailto:rostov@gutewetter.com'>rostov@gutewetter.com</a><br>";
+  a_type[63] = "lightblue"
+  a_point[64] = [44.560100,33.486085];
+  a_name[64] = ""
+  a_name[64] += "<strong>Орегон</strong><br>Камышовое шоссе, 27<br>Тел.: + 7 (978) 096-30-24<br>";
+  a_type[64] = "lightblue"
+  a_point[65] = [44.593327,33.529887];
+  a_name[65] = ""
+  a_name[65] += "<strong>«Кармен»</strong><br>ул. Охотская, д. 8<br>Тел.: +7 (978) 784-19-81<br>";
+  a_type[65] = "lightblue"
+  a_point[66] = [44.975909,34.105509];
+  a_name[66] = ""
+  a_name[66] += "<strong>«Кармен»</strong><br>ул. Вилар, д. 6<br>Тел.: +7 (978) 715-15-69<br>";
+  a_type[66] = "lightblue"
+  a_point[67] = [43.612199,39.728918];
+  a_name[67] = ""
+  a_name[67] += "<strong>«KERAMA MARAZZI»</strong><br>ул. Донская, 28 ТЦ Строй Сити<br>Тел.: +7 (918) 100-02-45<br>";
+  a_type[67] = "lightblue"
+  a_point[68] = [43.60543885219963,39.750374195770135];
+  a_name[68] = ""
+  a_name[68] += "<strong>«KERAMA MARAZZI»</strong><br>ул. Транспортная, 28 ТЦ Олимп<br>Тел.: 8 (918) 603-43-43<br>";
+  a_type[68] = "lightblue"
+  a_point[69] = [43.5956231200259,39.7187264914016];
+  a_name[69] = ""
+  a_name[69] += "<strong>«KERAMA MARAZZI»</strong><br>ул. Красноармейская, 4/1, микрорайон Заречный<br>Тел.: +7 (862) 254-43-43<br>";
+  a_type[69] = "lightblue"
+  a_point[70] = [45.052130,41.916046];
+  a_name[70] = ""
+  a_name[70] += "<strong>ТЦ ЕВРОКЕРАМИКА</strong><br>Кулакова пр., д. 17И<br>Тел.: +7 (8652) 56-46-36, +7 (8652) 95-53-67<br>";
+  a_type[70] = "lightblue"
+  a_point[71] = [51.317922,37.908406];
+  a_name[71] = ""
+  a_name[71] += "<strong>KERAMIX</strong><br>м-н Надежда, 10<br>Тел.: +7 (4725) 40-60-34, 40-60-80<br>";
+  a_type[71] = "lightblue"
+  a_point[72] = [54.563421,100.576070];
+  a_name[72] = ""
+  a_name[72] += "<strong>Сантехника Мауро</strong><br>ул. Володарского, 26<br>Тел.: +7 (950) 055 52 95<br>";
+  a_type[72] = "lightblue"
+  a_point[73] = [52.747921,103.631295];
+  a_name[73] = ""
+  a_name[73] += "<strong>Сантехника Мауро</strong><br>ул. Стопани, 40<br>Тел.: +7(39543) 3-22-33<br>";
+  a_type[73] = "lightblue"
+  a_point[74] = [43.804771,131.946206];
+  a_name[74] = ""
+  a_name[74] += "<strong>Торговое предприятие «Солнышко»</strong><br>ул. Советская, 114<br>Тел.: +7 (4234) 33-40-20<br>";
+  a_type[74] = "lightblue"
+  a_point[75] = [54.801366,56.094791];
+  a_name[75] = ""
+  a_name[75] += "<strong>ИП Байтимирова Г.А.</strong><br>Индустриальное шоссе, 44/1<br>Тел.: +7 (347) 246-49-33<br>";
+  a_type[75] = "lightblue"
+  a_point[76] = [56.151682,47.177479];
+  a_name[76] = ""
+  a_name[76] += "<strong>Дизайн-студия интерьеров «Gdesign»</strong><br>ул. Юрьева, д. 1<br>Тел.: +7 (927) 845-17-67; +7 (927) 666-60-27<br>";
+  a_type[76] = "lightblue"
+  a_point[77] = [52.205259,104.066807];
+  a_name[77] = ""
+  a_name[77] += "<strong>Сантехника Мауро</strong><br>1-й микрорайон 65 А<br>Тел.: +7(39550) 6-20-20<br>";
+  a_type[77] = "lightblue"
+  a_point[78] = [46.314098,44.214916];
+  a_name[78] = ""
+  a_name[78] += "<strong>Посейдон</strong><br>ул. Ленина 7<br>Тел.: +7 (937) 466-51-35<br>";
+  a_type[78] = "lightblue"
+  a_point[79] = [46.927470,142.753554];
+  a_name[79] = ""
+  a_name[79] += "<strong>Салон «ЕвроДекор»</strong><br>ул. Комсомольская, 314-А, 1-й этаж<br>Тел.: +7 (4242) 31-22-80<br>";
+  a_type[79] = "lightblue"
+  a_point[80] = [46.939217,142.752305];
+  a_name[80] = ""
+  a_name[80] += "<strong>Салон «ЕвроДекор»</strong><br>ул. Комсомольская, 247-Б,<br> ТД Зодчий, цокольный этаж<br>Тел.: +7 (4242) 31-24-58<br>";
+  a_type[80] = "lightblue"
+  a_point[81] = [46.961331,142.721861];
+  a_name[81] = ""
+  a_name[81] += "<strong>Салон «ЕвроДекор»</strong><br>ул. Железнодорожная, 50,<br> ТЦ Мегаград, 2-й этаж<br>Тел.: +7 (4242) 77-06-06, доб. 112<br>";
+  a_type[81] = "lightblue"
+  a_point[82] = [44.504461,34.148045];
+  a_name[82] = ""
+  a_name[82] += "<strong>Орегон</strong><br>Дарсановский пер., 4<br>Тел.: +7 (978) 728-26-45<br>";
+  a_type[82] = "lightblue"
+  myGeoObjects = [];
+  for (var i = 0, l = a_point.length; i < l; i++) {
+    point = a_point[i];
+    myPlacemark = new ymaps.Placemark(point, {
+// Свойства
+        balloonContentBody: a_name[i]
+      },
+      {
+// Опции
+        preset: "twirl#" + a_type[i] + "DotIcon"
+      }
+    );
+    myGeoObjects.push(myPlacemark);
+  }
+  var myMap = new ymaps.Map("id_ymap", {
+    center: [55.753582,37.62091],
+    zoom: 4
+  });
+// Кнопка изменения масштаба
+  myMap.controls.add("zoomControl");
+// Добавляем кластеризатор на карту
+  clusterer.add(myGeoObjects);
+  myMap.geoObjects.add(clusterer);
+// Устанавливаем центр и масштаб карты так, чтобы отобразить все геообъекты целиком.
+  myMap.setBounds(clusterer.getBounds());
+  myMap.behaviors.disable('scrollZoom');
+}

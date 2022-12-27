@@ -1,0 +1,88 @@
+.block-main {
+  margin: 4rem auto 0 auto;
+  text-align: center;
+
+  &__gutewetter {
+    margin-bottom: 4rem;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 3rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 2rem;
+    }
+
+    img {
+      width: 70%;
+      max-width: 540px;
+      height: auto;
+      margin-bottom: 1rem;
+      margin-left: 1rem;
+    }
+
+    &__slogan {
+      font-size: 2.8rem;
+      margin: 0;
+      font-weight: 400;
+
+      @include media-breakpoint-down(lg) {
+        font-size: 2.5rem;
+      }
+
+      @include media-breakpoint-down(md) {
+        font-size: 1.9rem;
+      }
+
+      @include media-breakpoint-down(sm) {
+        font-size: 1.5rem;
+      }
+
+      @include media-breakpoint-only(xs) {
+        font-size: 1.2rem;
+      }
+
+    }
+
+  }
+
+  &__links {
+    white-space: nowrap;
+
+    a {
+      margin: 0 2rem;
+      white-space: nowrap;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+    }
+
+  }
+
+  &__illustration {
+    margin-top: 4rem;
+
+    @include media-breakpoint-down(md) {
+      margin-top: 3rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 2rem;
+    }
+
+    img {
+      width: 100%;
+      max-width: 640px;
+      height: auto;
+    }
+
+  }
+
+}
+

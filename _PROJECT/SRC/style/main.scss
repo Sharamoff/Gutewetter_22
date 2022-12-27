@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+
+// пустышки рефера для отладки
+@import 'vendor/bootstrap/functions';
+@import 'vendor/bootstrap/variables';
+@import 'vendor/bootstrap/mixins';
+
+
+/* main */
+
+@import 'base/mixins';
+@import 'base/variables';
+@import 'base/fonts';
+@import 'base/grid';
+
+@import 'layout/header';
+@import 'layout/menumain';
+@import 'layout/menucatalog';
+@import 'layout/menuregion';
+@import 'layout/sections';
+@import 'layout/footer';
+@import 'layout/barbtm';
+@import 'layout/modal';
+
+@import 'elements/elements';
+@import 'elements/headers';
+@import 'elements/buttons';
+@import 'elements/links';
+@import 'elements/forms';
+@import 'elements/sliders';
+@import 'elements/lists';
+@import 'elements/tables';
+@import 'elements/ratings';
+@import 'elements/maps';
+
+@import 'blocks/main';
+@import 'blocks/search';
+@import 'blocks/product';
+@import 'blocks/actions';
+@import 'blocks/adv';
+@import 'blocks/reference';
+@import 'blocks/professional';
+@import 'blocks/matrix';
+@import 'blocks/signs';
+@import 'blocks/mymap';

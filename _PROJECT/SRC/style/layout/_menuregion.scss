@@ -1,0 +1,182 @@
+.menuregion {
+  margin-top: 4.4rem;
+
+  @include media-breakpoint-down(md) {
+
+    .btn-close {
+      display: none;
+    }
+
+    .menuregion__search {
+      margin-right: 0;
+      width: 100%;
+    }
+
+    .fld_menuregion__search {
+      width: 100%;
+    }
+
+  }
+
+  &.show{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .modal-dialog {
+    min-width: 100%;
+    margin: 0;
+
+    @include media-breakpoint-down(md) {
+      height: 100vh;
+    }
+
+  }
+
+  .modal-content {
+    font: $font-basemed;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.15);
+    filter: drop-shadow(0 0.2rem 0.4rem rgba(0, 0, 0, 0.15));
+    backdrop-filter: blur(5px) !important;
+    color: $c-gray;
+    transition: $transition-all;
+  }
+
+  .modal-header .container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    @include media-breakpoint-only(xs) {
+      gap: 1rem;
+    }
+
+  }
+
+  .modal-body {
+    padding: 2rem 1rem 6rem 2rem !important;
+  }
+
+  .modal-body .container-fluid {
+    display: block;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+  }
+
+  a {
+    color: $c-gray;
+
+    &:hover {
+      color: $c-black;
+      text-decoration: underline;
+    }
+
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+    margin: 0.5rem 1rem 2rem 0;
+    width: 100%;
+
+    > li {
+      margin-top: 0.8rem;
+      margin-bottom: 0.8rem;
+
+      a {
+        display: block;
+      }
+
+      &.lither {
+        font-size: $font-size-basemax;
+        font-weight: 700;
+      }
+
+    }
+
+  }
+
+  .menuregion__hdr {
+    font-size: $font-size-basemax;
+    font-weight: 700;
+    color: $c-gray;
+    white-space: nowrap;
+
+    &:before {
+      font-family: $fontawesome;
+      color: $c-gray-invert;
+      margin-right: 1rem;
+      content: "\f3c5";
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-top: 1rem;
+    }
+
+  }
+
+  .menuregion__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3rem;
+
+    @include media-breakpoint-down(md) {
+      margin-right: 0;
+    }
+
+    .fld_menuregion__search {
+      height: 3.2rem;
+      background: $c-gray-bk;
+      border: solid 1px $color-border;
+      border-left: none;
+      border-radius: 0 $border-radius $border-radius 0;
+      font-size: $font-size-basemed;
+      padding-left: 1rem;
+
+      @include media-breakpoint-down(md) {
+        font-size: $font-size-base-md;
+        margin-right: 0;
+      }
+
+      @include media-breakpoint-down(sm) {
+        font-size: $font-size-base-sm;
+      }
+
+    }
+
+    @include placeholder {
+      color: $c-gray-invert;
+    }
+
+    .b_menuregion__search {
+      height: 3.2rem;
+      width: 3rem;
+      background: $c-gray-bk url("../img/lupa-menu.svg") center right no-repeat;
+      border: solid 1px $color-border;
+      border-right: none;
+      border-radius: $border-radius 0 0 $border-radius;
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

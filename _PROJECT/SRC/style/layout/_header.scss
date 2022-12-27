@@ -1,0 +1,454 @@
+header {
+  position: fixed;
+  z-index: 9999 !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 4.4rem;
+  background-color: $c-fixbar-gray;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.15);
+  filter: drop-shadow(0 0.2rem 0.4rem rgba(0, 0, 0, 0.15));
+  backdrop-filter: blur(5px);
+  color: $c-gray-invert;
+  font: $font-topmenu;
+  padding: 0 15px;
+  transition: 0.5s;
+
+  &.showsearch {
+    background-color: $c-black;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 0;
+
+    &.showmenus {
+      background-color: $c-black;
+      box-shadow: none;
+      filter: none;
+      backdrop-filter: none;
+    }
+
+  }
+
+  @include media-breakpoint-between(md, lg) {
+
+    .span--overflow {
+      display: none;
+    }
+
+  }
+
+
+
+  .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  a {
+    color: $c-gray-invert;
+
+    &:hover {
+      text-decoration: none;
+      color: $c-white;
+    }
+
+  }
+
+}
+
+.header__menumain-md {
+  background: none;
+  border: none;
+
+  .animated-icon {
+    width: 24px;
+    height: 20px;
+    position: relative;
+    margin: 0 9px 0 9px;
+    transform: rotate(0deg);
+    cursor: pointer;
+
+    span {
+      display: block;
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out;
+      background: $c-white;
+
+      &:nth-child(1) {
+        top: 0;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        top: 9px;
+      }
+
+      &:nth-child(4) {
+        top: 18px;
+        width: 60%;
+      }
+
+    }
+
+    &.open {
+
+      span {
+
+        &:nth-child(1) {
+          top: 10px;
+          width: 0;
+          left: 50%;
+        }
+
+        &:nth-child(2) {
+          transform: rotate(45deg);
+        }
+
+        &:nth-child(3) {
+          transform: rotate(-45deg);
+        }
+
+        &:nth-child(4) {
+          top: 10px;
+          width: 0;
+          left: 50%;
+        }
+
+      }
+
+
+    }
+
+  }
+
+  .animated-icon.open span:nth-child(1) {
+    top: 11px;
+    width: 0;
+    left: 50%;
+  }
+
+  .animated-icon.open span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+
+  .animated-icon.open span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+
+  .animated-icon.open span:nth-child(4) {
+    top: 11px;
+    width: 0;
+    left: 50%;
+  }
+
+}
+
+.header__logo {
+  display: block;
+  margin-top: 1px;
+  margin-right: 4rem;
+
+  @include media-breakpoint-down(md) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img {
+    height: 29px;
+    width: auto;
+
+    @include media-breakpoint-down(md) {
+      height: 20px;
+    }
+
+  }
+
+}
+
+.header__menu {
+  flex-wrap: nowrap;
+  transition: $transition-all;
+
+  a > i {
+    margin-right: 0.6rem;
+    color: $c-gray-light;
+    font-size: 1.5rem;
+    transition: $transition-all;
+  }
+
+  a:hover > i {
+    color: $c-white;
+  }
+
+  .menu-item {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 0.2rem;
+
+    > a {
+      display: flex;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+      align-items: center;
+      height: 4rem;
+
+      &.i--drop::after {
+        margin-left: 0.3rem;
+        font: 300 1.4rem $fontawesome;
+        content: "\f107";
+      }
+
+      &.show {
+        color: $c-white;
+
+        &.i--drop::after {
+          content: "\f106";
+        }
+
+      }
+
+    }
+
+    .dropdown-menu {
+      background-color: $color-bk-dropdown;
+      border-radius: 0;
+      padding: 0.5rem 2rem;
+      margin-top: 2px;
+      z-index: $zindex-fixed + 2;
+
+      &.dropdown-menu-end {
+        margin-right: -8rem;
+      }
+
+      /*
+      &:before {
+        position: absolute;
+        top: -10px;
+        left: 30px;
+        display: inline-block;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-bottom-color: $c-fixbar-gray;
+        content: '';
+      }
+
+      &.dropdown-menu-end {
+
+        &:before {
+          left: 80%;
+        }
+
+      }
+      */
+
+      > li {
+        font-size: $font-size-basemed;
+        margin: 0;
+        border-bottom: solid 1px $color-hr-dropdown;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+      }
+
+      .dropdown-item {
+        color: $c-gray-invert;
+        padding: 1rem 0;
+
+        &:hover {
+          background: transparent;
+          color: $c-white;
+          text-decoration: none;
+        }
+
+      }
+
+    }
+
+  }
+
+  &.menu--catalog {
+    font-weight: bold;
+
+    .menu-item {
+
+      @include media-breakpoint-down(md) {
+        padding-right: 0;
+      }
+
+    }
+
+    .animated-icon {
+      width: 40px;
+      height: 4rem;
+      background: url("../img/i-catalog.svg") center center no-repeat;
+      opacity: 0.3;
+      transition: $transition-all;
+
+      @include media-breakpoint-down(md) {
+        width: 40px;
+        margin-right: 10px;
+      }
+
+    }
+
+    a:hover {
+
+      .animated-icon {
+        opacity: 1;
+      }
+
+    }
+
+    a.open {
+      color: $c-white;
+    }
+
+    a.open .animated-icon {
+      opacity: 1;
+    }
+
+    @include media-breakpoint-down(md) {
+
+      a span {
+        display: none;
+      }
+
+      a.open .animated-icon {
+        background: url("../img/i-x-w.svg") center center no-repeat;
+        opacity: 1;
+        width: 40px;
+        margin-right: 6px;
+      }
+
+    }
+
+  }
+
+  &.menu--region {
+
+    i {
+      position: relative;
+      top: -1px;
+    }
+
+    .open, .open i {
+      color: $c-white;
+    }
+
+  }
+
+  &.menu--user {
+
+    i {
+      font-size: 2rem;
+    }
+
+  }
+
+}
+
+.header__mainsearch {
+
+  .mainsearch-btn {
+    position: relative;
+    top: -1px;
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    background: transparent url("../img/lupa-menu.svg") center center no-repeat;
+
+    &:hover {
+      background-image: url("../img/lupa-menu_.svg");
+    }
+
+  }
+
+}
+
+.header__mainsearch-form {
+  display: none;
+  position: absolute;
+  z-index: $zindex-fixed + 1;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4.4rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: $c-black;
+  transition: 0.5s;
+  padding-left: 20%;
+  padding-right: 20%;
+
+  &.active {
+    display: flex;
+  }
+
+  input[type="search"] {
+    height: 3.6rem;
+    width: 100%;
+    background: $c-black;
+    border: none;
+    font-size: $font-size-basemed;
+    color: $c-white;
+  }
+
+  .mainsearch-form__search {
+    height: 3.6rem;
+    width: 4rem;
+    background: $c-black url("../img/lupa-menu.svg") center center no-repeat;
+    border: none;
+    border-radius: $border-radius 0 0 $border-radius;
+  }
+
+  .mainsearch-form__close {
+    height: 3.6rem;
+    width: 4rem;
+    background: $c-black url("../img/i-x-search.svg") center center no-repeat;
+    border: none;
+    border-radius: 0 $border-radius $border-radius 0;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

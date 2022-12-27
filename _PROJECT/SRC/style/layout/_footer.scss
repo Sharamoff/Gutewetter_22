@@ -1,0 +1,154 @@
+footer {
+  background: $c-gray-bk;
+  padding: 3rem 15px 8rem 15px;
+  font: $font-footer;
+
+  @include media-breakpoint-down(md) {
+    font: $font-footer-md;
+    padding-top: 2rem;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font: $font-footer-sm;
+    padding-top: 1rem;
+  }
+
+}
+
+.footer__menu {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 3rem;
+  margin-right: 1rem;
+
+  @include media-breakpoint-only(xs) {
+    margin-bottom: 2rem;
+  }
+
+  > li {
+    margin: 1rem 0;
+    padding: 0;
+    line-height: $line-height-min;
+  }
+
+  .menu-hdr {
+    font-size: $font-size-basemed;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+
+    @include media-breakpoint-down(md) {
+      font-size: $font-size-basemed-md;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-basemed-sm;
+    }
+
+    span {
+      display: block;
+      width: 4rem;
+      height: 0.2rem;
+      background: $c-gray;
+      margin-top: 0.2rem;
+    }
+
+  }
+
+  a {
+    display: block;
+    color: $c-gray-light;
+
+    &:hover {
+      color: $c-gray;
+      text-decoration: underline;
+    }
+
+  }
+
+}
+
+.footer__codesearch-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -5.5rem;
+
+  @include media-breakpoint-down(md) {
+    margin-top: 0;
+    margin-bottom: 4rem;
+  }
+
+  input[type="search"] {
+    -webkit-appearance: none;
+    height: 3.6rem;
+    width: 99%;
+    background: $c-white;
+    border: solid 1px $color-border;
+    border-left: none;
+    border-radius: 0 $border-radius $border-radius 0;
+    font-size: $font-size-basemed;
+
+    @include media-breakpoint-down(md) {
+      font-size: $font-size-base-md;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-base-sm;
+    }
+
+  }
+
+  @include placeholder {
+    color: $c-gray-invert;
+  }
+
+  .codesearch-form__search {
+    height: 3.6rem;
+    width: 3.2rem;
+    background: $c-white url("../img/lupa-menu.svg") center right no-repeat;
+    border: solid 1px $color-border;
+    border-right: none;
+    border-radius: $border-radius 0 0 $border-radius;
+  }
+
+}
+
+.footer__copy {
+  font-size: $font-size-fixed;
+
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-fixed-sm;
+  }
+
+}
+
+.promoting {
+  display: inline-block;
+  float: right;
+
+  img {
+    height: 30px;
+    width: auto;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

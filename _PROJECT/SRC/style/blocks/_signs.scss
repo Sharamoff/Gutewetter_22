@@ -1,0 +1,39 @@
+.block-signs {
+  margin-top: 4rem;
+
+  .signs__item {
+    margin: 0 1rem 4rem 1rem;
+    font-size: $font-size-basemin;
+    text-align: center;
+
+    @include media-breakpoint-down(md) {
+      font-size: $font-size-basemin-md;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-basemin-sm;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 120px;
+      height: auto;
+      border-radius: 50%;
+      background-color: $c-gray;
+      margin: 0 auto 1rem auto;
+
+      @include media-breakpoint-down(md) {
+        max-width: 100px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        max-width: 80px;
+      }
+
+    }
+
+  }
+
+}
+

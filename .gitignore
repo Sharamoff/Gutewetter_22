@@ -1,0 +1,6 @@
+*.rar
+figmafig/
+materials/
+pics/
+_PROJECT/node_modules/
+_PROJECT/.idea/

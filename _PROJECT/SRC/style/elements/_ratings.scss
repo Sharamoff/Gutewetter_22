@@ -1,0 +1,48 @@
+// ratings
+
+
+
+.rating {
+	display: inline-block;
+	padding-left: 85px;
+	padding-top: 2px;
+	color: $c-black;
+	background-position: center left;
+	background-repeat: no-repeat;
+	background-size: 80px;
+	line-height: 1;
+	min-height: 13px;
+	margin-left: 1rem;
+
+	@include media-breakpoint-down(md) {
+		margin-left: 0;
+	}
+
+	&.rate--00 {background-image: url("../img/rs00.svg")}
+	&.rate--05 {background-image: url("../img/rs05.svg")}
+	&.rate--10 {background-image: url("../img/rs10.svg")}
+	&.rate--15 {background-image: url("../img/rs15.svg")}
+	&.rate--20 {background-image: url("../img/rs20.svg")}
+	&.rate--25 {background-image: url("../img/rs25.svg")}
+	&.rate--30 {background-image: url("../img/rs30.svg")}
+	&.rate--35 {background-image: url("../img/rs35.svg")}
+	&.rate--40 {background-image: url("../img/rs40.svg")}
+	&.rate--45 {background-image: url("../img/rs45.svg")}
+	&.rate--50 {background-image: url("../img/rs50.svg")}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
