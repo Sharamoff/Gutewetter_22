@@ -38,8 +38,8 @@
   }
 
   .modal-body {
-    padding: 0 0.5rem 4rem 0.5rem !important;
-    margin-top: 10rem;
+    padding: 1rem 0.5rem 6rem 0.5rem !important;
+    margin-top: 8.5rem;
 
     @include media-breakpoint-down(md) {
       padding-top: 2rem !important;
@@ -68,21 +68,18 @@
 
 .menucatalog__configurator {
   position: absolute;
-  top: 4rem;
-  left: 2rem;
-  right: 2rem;
-  z-index: 9;
+  width: 100%;
+  z-index: 99999;
+  margin: 0 auto;
+  padding: 4rem 2rem 2rem 2rem;
   display: flex;
+  align-items: center;
   justify-content: center;
-  padding-bottom: 2rem;
 
   @include media-breakpoint-down(md) {
-    top: 2rem;
-    border-bottom: solid 1px $c-gray;
-  }
-
-  @include media-breakpoint-only(xs) {
+    padding-top: 2rem;
     justify-content: flex-start;
+    border-bottom: solid 1px $c-gray;
   }
 
   img {
@@ -96,12 +93,6 @@
 .menucatalog__menu {
   display: flex;
   flex-wrap: nowrap;
-  max-width: 27rem;
-  margin: 0 auto 2rem auto;
-
-  @include media-breakpoint-down(md) {
-    max-width: none;
-  }
 
   img {
     width: 50px;
@@ -111,13 +102,13 @@
 
   ul {
     padding: 0;
-    margin: 0;
     list-style: none;
+    margin: 0 1rem 2rem 0;
+    width: 100%;
 
     > li {
       margin-top: 1.5rem;
       margin-bottom: 1.5rem;
-
 
       a {
         display: block;
