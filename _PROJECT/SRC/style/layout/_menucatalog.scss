@@ -112,11 +112,12 @@
   ul {
     padding: 0;
     margin: 0;
+    list-style: none;
 
     > li {
       margin-top: 1.5rem;
       margin-bottom: 1.5rem;
-      margin-left: 2.3rem;
+
 
       a {
         display: block;
@@ -130,8 +131,6 @@
     font-weight: 700;
     color: $c-white;
     line-height: $line-height-h;
-    margin-left: 0.5rem;
-    list-style: none;
   }
 
 }
