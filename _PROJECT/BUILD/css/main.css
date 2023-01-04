@@ -496,7 +496,7 @@ header a:hover {
   width: 40px;
   height: 4rem;
   background: url("../img/i-catalog.svg") center center no-repeat;
-  opacity: 0.3;
+  opacity: 0.5;
   transition: 0.3s;
 }
 @media (max-width: 767.98px) {
@@ -863,8 +863,8 @@ header a:hover {
   }
 }
 .menucatalog .modal-body {
-  padding: 1rem 0.5rem 6rem 0.5rem !important;
-  margin-top: 8.5rem;
+  padding: 2rem 0.5rem 6rem 0.5rem !important;
+  margin-top: 10rem;
 }
 @media (max-width: 767.98px) {
   .menucatalog .modal-body {
@@ -898,8 +898,12 @@ header a:hover {
 @media (max-width: 767.98px) {
   .menucatalog__configurator {
     padding-top: 2rem;
-    justify-content: flex-start;
     border-bottom: solid 1px #1D1D1F;
+  }
+}
+@media (max-width: 575.98px) {
+  .menucatalog__configurator {
+    justify-content: flex-start;
   }
 }
 .menucatalog__configurator img {
