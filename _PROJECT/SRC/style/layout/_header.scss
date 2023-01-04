@@ -294,7 +294,7 @@ header {
       width: 40px;
       height: 4rem;
       background: url("../img/i-catalog.svg") center center no-repeat;
-      opacity: 0.3;
+      opacity: 0.5;
       transition: $transition-all;
 
       @include media-breakpoint-down(md) {
