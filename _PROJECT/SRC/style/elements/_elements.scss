@@ -4,3 +4,176 @@ p.p {
 .span--overflow {
   overflow: hidden;
 }
+
+
+
+.panel-breadcrumb {
+  position: absolute;
+  top: 4.4rem;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: $c-tool;
+  backdrop-filter: blur(10px);
+  color: $c-fixbar-gray;
+  padding: 1.3rem 15px;
+  font-size: $font-size-basemed;
+
+  @include media-breakpoint-down(md) {
+    font-size: $font-size-basemed-md;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-basemed-sm;
+  }
+
+  .breadcrumb__hdr {
+    font-weight: 600;
+
+    &:after {
+      font-family: $fontawesome;
+      content: "\f077";
+      font-weight: 400;
+      margin-left: 0.8rem;
+    }
+
+    &.collapsed {
+
+      &:after {
+        content: "\f078";
+      }
+
+    }
+
+  }
+
+  #breadcrumb-submenu {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin-top: 1.3rem;
+    margin-bottom: 0;
+    border-top: solid 1px $color-border;
+
+    > li {
+      margin-top: 1.3rem;
+      margin-bottom: 1.3rem;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: $c-fixbar-gray;
+
+      &:before {
+        font-family: $fontawesome;
+        content: "\f105";
+        margin-left: 0.2rem;
+        margin-right: 0.6rem;
+      }
+
+      &:hover {
+        color: $c-black;
+      }
+
+    }
+
+  }
+
+}
+
+
+
+.pagination {
+  font-size: $font-size-basemed;
+  width: 100%;
+  justify-content: space-between;
+
+  @include media-breakpoint-down(md) {
+    font-size: $font-size-basemed-md;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-basemed-sm;
+  }
+
+  .page-item {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .page-link {
+    padding: 1rem;
+    text-decoration: none;
+    color: $c-gray;
+    background: $c-white;
+    border-radius: 0 !important;
+    border-color: $color-border;
+    font-size: $font-size-basemed;
+
+    @include media-breakpoint-down(md) {
+      font-size: $font-size-basemed-md;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-basemed-sm;
+    }
+
+    &:hover {
+      color: $color-link-hover;
+      background: $c-gray-bk;
+    }
+
+    i {
+      font-size: $font-size-basemin;
+
+      &.fa-chevron-left {
+        margin-right: 0.8rem;
+      }
+
+      &.fa-chevron-right {
+        margin-left: 0.8rem;
+      }
+
+    }
+
+  }
+
+  .page-item.active {
+
+    .page-link {
+      background: $c-gray;
+      color: $c-white;
+      font-weight: bold;
+      border-color: $color-border;
+      cursor: default;
+    }
+
+  }
+
+  .page-item.disabled {
+
+    .page-link {
+      opacity: 0.5;
+    }
+
+  }
+
+}
+
+
+
+.span--dot {
+  display: block;
+  flex-grow: 1;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  min-height: 15px;
+  background: url("../img/dot-h.png") left center repeat-x;
+}
+
+
+
+
+
+

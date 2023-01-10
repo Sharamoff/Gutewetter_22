@@ -1,0 +1,65 @@
+.ui-slider {
+	position: relative;
+	margin: 0;
+
+	.ui-slider-handle {
+		position: absolute;
+		z-index: 2;
+		width: 18px;
+		height: 18px;
+		border-radius: 50%;
+		background: $c-white;
+		border: solid 2px $c-blue;
+		cursor: pointer;
+
+		&:focus {
+			outline: none;
+		}
+
+	}
+
+	.ui-slider-range {
+		position: absolute;
+		z-index: 1;
+		font-size: 1.2rem;
+		display: block;
+		border: 0;
+		overflow: hidden;
+		background: $c-blue;
+	}
+
+}
+
+.ui-slider-horizontal {
+	height: 4px;
+
+	.ui-slider-handle {
+		top: -7px;
+		margin-left: -9px;
+
+	}
+
+	.ui-slider-range {
+		top: 0;
+		height: 100%;
+	}
+
+	.ui-slider-range-min {
+		left: 0;
+	}
+	.ui-slider-range-max {
+		right: 0;
+	}
+
+}
+
+.ui-widget-content {
+	background: $c-gray-invert;
+	//border: solid 1px $color-border;
+}
+
+
+
+.ui-corner-all {
+	border-radius: 3rem;
+}

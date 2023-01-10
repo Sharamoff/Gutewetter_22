@@ -1,0 +1,89 @@
+.block-faq {
+
+  @include media-breakpoint-up(md) {
+    margin-left: 0.8rem;
+  }
+
+  .faq__item {
+    margin-bottom: 4rem;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 3rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 2rem;
+    }
+
+    &-q {
+      font-size: 2.1rem;
+      font-weight: 500;
+      padding-left: 4rem;
+      caret-color: transparent;
+
+      @include media-breakpoint-down(md) {
+        font-size: 1.9rem;
+        cursor: pointer;
+      }
+
+      @include media-breakpoint-down(sm) {
+        font-size: 1.7rem;
+      }
+
+      @include media-breakpoint-only(xs) {
+        padding-left: 3rem;
+      }
+
+      &:before {
+        font-family: $fontawesome;
+        color: $c-blue;
+        content: "\f4b6";
+        font-weight: 300 !important;
+        margin-right: 0.6rem;
+        margin-left: -3.5rem;
+
+        @include media-breakpoint-down(md) {
+          margin-left: -3.2rem;
+        }
+
+        @include media-breakpoint-down(sm) {
+          margin-left: -2.9rem;
+        }
+
+      }
+
+    }
+
+    &-a {
+      margin-left: 4rem;
+      margin-top: 0.6rem;
+
+      @include media-breakpoint-only(xs) {
+        margin-left: 3rem;
+      }
+
+      p {
+        line-height: $line-height-p;
+      }
+
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

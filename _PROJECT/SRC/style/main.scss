@@ -33,10 +33,11 @@
 @import 'elements/tables';
 @import 'elements/ratings';
 @import 'elements/maps';
+@import 'elements/ui-slider';
 
 @import 'blocks/main';
 @import 'blocks/search';
-@import 'blocks/product';
+@import 'blocks/filter';
 @import 'blocks/actions';
 @import 'blocks/adv';
 @import 'blocks/reference';
@@ -44,3 +45,9 @@
 @import 'blocks/matrix';
 @import 'blocks/signs';
 @import 'blocks/mymap';
+@import 'blocks/tools';
+@import 'blocks/productcategory';
+@import 'blocks/productcolors';
+@import 'blocks/productlist';
+@import 'blocks/faq';
+

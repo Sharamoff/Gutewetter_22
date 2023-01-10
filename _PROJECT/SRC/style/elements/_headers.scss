@@ -5,7 +5,7 @@
 h2,
 .mainhdr {
 	font: $font-h2;
-	font-weight: 600;
+	font-weight: 600 !important;
 	color: $c-gray;
 	margin-top: 0;
 	margin-bottom: 4rem;
@@ -47,6 +47,7 @@ h3 {
 	font: $font-h3;
 	font-weight: 500;
 	margin-bottom: 0.8rem;
+	line-height: $line-height-h;
 
 	@include media-breakpoint-down(md) {
 		font: $font-h3-md;

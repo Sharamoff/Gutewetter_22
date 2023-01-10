@@ -12,13 +12,13 @@ $('.mainsearch-btn').on('click', function () {
   $('#fld_mainsearch').focus();
 });
 
-$('.mainsearch-form__close').on('click', function () {
+$('.mainsearch-form__close, .pagesection, footer, .barbtm').on('click', function () {
   $('header').removeClass('showsearch');
   $('.header__mainsearch-form').removeClass('active');
 });
 
 $('.mainsearch-form__search').on('click', function () {
-  $('header').removeClass('showsearch');
+  $('header').removeClass('show-search');
   $('.header__mainsearch-form').removeClass('active');
 });
 
@@ -102,6 +102,16 @@ $('#id_menucatalog').on('hidden.bs.modal', function (e) {
 
 
 
+// breadcrumb panel
+
+$('header, .pagesection, footer, .barbtm').on('click', function () {
+  $('#breadcrumb-submenu').removeClass('show');
+  $('.breadcrumb__hdr').addClass('collapsed');
+});
+
+
+
+
 // slider actions
 
 $('#id_idx-actions').slick({
@@ -173,4 +183,195 @@ $('#id_idx-reference').slick({
     }
   ]
 });
+
+
+
+// filter-form slider
+
+$('#id_filter-form').slick({
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  dots: false,
+  infinite: true,
+  arrows: true,
+  responsive: [
+    {
+      breakpoint: 820,
+      settings: {
+        slidesToShow: 5
+      }
+    },
+    {
+      breakpoint: 720,
+      settings: {
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 546,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 380,
+      settings: {
+        slidesToShow: 2
+      }
+    }
+  ]
+});
+
+
+
+// filter range sliders
+
+$('#id_inputslider-l').slider({
+  min: 50,
+  max: 800,
+  values: [300, 700],
+  range: true,
+  stop: function(event, ui) {
+    $('input#id_inputval-l1').val($(this).slider('values', 0));
+    $('input#id_inputval-l2').val($(this).slider('values', 1));
+  },
+  slide: function(event, ui){
+    $('input#id_inputval-l1').val($(this).slider('values', 0));
+    $('input#id_inputval-l2').val($(this).slider('values', 1));
+  }
+});
+$('input#id_inputval-l1').change(function(){
+  var value1=$(this).val();
+  var value2=$('input#id_inputval-l2').val();
+  if(parseInt(value1) < 50) {value1 = 50;}
+  if(parseInt(value1) > parseInt(value2)){
+    value1 = value2;
+    $(this).val(value1);
+  }
+  $('#id_inputslider-l').slider('values', 0, value1);
+});
+$('input#id_inputval-l2').change(function(){
+  var value1=$('input#id_inputval-l1').val();
+  var value2=$(this).val();
+  if (value2 > 700) {value2 = 700;}
+  if(parseInt(value1) > parseInt(value2)){
+    value2 = value1;
+    $(this).val(value2);
+  }
+  $('#id_inputslider-l').slider('values', 1, value2);
+});
+
+$('#id_inputslider-w').slider({
+  min: 50,
+  max: 250,
+  values: [70, 120],
+  range: true,
+  stop: function(event, ui) {
+    $('input#id_inputval-w1').val($(this).slider('values', 0));
+    $('input#id_inputval-w2').val($(this).slider('values', 1));
+  },
+  slide: function(event, ui){
+    $('input#id_inputval-w1').val($(this).slider('values', 0));
+    $('input#id_inputval-w2').val($(this).slider('values', 1));
+  }
+});
+$('input#id_inputval-w1').change(function(){
+  var value1=$(this).val();
+  var value2=$('input#id_inputval-w2').val();
+  if(parseInt(value1) < 50) {value1 = 50;}
+  if(parseInt(value1) > parseInt(value2)){
+    value1 = value2;
+    $(this).val(value1);
+  }
+  $('#id_inputslider-w').slider('values', 0, value1);
+});
+$('input#id_inputval-w2').change(function(){
+  var value1=$('input#id_inputval-w1').val();
+  var value2=$(this).val();
+  if (value2 > 250) {value2 = 250;}
+  if(parseInt(value1) > parseInt(value2)){
+    value2 = value1;
+    $(this).val(value2);
+  }
+  $('#id_inputslider-w').slider('values', 1, value2);
+});
+
+$('#id_inputslider-l').draggable();
+$('#id_inputslider-w').draggable();
+
+$('.popval-val').click(function() {
+  var vall = $(this).data('vall');
+  var valw = $(this).data('valw');
+  $('#id_inputslider-l').slider('values', [vall, vall]);
+  $('input#id_inputval-l1').val(vall);
+  $('input#id_inputval-l2').val(vall);
+  $('#id_inputslider-w').slider('values', [valw, valw]);
+  $('input#id_inputval-w1').val(valw);
+  $('input#id_inputval-w2').val(valw);
+});
+
+
+
+// product in productlist slider
+
+$('.productlist__item-pics_slide').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  speed: 0,
+  arrows: false,
+  dots: true,
+  infinite: true,
+  autoplay: false
+});
+$('.productlist__item').hover(function() {
+  let itemId = '#' + $(this).attr("id");
+  $(itemId+' .hoverbar1').hover(function () {
+      $(itemId+' .productlist__item-pics_slide').slick('slickGoTo', 0);
+    }, function () {}
+  );
+  $(itemId+' .hoverbar2').hover(function () {
+      $(itemId+' .productlist__item-pics_slide').slick('slickGoTo', 1);
+    }, function () {}
+  );
+  $(itemId+' .hoverbar3').hover(function () {
+      $(itemId+' .productlist__item-pics_slide').slick('slickGoTo', 2);
+    }, function () {}
+  );
+  $(itemId+' .hoverbar4').hover(function () {
+      $(itemId+' .productlist__item-pics_slide').slick('slickGoTo', 3);
+    }, function () {}
+  );
+});
+
+
+
+// FAQ accordion behavior
+
+function behaviorFAQ() {
+  let def_width = $(document).width();
+  if ( def_width < 753) {
+    $('.faq__item-a').collapse('hide');
+    $('.faq__item-q').attr('data-bs-toggle', 'collapse');
+  } else {
+    $('.faq__item-a').collapse('show');
+    $('.faq__item-q').removeAttr('data-bs-toggle');
+  }
+}
+behaviorFAQ();
+$(window).resize(function() {
+  behaviorFAQ();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 

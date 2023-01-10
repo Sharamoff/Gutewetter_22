@@ -2,3 +2,29 @@
 
 $grid-gutter-width:     1rem;
 $enable-caret:          false;
+
+$blue:                  #008BD2;
+$blue-100:              tint-color(#008BD2, 80%);
+$blue-200:              tint-color(#008BD2, 60%);
+$blue-300:              tint-color(#008BD2, 40%);
+$blue-400:              tint-color(#008BD2, 20%);
+$blue-500:              #008BD2;
+$blue-600:              shade-color(#008BD2, 20%);
+$blue-700:              shade-color(#008BD2, 40%);
+$blue-800:              shade-color(#008BD2, 60%);
+$blue-900:              shade-color(#008BD2, 80%);
+
+$red:                   #B42D5B;
+$red-100:              tint-color(#B42D5B, 80%);
+$red-200:              tint-color(#B42D5B, 60%);
+$red-300:              tint-color(#B42D5B, 40%);
+$red-400:              tint-color(#B42D5B, 20%);
+$red-500:              #B42D5B;
+$red-600:              shade-color(#B42D5B, 20%);
+$red-700:              shade-color(#B42D5B, 40%);
+$red-800:              shade-color(#B42D5B, 60%);
+$red-900:              shade-color(#B42D5B, 80%);
+
+$input-border-color:              #C3C3C7;
+$form-check-input-border:         1px solid #C3C3C7;
+$form-check-input-border-radius:  0.4rem;
