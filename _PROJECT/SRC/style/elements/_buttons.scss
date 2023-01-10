@@ -62,6 +62,34 @@ button.disabled:hover {
 
 
 
+.b-more {
+	display: block;
+	text-align: center;
+	font-size: $font-size-basemed;
+	background: $c-white;
+	color: $c-gray;
+	border: solid 1px $color-border;
+	padding: 1rem;
+	margin-bottom: 1.5rem;
+	text-decoration: none;
+
+	@include media-breakpoint-down(md) {
+		font-size: $font-size-basemed-md;
+	}
+
+	@include media-breakpoint-down(sm) {
+		font-size: $font-size-basemed-sm;
+	}
+
+	&:hover {
+		background: $c-gray-bk;
+		color: $color-link-hover;
+		text-decoration: none;
+	}
+
+}
+
+
 
 
 

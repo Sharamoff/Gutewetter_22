@@ -23,13 +23,11 @@ BODY {
 
 .header-compensator {
 	height: 4.4rem;
-
-	@include media-breakpoint-down(md) {
-		height: 4rem;
-	}
-
 }
 
+.breadcrumb-compensator {
+	height: 8.8rem;
+}
 
 
 section {
@@ -61,7 +59,7 @@ section {
 	&.row--margined {
 
 		> [class*="col-"] {
-			margin-bottom: 4rem;
+			margin-bottom: 1rem;
 		}
 
 	}

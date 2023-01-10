@@ -10,14 +10,16 @@ $m-max:									1080px;
 $c-white:               rgb(255, 255, 255);
 $c-black:               rgb(0, 0, 0);
 
-$c-gray-bk:             #F5F5F7;
-$c-border:              #C3C3C7;
-$c-gray-invert:         #C3C3C7;
+$c-gray-bk:             #F5F5F6;
+$c-border:              #C3C3C6;
+$c-tool-border:         #D3D3D6;
+$c-gray-invert:         #C3C3C6;
 $c-gray-light:					#6E6E73;
 $c-gray:								#1D1D1F;
 $c-fixbar-gray:         rgb(29, 29, 31, 0.93);
 $c-blue:                #008BD2;
 $c-red:                 #B42D5B;
+$c-tool:                rgba(227, 227, 231, 0.5);
 
 $color-bk-body:         $c-white;
 $color-bk-gray:         $c-gray-bk;
@@ -33,6 +35,8 @@ $color-bk-dropdown:     $c-black;
 $color-hr-dropdown:     #555559;
 $color-bk-search:       #1d1d1f;
 $color-bk-modal:        rgba(245, 245, 247, 1);
+
+
 
 
 
@@ -69,8 +73,8 @@ $font-size-fixed-sm:    12px;
 $font-size-fixed-min:   10px;
 
 $font-size-h2:          4.8rem;
-$font-size-h2-md:       3.8rem;
-$font-size-h2-sm:       3.2rem;
+$font-size-h2-md:       3.2rem;
+$font-size-h2-sm:       2.5rem;
 
 $font-size-h3:          2.8rem;
 $font-size-h3-md:       2.1rem;
@@ -97,13 +101,13 @@ $font-basemax:          $font-size-basemax $font-family-base;
 $font-basemax-md:       $font-size-basemax-md $font-family-base;
 $font-basemax-sm:       $font-size-basemax-sm $font-family-base;
 
-$font-h2:               $font-size-h2/$line-height-h $font-family-base;
-$font-h2-md:            $font-size-h2-md/$line-height-h $font-family-base;
-$font-h2-sm:            $font-size-h2-sm/$line-height-h $font-family-base;
+$font-h2:               $font-size-h2 $font-family-base;
+$font-h2-md:            $font-size-h2-md $font-family-base;
+$font-h2-sm:            $font-size-h2-sm $font-family-base;
 
-$font-h3:               $font-size-h3/$line-height-h $font-family-base;
-$font-h3-md:            $font-size-h3-md/$line-height-h $font-family-base;
-$font-h3-sm:            $font-size-h3-sm/$line-height-h $font-family-base;
+$font-h3:               $font-size-h3 $font-family-base;
+$font-h3-md:            $font-size-h3-md $font-family-base;
+$font-h3-sm:            $font-size-h3-sm $font-family-base;
 
 $font-topmenu:          $font-size-fixed $font-family-base;
 
