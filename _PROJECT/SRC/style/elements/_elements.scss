@@ -16,7 +16,7 @@ p.p {
   background: $c-tool;
   backdrop-filter: blur(10px);
   color: $c-fixbar-gray;
-  padding: 1.3rem 15px;
+  padding: 0 15px;
   font-size: $font-size-basemed;
 
   @include media-breakpoint-down(md) {
@@ -28,7 +28,18 @@ p.p {
   }
 
   .breadcrumb__hdr {
+    display: flex;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    min-height: 4rem;
     font-weight: 600;
+    caret-color: transparent;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
 
     &:after {
       font-family: $fontawesome;
@@ -47,17 +58,22 @@ p.p {
 
   }
 
-  #breadcrumb-submenu {
-    list-style: none;
-    padding: 0;
-    width: 100%;
-    margin-top: 1.3rem;
-    margin-bottom: 0;
-    border-top: solid 1px $color-border;
+  .breadcrumb-submenu {
+    margin-top: 0;
 
-    > li {
-      margin-top: 1.3rem;
-      margin-bottom: 1.3rem;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 3rem 0;
+      width: 100%;
+
+      > li {
+        list-style: none;
+        margin-top: 1.8rem;
+        margin-bottom: 1.8rem;
+
+      }
+
     }
 
     a {
@@ -173,7 +189,15 @@ p.p {
 }
 
 
+.dlv {
+  margin: 0;
+  border-top: 1px solid $color-border;
 
+  @include media-breakpoint-down(md) {
+    margin: 0 -20px;
+  }
+
+}
 
 
 

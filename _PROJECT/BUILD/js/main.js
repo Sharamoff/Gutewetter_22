@@ -108,7 +108,7 @@ $('#id_menucatalog').on('hidden.bs.modal', function (e) {
 // breadcrumb panel
 
 $('header, .pagesection, footer, .barbtm').on('click', function () {
-  $('#breadcrumb-submenu').removeClass('show');
+  $('.breadcrumb-submenu').removeClass('show');
   $('.breadcrumb__hdr').addClass('collapsed');
 });
 
