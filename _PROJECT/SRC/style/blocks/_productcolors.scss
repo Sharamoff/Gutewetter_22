@@ -14,7 +14,12 @@
 .pc--gold-galv		 	{ background: #DFC746; }														        // золотой гальваник
 .pc--gold-metal	 	{ background: #DBB000; }														        // золотой металл
 
+.pc--none {
+  display: none !important;
+}
+
 .product-color {
+  float: left;
   display: inline-block;
   width: 1.9rem;
   height: 1.9rem;
@@ -24,6 +29,17 @@
   border: 1px solid #FFFFFF;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.33);
   margin-right: 0.8rem;
+
+  @include media-breakpoint-only(xs) {
+    width: 1.7rem;
+    height: 1.7rem;
+    min-width: 1.7rem;
+    min-height: 1.7rem;
+    margin-right: 0.5rem;
+    position: relative;
+    top: -1px;
+  }
+
 }
 
 

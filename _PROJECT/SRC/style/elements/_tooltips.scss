@@ -1,0 +1,38 @@
+.tooltip {
+	opacity: 1 !important;
+
+	.tooltip-inner {
+		line-height: 1.1 !important;
+		padding: 0.3rem 0.8rem 0.6rem 0.8rem !important;
+		background-color: $c-gray !important;
+		font-size: $font-size-basemin !important;
+		max-width: 80rem !important;
+	}
+
+}
+
+
+.prop-tooltip {
+	display: inline-block;
+	font-size: 1.3rem;
+	background: transparentize($c-gray-invert, 0.5);
+	width: 1.7rem;
+	height: 1.7rem;
+	text-align: center;
+	line-height: 1.7rem;
+	margin-left: 0.8rem;
+	cursor: pointer;
+	caret-color: transparent;
+	position: relative;
+	top: -1px;
+
+	@include media-breakpoint-down(md) {
+		top: 0;
+	}
+
+	&:hover {
+		background: $c-black;
+		color: $c-white;
+	}
+
+}

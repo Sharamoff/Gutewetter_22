@@ -9,38 +9,10 @@
     margin-bottom: 1rem;
   }
 
-  @include media-breakpoint-down(lg) {
-
-    > .row [class*="col-"] {
-
-      &:nth-child(odd) {
-        .productlist__item {
-          margin-left: auto;
-          margin-right: 0;
-        }
-      }
-
-      &:nth-child(even) {
-        .productlist__item {
-          margin-left: 0;
-          margin-right: auto;
-        }
-      }
-
-    }
-
-  }
-
   @include media-breakpoint-down(md) {
 
     > .row [class*="col-"] {
       margin-bottom: 3rem;
-
-     .productlist__item {
-        margin-left: auto !important;
-        margin-right: auto !important;
-      }
-
     }
 
   }
@@ -88,7 +60,7 @@
 
         @include media-breakpoint-down(md) {
           display: inline-block !important;
-          bottom: -1.8rem;
+          bottom: -2.3rem;
         }
 
         li {
@@ -180,19 +152,34 @@
     padding: 0.3rem 1rem;
   }
 
+  .productlist__item-72h {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 40px;
+    height: 40px;
+    background: transparentize($c-gray, 0.25) url("../img/72h.svg") center center no-repeat;
+    backdrop-filter: blur(5px);
+  }
+
   .productlist__item-bfav,
   .productlist__item-bcompare {
     position: absolute;
     z-index: 5;
     width: 30px;
     height: 30px;
-    line-height: 30px;
+    line-height: 31px;
     text-align: center;
     background-color: transparentize($c-white, 0.5);
     background-position: center center;
     background-repeat: no-repeat;
+    backdrop-filter: blur(5px);
     border: none;
-    font-size: 16px;
+    border-radius: 50%;
+    font-family: $fontawesome;
+    font-weight: 300;
+    font-size: 17px;
     color: $c-gray;
     padding: 0 !important;
 
@@ -201,27 +188,26 @@
       color: $c-black;
     }
 
+    &.active {
+      background-color: $c-gray;
+      color: $c-gray-invert;
+    }
+
   }
   .productlist__item-bfav {
     top: 5px;
     right: 5px;
-    background-image: url("../img/ipl-fav.svg");
 
-    &.active {
-      background-image: url("../img/ipl-fav_.svg");
-      background-color: $c-gray;
-    }
+    &:before { content: "\f004"; }
 
   }
   .productlist__item-bcompare {
     top: 5px;
     right: 40px;
-    background-image: url("../img/ipl-compare.svg");
+    line-height: 29px;
+    font-size: 15px;
 
-    &.active {
-      background-image: url("../img/ipl-compare_.svg");
-      background-color: $c-gray;
-    }
+    &:before { content: "\f516"; }
 
   }
 
@@ -393,28 +379,76 @@
 
 
 
-.productlist-compilation {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.block-productlistmini {
+  margin-bottom: 3rem;
 
-  > li {
-    margin: 0;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 1rem;
+  }
 
-    a {
-      display: inline-block;
-      color: $c-gray;
-      margin: 0.5rem;
-      padding: 0.5rem 1rem;
-      background: transparentize($c-gray-invert, 0.5);
+  > .row [class*="col-"] {
+    margin-bottom: 2rem;
+  }
 
-      &:hover {
-        color: $color-link-hover;
-        background: $c-gray-invert;
-        text-decoration: none;
+  .productlistmini__item {
+    display: block;
+    text-align: center;
+    font-size: $font-size-basemed;
+    color: $c-gray;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    height: 100%;
+    max-width: 28rem;
+    caret-color: transparent;
+
+    @include media-breakpoint-down(md) {
+      font-size: $font-size-basemed-md;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-basemed-sm;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    &:hover {
+      color: $c-blue;
+      text-decoration: none;
+    }
+
+  }
+
+  .productlistmini__item-pics {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+  }
+
+  .productlistmini__item-title {
+    margin: 0.8rem 0 0.4rem 0;
+
+    strong {
+      display: block;
+    }
+
+  }
+
+  .productlistmini__item-more {
+    color: $c-gray !important;
+
+    .item-more__price {
+      white-space: nowrap;
+
+      i {
+        margin-left: 0.3rem;
+        font-size: 1.2rem;
       }
 
     }
@@ -422,6 +456,10 @@
   }
 
 }
+
+
+
+
 
 
 

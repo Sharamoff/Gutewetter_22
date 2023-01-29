@@ -18,14 +18,16 @@ button.disabled:hover {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	padding: 1rem 2rem;
-	min-width: 15rem;
-	gap: 10px;
+	padding: 1.5rem 2rem;
+	min-width: 12rem;
 	border: none;
 	background: $c-gray;
-	box-shadow: 0 0.2rem 0.4rem rgba(29, 29, 31, 0.3);
-	border-radius: $border-radius;
+	border-radius: 0;
 	color: $c-white;
+
+	&:hover {
+		background: $c-black;
+	}
 
 	@include media-breakpoint-down(md) {
 		padding-left: 1.5rem;
@@ -39,18 +41,32 @@ button.disabled:hover {
 	}
 
 	@include media-breakpoint-only(xs) {
-		width: 100%;
+		width: 100% !important;
 	}
 
 	&.btn--blue {
-		background: $color-link;
-		box-shadow: 0 0.2rem 0.4rem rgba(10, 54, 77, 0.3);
+		background: $c-blue;
+
+		&:hover {
+			background: $c-gray;
+		}
+
 	}
 
-	&:hover {
-		background: $c-gray-light;
-		box-shadow: inset 0 0.2rem 0.4rem rgba(29, 29, 31, 0.1);
+	&.btn--contour {
+		background: $c-white;
+		color: $c-blue;
+		border: solid 1px transparentize($c-blue, 0.5);
+
+		&:hover {
+			background: $c-white;
+			color: $c-black;
+			border-color: transparentize($c-black, 0.5);
+		}
+
 	}
+
+
 
 	i {
 		position: relative;

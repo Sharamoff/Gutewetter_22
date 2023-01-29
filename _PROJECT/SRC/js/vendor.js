@@ -8,4 +8,5 @@
 
 //= vendor/slick.min.js
 
+//= vendor/select2/select2.full.min.js
 

@@ -1,0 +1,124 @@
+.select2-container--default {
+
+	li {
+		margin: 0 !important;
+	}
+
+	.select2-results__option--selected {
+		background-color: transparentize($c-gray-invert, 0.5);
+	}
+
+	.select2-results__option--highlighted.select2-results__option--selectable {
+		background-color: $c-blue;
+		color: white;
+	}
+
+}
+
+.select2-selection__rendered {
+	line-height: 33px !important;
+}
+
+.select2-selection--single {
+	height: 35px !important;
+}
+
+.select2-selection__arrow {
+	height: 33px !important;
+}
+
+.select2-dropdown {
+	border: 1px solid $color-border;
+	border-radius: 0;
+	box-shadow: 0 1px 3px rgba(29, 29, 31, 0.2);
+	margin-top: 1px;
+}
+
+.select2-container--open .select2-dropdown--below {
+	border-top: 1px solid $color-border;
+}
+
+.select2-results__options {
+	font-size: $font-size-basemed;
+
+	@include media-breakpoint-down(md) {
+		font-size: $font-size-basemed-md;
+	}
+
+	@include media-breakpoint-down(sm) {
+		font-size: $font-size-basemed-sm;
+	}
+
+}
+
+
+.select2type {
+
+	&.selector--simple {
+
+		selector {
+			margin: 0 -5px;
+			padding: 0 2rem 0 0.5rem;
+			width: 100%;
+			border: none;
+			background: url("../img/i-selector.svg") center right no-repeat;
+			appearance: none;
+			cursor: pointer;
+
+			@include media-breakpoint-only(md) {
+				margin-right: 5px;
+			}
+
+			@include media-breakpoint-only(xs) {
+				margin-right: 5px;
+			}
+
+		}
+
+		.select2-selection--single {
+			border: none !important;
+			height: inherit !important;
+			width: 100% !important;
+		}
+
+		.select2-selection__rendered {
+			padding-left: 0 !important;
+			padding-right: 25px;
+			color: $c-gray !important;
+			line-height: 1.1 !important;
+		}
+
+		.select2-selection__arrow {
+			top: -4px !important;
+			right: 5px !important;
+			width: 15px !important;
+			background: url("../img/i-selector.svg") center right no-repeat;
+
+			b {
+				border-color: transparent !important;
+			}
+
+		}
+
+	}
+
+	&.selector--colorchoice {
+
+		.select2-selection__rendered span {
+			display: flex;
+			align-items: center;
+			overflow: hidden;
+		}
+
+		.product-color {
+			position: relative;
+			top: -1px;
+		}
+
+	}
+
+}
+
+
+
+

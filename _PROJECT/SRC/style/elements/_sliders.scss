@@ -49,6 +49,7 @@
 	border: none;
 	padding: 0;
 	opacity: 0.5;
+	background-size: cover;
 
 	&:hover {
 		opacity: 1;
@@ -59,11 +60,13 @@
 .slick-prev {
 	margin-left: -12px;
 	background: url("../img/slick-l.svg") center center no-repeat;
+	left: 0;
 }
 
 .slick-next {
 	margin-right: -12px;
 	background: url("../img/slick-r.svg") center center no-repeat;
+	right: 0;
 }
 
 
@@ -120,8 +123,8 @@
 				content: "\2022";
 				width: 20px;
 				height: 20px;
-				font-size: 30px;
-				line-height: 30px;
+				font-size: 20px;
+				line-height: 20px;
 				text-align: center;
 				color: $c-gray;
 				opacity: 0.3;

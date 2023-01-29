@@ -38,8 +38,12 @@ label {
 	color: $color-placeholder;
 }
 
-SELECT {
+select {
 	cursor: pointer;
+}
+
+option {
+	padding: 1rem !important;
 }
 
 input[type="search"] {
@@ -154,9 +158,6 @@ input[type="radio"] {
 	color: $c-gray-light;
 	margin-top: 2rem;
 }
-
-
-
 
 
 

@@ -8,18 +8,21 @@ BODY {
 
 	&.modal-open {
 		overflow: hidden;
-		position:fixed;
+		position: fixed;
 		width: 100%;
 
 		@include media-breakpoint-up(md) {
-			padding-right: 17px !important;
+			padding-right: 17px;
+
+			.panel-breadcrumb {
+				padding-right: 32px;
+			}
+
 		}
 
 	}
 
 }
-
-
 
 .header-compensator {
 	height: 4.4rem;
@@ -55,6 +58,44 @@ section {
 
 .row {
 	position: relative;
+
+	@include media-breakpoint-down(lg) {
+
+		> [class*="col-"] {
+
+			&:nth-child(odd) {
+				> div,
+				> a {
+					margin-left: auto;
+					margin-right: 0;
+				}
+			}
+
+			&:nth-child(even) {
+				> div,
+				> a {
+					margin-left: 0;
+					margin-right: auto;
+				}
+			}
+
+		}
+
+	}
+
+	@include media-breakpoint-down(sm) {
+
+		> [class*="col-"] {
+
+			> div,
+			> a {
+				margin-left: auto !important;
+				margin-right: auto !important;
+			}
+
+		}
+
+	}
 
 	&.row--margined {
 
@@ -95,6 +136,43 @@ section {
 
 }
 
+[class*="col-"].col--r-padded {
+	padding-left: 1.5rem;
+
+	@include media-breakpoint-down(lg) {
+		padding-left: 1rem;
+	}
+
+	@include media-breakpoint-down(md) {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	@include media-breakpoint-down(sm) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+}
+
+[class*="col-"].col--l-padded {
+	padding-right: 1.5rem;
+
+	@include media-breakpoint-down(lg) {
+		padding-right: 1rem;
+	}
+
+	@include media-breakpoint-down(md) {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	@include media-breakpoint-down(sm) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+}
 
 
 .hidden-min {

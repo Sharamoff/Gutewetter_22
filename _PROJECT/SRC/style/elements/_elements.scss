@@ -1,11 +1,28 @@
-p.p {
+p {
+  margin-bottom: 1rem;
+}
+
+.p {
   line-height: $line-height-p;
 }
+
 .span--overflow {
   overflow: hidden;
 }
 
+.note {
+  font-size: $font-size-basemed;
+  color: $c-gray-light;
 
+  @include media-breakpoint-down(md) {
+    font-size: $font-size-basemed-md;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-basemed-sm;
+  }
+
+}
 
 .panel-breadcrumb {
   position: absolute;
@@ -198,6 +215,30 @@ p.p {
   }
 
 }
+
+
+.e-exlclamation {
+
+  &:before {
+    font-family: $fontawesome;
+    content: "\f06a";
+    font-weight: 400;
+    margin-right: 0.5rem;
+  }
+
+  &.e--blue:before {
+    color: $c-blue;
+  }
+
+  &.e--red:before {
+    color: $c-red;
+  }
+
+}
+
+
+
+
 
 
 

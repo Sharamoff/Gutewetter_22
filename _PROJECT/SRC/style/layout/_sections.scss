@@ -59,3 +59,67 @@
 .sc_productlist-faq {
 
 }
+
+
+.sc_productgallery {
+  padding-top: 8rem;
+
+  @include media-breakpoint-only(md) {
+    padding-top: 7rem;
+  }
+
+  @include media-breakpoint-only(sm) {
+    padding-top: 6rem;
+  }
+
+  @include media-breakpoint-only(xs) {
+    padding-top: 5rem;
+  }
+
+}
+
+
+.sc_producttablist {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.sc_producttabs {
+  background: $c-gray-bk;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+
+.sc_productcategory {
+  //background: $c-gray-bk;
+  padding-top: 6rem;
+}
+
+.sc_productrecommend {
+  padding-top: 0;
+}
+
+.sc_productwatched {
+  padding-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

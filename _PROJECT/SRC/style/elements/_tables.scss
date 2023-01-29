@@ -1,167 +1,98 @@
-// tables
-
-
-
 .table {
-	background: $c-white;
+	margin-bottom: 4rem;
+	color: $c-gray;
+	border-color: $c-tool-border;
 
 	th {
-		padding: 0.8rem 1rem;
-		background: $c-gray-light;
-		line-height: $line-height-min;
-		font-size: $font-size-base;
-		color: $c-gray-light;
+		padding: 1.2rem;
+		background-color: $c-tool-border;
+		font-size: $font-size-basemed;
+		font-weight: 600;
 		border-left: solid 1px $c-white;
-		text-align: center;
-		vertical-align: center !important;
-		font-weight: normal;
 
-		a {
-			text-decoration: none;
-			color: $c-gray-light;
+		@include media-breakpoint-down(md) {
+			font-size: $font-size-basemed-md;
+		}
+
+		@include media-breakpoint-down(sm) {
+			font-size: $font-size-basemed-sm;
+		}
+
+		@include media-breakpoint-only(xs) {
+			padding: 1rem 0.5rem;
 		}
 
 		&:first-child {
-			border-left: 0;
+			border-left: solid 1px $c-tool-border;
+		}
+
+		&:last-child {
+			border-right: solid 1px $c-tool-border;
 		}
 
 	}
 
 	td {
 		padding: 1rem;
-		line-height: $line-height-min;
-		font-size: $font-size-base;
-		color: $color-text;
-	}
-
-	@include media-breakpoint-down(md) {
-		th,
-		td {
-			font-size: $font-size-basemin;
-			padding: 0.5rem;
-		}
-	}
-
-}
-
-
-.td--price {
-	text-align: right !important;
-	color: $c-black;
-	white-space: nowrap;
-}
-
-.td--cart {
-	padding: 0.5rem !important;
-	width: 1%;
-	flex-grow: 1;
-
-	button {
-		display: inline-block;
-		border: none;
-		color: $color-link;
-		padding: 0.5rem 1.5rem;
-		margin: 0;
-		border-radius: $btn-border-radius;
+		background-color: $c-white;
+		border-bottom: solid 1px $c-tool-border;
+		border-left: solid 1px $c-white;
+		overflow: hidden;
 
 		@include media-breakpoint-down(md) {
-			padding: 0.5rem 1.5rem;
+			font-size: $font-size-basemed-md;
 		}
 
-		i {
-			font-size: 1.5rem;
+		@include media-breakpoint-down(sm) {
+			font-size: $font-size-basemed-sm;
 		}
 
-		&:hover {
-			background: $color-link-hover;
-			color: $c-black;
+		@include media-breakpoint-only(xs) {
+			padding: 1rem 0.5rem;
 		}
 
+		&:first-child {
+			border-left: solid 1px $c-tool-border;
+		}
+
+		&:last-child {
+			border-right: solid 1px $c-tool-border;
+		}
+
+	}
+
+	&.table--hover tr:hover td {
+		cursor: pointer;
+		background-color: $c-gray-bk;
 	}
 
 }
 
 
-.th--up {
-	margin-right: -5px;
-
-	&:after {
-		font-family: $fontawesome;
-		font-weight: bold;
-		font-size: 14px;
-		color: $c-gray-light;
-		content: '\f0d8';
-		margin-left: 0.5rem;
-	}
-
-}
-
-.th--down {
-	margin-right: -5px;
-
-	&:after {
-		font-family: $fontawesome;
-		font-weight: bold;
-		font-size: 14px;
-		color: $c-gray-light;
-		content: '\f0d7';
-		margin-left: 0.5rem;
-	}
-
-}
-
-.td--left {text-align: left !important;}
-.td--centered {text-align: center !important;}
-.td--right {text-align: right !important;}
-
-.tr--link {
-	cursor: pointer;
-
-	> td {
-		color: $c-black;
-	}
-
-	&:hover {
-
-		> td {
-			color: $color-link-hover;
-		}
-
-	}
-
-}
-
-
-
-
-// таблица на слоях
 
 .divtable {
-	margin: 1.5rem 0;
-	background: $c-white;
+	margin-bottom: 4rem;
 	color: $c-gray;
-	border-top: solid 1px $color-border;
 
-	.row {
+	.dtrow {
 		display: flex;
-		flex-flow: row wrap;
+		flex-wrap: nowrap;
 		align-content: center;
-		border-bottom: solid 1px $color-border;
+		border-bottom: solid 1px $c-tool-border;
+		border-left: solid 1px $c-tool-border;
+		border-right: solid 1px $c-tool-border;
 		margin: 0;
 
-		@include media-breakpoint-down(md) {
-			display: block;
+		&:last-child {
+			margin-bottom: -1px;
 		}
 
-		&.row--th {
-
-			@include media-breakpoint-down(md) {
-				display: none;
-			}
-
+		&.dtrow--th {
+			border-left: none;
+			border-right: none;
 		}
 
-		&.row--td {
+		&.dtrow--td {
 
 		}
 
@@ -169,22 +100,25 @@
 
 	&.divtable-hover {
 
-		.row--td:hover {
-			background-color: #f7f7f7;
+		.dtrow--td:hover {
 			cursor: pointer;
+
+			> .dt-td {
+				background-color: $c-gray-bk;
+			}
+
 		}
 
 	}
 
+
 	.dt-th {
-		padding: 0.8rem 1rem;
-		background: $c-gray-light;
+		padding: 1.2rem;
+		background-color: $c-tool-border;
 		line-height: $line-height-min;
-		font-size: $font-size-base;
-		color: $c-gray-light;
+		font-size: $font-size-basemed;
+		color: $c-gray;
 		border-left: solid 1px $c-white;
-		flex-grow: 2;
-		width: 15%;
 		overflow: hidden;
 
 		a {
@@ -196,36 +130,14 @@
 			border-left: 0;
 		}
 
-		&.th--name {
-			width: 33%;
-
-			@include media-breakpoint-down(md) {
-				width: 100%;
-			}
-
-		}
-
-		&.th--price {
-			text-align: right;
-			width: 10%;
-		}
-
-		&.th--cart {
-			padding: 0 !important;
-			width: 3%;
-			flex-grow: 1;
-		}
-
 	}
 
 	.dt-td {
 		padding: 1rem;
 		line-height: $line-height-min;
-		font-size: $font-size-base;
-		flex-grow: 2;
-		width: 15%;
+		background: $c-white;
 
-		@include media-breakpoint-down(md) {
+		@include media-breakpoint-down(sm) {
 			display: block;
 			width: auto;
 			padding: 0 1rem;
@@ -233,11 +145,13 @@
 			margin-bottom: 0.8rem;
 		}
 
+
 		.dt-tt {
 			display: none;
 
-			@include media-breakpoint-down(md) {
-				display: block;
+			@include media-breakpoint-down(sm) {
+				display: none;
+				//display: block;
 				line-height: $line-height-min;
 				font-size: $font-size-base;
 				color: $c-gray-light;
@@ -247,56 +161,51 @@
 
 		}
 
-		&.td--name {
-			width: 33%;
-			@include clearfix;
-
-			@include media-breakpoint-down(md) {
-				width: 100%;
-				margin-bottom: 1rem;
-			}
-
-			.td--name__productimg {
-				width: 8rem;
-				float: left;
-				margin-right: 1rem;
-
-				img {
-					width: 100%;
-					height: auto;
-				}
-
-			}
-
-		}
-
 		&.td--price {
 			text-align: right;
 			white-space: nowrap;
-			width: 10%;
+			width: 20%;
 
-			@include media-breakpoint-down(md) {
-				text-align: left;
+			i {
+				font-size: 12px;
+				margin-left: 0.3rem;
 			}
 
 		}
 
-		&.td--cart {
-			padding: 0.5rem !important;
-			width: 3%;
-			flex-grow: 1;
+	}
 
-			@include media-breakpoint-down(md) {
-				padding-left: 1rem !important;
-				min-width: 50%;
-			}
+	.wide--color {
+		width: 40%;
+	}
 
-			button{
-				width: 100%;
-			}
+	.wide--price {
+		text-align: right;
+		width: 20%;
+	}
 
-		}
+}
 
+
+
+.tr--empty td {
+	background: none !important;
+	border: none !important;
+	cursor: default !important;
+	overflow: hidden;
+}
+
+.th--price,
+.td--price {
+	text-align: right;
+}
+
+.td--price {
+	white-space: nowrap;
+
+	i {
+		font-size: 12px;
+		margin-left: 0.3rem;
 	}
 
 }
