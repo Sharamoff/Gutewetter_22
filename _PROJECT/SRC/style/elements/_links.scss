@@ -14,7 +14,7 @@ a {
 
 }
 
-a [href^="tel"] {
+a[href^="tel"] {
 	color: $c-gray;
 	text-decoration: none !important;
 	white-space: nowrap;
