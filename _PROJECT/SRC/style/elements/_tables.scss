@@ -82,6 +82,13 @@
 		border-left: solid 1px $c-tool-border;
 		border-right: solid 1px $c-tool-border;
 		margin: 0;
+		background-color: $c-white;
+
+		@include media-breakpoint-down(sm) {
+			display: block;
+			border-top: solid 1px $c-tool-border;
+			margin-bottom: -1px;
+		}
 
 		&:last-child {
 			margin-bottom: -1px;
@@ -90,6 +97,11 @@
 		&.dtrow--th {
 			border-left: none;
 			border-right: none;
+
+			@include media-breakpoint-down(sm) {
+				display: none;
+			}
+
 		}
 
 		&.dtrow--td {
@@ -98,7 +110,7 @@
 
 	}
 
-	&.divtable-hover {
+	&.divtable--hovered {
 
 		.dtrow--td:hover {
 			cursor: pointer;
@@ -117,13 +129,34 @@
 		background-color: $c-tool-border;
 		line-height: $line-height-min;
 		font-size: $font-size-basemed;
+		font-weight: 600;
 		color: $c-gray;
 		border-left: solid 1px $c-white;
 		overflow: hidden;
+		flex-grow: 2;
+		width: 15%;
+
+		@include media-breakpoint-down(md) {
+			font-size: $font-size-basemed-md;
+		}
+
+		@include media-breakpoint-down(sm) {
+			font-size: $font-size-basemed-sm;
+		}
+
+		@include media-breakpoint-only(xs) {
+			padding: 1rem 0.5rem;
+		}
 
 		a {
-			color: $c-gray-light;
-			text-decoration: none;
+			color: $c-gray;
+			text-decoration: underline;
+
+			&:hover {
+				color: $color-link-hover;
+				text-decoration: none;
+			}
+
 		}
 
 		&:first-child {
@@ -136,52 +169,34 @@
 		padding: 1rem;
 		line-height: $line-height-min;
 		background: $c-white;
+		flex-grow: 2;
+		width: 15%;
 
-		@include media-breakpoint-down(sm) {
-			display: block;
-			width: auto;
-			padding: 0 1rem;
-			line-height: $line-height-min;
-			margin-bottom: 0.8rem;
+		@include media-breakpoint-down(md) {
+			font-size: $font-size-basemed-md;
 		}
 
+		@include media-breakpoint-down(sm) {
+			font-size: $font-size-basemed-sm;
+			display: block;
+			width: auto;
+			padding: 0.5rem 1rem;
+			line-height: $line-height-min;
+		}
 
 		.dt-tt {
 			display: none;
 
 			@include media-breakpoint-down(sm) {
-				display: none;
-				//display: block;
+				display: block;
 				line-height: $line-height-min;
-				font-size: $font-size-base;
+				font-size: $font-size-basemin-sm;
 				color: $c-gray-light;
-				margin-top: 0.8rem;
-				margin-bottom: 0.1rem;
+				padding-bottom: 0.1rem;
 			}
 
 		}
 
-		&.td--price {
-			text-align: right;
-			white-space: nowrap;
-			width: 20%;
-
-			i {
-				font-size: 12px;
-				margin-left: 0.3rem;
-			}
-
-		}
-
-	}
-
-	.wide--color {
-		width: 40%;
-	}
-
-	.wide--price {
-		text-align: right;
-		width: 20%;
 	}
 
 }
@@ -197,11 +212,18 @@
 
 .th--price,
 .td--price {
+	flex-grow: 1;
 	text-align: right;
+
+	@include media-breakpoint-down(sm) {
+		text-align: left;
+	}
+
 }
 
 .td--price {
 	white-space: nowrap;
+
 
 	i {
 		font-size: 12px;

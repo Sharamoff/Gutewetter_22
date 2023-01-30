@@ -237,8 +237,129 @@ p {
 }
 
 
+.img-inner {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  width: 30%;
+  min-width: 290px;
+
+  @include media-breakpoint-only(xs) {
+    width: 100%;
+    margin-bottom: 1rem;
+    max-width: 320px;
+  }
+
+  &.float-left {
+    float: left;
+    margin-right: 2rem;
+
+    @include media-breakpoint-only(xs) {
+      margin-left: auto;
+      margin-right: auto;
+      float: none !important;
+    }
+
+  }
+
+  &.float-right {
+    float: right;
+    margin-left: 2rem;
+
+    @include media-breakpoint-only(xs) {
+      margin-left: auto;
+      margin-right: auto;
+      float: none !important;
+    }
+
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+
+  p,
+  figcaption {
+    font-size: $font-size-basemed;
+    line-height: $line-height;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+
+    @include media-breakpoint-down(md) {
+      font-size: $font-size-basemed-md;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-basemed-sm;
+    }
+
+    @include media-breakpoint-only(xs) {
+      text-align: center;
+    }
+
+  }
+
+}
 
 
+.card {
+  border-color: $color-border;
+  border-radius: 0;
+  margin: 2rem 0;
+  background-color: transparent;
 
+  @include media-breakpoint-only(xs) {
+    margin: 1.5rem auto;
+  }
+
+  .card-header {
+    font-weight: 600;
+    color: $c-black;
+    padding: 1rem 1rem 0.8rem 2rem;
+    line-height: $line-height-min;
+    background-color: $c-border;
+    border-radius: 0;
+    border-color: $color-border;
+
+    @include media-breakpoint-only(xs) {
+      padding: 0.8rem 1rem 0.6rem 1.5rem;
+    }
+
+  }
+
+  .card-body {
+    background-color: $color-bk-body;
+    padding: 1.5rem 2rem 1rem 2rem;
+
+    @include media-breakpoint-only(xs) {
+      padding: 1.5rem 1.5rem 1rem 1.5rem;
+    }
+
+  }
+
+  &--warn {
+    border: solid 1px $c-red;
+
+    .card-header {
+      color: $c-white;
+      border-color: $c-red;
+      background-color: $c-red;
+    }
+
+  }
+
+  &--info {
+    border: solid 1px $c-blue;
+
+    .card-header {
+      color: $c-white;
+      border-color: $c-blue;
+      background-color: $c-blue;
+    }
+
+  }
+
+}
 
 

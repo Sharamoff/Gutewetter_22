@@ -1,27 +1,23 @@
-// lists
-
-
-
-UL {
+UL, OL {
 	padding-left: 2rem;
 	margin-top: $font-size-base;
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
 
 	@include media-breakpoint-down(md) {
 		margin-top: $font-size-base-md;
-		margin-bottom: 3rem;
 	}
 
 	@include media-breakpoint-down(sm) {
 		margin-top: $font-size-base-sm;
-		margin-bottom: 2rem;
 	}
 
 	> ul {
+		margin-top: 0;
+		margin-bottom: 1rem;
 		padding-left: 2rem;
 
 		> li {
-			margin: 0.3rem 0;
+			margin: 0.6rem 0;
 		}
 
 	}
@@ -32,10 +28,12 @@ UL {
 
 }
 
+
 UL.ul--nolist {
 	padding-left: 0;
 	list-style: none;
 }
+
 
 .li--hdr {
 	margin-left: -2rem;
@@ -77,7 +75,33 @@ ul.list-doc {
 }
 
 
+OL.ol--cont {
+	counter-reset: li;
+	list-style: none;
 
+	> li {
+		margin: 0.8rem 0 0.8rem 1rem;
+		position: relative;
+		display: block;
+		&:before {
+			content: counter(li);
+			counter-increment: li;
+			position: absolute;
+			left: -3rem;
+			top: -1px;
+			background: $c-white;
+			height: 22px;
+			width: 22px;
+			text-align: center;
+			font-size: 15px;
+			font-weight: 600;
+			line-height: 19px;
+			border: solid 1px $c-gray-light;
+			border-radius: 50%;
+		}
+	}
+
+}
 
 
 
