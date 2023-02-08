@@ -101,7 +101,6 @@
 
 
 .sc_productcategory {
-  //background: $c-gray-bk;
   padding-top: 6rem;
 }
 
@@ -114,11 +113,35 @@
 }
 
 
+.sc_wtbfilter {
+  background: $c-gray-bk;
+  padding-bottom: 6rem;
 
+  @include media-breakpoint-down(md) {
+    padding-bottom: 4rem;
+  }
 
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 3rem;
+  }
 
+}
 
+.sc_wtblist {
+  padding-top: 6rem;
 
+  @include media-breakpoint-down(md) {
+    padding-top: 4rem;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 3rem;
+  }
+}
+
+.sc_wtbmap {
+  padding: 0;
+}
 
 
 

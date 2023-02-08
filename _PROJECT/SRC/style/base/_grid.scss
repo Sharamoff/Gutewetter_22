@@ -47,7 +47,6 @@ section {
 
 	@include media-breakpoint-down(sm) {
 		padding: 6rem 15px 3rem 15px;
-		padding-top: 6rem;
 	}
 
 }
@@ -101,7 +100,7 @@ section {
 	&.row--margined {
 
 		> [class*="col-"] {
-			margin-bottom: 1rem;
+			margin-bottom: 10px;
 		}
 
 	}

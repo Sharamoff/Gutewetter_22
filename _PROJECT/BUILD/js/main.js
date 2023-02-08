@@ -442,7 +442,8 @@ $('.productcart__btns-bcompare, .productcart__btns-bfav').on('click', function (
 // select2
 
 $('.select2type select').select2({
-  width: 'resolve'
+  width: 'resolve',
+  dropdownCssClass: 'bigdrop'
 });
 
 $('.select2type.selector--nosearch select').select2({
@@ -479,6 +480,13 @@ function hideVideo(e) {
 }
 $('.block-video').hover(hoverVideo, hideVideo);
 $('.block-video').on('touchstart', hoverVideo, function (e) {$('video', this).get(0).pause()});
+
+
+// wtb filter button click
+
+$('.wtbfilter__btns_b').on('click', function () {
+  $(this).toggleClass('active');
+});
 
 
 });

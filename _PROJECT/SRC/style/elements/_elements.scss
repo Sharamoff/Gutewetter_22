@@ -58,6 +58,10 @@ p {
     appearance: none;
     border-radius: 0;
 
+    @include media-breakpoint-only(xs) {
+      justify-content: center;
+    }
+
     &:after {
       font-family: $fontawesome;
       content: "\f077";
@@ -88,7 +92,6 @@ p {
         list-style: none;
         margin-top: 1.8rem;
         margin-bottom: 1.8rem;
-
       }
 
     }
@@ -97,6 +100,10 @@ p {
       display: block;
       text-decoration: none;
       color: $c-fixbar-gray;
+
+      @include media-breakpoint-only(xs) {
+        text-align: center;
+      }
 
       &:before {
         font-family: $fontawesome;

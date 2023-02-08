@@ -25,6 +25,8 @@
 
 .select2-selection__arrow {
 	height: 33px !important;
+	top: 50% !important;
+	margin-top: -16px !important;
 }
 
 .select2-dropdown {
@@ -39,16 +41,8 @@
 }
 
 .select2-results__options {
+	max-height: 240px !important;
 	font-size: $font-size-basemed;
-
-	@include media-breakpoint-down(md) {
-		font-size: $font-size-basemed-md;
-	}
-
-	@include media-breakpoint-down(sm) {
-		font-size: $font-size-basemed-sm;
-	}
-
 }
 
 
@@ -89,7 +83,6 @@
 		}
 
 		.select2-selection__arrow {
-			top: -4px !important;
 			right: 5px !important;
 			width: 15px !important;
 			background: url("../img/i-selector.svg") center right no-repeat;
