@@ -530,11 +530,12 @@
 <div class="panel-breadcrumb">
 	<div class="container-fluid">
 
-		<div class="breadcrumb__hdr collapsed" role="button" data-bs-toggle="collapse" data-bs-target=".breadcrumb-submenu" aria-expanded="true">Контактная информация</div>
+		<div class="breadcrumb__hdr collapsed" role="button" data-bs-toggle="collapse" data-bs-target=".breadcrumb-submenu" aria-expanded="true">Салон «Aqua Plaza»</div>
 		<div class="breadcrumb-submenu collapse">
 			<div class="dlv"></div>
 			<ul>
 				<li><a href="">На главную</a></li>
+				<li><a href="">Где купить?</a></li>
 			</ul>
 		</div>
 
@@ -545,58 +546,38 @@
 
 
 
-<section class="pagesection sc_contact">
+<section class="pagesection sc_dealer">
 	<div class="container-fluid">
+		<div class="row">
 
-
-		<h2 class="h--centered-md">ООО «Фэктори&nbsp;ГутэВэтэр&nbsp;МО»</h2>
-
-
-		<div class="block-contact">
-			<div class="contact__item">
-				<div class="contact__item-solid"><strong>ИНН</strong> 5036173380, <strong>КПП</strong> 503601001</div>
+			<div class="col-md-6 col--l-padded">
+				<div class="block-dealer">
+					<div class="dealer__logo"><img src="img/dealers/l-ap.png" alt="Салон «Aqua Plaza»"></div>
+					<h2 class="dealer__name">Салон «Aqua&nbsp;Plaza»</h2>
+					<div class="dealer__type">авторизированный дилер</div>
+					<div class="dealer__address">Москва и МО, 91-й&nbsp;км&nbsp;МКАД, ТК&nbsp;«Твой&nbsp;дом»,&nbsp;2&nbsp;этаж</div>
+					<div class="dealer__phone"><span>Телефон:</span><a href="tel:">+7 (495) 120-07-74, доб. 5</a></div>
+					<div class="dealer__openh"><span>Часы работы:</span>пн–пт с 10:00 до 19:00</div>
+					<a href="http://www.aquaplaza.net/" class="dealer__link" target="_blank">aquaplaza.net/</a>
+				</div>
 			</div>
+
+			<div class="col-md-6 col--r-padded">
+				<div class="dealer__pic"><img src="img/dealers/pic-ap.jpg" alt="Салон «Aqua Plaza»"></div>
+			</div>
+
 		</div>
-
-		<div class="block-contact">
-			<div class="contact__item">
-				<div class="contact__item-prop">Адрес:</div>
-				<div class="contact__item-val">142116,&nbsp;МО,&nbsp;г.&nbsp;Подольск, ул.&nbsp;Лобачева, д.&nbsp;13</div>
-			</div>
-			<div class="contact__item">
-				<div class="contact__item-prop">Cклад:</div>
-				<div class="contact__item-val">Московская&nbsp;обл., г.&nbsp;Люберцы, ул.&nbsp;65&nbsp;лет&nbsp;Победы, дом&nbsp;1, литера&nbsp;Д</div>
-			</div>
-		</div>
-
-		<div class="block-contact">
-			<div class="contact__item">
-				<div class="contact__item-prop">Телефон:</div>
-				<div class="contact__item-val"><a href="tel:+74956462626">+7 495 646-26-26</a> <span class="font-size-basemed">многоканальный</span></div>
-			</div>
-			<div class="contact__item">
-				<div class="contact__item-prop">E-mail:</div>
-				<div class="contact__item-val"><a href="mailto:info@gutewetter.ru">info@gutewetter.ru</a></div>
-			</div>
-			<div class="contact__item">
-				<div class="contact__item-prop">Сервисная служба:</div>
-				<div class="contact__item-val"><a href="mailto:ms@gutewetter.com">ms@gutewetter.com</a></div>
-			</div>
-		</div>
-
-		<div class="block-contact">
-			<div class="contact__item">
-				<div class="contact__item-prop">Время работы:</div>
-				<div class="contact__item-val">пн&nbsp;—&nbsp;пт с&nbsp;10:00&nbsp;до&nbsp;19:00</div>
-			</div>
-		</div>
-
-
-		<p>&nbsp;</p>
-		<a href="#" class="alink alink--centered-md">Наши магазины, дилеры и дистрибьюторы</a>
-
-
 	</div>
+</section>
+
+
+
+
+
+<section class="pagesection sc_dealermap">
+
+	<div class="block-dealermap" id="id_ymap"></div>
+
 </section>
 
 
@@ -769,7 +750,39 @@
 <script src="js/vendor.js"></script>
 <script src="js/main.js"></script>
 
+<script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?apikey=ed18bed2-f971-4576-98fc-ca93a4380c0e&lang=ru_RU&onload=init"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
 
+		ymaps.ready(init);
+
+		function init(){
+
+			var mywBuyMap = new ymaps.Map ("id_ymap", {
+				center: [55.898737,37.674090],
+				zoom: 17
+			});
+
+			mywBuyPlacemark1 = new ymaps.Placemark([55.898737,37.674090], {
+				hintContent: 'Салон «Aqua Plaza»',
+				balloonContent: '<strong>Салон «Aqua Plaza»</strong><br>' +
+					'91-й км МКАД, ТК «Твой дом» 2 этаж<br>' +
+					'Телефон: +7 (495) 120-07-74, доб. 5<br>' +
+					'Часы работы: пн–пт с 10:00 до 19:00<br>' +
+					'<a href="http://www.aquaplaza.net/" target="_blank">aquaplaza.net</a>'
+			}, {
+				preset: 'twirl#dotIcon',
+				iconColor: '#008BD2'
+			});
+
+			mywBuyMap.geoObjects.add(mywBuyPlacemark1);
+
+			mywBuyMap.behaviors.disable('scrollZoom');
+
+		}
+
+	});
+</script>
 
 
 

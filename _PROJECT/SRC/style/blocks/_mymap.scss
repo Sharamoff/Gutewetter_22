@@ -1,9 +1,3 @@
-[class*="-ground-pane"] {
-  filter: contrast(120%);
-  filter: grayscale(88%);
-}
-
-
 .block-mymap-idx {
   width: 100%;
   height: 400px;
@@ -43,8 +37,25 @@
   }
 
   @include media-breakpoint-only(xs) {
-    height: 550px;
+    height: 600px;
   }
 
+}
+
+.block-dealermap {
+  width: 100%;
+  height: 700px;
+
+  @include media-breakpoint-down(md) {
+    height: 400px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    height: 300px;
+  }
+
+  @include media-breakpoint-only(xs) {
+    height: 600px;
+  }
 
 }

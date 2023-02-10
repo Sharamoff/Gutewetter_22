@@ -1,15 +1,4 @@
-// maps
-
-
-
-.mymap {
-	height: 50rem;
-	border: solid 1px $color-border;
-	overflow: hidden;
-
-	@include media-breakpoint-down(sm) {
-		margin-top: 2rem;
-		margin-bottom: 2rem;
-	}
-
+[class*="-ground-pane"] {
+  filter: contrast(120%);
+  filter: grayscale(88%);
 }

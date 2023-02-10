@@ -154,12 +154,7 @@
 
 
 
-
-.block-wtblist {
-
-}
-
-.wtblist__item {
+.block-dealerlist {
   display: block;
   color: $c-gray;
 
@@ -179,39 +174,74 @@
     font-weight: 500;
   }
 
-  &-logo {
-    width: 150px;
-    height: 90px;
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 1.2rem;
+}
 
-    img {
-      width: 100%;
-      height: auto;
-    }
+.dealerlist__logo {
+  width: 150px;
+  height: 90px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1.2rem;
 
+  img {
+    width: 100%;
+    height: auto;
   }
 
-  &-name {
-    font-weight: 600;
-    font-size: $font-size-basemax;
-    margin-bottom: 0.6rem;
+}
 
-    @include media-breakpoint-down(md) {
-      font-size: $font-size-basemax-md;
-    }
+.dealerlist__name {
+  font-weight: 600;
+  font-size: $font-size-basemax;
+  margin-bottom: 0.6rem;
 
-    @include media-breakpoint-down(sm) {
-      font-size: $font-size-basemax-sm;
-    }
-
+  @include media-breakpoint-down(md) {
+    font-size: $font-size-basemax-md;
   }
 
-  &-type {
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-basemax-sm;
+  }
+
+}
+
+.dealerlist__type {
+  font-size: $font-size-basemed;
+  color: $c-gray-light;
+  margin-bottom: 0.6rem;
+
+  @include media-breakpoint-down(md) {
+    font-size: $font-size-basemed-md;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-basemed-sm;
+  }
+
+}
+
+.dealerlist__address {
+  margin-bottom: 0.6rem;
+}
+
+.dealerlist__phone {
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+
+  > a {
+    display: inline-block !important;
+  }
+
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
+
+  span {
     font-size: $font-size-basemed;
+    font-weight: 400;
     color: $c-gray-light;
-    margin-bottom: 0.6rem;
+
+    margin-right: 0.6rem;
 
     @include media-breakpoint-down(md) {
       font-size: $font-size-basemed-md;
@@ -219,104 +249,169 @@
 
     @include media-breakpoint-down(sm) {
       font-size: $font-size-basemed-sm;
-    }
-
-  }
-
-  &-address {
-    margin-bottom: 0.6rem;
-  }
-
-  &-phone {
-    font-weight: 500;
-    margin-bottom: 0.6rem;
-
-    > a {
-      display: inline-block !important;
-    }
-
-    @include media-breakpoint-down(sm) {
-      text-align: center;
-    }
-
-    span {
-      font-size: $font-size-basemed;
-      font-weight: 400;
-      color: $c-gray-light;
-
-      margin-right: 0.6rem;
-
-      @include media-breakpoint-down(md) {
-        font-size: $font-size-basemed-md;
-      }
-
-      @include media-breakpoint-down(sm) {
-        font-size: $font-size-basemed-sm;
-      }
-
-    }
-
-  }
-
-  &-openh {
-    font-weight: 500;
-    margin-bottom: 0.6rem;
-
-    @include media-breakpoint-down(sm) {
-      text-align: center;
-    }
-
-    span {
-      font-size: $font-size-basemed;
-      font-weight: 400;
-      color: $c-gray-light;
-      margin-right: 0.6rem;
-
-      @include media-breakpoint-down(md) {
-        font-size: $font-size-basemed-md;
-      }
-
-      @include media-breakpoint-down(sm) {
-        font-size: $font-size-basemed-sm;
-      }
-
-    }
-
-  }
-
-  &-link {
-    display: block;
-    color: $c-gray;
-    text-decoration: underline;
-    margin-bottom: 0.5rem;
-    font-size: $font-size-basemed;
-
-    @include media-breakpoint-down(md) {
-      font-size: $font-size-basemed-md;
-    }
-
-    @include media-breakpoint-down(sm) {
-      font-size: $font-size-basemed-sm;
-      text-align: center;
-    }
-
-    &:hover {
-      color: $c-blue;
-      text-decoration: none;
     }
 
   }
 
 }
 
+.dealerlist__openh {
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
+
+  span {
+    font-size: $font-size-basemed;
+    font-weight: 400;
+    color: $c-gray-light;
+    margin-right: 0.6rem;
+
+    @include media-breakpoint-down(md) {
+      font-size: $font-size-basemed-md;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-basemed-sm;
+    }
+
+  }
+
+}
+
+.dealerlist__link {
+  display: block;
+  color: $c-gray;
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+  font-size: $font-size-basemed;
+
+  @include media-breakpoint-down(md) {
+    font-size: $font-size-basemed-md;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-basemed-sm;
+    text-align: center;
+  }
+
+  &:hover {
+    color: $c-blue;
+    text-decoration: none;
+  }
+
+}
 
 
 
+.block-dealer {
 
+  @include media-breakpoint-down(md) {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+  }
 
+}
 
+.dealer__logo {
+  width: 210px;
+  margin-bottom: 4rem;
 
+  @include media-breakpoint-down(md) {
+    margin-bottom: 2rem;
+  }
 
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+.dealer__name {
+
+  @include media-breakpoint-down(md) {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+.dealer__type {
+  color: $c-gray-light;
+  margin-bottom: 2rem;
+}
+
+.dealer__address {
+  margin-bottom: 1rem;
+}
+
+.dealer__phone {
+  font-weight: 500;
+  margin-bottom: 1rem;
+
+  > a {
+    display: inline-block !important;
+  }
+
+  @include media-breakpoint-down(md) {
+    text-align: center;
+  }
+
+  span {
+    font-weight: 400;
+    color: $c-gray-light;
+    margin-right: 1rem;
+  }
+
+}
+
+.dealer__openh {
+  font-weight: 500;
+  margin-bottom: 2rem;
+
+  @include media-breakpoint-down(md) {
+    text-align: center;
+  }
+
+  span {
+    font-weight: 400;
+    color: $c-gray-light;
+    margin-right: 1rem;
+  }
+
+}
+
+.dealer__link {
+  display: block;
+  color: $c-gray;
+  text-decoration: underline;
+
+  &:hover {
+    color: $c-blue;
+    text-decoration: none;
+  }
+
+}
+
+.dealer__pic {
+
+  @include media-breakpoint-down(md) {
+    margin-top: 4rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+}
 
 
 

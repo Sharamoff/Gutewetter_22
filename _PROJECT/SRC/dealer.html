@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<link rel="icon" href="favicon.ico" type="image/x-icon" sizes="any">
+	<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+	<title>Gutewetter</title>
+
+	<link href="css/vendor.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/addit.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+
+
+//= layout/_header.html
+<div class="header-compensator"></div>
+
+
+
+
+
+<div class="panel-breadcrumb">
+	<div class="container-fluid">
+
+		<div class="breadcrumb__hdr collapsed" role="button" data-bs-toggle="collapse" data-bs-target=".breadcrumb-submenu" aria-expanded="true">Салон «Aqua Plaza»</div>
+		<div class="breadcrumb-submenu collapse">
+			<div class="dlv"></div>
+			<ul>
+				<li><a href="">На главную</a></li>
+				<li><a href="">Где купить?</a></li>
+			</ul>
+		</div>
+
+	</div>
+</div>
+
+
+
+
+
+<section class="pagesection sc_dealer">
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-md-6 col--l-padded">
+				<div class="block-dealer">
+					<div class="dealer__logo"><img src="img/dealers/l-ap.png" alt="Салон «Aqua Plaza»"></div>
+					<h2 class="dealer__name">Салон «Aqua&nbsp;Plaza»</h2>
+					<div class="dealer__type">авторизированный дилер</div>
+					<div class="dealer__address">Москва и МО, 91-й&nbsp;км&nbsp;МКАД, ТК&nbsp;«Твой&nbsp;дом»,&nbsp;2&nbsp;этаж</div>
+					<div class="dealer__phone"><span>Телефон:</span><a href="tel:">+7 (495) 120-07-74, доб. 5</a></div>
+					<div class="dealer__openh"><span>Часы работы:</span>пн–пт с 10:00 до 19:00</div>
+					<a href="http://www.aquaplaza.net/" class="dealer__link" target="_blank">aquaplaza.net/</a>
+				</div>
+			</div>
+
+			<div class="col-md-6 col--r-padded">
+				<div class="dealer__pic"><img src="img/dealers/pic-ap.jpg" alt="Салон «Aqua Plaza»"></div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+
+
+
+<section class="pagesection sc_dealermap">
+
+	<div class="block-dealermap" id="id_ymap"></div>
+
+</section>
+
+
+
+
+
+//= layout/_footer.html
+
+
+
+
+
+//= layout/_barbtm.html
+
+
+
+
+
+//= layout/_modal.html
+
+
+
+
+
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+
+<script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?apikey=ed18bed2-f971-4576-98fc-ca93a4380c0e&lang=ru_RU&onload=init"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+
+		ymaps.ready(init);
+
+		function init(){
+
+			var mywBuyMap = new ymaps.Map ("id_ymap", {
+				center: [55.898737,37.674090],
+				zoom: 17
+			});
+
+			mywBuyPlacemark1 = new ymaps.Placemark([55.898737,37.674090], {
+				hintContent: 'Салон «Aqua Plaza»',
+				balloonContent: '<strong>Салон «Aqua Plaza»</strong><br>' +
+					'91-й км МКАД, ТК «Твой дом» 2 этаж<br>' +
+					'Телефон: +7 (495) 120-07-74, доб. 5<br>' +
+					'Часы работы: пн–пт с 10:00 до 19:00<br>' +
+					'<a href="http://www.aquaplaza.net/" target="_blank">aquaplaza.net</a>'
+			}, {
+				preset: 'twirl#dotIcon',
+				iconColor: '#008BD2'
+			});
+
+			mywBuyMap.geoObjects.add(mywBuyPlacemark1);
+
+			mywBuyMap.behaviors.disable('scrollZoom');
+
+		}
+
+	});
+</script>
+
+
+
+</body>
+</html>

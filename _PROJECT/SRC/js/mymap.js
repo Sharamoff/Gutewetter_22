@@ -5,7 +5,6 @@ function init() {
   var a_name = new Array();
   var a_type = new Array();
   var a_address = new Array();
-// Создаем кластеризатор c красной иконкой (по умолчанию используются синия)
   var clusterer = new ymaps.Clusterer({preset: 'twirl#blueClusterIcons'});
   var point;
   var myPlacemark;
@@ -350,11 +349,9 @@ function init() {
   for (var i = 0, l = a_point.length; i < l; i++) {
     point = a_point[i];
     myPlacemark = new ymaps.Placemark(point, {
-// Свойства
         balloonContentBody: a_name[i]
       },
       {
-// Опции
         preset: "twirl#" + a_type[i] + "DotIcon"
       }
     );
@@ -364,12 +361,9 @@ function init() {
     center: [55.753582,37.62091],
     zoom: 4
   });
-// Кнопка изменения масштаба
   myMap.controls.add("zoomControl");
-// Добавляем кластеризатор на карту
   clusterer.add(myGeoObjects);
   myMap.geoObjects.add(clusterer);
-// Устанавливаем центр и масштаб карты так, чтобы отобразить все геообъекты целиком.
   myMap.setBounds(clusterer.getBounds());
   myMap.behaviors.disable('scrollZoom');
 }
