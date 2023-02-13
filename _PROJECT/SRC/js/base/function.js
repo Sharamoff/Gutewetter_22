@@ -107,6 +107,16 @@ $('#id_menucatalog').on('hidden.bs.modal', function (e) {
 
 
 
+// breadcrumb fix
+
+$(window).scroll(function () {
+  if($(this).scrollTop() > 40) {
+    $('.panel-breadcrumb').addClass('fixed-top');
+  } else {
+    $('.panel-breadcrumb').removeClass('fixed-top')
+  }
+});
+
 // breadcrumb panel
 
 $('header, .pagesection, footer, .barbtm').on('click', function () {
