@@ -766,6 +766,7 @@ header a:hover {
   white-space: nowrap;
   text-align: center;
   margin: 0 auto;
+  color: #C3C3C6 !important;
 }
 .menumain__contact .contact-email {
   display: block;
@@ -1712,13 +1713,13 @@ p {
   left: 0;
   right: 0;
   z-index: 999;
-  background: rgba(227, 227, 231, 0.5);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
   color: rgba(29, 29, 31, 0.93);
   padding: 0 15px;
   font-size: 1.5rem;
-  border-bottom: solid 1px rgba(211, 211, 214, 0.5);
+  background-color: rgba(227, 227, 231, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-bottom: solid 1px rgba(211, 211, 214, 0.3);
 }
 @media (max-width: 767.98px) {
   .panel-breadcrumb {
@@ -1729,32 +1730,6 @@ p {
   .panel-breadcrumb {
     font-size: 1.3rem;
   }
-}
-.panel-breadcrumb.panel-breadcrumb--lined {
-  position: relative;
-  top: -4px;
-  padding-top: 4px;
-  margin-bottom: -4.4rem;
-  font-size: 1.3rem;
-}
-.panel-breadcrumb.panel-breadcrumb--lined.fixed-top {
-  padding-top: 0;
-}
-.panel-breadcrumb.panel-breadcrumb--listed .breadcrumb-submenu {
-  margin-left: 2rem;
-}
-@media (max-width: 575.98px) {
-  .panel-breadcrumb.panel-breadcrumb--listed .breadcrumb-submenu {
-    margin-left: 0;
-  }
-}
-.panel-breadcrumb.panel-breadcrumb--trasparentize20 {
-  background-color: rgba(227, 227, 231, 0.3);
-  border-bottom: solid 1px rgba(211, 211, 214, 0.4);
-}
-.panel-breadcrumb.panel-breadcrumb--trasparentize40 {
-  background-color: rgba(227, 227, 231, 0.2);
-  border-bottom: solid 1px rgba(211, 211, 214, 0.3);
 }
 .panel-breadcrumb.fixed-top {
   position: fixed;
@@ -1776,9 +1751,9 @@ p {
 }
 @media (max-width: 575.98px) {
   .panel-breadcrumb .breadcrumb__hdr {
-    justify-content: center;
     padding-top: 0;
     padding-bottom: 0;
+    min-height: 3.6rem;
   }
 }
 .panel-breadcrumb .breadcrumb__hdr:after {
@@ -1812,11 +1787,6 @@ p {
   text-decoration: none;
   color: rgba(29, 29, 31, 0.93);
 }
-@media (max-width: 575.98px) {
-  .panel-breadcrumb .breadcrumb-submenu a {
-    text-align: center;
-  }
-}
 .panel-breadcrumb .breadcrumb-submenu a:before {
   font-family: "Font Awesome 5 Pro";
   content: "";
@@ -1829,41 +1799,6 @@ p {
 .panel-breadcrumb .breadcrumb-submenu a:hover {
   color: black;
   text-decoration: none;
-}
-
-.breadcrumb {
-  margin-top: 0.9rem;
-  margin-bottom: 0.9rem;
-}
-@media (max-width: 575.98px) {
-  .breadcrumb {
-    justify-content: center;
-  }
-}
-.breadcrumb > li {
-  margin: 0.3rem 0.6rem 0.3rem 0.3rem;
-  white-space: nowrap;
-}
-.breadcrumb > li:before {
-  font-family: "Font Awesome 5 Pro";
-  content: "";
-  margin-left: 0;
-  margin-right: 0.6rem;
-  color: #1D1D1F;
-  font-weight: 200 !important;
-  position: relative;
-  top: 1px;
-}
-.breadcrumb a {
-  color: rgba(29, 29, 31, 0.93);
-}
-.breadcrumb a:hover {
-  color: black;
-  text-decoration: underline;
-}
-.breadcrumb .active {
-  font-weight: 600;
-  color: black;
 }
 
 .pagination {

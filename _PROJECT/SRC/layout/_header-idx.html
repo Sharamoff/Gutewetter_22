@@ -1,0 +1,114 @@
+<header class="header fixed-top">
+<div class="container-fluid">
+
+
+  <button class="header__menumain-md hidden-md-up" type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#id_menumain-md"
+          aria-controls="id_menumain-md" aria-expanded="false">
+    <div class="animated-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </button>
+
+
+  <a href="https://www.gutewetter.ru/" class="header__logo">
+    <img src="img/gw.svg" alt="Gutewetter" title="Gutewetter. Производство душевых ограждений.">
+  </a>
+
+
+  <nav class="navbar header__menu menu--catalog">
+    <div class="menu-item">
+      <a href="#" role="button" id="id_toggle-menucatalog" title="Каталог продукции">
+        <div class="animated-icon"></div>
+        <span>Каталог</span>
+      </a>
+    </div>
+  </nav>
+
+
+  <nav class="navbar header__menu hidden-md-down">
+    <div class="menu-item">
+      <a href="#">Где купить?</a>
+    </div>
+    <div class="menu-item dropdown">
+      <a href="#" class="dropdown-toggle i--drop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Партнерам</a>
+      <ul class="dropdown-menu animate__animated animate__faster animate__fadeIn">
+        <li><a href="#" class="dropdown-item">Программы сотрудничества</a></li>
+        <li><a href="#" class="dropdown-item">Сертификаты</a></li>
+        <li><a href="#" class="dropdown-item">Для скачивания</a></li>
+        <li><a href="#" class="dropdown-item">Экспозиции</a></li>
+        <li><a href="#" class="dropdown-item">Видео</a></li>
+      </ul>
+    </div>
+    <div class="menu-item dropdown">
+      <a href="#" class="dropdown-toggle i--drop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Компания</a>
+      <ul class="dropdown-menu animate__animated animate__faster animate__fadeIn" aria-labelledby="id_menu-company">
+        <li><a href="#" class="dropdown-item">Новости</a></li>
+        <li><a href="#" class="dropdown-item">Выставки</a></li>
+        <li><a href="#" class="dropdown-item">Портфолио</a></li>
+        <li><a href="#" class="dropdown-item">Пресса о нас</a></li>
+        <li><a href="#" class="dropdown-item">Партнерам</a></li>
+        <li><a href="#" class="dropdown-item">Где купить?</a></li>
+        <li><a href="#" class="dropdown-item">Контактная информация</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="header__mainsearch hidden-md-down">
+    <button class="mainsearch-btn" role="button" title="Найти на сайте"></button>
+  </div>
+  <form class="header__mainsearch-form hidden-md-down animate__animated animate__faster animate__fadeIn">
+    <input type="submit" class="mainsearch-form__search animate__animated animate__faster animate__fadeInLeft" title="Найти" value="">
+    <input id="fld_mainsearch" type="search" class=" animate__animated animate__faster animate__fadeInRight" placeholder="Найти на сайте">
+    <button class="mainsearch-form__close animate__animated animate__faster animate__fadeInRight" title="Закрыть поиск по сайту"></button>
+  </form>
+
+
+  <nav class="navbar header__menu menu--region hidden-md-down">
+    <div class="menu-item">
+      <a href="#" role="button" id="id_toggle-menuregion" title="Ваш регион">
+        <i class="fal fa-map-marker-alt"></i><span class="span--overflow">Набережные Челны</span>
+      </a>
+    </div>
+  </nav>
+
+
+  <nav class="navbar header__menu hidden-md-down">
+    <div class="menu-item dropdown">
+      <a href="#" class="dropdown-toggle i--drop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Сервис</a>
+      <ul class="dropdown-menu dropdown-menu-end animate__animated animate__faster animate__fadeIn" aria-labelledby="id_menu-service">
+        <li><a href="#" class="dropdown-item">Покраска</a></li>
+        <li><a href="#" class="dropdown-item">Доставка</a></li>
+        <li><a href="#" class="dropdown-item">Монтаж</a></li>
+        <li><a href="#" class="dropdown-item">Сервисное обслуживание</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <nav class="navbar header__menu menu--user hidden-md-down">
+    <div class="menu-item">
+      <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#id_modal-login" title="Личный кабинет"><i class="fal fa-user-circle"></i><span class="span--overflow">Личный кабинет</span></a>
+    </div>
+  </nav>
+
+
+</div>
+</header>
+
+
+
+//= _menucatalog.html
+
+
+
+//= _menumain.html
+
+
+
+//= _menuregion.html
