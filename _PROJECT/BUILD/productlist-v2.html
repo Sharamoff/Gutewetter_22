@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<link rel="icon" href="favicon.ico" type="image/x-icon" sizes="any">
+	<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+	<title>Gutewetter</title>
+
+	<link href="css/vendor.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/addit.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+
+
+<header class="header">
+<div class="container-fluid">
+
+
+  <button class="header__menumain-md hidden-md-up" type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#id_menumain-md"
+          aria-controls="id_menumain-md" aria-expanded="false">
+    <div class="animated-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </button>
+
+
+  <a href="https://www.gutewetter.ru/" class="header__logo">
+    <img src="img/gw.svg" alt="Gutewetter" title="Gutewetter. Производство душевых ограждений.">
+  </a>
+
+
+  <nav class="navbar header__menu menu--catalog">
+    <div class="menu-item">
+      <a href="#" role="button" id="id_toggle-menucatalog" title="Каталог продукции">
+        <div class="animated-icon"></div>
+        <span>Каталог</span>
+      </a>
+    </div>
+  </nav>
+
+
+  <nav class="navbar header__menu hidden-md-down">
+    <div class="menu-item">
+      <a href="#">Где купить?</a>
+    </div>
+    <div class="menu-item dropdown">
+      <a href="#" class="dropdown-toggle i--drop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Партнерам</a>
+      <ul class="dropdown-menu animate__animated animate__faster animate__fadeIn">
+        <li><a href="#" class="dropdown-item">Программы сотрудничества</a></li>
+        <li><a href="#" class="dropdown-item">Сертификаты</a></li>
+        <li><a href="#" class="dropdown-item">Для скачивания</a></li>
+        <li><a href="#" class="dropdown-item">Экспозиции</a></li>
+        <li><a href="#" class="dropdown-item">Видео</a></li>
+      </ul>
+    </div>
+    <div class="menu-item dropdown">
+      <a href="#" class="dropdown-toggle i--drop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Компания</a>
+      <ul class="dropdown-menu animate__animated animate__faster animate__fadeIn" aria-labelledby="id_menu-company">
+        <li><a href="#" class="dropdown-item">Новости</a></li>
+        <li><a href="#" class="dropdown-item">Выставки</a></li>
+        <li><a href="#" class="dropdown-item">Портфолио</a></li>
+        <li><a href="#" class="dropdown-item">Пресса о нас</a></li>
+        <li><a href="#" class="dropdown-item">Партнерам</a></li>
+        <li><a href="#" class="dropdown-item">Где купить?</a></li>
+        <li><a href="#" class="dropdown-item">Контактная информация</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="header__mainsearch hidden-md-down">
+    <button class="mainsearch-btn" role="button" title="Найти на сайте"></button>
+  </div>
+  <form class="header__mainsearch-form hidden-md-down animate__animated animate__faster animate__fadeIn">
+    <input type="submit" class="mainsearch-form__search animate__animated animate__faster animate__fadeInLeft" title="Найти" value="">
+    <input id="fld_mainsearch" type="search" class="animate__animated animate__faster animate__fadeInRight" placeholder="Найти на сайте" autocomplete="off">
+    <button class="mainsearch-form__close animate__animated animate__faster animate__fadeInRight" title="Закрыть поиск по сайту"></button>
+  </form>
+
+
+  <nav class="navbar header__menu menu--region hidden-md-down">
+    <div class="menu-item">
+      <a href="#" role="button" id="id_toggle-menuregion" title="Ваш регион">
+        <i class="fal fa-map-marker-alt"></i><span class="span--overflow">Набережные Челны</span>
+      </a>
+    </div>
+  </nav>
+
+
+  <nav class="navbar header__menu hidden-md-down">
+    <div class="menu-item dropdown">
+      <a href="#" class="dropdown-toggle i--drop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Сервис</a>
+      <ul class="dropdown-menu dropdown-menu-end animate__animated animate__faster animate__fadeIn" aria-labelledby="id_menu-service">
+        <li><a href="#" class="dropdown-item">Покраска</a></li>
+        <li><a href="#" class="dropdown-item">Доставка</a></li>
+        <li><a href="#" class="dropdown-item">Монтаж</a></li>
+        <li><a href="#" class="dropdown-item">Сервисное обслуживание</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <nav class="navbar header__menu menu--user hidden-md-down">
+    <div class="menu-item">
+      <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#id_modal-login" title="Личный кабинет"><i class="fal fa-user-circle"></i><span class="span--overflow">Личный кабинет</span></a>
+    </div>
+  </nav>
+
+
+</div>
+</header>
+
+
+
+<div class="modal menucatalog fade" id="id_menucatalog" tabindex="-1">
+
+ <div class="menucatalog__configurator">
+   <a  href="#"><img src="img/ic-cog.svg" alt="">Конфигуратор индивидуальных изделий</a>
+ </div>
+
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">
+              <div class="menucatalog__menu">
+                <a href="#"><img src="img/ic-1.png" alt="Душевые ограждения"></a>
+                <ul>
+                  <li class="menu-hdr"><a href="#">Душевые ограждения</a></li>
+                  <li><a href="#">Душевые перегородки</a></li>
+                  <li><a href="#">Душевые уголки</a></li>
+                  <li><a href="#">Двери в душевую нишу</a></li>
+                  <li><a href="#">Шторки на ванну</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="menucatalog__menu">
+                <a href="#"> <img src="img/ic-5.png" alt="Поддоны для душа"></a>
+                <ul>
+                  <li class="menu-hdr"><a href="#">Поддоны для душа</a></li>
+                  <li><a href="#">Квадратные</a></li>
+                  <li><a href="#">Четверть круга</a></li>
+                  <li><a href="#">Пятиугольные</a></li>
+                  <li><a href="#">Прямоугольные</a></li>
+                  <li><a href="#">Полукруглые</a></li>
+                  <li><a href="#">Сифоны для поддонов</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="menucatalog__menu">
+                <a href="#"><img src="img/ic-6.png" alt="Фурнитура и комплектующие"></a>
+                <ul>
+                  <li class="menu-hdr"><a href="#">Фурнитура и комплектующие</a></li>
+                  <li><a href="#">Стекла</a></li>
+                  <li><a href="#">Петли</a></li>
+                  <li><a href="#">Ручки</a></li>
+                  <li><a href="#">Профиль</a></li>
+                  <li><a href="#">Ролики</a></li>
+                  <li><a href="#">Полистирол</a></li>
+                  <li><a href="#">Уплотнители PVC</a></li>
+                  <li><a href="#">Уголки для защиты стекла</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="menucatalog__menu">
+                <a href="#"><img src="img/ic-7.png" alt="Нестандартные решения"></a>
+                <ul>
+                  <li class="menu-hdr"><a href="#">Нестандартные решения</a></li>
+                  <li><a href="#">Фотогалерея</a></li>
+                  <li><a href="#">Анимации</a></li>
+                  <li><a href="#">Виды сверху</a></li>
+                  <li><a href="#">Чертежи фурнитуры</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+<nav class="menumain collapse fade hidden-md-up" id="id_menumain-md">
+<div class="container-fluid">
+
+
+  <div class="menumain__contact">
+    <a href="tel:+74956462626" class="contact-tel">+7 495 <strong>646-26-26</strong></a></li>
+    <a href="mailto:info@gutewetter.ru" class="contact-email">info@gutewetter.ru</a>
+    <ul class="contact-soc">
+      <li title="Вконтакте"><a href="#"><img src="img/if-socvk.svg" alt="Вконтакте"></a></li>
+      <li title="Youtube"><a href="#"><img src="img/if-socyoutube.svg" alt="Youtube"></a></li>
+      <li title="WhatsApp"><a href="#"><img src="img/if-socwhatsapp.svg" alt="WhatsApp"></a></li>
+      <li title="Viber"><a href="#"><img src="img/if-socviber.svg" alt="Viber"></a></li>
+      <li title="Telegram"><a href="#"><img src="img/if-soctg.svg" alt="Telegram"></a></li>
+    </ul>
+ </div>
+
+
+  <form class="menumain__search">
+    <input type="submit" class="search-btn" title="Найти" value="">
+    <input id="fld_search" type="search" placeholder="Найти на сайте">
+  </form>
+
+
+  <hr>
+
+
+  <div class="menumain__regionuser">
+    <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#id_menuregion"><i class="fal fa-map-marker-alt"></i>Набережные Челны
+    </a>
+    <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#id_modal-login">
+      <i class="fal fa-user-circle"></i>Личный кабинет
+    </a>
+  </div>
+
+
+  <hr>
+
+
+  <nav class="menumain__nav" id="id_menumain">
+
+
+    <div class="menu-item">
+      <a href="#" id="id_menu-item-menucatalog"><strong>Каталог продукции</strong></a>
+    </div>
+
+    <div class="menu-item">
+      <a href="#">Где купить?</a>
+    </div>
+
+    <div class="menu-item">
+      <button id="id_b-mainmenu-partner" class="i--drop collapsed" data-bs-toggle="collapse" data-bs-target="#id_mainmenu-partner" aria-expanded="false">Партнерам</button>
+      <ul id="id_mainmenu-partner" class="menu-item__submenu collapse" data-bs-parent="#id_menumain" aria-labelledby="id_b-mainmenu-partner">
+        <li><a href="#">Программы сотрудничества</a></li>
+        <li><a href="#">Сертификаты</a></li>
+        <li><a href="#">Для скачивания</a></li>
+        <li><a href="#">Экспозиции</a></li>
+        <li><a href="#">Видео</a></li>
+      </ul>
+    </div>
+
+    <div class="menu-item">
+      <button id="id_b-mainmenu-company" class="i--drop collapsed" data-bs-toggle="collapse" data-bs-target="#id_mainmenu-company" aria-expanded="false">Компания</button>
+      <ul id="id_mainmenu-company" class="menu-item__submenu collapse" data-bs-parent="#id_menumain" aria-labelledby="id_b-mainmenu-company">
+        <li><a href="#" class="dropdown-item">Новости</a></li>
+        <li><a href="#" class="dropdown-item">Выставки</a></li>
+        <li><a href="#" class="dropdown-item">Портфолио</a></li>
+        <li><a href="#" class="dropdown-item">Пресса о нас</a></li>
+        <li><a href="#" class="dropdown-item">Партнерам</a></li>
+        <li><a href="#" class="dropdown-item">Где купить?</a></li>
+        <li><a href="#" class="dropdown-item">Контактная информация</a></li>
+      </ul>
+    </div>
+
+
+    <div class="menu-item">
+      <button id="id_b-mainmenu-service" class="i--drop collapsed" data-bs-toggle="collapse" data-bs-target="#id_mainmenu-service" aria-expanded="false">Сервис</button>
+      <ul id="id_mainmenu-service" class="menu-item__submenu collapse" data-bs-parent="#id_menumain" aria-labelledby="id_b-mainmenu-service">
+        <li><a href="#" class="dropdown-item">Покраска</a></li>
+        <li><a href="#" class="dropdown-item">Доставка</a></li>
+        <li><a href="#" class="dropdown-item">Монтаж</a></li>
+        <li><a href="#" class="dropdown-item">Сервисное обслуживание</a></li>
+      </ul>
+    </div>
+
+  </nav>
+
+
+  <hr>
+
+
+  <div class="menumain__tools">
+
+    <ul class="tools-tool">
+      <li><a href="#"><img src="img/if-eye.svg" alt="">Вы смотрели</a></li>
+      <li><a href="#"><img src="img/if-fav.svg" alt="">Избранное</a></li>
+      <li><a href="#"><img src="img/if-cmp.svg" alt="">Сравнение</a></li>
+    </ul>
+
+    <div class="tools-cart" title="Ваша корзина">
+      <a href="#"><img src="img/if-cart.svg" alt="">1 ед. 20 000 <i class="fal fa-ruble-sign"></i></a>
+    </div>
+
+  </div>
+
+
+
+</div>
+</nav>
+
+
+
+<div class="modal menuregion fade" id="id_menuregion" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+
+      <div class="modal-header">
+
+        <div class="container-fluid">
+          <div class="menuregion__hdr">Набережные Челны</div>
+          <form class="menuregion__search" name="menuregion__search-form">
+            <input type="submit" class="b_menuregion__search" title="Найти" value="">
+            <input type="search" class="fld_menuregion__search" placeholder="Поиск по городу">
+          </form>
+        </div>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+      </div>
+
+
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <ul>
+                <li class="lither">A</li>
+                <li><a href="#">Абакан</a></li>
+                <li><a href="#">Анапа</a></li>
+                <li><a href="#">Арзамас</a></li>
+                <li><a href="#">Архангельск</a></li>
+              </ul>
+              <ul>
+                <li class="lither">Б</li>
+                <li><a href="#">Балаково</a></li>
+                <li><a href="#">Барнаул</a></li>
+                <li><a href="#">Белгород</a></li>
+                <li><a href="#">Бийск</a></li>
+                <li><a href="#">Брянск</a></li>
+              </ul>
+              <ul>
+                <li class="lither">В</li>
+                <li><a href="#">Владикавказ</a></li>
+                <li><a href="#">Владимир</a></li>
+                <li><a href="#">Волгоград</a></li>
+                <li><a href="#">Волоколамск</a></li>
+                <li><a href="#">Воронеж</a></li>
+              </ul>
+              <ul>
+                <li class="lither">Д</li>
+                <li><a href="#">Дзержинск</a></li>
+                <li><a href="#">Домодедово</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <ul>
+                <li class="lither">Е</li>
+                <li><a href="#">Егорьевск</a></li>
+                <li><a href="#">Екатеринбург</a></li>
+              </ul>
+              <ul>
+                <li class="lither">Ж</li>
+                <li><a href="#">Жуковский</a></li>
+              </ul>
+              <ul>
+                <li class="lither">З</li>
+                <li><a href="#">Зеленоград</a></li>
+              </ul>
+              <ul>
+                <li class="lither">И</li>
+                <li><a href="#">Иваново</a></li>
+                <li><a href="#">Ивантеевка</a></li>
+                <li><a href="#">Ижевск</a></li>
+              </ul>
+              <ul>
+                <li class="lither">К</li>
+                <li><a href="#">Казань</a></li>
+                <li><a href="#">Калининград</a></li>
+                <li><a href="#">Калуга</a></li>
+                <li><a href="#">Киров</a></li>
+                <li><a href="#">Клинцы</a></li>
+                <li><a href="#">Коломна</a></li>
+                <li><a href="#">Королев</a></li>
+                <li><a href="#">Кострома</a></li>
+                <li><a href="#">Краснодар</a></li>
+                <li><a href="#">Красноярск</a></li>
+                <li><a href="#">Курск</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <ul>
+                <li class="lither">Л</li>
+                <li><a href="#">Липецк</a></li>
+                <li><a href="#">Лукоянов</a></li>
+                <li><a href="#">Люберцы</a></li>
+              </ul>
+              <ul>
+                <li class="lither">М</li>
+                <li><a href="#">Магадан</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Мурманск</a></li>
+              </ul>
+              <ul>
+                <li class="lither">Н</li>
+                <li><a href="#">Нефтеюганск</a></li>
+                <li><a href="#">Нижний Новгород</a></li>
+                <li><a href="#">Новокузнецк</a></li>
+                <li><a href="#">Новосибирск</a></li>
+                <li><a href="#">Новый Уренгой</a></li>
+                <li><a href="#">Норильск</a></li>
+                <li><a href="#">Нягань</a></li>
+              </ul>
+              <ul>
+                <li class="lither">О</li>
+                <li><a href="#">Обнинск</a></li>
+                <li><a href="#">Одинцово</a></li>
+                <li><a href="#">Омск</a></li>
+                <li><a href="#">Орел</a></li>
+                <li><a href="#">Орехово-Зуево</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <ul>
+                <li class="lither">П</li>
+                <li><a href="#">Пенза</a></li>
+                <li><a href="#">Подольск</a></li>
+                <li><a href="#">Пугачев</a></li>
+                <li><a href="#">Пурпе</a></li>
+                <li><a href="#">Пятигорск</a></li>
+              </ul>
+              <ul>
+                <li class="lither">Р</li>
+                <li><a href="#">Ростов-на-Дону</a></li>
+                <li><a href="#">Рыбинск</a></li>
+                <li><a href="#">Рязань</a></li>
+              </ul>
+              <ul>
+                <li class="lither">С</li>
+                <li><a href="#">Самара</a></li>
+                <li><strong>Санкт-Петербург</strong></li>
+                <li><a href="#">Саранск</a></li>
+                <li><a href="#">Сарапул</a></li>
+                <li><a href="#">Саратов</a></li>
+                <li><a href="#">Сафоново</a></li>
+                <li><a href="#">Севастополь</a></li>
+                <li><a href="#">Симферополь</a></li>
+                <li><a href="#">Сочи</a></li>
+                <li><a href="#">Ставрополь</a></li>
+                <li><a href="#">Стрежевой</a></li>
+                <li><a href="#">Сыктывкар</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <ul>
+                <li class="lither">Т</li>
+                <li><a href="#">Тверь</a></li>
+                <li><a href="#">Тольятти</a></li>
+                <li><a href="#">Тула</a></li>
+                <li><a href="#">Тюмень</a></li>
+              </ul>
+              <ul>
+                <li class="lither">У</li>
+                <li><a href="#">Удомля</a></li>
+                <li><a href="#">Ульяновск</a></li>
+                <li><a href="#">Уфа</a></li>
+                <li><a href="#">Ухта</a></li>
+              </ul>
+              <ul>
+                <li class="lither">Х</li>
+                <li><a href="#">Ханты-Мансийск</a></li>
+                <li><a href="#">Химки</a></li>
+              </ul>
+              <ul>
+                <li class="lither">Ч</li>
+                <li><a href="#">Чебоксары</a></li>
+                <li><a href="#">Челябинск</a></li>
+                <li><a href="#">Череповец</a></li>
+              </ul>
+              <ul>
+                <li class="lither">Щ</li>
+                <li><a href="#">Щелково</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <ul>
+                <li class="lither">Ю</li>
+                <li><a href="#">Югорск</a></li>
+                <li><a href="#">Южно-Сахалинск</a></li>
+              </ul>
+              <ul>
+                <li class="lither">Я</li>
+                <li><a href="#">Ярославль</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+<div class="header-compensator"></div>
+
+
+
+
+
+<div class="panel-breadcrumb">
+	<div class="container-fluid">
+
+		<div class="breadcrumb__hdr collapsed" role="button" data-bs-toggle="collapse" data-bs-target=".breadcrumb-submenu" aria-expanded="true">Душевые уголки</div>
+		<div class="breadcrumb-submenu collapse">
+			<div class="dlv"></div>
+			<ul>
+				<li><a href="">Каталог</a></li>
+				<li><a href="">Душевые ограждения</a></li>
+			</ul>
+		</div>
+
+	</div>
+</div>
+
+
+
+
+
+<section class="pagesection sc_productlist-filter">
+<form name="fm_productlist-filter">
+
+
+
+	<div class="container-fluid">
+		<div class="block-filter">
+
+
+			<div class="flt flt--form">
+				<div class="filter__form slider" id="id_filter-form">
+					<a href="#" class="form__item" title="Прямоугольные">
+						<img src="img/gallery/forms/ipc-1-7.svg" alt="Прямоугольные">
+					</a>
+					<a href="#" class="form__item check" title="Квадратные">
+						<img src="img/gallery/forms/ipc-1-8.svg" alt="Квадратные">
+					</a>
+					<a href="#" class="form__item" title="Четверть круга">
+						<img src="img/gallery/forms/ipc-1-9.svg" alt="Четверть круга">
+					</a>
+				</div>
+			</div>
+
+
+			<div class="flt dlv hidden-md-up"></div>
+
+
+			<div class="row">
+
+				<div class="col-md-6">
+
+					<div class="flt flt--inlinecheck">
+						<div class="flt__hdr">Конструкция дверей</div>
+						<div class="flt__body">
+							<label><input type="checkbox" class="form-check-input" checked>Раздвижная</label>
+							<label><input type="checkbox" class="form-check-input">Распашная</label>
+							<label><input type="checkbox" class="form-check-input">Складные</label>
+						</div>
+					</div>
+
+					<div class="flt">
+						<div class="flt__hdr">Популярные размеры (ш x д), см</div>
+						<div class="flt__body">
+							<div class="inputslider__popval">
+								<div class="popval-val" data-valw="70" data-vall="70">70х70</div>
+								<div class="popval-val" data-valw="80" data-vall="80">80х80</div>
+								<div class="popval-val" data-valw="90" data-vall="90">90x90</div>
+								<div class="popval-val" data-valw="100" data-vall="100">100х100</div>
+								<div class="popval-val" data-valw="110" data-vall="110">110х110</div>
+								<div class="popval-val" data-valw="120" data-vall="120">120х120</div>
+								<div class="popval-val" data-valw="130" data-vall="250">130х250</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="inputslider">
+						<div class="inputslider__hdr">Ширина, см:</div>
+						<div class="inputslider__inputval">
+							от<input type="number" pattern="[0-9]*" class="form-control" id="id_inputval-w1" value="70">
+							до<input type="number" pattern="[0-9]*" class="form-control" id="id_inputval-w2" value="150">
+						</div>
+						<div class="inputslider__slider" id="id_inputslider-w"></div>
+					</div>
+
+					<div class="inputslider">
+						<div class="inputslider__hdr">Длина, см:</div>
+						<div class="inputslider__inputval">
+							от<input type="number" pattern="[0-9]*" class="form-control" id="id_inputval-l1" value="300">
+							до<input type="number" pattern="[0-9]*" class="form-control" id="id_inputval-l2" value="700">
+						</div>
+						<div class="inputslider__slider" id="id_inputslider-l"></div>
+					</div>
+
+				</div>
+
+				<div class="col-md-3 col-sm-6">
+					<div class="flt">
+						<div class="flt__hdr">Цвет фурнитуры</div>
+						<div class="flt__body">
+							<ul>
+								<li><label><input type="checkbox" class="form-check-input"><span class="product-color pc--white-matte"></span>Белый матовый</label></li>
+								<li><label><input type="checkbox" class="form-check-input"><span class="product-color pc--bronze"></span>Бронзовый</label></li>
+								<li><label><input type="checkbox" class="form-check-input"><span class="product-color pc--gold-galv"></span>Золотой гальванический</label></li>
+								<li><label><input type="checkbox" class="form-check-input"><span class="product-color pc--gold-metal"></span>Золотой металлик</label></li>
+								<li><label><input type="checkbox" class="form-check-input"><span class="product-color pc--chrom-brlnt"></span>Хром блестящий</label></li>
+								<li><label><input type="checkbox" class="form-check-input"><span class="product-color pc--chrom-matte"></span>Хром матовый</label></li>
+								<li><label><input type="checkbox" class="form-check-input"><span class="product-color pc--black-matte"></span>Черный матовый</label></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-6">
+					<div class="flt">
+						<div class="flt__hdr">Цвет стекла</div>
+						<div class="flt__body">
+							<ul>
+								<li><label><input type="checkbox" class="form-check-input"><span class="product-color pc--uncolored"></span>Бесцветный</label></li>
+								<li><label><input type="checkbox" class="form-check-input"><span class="product-color pc--bronze"></span>Бронзовый</label></li>
+								<li><label><input type="checkbox" class="form-check-input"><span class="product-color pc--bronze-matte"></span>Бронзовый матовый</label></li>
+								<li><label><input type="checkbox" class="form-check-input"><span class="product-color pc--white-blchd"></span>Выбеленный</label></li>
+								<li><label><input type="checkbox" class="form-check-input"><span class="product-color pc--grafite"></span>Графитовый</label></li>
+								<li><label><input type="checkbox" class="form-check-input"><span class="product-color pc--grafite-matte"></span>Графитовый матовый</label></li>
+								<li><label><input type="checkbox" class="form-check-input"><span class="product-color pc--matte"></span>Матовый</label></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+		</div>
+	</div>
+
+
+
+	<button class="b-filter">Показать 8 изделий</button>
+
+
+
+</form>
+</section>
+
+
+
+
+
+<section class="pagesection sc_productlist">
+	<div class="container-fluid">
+
+
+
+		<h2 class="h--centered">Душевые уголки прямоугольные</h2>
+
+
+
+		<div class="block-tools">
+			<div class="tools__val">
+				<span class="hidden-xs">Отобрано:</span>
+				<span class="val">8 товаров</span>
+			</div>
+			<div class="tools__form">
+				<span class="hidden-xs">Отсортировано:</span>
+				<select name="fld_sort" class="tools_select">
+					<option selected value="1">по популярности</option>
+					<option value="2">по возрастанию цены</option>
+					<option value="3">по убыванию цены</option>
+				</select>
+			</div>
+		</div>
+
+
+
+		<div class="block-productlist">
+			<div class="row">
+
+
+				<div class="col-sm-6 col-lg-4">
+					<div class="productlist__item" id="id_productlistitem1">
+
+						<div class="productlist__item-72h" data-toggle="tooltip" title="Можем доставить за 72 часа"></div>
+						<button class="productlist__item-bcompare" title="Добавить в Сравнение"></button>
+						<button class="productlist__item-bfav" title="Добавить в Избранное"></button>
+
+						<div class="productlist__item-pics">
+							<div class="productlist__item-pics_hoverbar">
+								<div class="hoverbar1"></div>
+								<div class="hoverbar2"></div>
+								<div class="hoverbar3"></div>
+								<div class="hoverbar4"></div>
+							</div>
+							<div class="productlist__item-pics_slide">
+								<img src="img/gallery/img-view1.jpg" alt="">
+								<img src="img/gallery/img-view2.jpg" alt="">
+								<img src="img/gallery/img-view3.jpg" alt="">
+								<img src="img/gallery/img-view4.jpg" alt="">
+							</div>
+						</div>
+
+						<a href="#" class="productlist__item-title">
+							Душевой уголок прямоугольный
+							<strong>PRACTIC RECTAN GK-401</strong>
+						</a>
+
+						<div class="productlist__item-descript">
+							<div class="item-descript__colors">
+								<div class="colors__hdr">Цвет фурнитуры</div>
+								<div class="span--dot"></div>
+								<div class="colors__color">
+									<span class="product-color pc--white-matte" title="Белый матовый"></span>
+									<span class="product-color pc--bronze" title="Бронзовый"></span>
+									<span class="product-color pc--chrom-brlnt" title="Хром блестящий"></span>
+									<span class="product-color pc--chrom-matte" title="Хром матовый"></span>
+									<span class="product-color pc--black-matte" title="Черный матовый"></span>
+								</div>
+							</div>
+							<div class="item-descript__colors">
+								<div class="colors__hdr">Цвет cтекла</div>
+								<div class="span--dot"></div>
+								<div class="colors__color">
+									<span class="product-color pc--uncolored" title="Бесцветный"></span>
+									<span class="product-color pc--bronze" title="Бронзовый"></span>
+									<span class="product-color pc--bronze-matte" title="Бронзовый матовый"></span>
+									<span class="product-color pc--white-blchd" title="Выбеленный"></span>
+									<span class="product-color pc--grafite" title="Графитовый"></span>
+									<span class="product-color pc--grafite-matte" title="Графитовый матовый"></span>
+									<span class="product-color pc--matte" title="Матовый"></span>
+								</div>
+							</div>
+						</div>
+
+						<div class="productlist__item-descript">
+							<div class="item-descript__sizes">
+								<div class="sizes__hdr">Ширина</div>
+								<div class="span--dot"></div>
+								<div class="sizes__size">70 — 120 см</div>
+							</div>
+							<div class="item-descript__sizes">
+								<div class="sizes__hdr">Длина</div>
+								<div class="span--dot"></div>
+								<div class="sizes__size">50 — 85 см</div>
+							</div>
+							<div class="item-descript__sizes">
+								<div class="sizes__hdr">Высота</div>
+								<div class="span--dot"></div>
+								<div class="sizes__size">190 см</div>
+							</div>
+						</div>
+
+						<a href="#" class="productlist__item-more">
+							<div class="item-more__price">от <strong>20 400</strong><i class="fal fa-ruble-sign"></i></div>
+							<div class="item-more__link">Подробнее</div>
+						</a>
+
+					</div>
+				</div>
+
+
+				<div class="col-sm-6 col-lg-4">
+					<div class="productlist__item" id="id_productlistitem2">
+
+						<button class="productlist__item-bcompare active" title="Добавить в Сравнение"></button>
+						<button class="productlist__item-bfav" title="Добавить в Избранное"></button>
+
+						<div class="productlist__item-pics">
+							<div class="productlist__item-pics_hoverbar">
+								<div class="hoverbar1"></div>
+								<div class="hoverbar2"></div>
+								<div class="hoverbar3"></div>
+								<div class="hoverbar4"></div>
+							</div>
+							<div class="productlist__item-pics_slide">
+								<img src="img/gallery/img-view5.jpg" alt="">
+								<img src="img/gallery/img-view6.jpg" alt="">
+								<img src="img/gallery/img-view7.jpg" alt="">
+								<img src="img/gallery/img-view8.jpg" alt="">
+							</div>
+						</div>
+
+						<a href="#" class="productlist__item-title">
+							Душевой уголок прямоугольный
+							<strong>KÜBELE DE019SC</strong>
+						</a>
+
+						<div class="productlist__item-descript">
+							<div class="item-descript__colors">
+								<div class="colors__hdr">Цвет фурнитуры</div>
+								<div class="span--dot"></div>
+								<div class="colors__color">
+									<span class="product-color pc--white-matte" title="Белый матовый"></span>
+									<span class="product-color pc--bronze" title="Бронзовый"></span>
+									<span class="product-color pc--gold-galv" title="Золотой гальванический"></span>
+									<span class="product-color pc--gold-metal" title="Золотой металлик"></span>
+									<span class="product-color pc--chrom-brlnt" title="Хром блестящий"></span>
+									<span class="product-color pc--chrom-matte" title="Хром матовый"></span>
+									<span class="product-color pc--black-matte" title="Черный матовый"></span>
+								</div>
+							</div>
+							<div class="item-descript__colors">
+								<div class="colors__hdr">Цвет cтекла</div>
+								<div class="span--dot"></div>
+								<div class="colors__color">
+									<span class="product-color pc--uncolored" title="Бесцветный"></span>
+									<span class="product-color pc--matte" title="Матовый"></span>
+								</div>
+							</div>
+						</div>
+
+						<div class="productlist__item-descript">
+							<div class="item-descript__sizes">
+								<div class="sizes__hdr">Ширина</div>
+								<div class="span--dot"></div>
+								<div class="sizes__size">70 — 150 см</div>
+							</div>
+							<div class="item-descript__sizes">
+								<div class="sizes__hdr">Длина</div>
+								<div class="span--dot"></div>
+								<div class="sizes__size">50 — 120 см</div>
+							</div>
+							<div class="item-descript__sizes">
+								<div class="sizes__hdr">Высота</div>
+								<div class="span--dot"></div>
+								<div class="sizes__size">220 см</div>
+							</div>
+						</div>
+
+						<a href="#" class="productlist__item-more">
+							<div class="item-more__price">от <strong>23 700</strong><i class="fal fa-ruble-sign"></i></div>
+							<div class="item-more__link">Подробнее</div>
+						</a>
+
+					</div>
+				</div>
+
+
+				<div class="col-sm-6 col-lg-4">
+					<div class="productlist__item" id="id_productlistitem3">
+
+						<div class="productlist__item-72h" data-toggle="tooltip" title="Можем доставить за 72 часа"></div>
+						<button class="productlist__item-bcompare active" title="Добавить в Сравнение"></button>
+						<button class="productlist__item-bfav" title="Добавить в Избранное"></button>
+
+						<div class="productlist__item-pics">
+							<div class="productlist__item-pics_hoverbar">
+								<div class="hoverbar1"></div>
+								<div class="hoverbar2"></div>
+								<div class="hoverbar3"></div>
+								<div class="hoverbar4"></div>
+							</div>
+							<div class="productlist__item-pics_slide">
+								<img src="img/gallery/img-view5.jpg" alt="">
+								<img src="img/gallery/img-view6.jpg" alt="">
+								<img src="img/gallery/img-view7.jpg" alt="">
+								<img src="img/gallery/img-view8.jpg" alt="">
+							</div>
+						</div>
+
+						<a href="#" class="productlist__item-title">
+							Душевой уголок прямоугольный
+							<strong>KÜBELE DE019R</strong>
+						</a>
+
+						<div class="productlist__item-descript">
+							<div class="item-descript__colors">
+								<div class="colors__hdr">Цвет фурнитуры</div>
+								<div class="span--dot"></div>
+								<div class="colors__color">
+									<span class="product-color pc--chrom-brlnt" title="Хром блестящий"></span>
+									<span class="product-color pc--chrom-matte" title="Хром матовый"></span>
+								</div>
+							</div>
+							<div class="item-descript__colors">
+								<div class="colors__hdr">Цвет cтекла</div>
+								<div class="span--dot"></div>
+								<div class="colors__color">
+									<span class="product-color pc--uncolored" title="Бесцветный"></span>
+								</div>
+							</div>
+						</div>
+
+						<div class="productlist__item-descript">
+							<div class="item-descript__sizes">
+								<div class="sizes__hdr">Ширина</div>
+								<div class="span--dot"></div>
+								<div class="sizes__size">70 — 120 см</div>
+							</div>
+							<div class="item-descript__sizes">
+								<div class="sizes__hdr">Длина</div>
+								<div class="span--dot"></div>
+								<div class="sizes__size">50 — 120 см</div>
+							</div>
+							<div class="item-descript__sizes">
+								<div class="sizes__hdr">Высота</div>
+								<div class="span--dot"></div>
+								<div class="sizes__size">210 см</div>
+							</div>
+						</div>
+
+						<a href="#" class="productlist__item-more">
+							<div class="item-more__price">от <strong>22 600</strong><i class="fal fa-ruble-sign"></i></div>
+							<div class="item-more__link">Подробнее</div>
+						</a>
+
+					</div>
+				</div>
+
+
+				<div class="col-sm-6 col-lg-4">
+					<div class="productlist__item" id="id_productlistitem4">
+
+						<button class="productlist__item-bcompare" title="Добавить в Сравнение"></button>
+						<button class="productlist__item-bfav" title="Добавить в Избранное"></button>
+
+						<div class="productlist__item-pics">
+							<div class="productlist__item-pics_hoverbar">
+								<div class="hoverbar1"></div>
+								<div class="hoverbar2"></div>
+								<div class="hoverbar3"></div>
+								<div class="hoverbar4"></div>
+							</div>
+							<div class="productlist__item-pics_slide">
+								<img src="img/gallery/img-view6.jpg" alt="">
+								<img src="img/gallery/img-view4.jpg" alt="">
+								<img src="img/gallery/img-view1.jpg" alt="">
+								<img src="img/gallery/img-view3.jpg" alt="">
+							</div>
+						</div>
+
+						<a href="#" class="productlist__item-title">
+							Душевой уголок прямоугольный
+							<strong>PRACTIC RECTAN GK-402</strong>
+						</a>
+
+						<div class="productlist__item-descript">
+							<div class="item-descript__colors">
+								<div class="colors__hdr">Цвет фурнитуры</div>
+								<div class="span--dot"></div>
+								<div class="colors__color">
+									<span class="product-color pc--white-matte" title="Белый матовый"></span>
+								</div>
+							</div>
+							<div class="item-descript__colors">
+								<div class="colors__hdr">Цвет cтекла</div>
+								<div class="span--dot"></div>
+								<div class="colors__color">
+									<span class="product-color pc--uncolored" title="Бесцветный"></span>
+									<span class="product-color pc--white-blchd" title="Выбеленный"></span>
+									<span class="product-color pc--grafite" title="Графитовый"></span>
+									<span class="product-color pc--grafite-matte" title="Графитовый матовый"></span>
+									<span class="product-color pc--matte" title="Матовый"></span>
+								</div>
+							</div>
+						</div>
+
+						<div class="productlist__item-descript">
+							<div class="item-descript__sizes">
+								<div class="sizes__hdr">Ширина</div>
+								<div class="span--dot"></div>
+								<div class="sizes__size">70 — 120 см</div>
+							</div>
+							<div class="item-descript__sizes">
+								<div class="sizes__hdr">Длина</div>
+								<div class="span--dot"></div>
+								<div class="sizes__size">50 — 85 см</div>
+							</div>
+							<div class="item-descript__sizes">
+								<div class="sizes__hdr">Высота</div>
+								<div class="span--dot"></div>
+								<div class="sizes__size">190 см</div>
+							</div>
+						</div>
+
+						<a href="#" class="productlist__item-more">
+							<div class="item-more__price">от <strong>20 400</strong><i class="fal fa-ruble-sign"></i></div>
+							<div class="item-more__link">Подробнее</div>
+						</a>
+
+					</div>
+				</div>
+
+
+				<div class="col-sm-6 col-lg-4">
+					<div class="productlist__item" id="id_productlistitem5">
+
+						<button class="productlist__item-bcompare" title="Добавить в Сравнение"></button>
+						<button class="productlist__item-bfav" title="Добавить в Избранное"></button>
+
+						<div class="productlist__item-pics">
+							<div class="productlist__item-pics_hoverbar">
+								<div class="hoverbar1"></div>
+								<div class="hoverbar2"></div>
+								<div class="hoverbar3"></div>
+								<div class="hoverbar4"></div>
+							</div>
+							<div class="productlist__item-pics_slide">
+								<img src="img/gallery/img-view8.jpg" alt="">
+								<img src="img/gallery/img-view3.jpg" alt="">
+								<img src="img/gallery/img-view7.jpg" alt="">
+								<img src="img/gallery/img-view1.jpg" alt="">
+							</div>
+						</div>
+
+						<a href="#" class="productlist__item-title">
+							Душевой уголок прямоугольный
+							<strong>KÜBELE DE022SC</strong>
+						</a>
+
+						<div class="productlist__item-descript">
+							<div class="item-descript__colors">
+								<div class="colors__hdr">Цвет фурнитуры</div>
+								<div class="span--dot"></div>
+								<div class="colors__color">
+									<span class="product-color pc--white-matte" title="Белый матовый"></span>
+									<span class="product-color pc--black-matte" title="Черный матовый"></span>
+								</div>
+							</div>
+							<div class="item-descript__colors">
+								<div class="colors__hdr">Цвет cтекла</div>
+								<div class="span--dot"></div>
+								<div class="colors__color">
+									<span class="product-color pc--uncolored" title="Бесцветный"></span>
+									<span class="product-color pc--matte" title="Матовый"></span>
+								</div>
+							</div>
+						</div>
+
+						<div class="productlist__item-descript">
+							<div class="item-descript__sizes">
+								<div class="sizes__hdr">Ширина</div>
+								<div class="span--dot"></div>
+								<div class="sizes__size">70 — 150 см</div>
+							</div>
+							<div class="item-descript__sizes">
+								<div class="sizes__hdr">Длина</div>
+								<div class="span--dot"></div>
+								<div class="sizes__size">50 — 120 см</div>
+							</div>
+							<div class="item-descript__sizes">
+								<div class="sizes__hdr">Высота</div>
+								<div class="span--dot"></div>
+								<div class="sizes__size">220 см</div>
+							</div>
+						</div>
+
+						<a href="#" class="productlist__item-more">
+							<div class="item-more__price">от <strong>23 700</strong><i class="fal fa-ruble-sign"></i></div>
+							<div class="item-more__link">Подробнее</div>
+						</a>
+
+					</div>
+				</div>
+
+
+				<div class="col-sm-6 col-lg-4">
+					<div class="productlist__item" id="id_productlistitem6">
+
+						<div class="productlist__item-72h" data-toggle="tooltip" title="Можем доставить за 72 часа"></div>
+						<button class="productlist__item-bcompare" title="Добавить в Сравнение"></button>
+						<button class="productlist__item-bfav" title="Добавить в Избранное"></button>
+
+						<div class="productlist__item-pics">
+							<div class="productlist__item-pics_hoverbar">
+								<div class="hoverbar1"></div>
+								<div class="hoverbar2"></div>
+								<div class="hoverbar3"></div>
+								<div class="hoverbar4"></div>
+							</div>
+							<div class="productlist__item-pics_slide">
+								<img src="img/gallery/img-view5.jpg" alt="">
+								<img src="img/gallery/img-view6.jpg" alt="">
+								<img src="img/gallery/img-view7.jpg" alt="">
+								<img src="img/gallery/img-view8.jpg" alt="">
+							</div>
+						</div>
+
+						<a href="#" class="productlist__item-title">
+							Душевой уголок прямоугольный
+							<strong>KÜBELE DE019R</strong>
+						</a>
+
+						<div class="productlist__item-descript">
+							<div class="item-descript__colors">
+								<div class="colors__hdr">Цвет фурнитуры</div>
+								<div class="span--dot"></div>
+								<div class="colors__color">
+									<span class="product-color pc--chrom-brlnt" title="Хром блестящий"></span>
+									<span class="product-color pc--chrom-matte" title="Хром матовый"></span>
+								</div>
+							</div>
+							<div class="item-descript__colors">
+								<div class="colors__hdr">Цвет cтекла</div>
+								<div class="span--dot"></div>
+								<div class="colors__color">
+									<span class="product-color pc--uncolored" title="Бесцветный"></span>
+								</div>
+							</div>
+						</div>
+
+						<div class="productlist__item-descript">
+							<div class="item-descript__sizes">
+								<div class="sizes__hdr">Ширина</div>
+								<div class="span--dot"></div>
+								<div class="sizes__size">70 — 120 см</div>
+							</div>
+							<div class="item-descript__sizes">
+								<div class="sizes__hdr">Длина</div>
+								<div class="span--dot"></div>
+								<div class="sizes__size">50 — 120 см</div>
+							</div>
+							<div class="item-descript__sizes">
+								<div class="sizes__hdr">Высота</div>
+								<div class="span--dot"></div>
+								<div class="sizes__size">210 см</div>
+							</div>
+						</div>
+
+						<a href="#" class="productlist__item-more">
+							<div class="item-more__price">от <strong>22 600</strong><i class="fal fa-ruble-sign"></i></div>
+							<div class="item-more__link">Подробнее</div>
+						</a>
+
+					</div>
+				</div>
+
+
+				<div class="col-sm-6 col-lg-4">
+					<div class="productlist__item" id="id_productlistitem7">
+
+						<button class="productlist__item-bcompare" title="Добавить в Сравнение"></button>
+						<button class="productlist__item-bfav" title="Добавить в Избранное"></button>
+
+						<div class="productlist__item-pics">
+							<div class="productlist__item-pics_hoverbar">
+								<div class="hoverbar1"></div>
+								<div class="hoverbar2"></div>
+								<div class="hoverbar3"></div>
+								<div class="hoverbar4"></div>
+							</div>
+							<div class="productlist__item-pics_slide">
+								<img src="img/gallery/img-view6.jpg" alt="">
+								<img src="img/gallery/img-view2.jpg" alt="">
+								<img src="img/gallery/img-view8.jpg" alt="">
+								<img src="img/gallery/img-view8.jpg" alt="">
+							</div>
+						</div>
+
+						<a href="#" class="productlist__item-title">
+							Душевой уголок прямоугольный
+							<strong>KÜBELE DE019SC</strong>
+						</a>
+
+						<div class="productlist__item-descript">
+							<div class="item-descript__colors">
+								<div class="colors__hdr">Цвет фурнитуры</div>
+								<div class="span--dot"></div>
+								<div class="colors__color">
+									<span class="product-color pc--white-matte" title="Белый матовый"></span>
+									<span class="product-color pc--bronze" title="Бронзовый"></span>
+									<span class="product-color pc--gold-galv" title="Золотой гальванический"></span>
+									<span class="product-color pc--gold-metal" title="Золотой металлик"></span>
+									<span class="product-color pc--chrom-brlnt" title="Хром блестящий"></span>
+									<span class="product-color pc--chrom-matte" title="Хром матовый"></span>
+									<span class="product-color pc--black-matte" title="Черный матовый"></span>
+								</div>
+							</div>
+							<div class="item-descript__colors">
+								<div class="colors__hdr">Цвет cтекла</div>
+								<div class="span--dot"></div>
+								<div class="colors__color">
+									<span class="product-color pc--uncolored" title="Бесцветный"></span>
+									<span class="product-color pc--matte" title="Матовый"></span>
+								</div>
+							</div>
+						</div>
+
+						<div class="productlist__item-descript">
+							<div class="item-descript__sizes">
+								<div class="sizes__hdr">Ширина</div>
+								<div class="span--dot"></div>
+								<div class="sizes__size">70 — 150 см</div>
+							</div>
+							<div class="item-descript__sizes">
+								<div class="sizes__hdr">Длина</div>
+								<div class="span--dot"></div>
+								<div class="sizes__size">50 — 120 см</div>
+							</div>
+							<div class="item-descript__sizes">
+								<div class="sizes__hdr">Высота</div>
+								<div class="span--dot"></div>
+								<div class="sizes__size">220 см</div>
+							</div>
+						</div>
+
+						<a href="#" class="productlist__item-more">
+							<div class="item-more__price">от <strong>23 700</strong><i class="fal fa-ruble-sign"></i></div>
+							<div class="item-more__link">Подробнее</div>
+						</a>
+
+					</div>
+				</div>
+
+
+				<div class="col-sm-6 col-lg-4">
+					<div class="productlist__item" id="id_productlistitem8">
+
+						<button class="productlist__item-bcompare" title="Добавить в Сравнение"></button>
+						<button class="productlist__item-bfav" title="Добавить в Избранное"></button>
+
+						<div class="productlist__item-pics">
+							<div class="productlist__item-pics_hoverbar">
+								<div class="hoverbar1"></div>
+								<div class="hoverbar2"></div>
+								<div class="hoverbar3"></div>
+								<div class="hoverbar4"></div>
+							</div>
+							<div class="productlist__item-pics_slide">
+								<img src="img/gallery/img-view3.jpg" alt="">
+								<img src="img/gallery/img-view6.jpg" alt="">
+								<img src="img/gallery/img-view4.jpg" alt="">
+								<img src="img/gallery/img-view1.jpg" alt="">
+							</div>
+						</div>
+
+						<a href="#" class="productlist__item-title">
+							Душевой уголок прямоугольный
+							<strong>KÜBELE DE019R</strong>
+						</a>
+
+						<div class="productlist__item-descript">
+							<div class="item-descript__colors">
+								<div class="colors__hdr">Цвет фурнитуры</div>
+								<div class="span--dot"></div>
+								<div class="colors__color">
+									<span class="product-color pc--chrom-brlnt" title="Хром блестящий"></span>
+									<span class="product-color pc--chrom-matte" title="Хром матовый"></span>
+								</div>
+							</div>
+							<div class="item-descript__colors">
+								<div class="colors__hdr">Цвет cтекла</div>
+								<div class="span--dot"></div>
+								<div class="colors__color">
+									<span class="product-color pc--uncolored" title="Бесцветный"></span>
+								</div>
+							</div>
+						</div>
+
+						<div class="productlist__item-descript">
+							<div class="item-descript__sizes">
+								<div class="sizes__hdr">Ширина</div>
+								<div class="span--dot"></div>
+								<div class="sizes__size">70 — 120 см</div>
+							</div>
+							<div class="item-descript__sizes">
+								<div class="sizes__hdr">Длина</div>
+								<div class="span--dot"></div>
+								<div class="sizes__size">50 — 120 см</div>
+							</div>
+							<div class="item-descript__sizes">
+								<div class="sizes__hdr">Высота</div>
+								<div class="span--dot"></div>
+								<div class="sizes__size">210 см</div>
+							</div>
+						</div>
+
+						<a href="#" class="productlist__item-more">
+							<div class="item-more__price">от <strong>22 600</strong><i class="fal fa-ruble-sign"></i></div>
+							<div class="item-more__link">Подробнее</div>
+						</a>
+
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+
+
+
+		<div class="row justify-content-center">
+			<div class="col-sm-6 col-lg-4 auto">
+
+				<a href="#" class="b-more">Еще товары</a>
+
+				<nav>
+					<ul class="pagination">
+						<li class="page-item disabled"><a class="page-link" href="#"><i class="far fa-chevron-left"></i>Назад</a></li>
+						<li class="page-item active"><a class="page-link" href="#">1</a></li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link" href="#">Дальше<i class="far fa-chevron-right"></i></a></li>
+					</ul>
+				</nav>
+
+			</div>
+		</div>
+
+
+
+		<a href="#" class="alink aink--centered">Посмотреть все продукты</a>
+
+
+
+	</div>
+</section>
+
+
+
+
+
+<section class="pagesection sc_productlist-compilation">
+	<div class="container-fluid">
+
+		<h2 class="h--centered">Подборки</h2>
+
+		<ul class="block-compilation">
+			<li><a href="#">80x80</a></li>
+			<li><a href="#">90x90</a></li>
+			<li><a href="#">90x100</a></li>
+			<li><a href="#">100x100</a></li>
+			<li><a href="#">100x105</a></li>
+			<li><a href="#">105x105</a></li>
+			<li><a href="#">110x110</a></li>
+			<li><a href="#">100x120</a></li>
+			<li><a href="#">120x120</a></li>
+			<li><a href="#">Раздвижные</a></li>
+			<li><a href="#">Распашные</a></li>
+			<li><a href="#">Складные</a></li>
+			<li><a href="#">Белые</a></li>
+			<li><a href="#">Матовые</a></li>
+			<li><a href="#">Черные</a></li>
+			<li><a href="#">Золотой металлик</a></li>
+			<li><a href="#">Бронзовые</a></li>
+			<li><a href="#">Черные</a></li>
+			<li><a href="#">Черные матовые</a></li>
+			<li><a href="#">Хром блестящий</a></li>
+		</ul>
+
+	</div>
+</section>
+
+
+
+
+
+<section class="pagesection sc_productlist-descript">
+	<div class="container-fluid">
+
+		<h2 class="h--centered-md">Душевые ограждения</h2>
+
+		<p class="p">На сайте нашего магазина представлены недорогие душевые уголки в различных формах — квадратные, прямоугольные, пятиугольные и четверть круга — с раздвижной, распашной или складной конструкцией дверей, а также в различном цветовом исполнении. Цвет стекла и фурнитуры вы можете выбрать в карточке товара из числа доступных. По запросу заказчика возможен индивидуальный подбор цвета (покраска в любой цвет каталога RAL). Размеры душевых уголков: ширина от 50 до 250 см, высота — от 190 до 200 см. Выполнены из закаленного стекла марки М1, возможна обработка защитным покрытием <a href="#">GuteClean</a> (для защиты от образования известкового налета и облегчения чистки).</p>
+		<p class="p">Доступно изготовление душевого уголка на заказ по индивидуальному проекту: любой формы, размера и цвета. В наличии 8 основных видов стекла, различные варианты исполнения профиля и фурнитуры. Возможно нанесение орнаментов методом пескоструйной обработки. Стандартный срок производства — 14 дней. Информация о технических характеристиках, руководство по эксплуатации и монтажная инструкция доступны для скачивания <a href="#">на страницах товаров</a>.</p>
+		<p class="p">Душевые ограждения произведены в России на современной фабрике из российских комплектующих собственной разработки, а следовательно имеет низкие цены и гарантию производителя. Компания осуществляет полное гарантийное и постгарантийное сервисное обслуживание, любую вышедшую из строя деталь вы сможете заказать в нашей сервисной службе.</p>
+
+	</div>
+</section>
+
+
+
+
+
+<section class="pagesection sc_productlist-faq">
+	<div class="container-fluid">
+
+
+		<h2 class="h--centered-md">Частые вопросы</h2>
+
+
+		<div class="block-faq" id="id_block-faq">
+
+			<div class="faq__item">
+				<div class="faq__item-q" data-bs-toggle="collapse" data-bs-target="#id_faq1" aria-expanded="true">
+					Какую вы даете гарантию на душевые уголки?
+				</div>
+				<div id="id_faq1" class="faq__item-a collapse show" data-bs-parent="#id_block-faq">
+					<p>Гарантия распространяется на все изделия нашей фабрики в тех случаях, когда изделие выходит из строя или функционирует некорректно из-за дефектов. Срок — 5 лет. На цветные комплекты — 1 год. Подробнее тут: ссылка на страницу. Внимание! Гарантия действует только при монтаже сертифицированной сервисной службой.</p>
+				</div>
+			</div>
+
+			<div class="faq__item">
+				<div class="faq__item-q" data-bs-toggle="collapse" data-bs-target="#id_faq2" aria-expanded="true">
+					Возможен ли монтаж изделия на пол?
+				</div>
+				<div id="id_faq2" class="faq__item-a collapse show" data-bs-parent="#id_block-faq">
+					<p>Душевой уголок можно смонтировать на поддон или пол, в зависимости от ваших потребностей. Поддоны стандартных размеров также можно приобрести у нас в магазине.</p>
+				</div>
+			</div>
+
+			<div class="faq__item">
+				<div class="faq__item-q" data-bs-toggle="collapse" data-bs-target="#id_faq3" aria-expanded="true">
+					Нужен душевой уголок нестандартных размеров, сможете изготовить?
+				</div>
+				<div id="id_faq3" class="faq__item-a collapse show" data-bs-parent="#id_block-faq">
+					<p>Да, мы производим душевые уголки под любое помещение, нужной вам формы и размера. В наличии более 200 цветовых решений, 8 видов стекла, алюминиевый профиль в различных вариантах исполнения (хром, золотое, белый и др.) и фурнитура премиум-класса из латуни. На стекло можно нанести пескоструйный рисунок и защитное покрытие
+						<a href="#">GuteClean</a>. Оформить заказ на нестандартное изделие можно <a href="#">на это странице</a>.</p>
+				</div>
+			</div>
+
+			<div class="faq__item">
+				<div class="faq__item-q" data-bs-toggle="collapse" data-bs-target="#id_faq4" aria-expanded="true">
+					Какие варианты доставки вы предлагаете?
+				</div>
+				<div id="id_faq4" class="faq__item-a collapse show" data-bs-parent="#id_block-faq">
+					<p>Доставка душевых уголков по Москве осуществляется фирменным транспортом (до подъезда или квартиры). В пределах МКАД — бесплатно, за пределы МКАД до 30 км — 2000 руб. Доставка по регионам России — транспортными компаниями ЦАП, ПЭК, Деловые линии. Стоимость рассчитывается индивидуально.</p>
+				</div>
+			</div>
+
+			<div class="faq__item">
+				<div class="faq__item-q" data-bs-toggle="collapse" data-bs-target="#id_faq5" aria-expanded="true">
+					Какие возможны варианты конструкции дверей?
+				</div>
+				<div id="id_faq5" class="faq__item-a collapse show" data-bs-parent="#id_block-faq">
+					<p>Мы предлагаем душевые уголки с раздвижной, распашной и складной (гармошка) конструкцией дверей.</p>
+				</div>
+			</div>
+
+			<div class="faq__item">
+				<div class="faq__item-q" data-bs-toggle="collapse" data-bs-target="#id_faq6" aria-expanded="true">
+					Говорят, что вы брендируете китайские душевые уголки. Это правда?
+				</div>
+				<div id="id_faq6" class="faq__item-a collapse show" data-bs-parent="#id_block-faq">
+					<p>Нет, вся продукция производится на собственной фабрике в Подмосковье. Локализация производства составляет 95%.</p>
+				</div>
+			</div>
+
+			<div class="faq__item">
+				<div class="faq__item-q" data-bs-toggle="collapse" data-bs-target="#id_faq7" aria-expanded="true">
+					У меня в ванной комнате высокие потолки, есть ли возможность изготовить душевой уголок с высотой более 190/200 см?
+				</div>
+				<div id="id_faq7" class="faq__item-a collapse show" data-bs-parent="#id_block-faq">
+					<p>Да, есть возможность изготовить душевой уголок по индивидуальным размерам. Комфортная максимальная высота душевого ограждения 220 cм. Возможная высота индивидуальных проектов 240-280.</p>
+				</div>
+			</div>
+
+			<div class="faq__item">
+				<div class="faq__item-q" data-bs-toggle="collapse" data-bs-target="#id_faq8" aria-expanded="true">
+					Интересует прочность стекла, легко ли его разбить?
+				</div>
+				<div id="id_faq8" class="faq__item-a collapse show" data-bs-parent="#id_block-faq">
+					<p>Душевые уголки изготовлены из специального закаленного стекла, которое выдерживает сильные механическое удары.</p>
+				</div>
+			</div>
+
+			<div class="faq__item">
+				<div class="faq__item-q" data-bs-toggle="collapse" data-bs-target="#id_faq9" aria-expanded="true">
+					У меня неровная стена в ванной комнате, будут ли проблемы с установкой или герметичностью душевого уголка?
+				</div>
+				<div id="id_faq9" class="faq__item-a collapse show" data-bs-parent="#id_block-faq">
+					<p>В случае неровности на ванной или больших уклонов на стене или на полу, существуют несколько вариантов изготовления душевых ограждений. Самый простой вариант: стандартное душевое ограждение с использованием профильных систем, которые имеют телескопический способ регулировки и гасят эти уклоны. В индивидуальных случаях можно изготовить стекло на заказ с трапециевидным вырезом под нужный уклон (однако это дороже).</p>
+				</div>
+			</div>
+
+			<div class="faq__item">
+				<div class="faq__item-q" data-bs-toggle="collapse" data-bs-target="#id_faq10" aria-expanded="true">
+					Есть ли у ваших душевых углов водоотталкивающее покрытие?
+				</div>
+				<div id="id_faq10" class="faq__item-a collapse show" data-bs-parent="#id_block-faq">
+					<p>Да, стёкла наших изделий могут быть покрыты уникальным водоотталкивающим средством GuteClean, обеспечивающим защиту от известкового налёта, грязи, пятен и облегчающим задачу чистки душевой кабины.</p>
+				</div>
+			</div>
+
+			<div class="faq__item">
+				<div class="faq__item-q" data-bs-toggle="collapse" data-bs-target="#id_faq11" aria-expanded="true">
+					Какой толщины закаленное стекло используется в стеклянных душевых ограждениях? Какая разница между стеклом с разной толщиной?
+				</div>
+				<div id="id_faq11" class="faq__item-a collapse show" data-bs-parent="#id_block-faq">
+					<p>Толщина стекла душевого ограждения обусловлена его конструкцией и размером изделия. Чем больше сегмент стекла, тем толще должно быть стекло (во избежание парусности). Например, для изделий 100 на 100 или 120 на 80 обычно применяется стекло толщиной 6 либо 8 мм. Стекло 10 мм в основном используется для изготовления изделий больших размеров, таких как 150 на 220 и т.п. При толщине стекла 10 мм поворотные и рельсовые механизмы подвергает большому износу и быстрому выходу из эксплуатации.</p>
+				</div>
+			</div>
+
+			<div class="faq__item">
+				<div class="faq__item-q" data-bs-toggle="collapse" data-bs-target="#id_faq12" aria-expanded="true">
+					Можно ли смонтировать душевой уголок посередине стены?
+				</div>
+				<div id="id_faq12" class="faq__item-a collapse show" data-bs-parent="#id_block-faq">
+					<p>Такая возможность имеется, для этого покупают пристенные уголки, они могут монтироваться посередине стенок. Для такого варианта монтажа лучше подобрать прямоугольную или закруглённую форму.</p>
+				</div>
+			</div>
+
+			<div class="faq__item">
+				<div class="faq__item-q" data-bs-toggle="collapse" data-bs-target="#id_faq13" aria-expanded="true">
+					Какую фурнитуру вы используете для своих изделий?
+				</div>
+				<div id="id_faq13" class="faq__item-a collapse show" data-bs-parent="#id_block-faq">
+					<p>При производстве душевых ограждений мы используем фурнитуру премиум-класса из латуни. Мы также можем предложить покраску фурнитуры в любые цвета c использованием сырья высшей категории DUPONT и нанесение гальванического покрытия.</p>
+				</div>
+			</div>
+
+			<div class="faq__item">
+				<div class="faq__item-q" data-bs-toggle="collapse" data-bs-target="#id_faq14" aria-expanded="true">
+					Какой профиль вы используете для своих изделий?
+				</div>
+				<div id="id_faq14" class="faq__item-a collapse show" data-bs-parent="#id_block-faq">
+					<p>В каркасных вариантах душевых ограждений мы используем алюминиевый профиль, выполненный из высококачественного сплава и защищенный специальным покрытием от щелочной среды. Мы также можем предложить покраску профиля в любые цвета c использованием сырья высшей категории DUPONT и нанесение гальванического покрытия.</p>
+				</div>
+			</div>
+
+		</div>
+
+
+	</div>
+</section>
+
+
+
+
+
+<footer class="footer">
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="col-6 col-md-3">
+      <ul class="footer__menu">
+        <li class="menu-hdr">Компания<span></span></li>
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Партнерам</a></li>
+        <li><a href="#">Где купить?</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li>&nbsp;</li>
+        <li><a href="#">Публичный договор-оферта</a></li>
+        <li><a href="#">Политика конфиденциальности</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md-3">
+      <ul class="footer__menu">
+        <li class="menu-hdr">Каталог<span></span></li>
+        <li><a href="#">Душевые ограждения</a></li>
+        <li><a href="#">Поддоны для душа</a></li>
+        <li><a href="#">Фурнитура и комплектующие</a></li>
+        <li><a href="#">Нестандартные решения</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md-3">
+      <ul class="footer__menu">
+        <li class="menu-hdr">Сервис<span></span></li>
+        <li><a href="#">Покраска</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Монтаж</a></li>
+        <li><a href="#">Сервисное обслуживание</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md-3">
+      <ul class="footer__menu">
+        <li class="menu-hdr">Профессионалам<span></span></li>
+        <li><a href="#">Программы сотрудничества</a></li>
+        <li><a href="#">Сертификаты</a></li>
+        <li><a href="#">Для скачивания</a></li>
+        <li><a href="#">Экспозиции</a></li>
+        <li><a href="#">Видео</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">&nbsp;</div>
+    <div class="col-md-6">
+      <form class="footer__codesearch-form">
+        <input type="submit" class="codesearch-form__search" title="Найти" value="">
+        <input id="fld_codesearch" type="search" placeholder="Найти по коду товара">
+      </form>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-6">
+      <div class="footer__copy">
+        &copy;&nbsp;2009—2023 Gutewetter.<br>
+        Все права защищены.
+      </div>
+    </div>
+    <div class="col-6">
+      <a href="https://www.promoting.ru/" class="promoting" target="_blank" title="Сделано в МА Промотинг."><img src="img/promoting.png" alt="Маркетинговое агентство Promoting."></a>
+    </div>
+  </div>
+
+
+</div>
+</footer>
+
+
+
+
+
+<div class="barbtm fixed-bottom">
+<div class="container-fluid">
+
+  <ul class="barbtm__contact">
+    <li>
+      <a href="tel:+74956462626" class="contact-tel">
+        <div class="contact-ico hidden-md-up" title="Позвонить: +7 495 646-26-26"><img src="img/if-tel.svg" alt="Позвонить"></div>
+        <span class="hidden-md-down">+7 495 <strong>646-26-26</strong></span>
+      </a>
+    </li>
+    <li>
+      <a href="mailto:info@gutewetter.ru" class="contact-email">
+        <div class="contact-ico hidden-md-up" title="Написать: info@gutewetter.ru"><img src="img/if-email.svg" alt="Написать"></div>
+        <span class="hidden-md-down">info@gutewetter.ru</span>
+      </a>
+    </li>
+  </ul>
+
+  <ul class="barbtm__soc">
+    <li title="Вконтакте"><a href="#"><img src="img/if-socvk.svg" alt="Вконтакте"></a></li>
+    <li title="Youtube"><a href="#"><img src="img/if-socyoutube.svg" alt="Youtube"></a></li>
+    <li title="WhatsApp"><a href="#"><img src="img/if-socwhatsapp.svg" alt="WhatsApp"></a></li>
+    <li title="Viber"><a href="#"><img src="img/if-socviber.svg" alt="Viber"></a></li>
+    <li title="Telegram"><a href="#"><img src="img/if-soctg.svg" alt="Telegram"></a></li>
+  </ul>
+  
+  <ul class="barbtm__tools hidden-xs">
+    <li title="Вы смотрели"><a href="#"><img src="img/if-eye.svg" alt=""><span class="hidden-lg-down">Вы смотрели</span></a></li>
+    <li title="Избранное"><a href="#"><img src="img/if-fav.svg" alt=""><span class="hidden-lg-down">Избранное</span></a></li>
+    <li title="Сравнение"><a href="#"><img src="img/if-cmp.svg" alt=""><span class="hidden-lg-down">Сравнение</span></a></li>
+  </ul>
+
+  <div class="barbtm__cart" title="Ваша корзина">
+    <a href="#"><img src="img/if-cart.svg" alt=""><span class="hidden-md-down">1 ед. 20 000 <i class="fal fa-ruble-sign"></i></span></a>
+  </div>
+
+</div>
+</div>
+
+
+
+
+
+<div class="modal fade" id="id_modal-login" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h3>Авторизация</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть окно"></button>
+      </div>
+
+      <div class="modal-body">
+        <form name="fm_user-auth">
+          <div class="form-group row">
+            <label for="fm_user-auth__login" class="col-sm-4">Ваш e-mail:</label>
+            <div class="col-sm-8"><input type="email" name="login" id="fm_user-auth__login" class="form-control"></div>
+          </div>
+          <div class="form-group row">
+            <label for="fm-user-auth__password" class="col-sm-4">Ваш пароль:</label>
+            <div class="col-sm-8"><input type="password" name="password" id="fm-user-auth__password" class="form-control">
+          </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-8">
+              <button class="b-btn">Войти</button>
+          </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-8 clearfix">
+              <a href="#">Забыли пароль?</a>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+
+
+
+
+
+</body>
+</html>

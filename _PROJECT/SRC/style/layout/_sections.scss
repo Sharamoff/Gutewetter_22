@@ -53,8 +53,17 @@
 }
 
 .sc_productlist-filter {
-  padding: 7rem 0 0 0;
+  padding: 6rem 0 0 0;
   background: $c-gray-bk;
+
+  @include media-breakpoint-down(md) {
+    padding-top: 7rem;
+  }
+
+  @include media-breakpoint-only(xs) {
+    padding-top: 6rem;
+  }
+
 }
 
 .sc_productlist-compilation {
@@ -147,8 +156,9 @@
   padding: 0;
 }
 
-
-
+.sc_configurator {
+  min-height: 60vh;
+}
 
 
 

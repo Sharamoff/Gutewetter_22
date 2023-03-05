@@ -48,6 +48,11 @@ p {
   &.fixed-top {
     position: fixed;
     top: 0;
+    transition: opacity 1s;
+  }
+
+  &.transparentize {
+    opacity: 0;
   }
 
   .breadcrumb__hdr {
@@ -89,6 +94,7 @@ p {
 
   .breadcrumb-submenu {
     margin-top: 0;
+    transition: none;
 
     .dlv {
       border-color: transparent;

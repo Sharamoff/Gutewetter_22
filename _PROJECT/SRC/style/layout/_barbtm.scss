@@ -60,6 +60,7 @@
 		align-items: center;
 		font-size: $font-size-base;
 		margin-right: 2rem;
+		color: $c-gray-invert;
 
 		@include media-breakpoint-down(md) {
 			font-size: $font-size-base-md;

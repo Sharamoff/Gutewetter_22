@@ -10,7 +10,7 @@ label {
 	font-size: $font-size-base;
 	cursor: pointer;
 	line-height: $line-height-min !important;
-	margin-bottom: 0.2rem !important;
+	//margin-bottom: 0.2rem !important;
 	user-select: none;
 
 	&.required:before {
@@ -57,6 +57,17 @@ input[type="search"] {
 		display: none;
 	}
 
+}
+
+input[type='number'] {
+	-moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	appearance: none;
+	margin: 0;
 }
 
 input[type="checkbox"] {
@@ -114,13 +125,14 @@ input[type="radio"] {
 }
 
 .form-check {
-	margin-bottom: 0.5rem;
-	padding-top: 0.2rem;
+	display: flex;
+	align-items: flex-start;
+	padding: 0;
 
 	label {
 		font-size: $font-size-base;
-		color: $c-black;
-		transition: $transition-all;
+		color: $c-gray;
+		padding: 0 5px;
 	}
 
 	&:hover {
@@ -132,11 +144,14 @@ input[type="radio"] {
 	}
 
 	.form-check-input {
-		margin-top: 0;
-		margin-left: -1.3em;
+		margin: 0;
+		cursor: pointer;
 	}
 
 }
+
+.label--l {	text-align: left; }
+.label--r {	text-align: right; }
 
 .form-check-inline {
 	margin-right: 2rem;
@@ -150,6 +165,11 @@ input[type="radio"] {
 
 .col-form-label {
 	margin-top: 0.3rem;
+
+	label {
+		margin-bottom: 0 !important;
+	}
+
 }
 
 

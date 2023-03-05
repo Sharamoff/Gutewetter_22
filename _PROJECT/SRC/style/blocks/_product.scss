@@ -491,6 +491,10 @@
     justify-content: center;
   }
 
+  @include media-breakpoint-only(xs) {
+    justify-content: space-between;
+  }
+
   > li {
     margin: 0;
 
@@ -502,16 +506,26 @@
       padding: 1.5rem 0 1rem 0;
       margin: 0 0.5rem;
       transition: none;
+      border-bottom: solid 2px transparent;
+
+      @include media-breakpoint-down(lg) {
+        font-size: $font-size-basemax-md;
+      }
 
       @include media-breakpoint-down(md) {
         font-size: $font-size-basemax-md;
         padding: 1rem 0 0.5rem 0;
-        margin: 0 2rem;
+        margin: 0 1rem;
       }
 
       @include media-breakpoint-down(sm) {
         font-size: $font-size-basemax-sm;
         padding: 0.5rem 0;
+      }
+
+      @include media-breakpoint-only(xs) {
+        padding: 0.8rem 0 0.2rem 0;
+        margin: 0 0.5rem;
       }
 
       &:hover {
