@@ -70,15 +70,13 @@ h2,
 	}
 
 	& + h4 {
-		margin-top: -1rem;
-		margin-bottom: 3rem;
+		margin-top: -2rem;
+		margin-bottom: 2rem;
 		font-size: $font-size-basemax;
 		line-height: $line-height !important;
 		font-weight: 500 !important;
 
 		@include media-breakpoint-down(md) {
-			margin-top: -2rem;
-			margin-bottom: 2rem;
 			font-size: $font-size-basemax-md;
 		}
 

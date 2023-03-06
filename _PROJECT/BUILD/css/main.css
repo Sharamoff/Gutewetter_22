@@ -1340,6 +1340,7 @@ header a:hover {
 
 .sc_configurator {
   min-height: 60vh;
+  padding-top: 2rem;
 }
 
 footer {
@@ -2089,8 +2090,8 @@ h2 + h3,
 }
 h2 + h4,
 .mainhdr + h4 {
-  margin-top: -1rem;
-  margin-bottom: 3rem;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
   font-size: 2.1rem;
   line-height: 1.2 !important;
   font-weight: 500 !important;
@@ -2098,8 +2099,6 @@ h2 + h4,
 @media (max-width: 767.98px) {
   h2 + h4,
 .mainhdr + h4 {
-    margin-top: -2rem;
-    margin-bottom: 2rem;
     font-size: 1.9rem;
   }
 }
@@ -5715,7 +5714,7 @@ OL.ol--cont > li:before {
   justify-content: center;
   align-items: center;
   padding: 0;
-  margin: 4rem 0 1rem 0;
+  margin: 2rem 0 1rem 0;
 }
 .block-stepindicator > li:not(.stepindicator__arrow) {
   display: block;
@@ -5769,7 +5768,7 @@ OL.ol--cont > li:before {
 
 .plate-step {
   display: flex;
-  margin-top: 4rem;
+  margin-top: 2rem;
   justify-content: center;
 }
 @media (max-width: 575.98px) {
@@ -5818,6 +5817,7 @@ OL.ol--cont > li:before {
   flex-wrap: nowrap;
   justify-content: center;
   gap: 2rem;
+  margin-top: -0.3rem;
 }
 .block-step__side .form-check-label {
   font-size: 13px;
@@ -5833,6 +5833,10 @@ OL.ol--cont > li:before {
   }
 }
 @media (max-width: 575.98px) {
+  .block-step__side .form-check-label {
+    margin-top: 0.1rem;
+    margin-bottom: 0;
+  }
   .block-step__side .form-check-label:before {
     content: "";
   }
@@ -5873,7 +5877,7 @@ OL.ol--cont > li:before {
   flex-flow: column;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 .block-steppic__img img {
   height: auto;
@@ -5951,6 +5955,7 @@ OL.ol--cont > li:before {
 }
 .stepcalc-sizes.active {
   display: flex;
+  flex-wrap: nowrap;
   opacity: 1;
   transition: 1s;
 }

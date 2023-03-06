@@ -557,7 +557,7 @@ $('#du-po .sidecheck__r').on('click', function () {
 
 // configurator step 3 programming
 
-$('#id_size-LCH').on('click', function () {
+$('#id_size-LCH').on('change', function () {
   const value = $(this).val();
   if (value == 0) {
     $('#id_size-LCH1').removeClass('active');
@@ -572,7 +572,7 @@ $('#id_size-LCH').on('click', function () {
     $('#id_size-LCH2').addClass('active');
   };
 });
-$('#id_size-LCK').on('click', function () {
+$('#id_size-LCK').on('change', function () {
   const value = $(this).val();
   if (value == 0) {
     $('#id_size-LCK1').removeClass('active');
@@ -587,7 +587,7 @@ $('#id_size-LCK').on('click', function () {
     $('#id_size-LCK2').addClass('active');
   };
 });
-$('#id_size-MCH').on('click', function () {
+$('#id_size-MCH').on('change', function () {
   const value = $(this).val();
   if (value == 0) {
     $('#id_size-MCH1').removeClass('active');
@@ -602,7 +602,7 @@ $('#id_size-MCH').on('click', function () {
     $('#id_size-MCH2').addClass('active');
   };
 });
-$('#id_size-MCK').on('click', function () {
+$('#id_size-MCK').on('change', function () {
   const value = $(this).val();
   if (value == 0) {
     $('#id_size-MCK1').removeClass('active');
@@ -617,7 +617,7 @@ $('#id_size-MCK').on('click', function () {
     $('#id_size-MCK2').addClass('active');
   };
 });
-$('#id_size-RCH').on('click', function () {
+$('#id_size-RCH').on('change', function () {
   const value = $(this).val();
   if (value == 0) {
     $('#id_size-RCH1').removeClass('active');
@@ -632,7 +632,7 @@ $('#id_size-RCH').on('click', function () {
     $('#id_size-RCH2').addClass('active');
   };
 });
-$('#id_size-RCK').on('click', function () {
+$('#id_size-RCK').on('change', function () {
   const value = $(this).val();
   if (value == 0) {
     $('#id_size-RCK1').removeClass('active');

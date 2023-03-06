@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   padding: 0;
-  margin: 4rem 0 1rem 0;
+  margin: 2rem 0 1rem 0;
 
   > li:not(.stepindicator__arrow)  {
     display: block;
@@ -65,7 +65,7 @@
 
 .plate-step {
   display: flex;
-  margin-top: 4rem;
+  margin-top: 2rem;
   justify-content: center;
 
   @include media-breakpoint-only(xs) {
@@ -128,6 +128,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     gap: 2rem;
+    margin-top: -0.3rem;
 
     .form-check-label {
       font-size: $font-size-fixed;
@@ -143,6 +144,8 @@
       }
 
       @include media-breakpoint-only(xs) {
+        margin-top: 0.1rem;
+        margin-bottom: 0;
 
         &:before {
           content: '';
@@ -192,7 +195,7 @@
   flex-flow: column;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 4rem;
+  margin-top: 3rem;
 
   &__img {
 
@@ -285,6 +288,7 @@
 
   &.active {
     display: flex;
+    flex-wrap: nowrap;
     opacity: 1;
     transition: 1s;
   }

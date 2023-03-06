@@ -146,6 +146,7 @@
   @include media-breakpoint-down(sm) {
     padding-top: 3rem;
   }
+
 }
 
 .sc_wtbmap {
@@ -158,6 +159,7 @@
 
 .sc_configurator {
   min-height: 60vh;
+  padding-top: 2rem;
 }
 
 
