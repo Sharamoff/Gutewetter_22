@@ -1240,16 +1240,6 @@ header a:hover {
   padding: 6rem 0 0 0;
   background: #F5F5F6;
 }
-@media (max-width: 767.98px) {
-  .sc_productlist-filter {
-    padding-top: 7rem;
-  }
-}
-@media (max-width: 575.98px) {
-  .sc_productlist-filter {
-    padding-top: 6rem;
-  }
-}
 
 .sc_productlist-compilation {
   background: #F5F5F6;
@@ -1303,17 +1293,6 @@ header a:hover {
 
 .sc_wtbfilter {
   background: #F5F5F6;
-  padding-bottom: 6rem;
-}
-@media (max-width: 767.98px) {
-  .sc_wtbfilter {
-    padding-bottom: 4rem;
-  }
-}
-@media (max-width: 575.98px) {
-  .sc_wtbfilter {
-    padding-bottom: 3rem;
-  }
 }
 
 .sc_wtblist {
@@ -1340,7 +1319,6 @@ header a:hover {
 
 .sc_configurator {
   min-height: 60vh;
-  padding-top: 2rem;
 }
 
 footer {

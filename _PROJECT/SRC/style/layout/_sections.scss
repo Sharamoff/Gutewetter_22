@@ -55,15 +55,6 @@
 .sc_productlist-filter {
   padding: 6rem 0 0 0;
   background: $c-gray-bk;
-
-  @include media-breakpoint-down(md) {
-    padding-top: 7rem;
-  }
-
-  @include media-breakpoint-only(xs) {
-    padding-top: 6rem;
-  }
-
 }
 
 .sc_productlist-compilation {
@@ -124,16 +115,6 @@
 
 .sc_wtbfilter {
   background: $c-gray-bk;
-  padding-bottom: 6rem;
-
-  @include media-breakpoint-down(md) {
-    padding-bottom: 4rem;
-  }
-
-  @include media-breakpoint-down(sm) {
-    padding-bottom: 3rem;
-  }
-
 }
 
 .sc_wtblist {
@@ -159,7 +140,6 @@
 
 .sc_configurator {
   min-height: 60vh;
-  padding-top: 2rem;
 }
 
 
