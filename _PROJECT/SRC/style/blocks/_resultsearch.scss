@@ -1,0 +1,101 @@
+.form-resultsearch {
+  display: flex;
+  align-items: center;
+
+  input[type="search"] {
+    -webkit-appearance: none;
+    height: 3.6rem;
+    background: $c-white;
+    border: solid 1px $color-border;
+    border-left: none;
+    border-radius: 0 $border-radius $border-radius 0;
+    font-size: $font-size-basemed;
+    width: 99%;
+
+    @include media-breakpoint-down(md) {
+      font-size: $font-size-base-md;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-base-sm;
+    }
+
+  }
+
+  @include placeholder {
+    color: $c-gray-invert;
+  }
+
+  .resultsearch__search {
+    height: 3.6rem;
+    width: 3.2rem;
+    background: $c-white url("../img/lupa-menu.svg") center right no-repeat;
+    border: solid 1px $color-border;
+    border-right: none;
+    border-radius: $border-radius 0 0 $border-radius;
+  }
+
+}
+
+.block-resultsearch {
+
+  > li {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  a {
+    display: block;
+    color: $c-gray;
+
+    &:hover {
+      color: $color-link-hover;
+      text-decoration: none;
+    }
+
+  }
+
+  .resultserach__hdr {
+    font-size: $font-size-basemax;
+    font-weight: 500;
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-down(md) {
+      font-size: $font-size-basemax-md;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-basemax-sm;
+    }
+
+  }
+
+  .resultserach__txt {
+    margin-bottom: 1rem;
+  }
+
+  .resultserach__link {
+    color: $color-link;
+    text-decoration: underline;
+
+    &:hover {
+      color: $color-link-hover;
+      text-decoration: none;
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

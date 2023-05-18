@@ -1,0 +1,57 @@
+.block-sizes {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+
+  h3 {
+    display: inline-block;
+    font-size: $font-size-basemax;
+    color: $c-white;
+    background: $c-gray;
+    text-align: center;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+    min-width: 8rem;
+
+    @include media-breakpoint-down(md) {
+      font-size: $font-size-basemax-md;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-basemax-sm;
+    }
+
+    @include media-breakpoint-only(xs) {
+      min-width: 7.3rem;
+    }
+
+  }
+
+  .sizes__items {
+    display: flex;
+    flex-wrap: wrap;
+
+    a {
+      display: block;
+      padding: 0.5rem;
+      margin: 0 1rem 1rem 0;
+      color: $c-gray;
+      background: transparentize($c-gray-light, 0.75);
+      text-align: center;
+      min-width: 8rem;
+
+      @include media-breakpoint-only(xs) {
+        min-width: 7.3rem;
+      }
+
+      &:hover {
+        color: $color-link-hover;
+        background: transparentize($c-gray-light, 0.5);
+        text-decoration: none;
+      }
+
+
+    }
+
+  }
+
+}

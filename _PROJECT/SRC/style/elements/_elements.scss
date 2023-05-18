@@ -90,6 +90,14 @@ p {
 
     }
 
+    &.nocollapsed {
+
+      &:after {
+        content: "\f054";
+      }
+
+    }
+
   }
 
   .breadcrumb-submenu {
@@ -187,10 +195,28 @@ p {
 
       &.fa-chevron-left {
         margin-right: 0.8rem;
+
+        @include media-breakpoint-down(sm) {
+          margin-right: 0;
+        }
+
       }
 
       &.fa-chevron-right {
         margin-left: 0.8rem;
+
+        @include media-breakpoint-down(sm) {
+          margin-left: 0;
+        }
+
+      }
+
+    }
+
+    span {
+
+      @include media-breakpoint-down(sm) {
+        display: none;
       }
 
     }
@@ -388,3 +414,27 @@ p {
 }
 
 
+.label--new {
+  background-color: $c-blue;
+  color: $c-white;
+}
+
+.label--action {
+  background-color: $c-red;
+  color: $c-white;
+}
+
+.label--sale {
+  background-color: #de1904;
+  color: $c-white;
+}
+
+.label--markdown {
+  background-color: #E27800;
+  color: $c-white;
+}
+
+.label--popular {
+  background-color: #1FB244;
+  color: $c-white;
+}

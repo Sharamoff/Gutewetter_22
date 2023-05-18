@@ -77,16 +77,16 @@ section {
 			&:nth-child(odd) {
 				> div,
 				> a {
-					margin-left: auto;
-					margin-right: 0;
+					//margin-left: auto;
+					//margin-right: 0;
 				}
 			}
 
 			&:nth-child(even) {
 				> div,
 				> a {
-					margin-left: 0;
-					margin-right: auto;
+					//margin-left: 0;
+					//margin-right: auto;
 				}
 			}
 
@@ -100,8 +100,8 @@ section {
 
 			> div,
 			> a {
-				margin-left: auto !important;
-				margin-right: auto !important;
+				margin-left: auto;
+				margin-right: auto;
 			}
 
 		}

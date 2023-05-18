@@ -2,7 +2,7 @@
 
 
 h1 {
-	font-weight: 400;
+	font-weight: 500;
 	line-height: $line-height-h;
 	font: $font-h3;
 	margin: 0 0 3rem 0;
@@ -30,6 +30,16 @@ h1 {
 		}
 
 	}
+
+	.h1--small {
+		display: block;
+		margin-top: 0.3rem;
+		font-size: $font-size-base;
+		line-height: 1.3;
+		font-weight: 500;
+
+	}
+
 
 }
 

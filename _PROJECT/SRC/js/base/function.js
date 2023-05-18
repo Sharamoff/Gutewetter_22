@@ -647,7 +647,32 @@ $('#id_size-RCK').on('change', function () {
 
 
 
+// slider portfolio
 
+$('#id_portfolio').slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  dots: true,
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  variableWidth: true,
+  responsive: [
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: '30px'
+      }
+    }
+  ]
+});
+
+
+// flex gallery
+$('.flex-images').flexImages({rowHeight: 360});
 
 
 

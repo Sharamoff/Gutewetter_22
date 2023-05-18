@@ -1,0 +1,56 @@
+///////////////////////////////////////////////
+
+
+
+// гибкие картинки
+
+.flex-images {
+	overflow: hidden;
+
+	.item {
+		float: left;
+		margin: 0;
+		box-sizing: content-box;
+		overflow: hidden;
+		position: relative;
+		border: solid 2px transparent;
+		opacity: 0.95;
+
+		&:hover {
+			border-color: $c-white;
+			opacity: 1;
+
+			img {
+				scale: 1.05;
+			}
+
+		}
+
+		img {
+			display: block;
+			width: auto;
+			height: 100%;
+			transition: $transition-all;
+		}
+
+		.flex-num {
+			position: absolute;
+			display: inline-block;
+			width: 25px;
+			height: 25px;
+			line-height: 25px;
+			text-align: center;
+			background-color: rgba(0,0,0,0.5);
+			color: #ffffff;
+			top: 0;
+			left: 0;
+			z-index: 2;
+		}
+
+	}
+
+}
+
+
+
+

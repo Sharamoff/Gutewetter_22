@@ -107,6 +107,168 @@
 
 
 
+.menu-productcategory {
+  list-style: none;
+  margin: 0 0 2rem 0;
+  padding: 0;
+
+  > li {
+    margin-bottom: 1.5rem;
+    font-size: $font-size-basemed;
+    color: $c-gray;
+    cursor: pointer;
+
+    @include media-breakpoint-down(md) {
+      font-size: $font-size-basemed-md;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-basemed-sm;
+      margin-bottom: 1rem;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: $c-blue;
+    }
+
+  }
+
+  > li:before {
+    font-family: $fontawesome;
+    content: "\f105";
+    font-weight: 300;
+    margin-right: 0.8rem;
+    color: $c-gray-light;
+  }
+
+  .root {
+    font-size: $font-size-base;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 2rem;
+
+    &:before {
+      content: "";
+      margin-right: 0;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: $font-size-base-md;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-base-sm;
+    }
+
+  }
+
+  .active,
+  .active:hover {
+    color: $c-black !important;
+    font-weight: 600;
+    cursor: default;
+  }
+
+  a {
+    color: $c-gray;
+
+    &:hover {
+      text-decoration: none;
+      color: $c-blue;
+    }
+
+  }
+
+}
+
+
+
+.block-productcategory {
+  display: flex;
+  flex-wrap: wrap;
+
+  &.active {
+    display: flex;
+  }
+
+  .productcategory__item {
+    display: block;
+    color: $c-gray;
+    text-align: center;
+    margin: 0 1rem 2rem 0;
+    font-size: $font-size-basemed;
+    width: 130px;
+
+    @include media-breakpoint-down(md) {
+      font-size: $font-size-basemed-md;
+      margin-bottom: 1rem;
+      width: 100px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-basemed-sm;
+    }
+
+    span {
+      color: $c-gray;
+    }
+
+    &_img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border: solid 1px $border-color;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      background: $c-white;
+      width: 130px;
+      height: 130px;
+
+      @include media-breakpoint-down(md) {
+        margin-bottom: 0.5rem;
+        width: 100px;
+        height: 100px;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        opacity: 0.75;
+        transition: $transition-all;
+      }
+
+    }
+
+  }
+
+  .productcategory__item:hover {
+    text-decoration: none;
+    color: $c-blue;
+
+    img {
+      opacity: 1;
+    }
+
+  }
+
+}
+
+.productcategory--sub {
+
+  .productcategory__item_img {
+
+    img {
+      height: 80px;
+      min-width: 80px;
+    }
+
+  }
+
+}
 
 
 
