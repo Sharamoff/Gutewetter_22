@@ -154,10 +154,21 @@
 
 .sc_productlist-rootcategory {
   background: $c-gray-bk;
-  padding-bottom: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
 }
 
 .sc_compare {
   background: $c-gray-bk;
 }
 
+.sc_productcategory-filter {
+  background: $c-gray-bk;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
+
+.sc_portfolio {
+  padding-left: 0;
+  padding-right: 0;
+}

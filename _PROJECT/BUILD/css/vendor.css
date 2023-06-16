@@ -5969,8 +5969,7 @@ textarea.form-control-lg {
   float: left;
   width: 100%;
   margin-right: -100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -21779,7 +21778,6 @@ readers do not read off random characters that represent icons */
   }
 }
 .animate__animated.animate__flip {
-  -webkit-backface-visibility: visible;
   backface-visibility: visible;
   animation-name: flip;
 }
@@ -21805,7 +21803,6 @@ readers do not read off random characters that represent icons */
   }
 }
 .animate__flipInX {
-  -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
   animation-name: flipInX;
 }
@@ -21831,7 +21828,6 @@ readers do not read off random characters that represent icons */
   }
 }
 .animate__flipInY {
-  -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
   animation-name: flipInY;
 }
@@ -21852,7 +21848,6 @@ readers do not read off random characters that represent icons */
   animation-duration: calc(1s * 0.75);
   animation-duration: calc(var(--animate-duration) * 0.75);
   animation-name: flipOutX;
-  -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
 }
 @keyframes flipOutY {
@@ -21871,7 +21866,6 @@ readers do not read off random characters that represent icons */
 .animate__flipOutY {
   animation-duration: calc(1s * 0.75);
   animation-duration: calc(var(--animate-duration) * 0.75);
-  -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
   animation-name: flipOutY;
 }

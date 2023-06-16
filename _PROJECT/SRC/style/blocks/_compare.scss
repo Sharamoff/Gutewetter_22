@@ -24,6 +24,7 @@
     background-color: $c-white;
     overflow-x: auto;
     overflow-y: hidden;
+    scrollbar-width: thin;
     padding: 0;
 
     @include media-breakpoint-down(sm) {
@@ -88,6 +89,10 @@
       height: auto;
       overflow: hidden;
       margin: 1rem 0 0 0;
+    }
+
+    form {
+      margin-top: 1.5rem;
     }
 
     .form_hdr {
@@ -175,8 +180,8 @@
   right: 0;
   z-index: 99;
   border: none;
-  background: $c-white;
-  color: $c-black;
+  background: transparent;
+  color: $c-white;
   padding: 0.5rem;
   font-size: 2.5rem;
   line-height: 1;
@@ -184,6 +189,7 @@
 
   &:hover {
     opacity: 1;
+    color: $c-black;
   }
 
 }

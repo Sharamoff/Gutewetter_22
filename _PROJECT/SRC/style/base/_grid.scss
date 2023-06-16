@@ -65,6 +65,11 @@ section {
 .container-fluid {
 	max-width: $m-max;
 	position: relative;
+
+	&.container-fluid--maxwidth {
+		max-width: none !important;
+	}
+
 }
 
 .row {
