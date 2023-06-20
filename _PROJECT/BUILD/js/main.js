@@ -675,7 +675,7 @@ $('#id_portfolio').slick({
 
 
 // flex gallery
-$('.flex-images').flexImages({rowHeight: 360});
+$('.flex-images').flexImages({rowHeight: 450});
 
 
 });
