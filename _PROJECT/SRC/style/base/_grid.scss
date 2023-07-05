@@ -150,6 +150,10 @@ section {
 
 	}
 
+	&.row--centered {
+		justify-content: center;
+	}
+
 }
 
 [class*="col-"].col--r-padded {

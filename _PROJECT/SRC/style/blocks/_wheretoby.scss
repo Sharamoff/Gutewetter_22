@@ -404,15 +404,76 @@
 
   @include media-breakpoint-down(md) {
     margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 
-  img {
-    width: 100%;
-    height: auto;
+  .slick-list {
+    margin: 0;
+  }
+
+  .slick-slide {
+    margin: 0;
+
+    @include media-breakpoint-down(md) {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+  }
+
+  .pic-main {
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+  }
+
+  .pic-mini {
+    margin-top: 10px;
+    overflow: hidden;
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+
+    img {
+      width: auto;
+      height: 100px;
+      opacity: 0.75;
+      filter: grayscale(1);
+      transition: $transition-all;
+
+      &:hover {
+        opacity: 1;
+        filter: grayscale(0);
+      }
+
+    }
+
+    .slick-slide {
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .slick-current {
+
+      img {
+        opacity: 1;
+        filter: grayscale(0);
+      }
+
+    }
+
   }
 
 }
 
+
+.dealer__note {
+  margin-top: 4rem;
+}
 
 
 

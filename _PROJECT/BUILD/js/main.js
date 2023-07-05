@@ -678,4 +678,42 @@ $('#id_portfolio').slick({
 $('.flex-images').flexImages({rowHeight: 450});
 
 
+// slider dealerpic
+$('#id_dealerpic-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  asNavFor: '#id_dealerpic-nav',
+  arrows: true,
+  dots: false,
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 8000,
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px'
+      }
+    }
+  ]
+});
+$('#id_dealerpic-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '#id_dealerpic-for',
+  dots: false,
+  arrows: false,
+  centerMode: true,
+  infinite: true,
+  loop: true,
+  focusOnSelect: true,
+  centerPadding: '50px'
+});
+
+
 });

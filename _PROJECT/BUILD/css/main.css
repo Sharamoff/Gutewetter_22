@@ -217,6 +217,9 @@ section::after {
     display: block;
   }
 }
+.row.row--centered {
+  justify-content: center;
+}
 
 [class*=col-].col--r-padded {
   padding-left: 1.5rem;
@@ -6066,11 +6069,56 @@ OL.ol--cont > li:before {
 @media (max-width: 767.98px) {
   .dealer__pic {
     margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 }
-.dealer__pic img {
+.dealer__pic .slick-list {
+  margin: 0;
+}
+.dealer__pic .slick-slide {
+  margin: 0;
+}
+@media (max-width: 767.98px) {
+  .dealer__pic .slick-slide {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+.dealer__pic .pic-main img {
   width: 100%;
   height: auto;
+}
+.dealer__pic .pic-mini {
+  margin-top: 10px;
+  overflow: hidden;
+}
+@media (max-width: 767.98px) {
+  .dealer__pic .pic-mini {
+    display: none;
+  }
+}
+.dealer__pic .pic-mini img {
+  width: auto;
+  height: 100px;
+  opacity: 0.75;
+  filter: grayscale(1);
+  transition: 0.3s;
+}
+.dealer__pic .pic-mini img:hover {
+  opacity: 1;
+  filter: grayscale(0);
+}
+.dealer__pic .pic-mini .slick-slide {
+  cursor: pointer;
+  text-align: center;
+}
+.dealer__pic .pic-mini .slick-current img {
+  opacity: 1;
+  filter: grayscale(0);
+}
+
+.dealer__note {
+  margin-top: 4rem;
 }
 
 .block-stepindicator {
