@@ -1,6 +1,10 @@
 .block-productgallery {
   position: relative;
-  margin-bottom: 4rem;
+  margin-bottom: 0;
+
+  @include media-breakpoint-down(md) {
+    margin-bottom: 4rem;
+  }
 
   .productgallery__label {
     position: absolute;

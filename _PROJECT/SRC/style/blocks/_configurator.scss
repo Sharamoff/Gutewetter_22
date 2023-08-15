@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   padding: 0;
-  margin: 2rem 0 1rem 0;
+  margin: 2rem 0 2rem 0;
 
   > li:not(.stepindicator__arrow)  {
     display: block;
@@ -58,6 +58,11 @@
     width: 3rem;
     height: 3rem;
     background: url("../img/a-step.svg") right center no-repeat;
+
+    @include media-breakpoint-only(xs) {
+      width: 2rem;
+    }
+
   }
 
 }
@@ -66,17 +71,19 @@
 .plate-step {
   display: flex;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   justify-content: stretch;
 
   @include media-breakpoint-only(xs) {
-    margin: 2rem -15px 0 -15px;
+    margin: 2rem -15px 2rem -15px;
   }
 
 }
 
-.block-step {
-  display: flex;
-  flex-flow: column;
+.block-step,
+.block-step-one,
+.block-step-two,{
+  display: block;
   height: 100%;
   padding: 2rem 1rem;
   border-radius: 1rem;
@@ -89,8 +96,22 @@
   }
 
   &.check {
-    background-color: $c-confcheck !important;
-    border-color: transparentize($c-blue, 0.5);
+    background-color: $c-gray-invert !important;
+    border-color: $c-gray-invert;
+    color: $c-black !important;
+
+    .block-step__title {
+      color: $c-black !important;
+
+      &::before {
+        font-family: $fontawesome;
+        content: '\f00c';
+        margin-right: 0.6rem;
+        color: $c-blue !important;
+      }
+
+    }
+
   }
 
   &:hover {
@@ -116,34 +137,66 @@
 
   }
 
+  &.block-step--icolors {
+    //padding-top: 0.5rem;
+
+    @include media-breakpoint-down(sm) {
+      padding-top: 0.5rem;
+    }
+
+    .block-step__img {
+      width: 100%;
+      height: auto;
+      max-width: 200px;
+
+      @include media-breakpoint-down(sm) {
+        max-width: none;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+    }
+
+    .block-step__title {
+      //margin-top: 0;
+    }
+
+  }
+
   &__img {
     transition: $transition-all;
     align-self: center;
-    height: 120px;
+    width: 100%;
+    max-width: 120px;
+    margin-left: auto;
+    margin-right: auto;
 
     @include media-breakpoint-down(sm) {
-      height: 80px;
+      width: 80px;
     }
 
     img {
-      height: 100%;
-      width: auto;
-      margin-left: auto;
-      margin-right: auto;
+      width: 100%;
+      height: auto;
     }
 
     &.side-l {
+      display: block;
 
       img {
-        transform: rotateY(0deg);
+        //transform: rotateY(0deg);
       }
 
     }
 
     &.side-r {
+      display: none;
 
       img {
-        transform: rotateY(180deg);
+        //transform: rotateY(180deg);
       }
 
     }
@@ -154,7 +207,6 @@
     font-size: $font-size-fixed;
     text-align: center;
     margin-top: 1rem;
-    margin-bottom: -1rem;
 
     @include media-breakpoint-down(sm) {
       font-size: $font-size-fixed-sm;
@@ -166,22 +218,17 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    gap: 2rem;
-    margin-top: 1rem;
-    margin-bottom: -1rem;
+    margin: 0.5rem 1rem -0.5rem 1rem;
 
-    @include media-breakpoint-only(xs) {
-      margin-bottom: -0.5rem;
+    @include media-breakpoint-down(md) {
+      margin-left: 0;
+      margin-right: 0;
     }
 
     .form-check-label {
       font-size: $font-size-fixed;
       line-height: 1;
       margin-bottom: 0.2rem;
-
-      &:before {
-        //content: 'установка ';
-      }
 
       @include media-breakpoint-down(sm) {
         font-size: $font-size-fixed-sm;
@@ -190,10 +237,6 @@
       @include media-breakpoint-only(xs) {
         margin-top: 0.1rem;
         margin-bottom: 0;
-
-        &:before {
-          //content: '';
-        }
 
       }
 
@@ -219,11 +262,13 @@
 
 }
 
+
+
 .block-stepnote {
   font-size: $font-size-basemed;
   line-height: $line-height-p;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 0;
   margin-bottom: 4rem;
 
   @include media-breakpoint-down(md) {
@@ -249,7 +294,7 @@
 
     img {
       height: auto;
-      max-height: 230px;
+      max-height: 240px;
       width: 100%;
     }
 
@@ -411,6 +456,66 @@
 }
 
 
+
+.block-stepreq {
+  margin-top: 3rem;
+
+  .stepreq-plate {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include media-breakpoint-only(xs) {
+      max-width: 100%;
+    }
+
+  }
+
+  .stepreq__item {
+    display: flex;
+    align-items: center;
+    margin: 2rem auto;
+    cursor: pointer;
+
+    > div {
+      flex: 1 1 99%;
+    }
+
+    .item-icon {
+      flex: 1 1 auto;
+      width: 87px;
+      min-width: 87px;;
+      height: 60px;
+      min-height: 60px;
+      margin-right: 10px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: left center;
+    }
+
+    &.item--gc .item-icon {
+      background-image: url("../img/ch-gc.svg");
+    }
+
+    &.item--orn .item-icon {
+      background-image: url("../img/ch-orn.svg");
+    }
+
+  }
+
+  .stepreq__item.check {
+
+    &.item--gc .item-icon {
+      background-image: url("../img/ch-gc-check.svg");
+    }
+
+    &.item--orn .item-icon {
+      background-image: url("../img/ch-orn-check.svg");
+    }
+
+  }
+
+}
 
 
 

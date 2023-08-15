@@ -143,6 +143,17 @@
 
   }
 
+  .productlist__item-onepic {
+    display: block;
+    margin-bottom: 1.5rem;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+  }
+
   .productlist__item-label {
     position: absolute;
     z-index: 10;

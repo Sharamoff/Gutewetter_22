@@ -514,45 +514,46 @@ $('.block-step').on('click', function () {
   $('.block-step').removeClass('check');
   $(this).toggleClass('check');
 });
+$('.block-step-one').on('click', function () {
+  $('.block-step-one').removeClass('check');
+  $(this).toggleClass('check');
+});
+$('.block-step-two').on('click', function () {
+  $('.block-step-two').removeClass('check');
+  $(this).toggleClass('check');
+});
 
 
 // configurator side choice
 
-$('#du-pr .sidecheck__l').on('click', function () {
-  $('#du-pr .block-step__img').removeClass('side-r');
-  $('#du-pr .block-step__img').addClass('side-l');
+$('#dt1 .sidecheck__l').on('click', function () {
+  $('#dt1 .side-l').show();
+  $('#dt1 .side-r').hide();
 });
-$('#du-pr .sidecheck__r').on('click', function () {
-  $('#du-pr .block-step__img').removeClass('side-l');
-  $('#du-pr .block-step__img').addClass('side-r');
-});
-
-$('#du-pt .sidecheck__l').on('click', function () {
-  $('#du-pt .block-step__img').removeClass('side-r');
-  $('#du-pt .block-step__img').addClass('side-l');
-});
-$('#du-pt .sidecheck__r').on('click', function () {
-  $('#du-pt .block-step__img').removeClass('side-l');
-  $('#du-pt .block-step__img').addClass('side-r');
+$('#dt1 .sidecheck__r').on('click', function () {
+  $('#dt1 .side-l').hide();
+  $('#dt1 .side-r').show();
 });
 
-$('#du-ck .sidecheck__l').on('click', function () {
-  $('#du-ck .block-step__img').removeClass('side-r');
-  $('#du-ck .block-step__img').addClass('side-l');
+$('#dt2 .sidecheck__l').on('click', function () {
+  $('#dt2 .side-l').show();
+  $('#dt2 .side-r').hide();
 });
-$('#du-ck .sidecheck__r').on('click', function () {
-  $('#du-ck .block-step__img').removeClass('side-l');
-  $('#du-ck .block-step__img').addClass('side-r');
+$('#dt2 .sidecheck__r').on('click', function () {
+  $('#dt2 .side-l').hide();
+  $('#dt2 .side-r').show();
 });
 
-$('#du-po .sidecheck__l').on('click', function () {
-  $('#du-po .block-step__img').removeClass('side-r');
-  $('#du-po .block-step__img').addClass('side-l');
+$('#dt3 .sidecheck__l').on('click', function () {
+  $('#dt3 .side-l').show();
+  $('#dt3 .side-r').hide();
 });
-$('#du-po .sidecheck__r').on('click', function () {
-  $('#du-po .block-step__img').removeClass('side-l');
-  $('#du-po .block-step__img').addClass('side-r');
+$('#dt3 .sidecheck__r').on('click', function () {
+  $('#dt3 .side-l').hide();
+  $('#dt3 .side-r').show();
 });
+
+
 
 
 // configurator step 3 programming
@@ -648,6 +649,13 @@ $('#id_size-RCK').on('change', function () {
   };
 });
 
+// GuteClean and Ornament check
+$('.item--gc').on('click', function () {
+  $(this).toggleClass('check');
+});
+$('.item--orn').on('click', function () {
+  $(this).toggleClass('check');
+});
 
 
 // slider portfolio
