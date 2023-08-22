@@ -3,7 +3,7 @@ $(document).ready(function () {
 
 //tooltips
 
-$('[data-toggle="tooltip"]').tooltip();
+$('[data-bs-toggle="tooltip"]').tooltip();
 
 
 

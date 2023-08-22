@@ -133,6 +133,17 @@
 
     .block-step__title {
       margin-top: 1rem;
+
+      &.title--top {
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+
+        @include media-breakpoint-down(sm) {
+          margin-bottom: 1rem;
+        }
+
+      }
+
     }
 
   }
@@ -206,7 +217,7 @@
   &__note {
     font-size: $font-size-fixed;
     text-align: center;
-    margin-top: 1rem;
+    //margin-top: 1rem;
 
     @include media-breakpoint-down(sm) {
       font-size: $font-size-fixed-sm;
@@ -517,9 +528,159 @@
 
 }
 
+.plate-step-color,
+.plate-step-dop {
+  width: 100%;
+  margin: 2rem 0;
+  padding: 2rem 4rem;
+  background-color: $color-bk-gray;
 
+  @include media-breakpoint-down(md) {
+    margin: 0;
+  }
 
+  @include media-breakpoint-down(sm) {
+    padding: 2rem 2rem 0.5rem 2rem;
+  }
 
+  h3 {
+    margin-bottom: 3rem;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 2rem;
+    }
+
+  }
+
+  .block-step-color {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 2rem 0;
+  }
+
+  .step-color {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    &__input {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 1.6rem;
+
+      @include media-breakpoint-down(md) {
+        width: 1.8rem;
+        height: 1.8rem;
+        margin-right: 1rem;
+      }
+
+    }
+
+    label {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+
+    &__color {
+      width: 2.2rem;
+      height: 2.2rem;
+      min-width: 2.2rem;
+      min-height: 2.2rem;
+      border-radius: 50%;
+      border: 1px solid #FFFFFF;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.33);
+      margin-right: 0.8rem;
+
+      @include media-breakpoint-down(md) {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0.5rem;
+      }
+
+    }
+
+    &__title {
+      color: $c-gray;
+      text-transform: uppercase;
+      font-weight: 500;
+      white-space: nowrap;
+      margin-top: 2px;
+    }
+
+  }
+
+  .step-color-help {
+    width: 2.4rem;
+    height: 2.4rem;
+    background: $c-white;
+    border: solid 1px $c-gray-invert;
+    border-radius: 50%;
+    color: $c-gray-light;
+    text-align: center;
+    cursor: pointer;
+
+    &:before {
+      content: "?";
+      line-height: 2.2rem;
+    }
+
+  }
+
+  .step-color-dropdown {
+    text-align: center;
+    font-size: $font-size-base;
+    font-weight: 500;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 1rem;
+    border: solid 1px $c-border;
+    border-radius: $border-radius;
+    background-color: $c-white;
+    box-shadow: 0 4px 16px 0px rgba(0, 0, 0, 0.33);
+
+    picture {
+      font-size: $font-size-base;
+      font-weight: 500;
+      text-transform: uppercase;
+      white-space: nowrap;
+      display: block;
+    }
+
+    img {
+      width: 200px;
+      height: auto;
+      display: block;
+      margin-bottom: 0.7rem;
+    }
+
+  }
+
+}
+
+.plate-step-dop {
+  //width: 80%;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: transparent;
+
+  @include media-breakpoint-down(md) {
+    margin-top: 2rem;
+
+    .span--dot {
+      display: none;
+    }
+
+  }
+
+  .step-color__title {
+    text-transform: inherit;
+    white-space: normal;
+  }
+
+}
 
 
 
