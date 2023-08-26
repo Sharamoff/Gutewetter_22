@@ -468,66 +468,6 @@
 
 
 
-.block-stepreq {
-  margin-top: 3rem;
-
-  .stepreq-plate {
-    max-width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-
-    @include media-breakpoint-only(xs) {
-      max-width: 100%;
-    }
-
-  }
-
-  .stepreq__item {
-    display: flex;
-    align-items: center;
-    margin: 2rem auto;
-    cursor: pointer;
-
-    > div {
-      flex: 1 1 99%;
-    }
-
-    .item-icon {
-      flex: 1 1 auto;
-      width: 87px;
-      min-width: 87px;;
-      height: 60px;
-      min-height: 60px;
-      margin-right: 10px;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: left center;
-    }
-
-    &.item--gc .item-icon {
-      background-image: url("../img/ch-gc.svg");
-    }
-
-    &.item--orn .item-icon {
-      background-image: url("../img/ch-orn.svg");
-    }
-
-  }
-
-  .stepreq__item.check {
-
-    &.item--gc .item-icon {
-      background-image: url("../img/ch-gc-check.svg");
-    }
-
-    &.item--orn .item-icon {
-      background-image: url("../img/ch-orn-check.svg");
-    }
-
-  }
-
-}
-
 .plate-step-color,
 .plate-step-dop {
   width: 100%;

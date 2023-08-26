@@ -5,6 +5,10 @@ input:focus {
 	border-color: $color-border;
 }
 
+input:invalid {
+	border-color: transparentize($c-gray-light, 0.33);
+}
+
 label {
 	color: $c-gray-light;
 	font-size: $font-size-base;
@@ -181,7 +185,84 @@ input[type="radio"] {
 
 
 
+.inputnumber {
+	display: flex;
 
+	button {
+		border: none;
+		width: 3.4rem;
+		height: 3.4rem;
+		background: $c-gray-invert;
+		color: $c-gray;
+		opacity: 0.6;
+		border-radius: $border-radius;
+
+		&:hover {
+			opacity: 1;
+		}
+
+	}
+
+	input {
+		border: none;
+		text-align: center;
+		width: 5rem;
+
+		@include media-breakpoint-only(xs) {
+			width: 4rem;
+		}
+
+	}
+
+}
+
+
+
+.input-switch {
+
+	input[type=checkbox] {
+		display: none;
+	}
+
+	label {
+		cursor: pointer;
+		text-indent: -9999px;
+		width: 5.4rem;
+		height: 2.8rem;
+		background: $c-gray-light;
+		display: block;
+		border-radius: 2.8rem;
+		position: relative;
+		margin: 0;
+		padding: 0;
+	}
+
+	label:after {
+		content: '';
+		position: absolute;
+		top: 2px;
+		left: 2px;
+		width: 2.4rem;
+		height: 2.4rem;
+		background: #fff;
+		border-radius: 2.4rem;
+		transition: 0.3s;
+	}
+
+	input:checked + label {
+		background: $color-link;
+	}
+
+	input:checked + label:after {
+		left: calc(100% - 2px);
+		transform: translateX(-100%);
+	}
+
+	label:active:after {
+		width: 3rem;
+	}
+
+}
 
 
 

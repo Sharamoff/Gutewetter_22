@@ -22,6 +22,12 @@ p {
     font-size: $font-size-basemed-sm;
   }
 
+  &.note--excl::before {
+    font-family: $fontawesome;
+    content: '\f06a';
+    margin-right: 0.6rem;
+  }
+
 }
 
 .panel-breadcrumb {
@@ -443,3 +449,6 @@ p {
 .dragscroll {
   //cursor: grab;
 }
+
+
+

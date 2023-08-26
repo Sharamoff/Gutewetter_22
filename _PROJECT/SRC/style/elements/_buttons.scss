@@ -20,6 +20,7 @@ button.disabled:hover {
 	background: $c-gray;
 	border-radius: 0;
 	color: $c-white;
+	text-align: center;
 
 	&:hover {
 		background: $c-black;
@@ -37,7 +38,7 @@ button.disabled:hover {
 	}
 
 	@include media-breakpoint-only(xs) {
-		width: 100% !important;
+		width: 100%;
 	}
 
 	&.btn--blue {
@@ -49,7 +50,7 @@ button.disabled:hover {
 
 	}
 
-	&.btn--contour- {
+	&.btn--contour {
 		background: $c-white;
 		color: $c-blue;
 		border: solid 1px transparentize($c-blue, 0.5);
@@ -64,8 +65,21 @@ button.disabled:hover {
 
 	i {
 		position: relative;
-		top: 0.1rem;
+		top: 1px;
 		margin-right: 0.6rem;
+	}
+
+	.fa-chevron-left {
+		margin-right: 1rem !important;
+		text-align: left;
+		top: -1px;
+	}
+
+	.fa-chevron-right {
+		margin-left: 1rem !important;
+		margin-right: 0 !important;
+		text-align: right;
+		top: -1px;
 	}
 
 }
