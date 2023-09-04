@@ -220,6 +220,21 @@ section::after {
 .row.row--centered {
   justify-content: center;
 }
+.row.row--horizontal {
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+}
+@media (max-width: 575.98px) {
+  .row.row--horizontal {
+    flex-wrap: wrap;
+    align-items: normal;
+  }
+}
+.row.row--horizontal > div {
+  flex: 1 1 auto;
+}
 
 [class*=col-].col--r-padded {
   padding-left: 1.5rem;
@@ -6576,6 +6591,8 @@ OL.ol--cont > li:before {
   background-color: #F5F5F6;
   padding: 2rem 3rem;
   height: 100%;
+  width: 100%;
+  max-width: 40rem;
 }
 @media (max-width: 991.98px) {
   .block-stepcalc {

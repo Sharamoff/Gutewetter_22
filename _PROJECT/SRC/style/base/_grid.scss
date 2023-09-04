@@ -154,6 +154,23 @@ section {
 		justify-content: center;
 	}
 
+	&.row--horizontal {
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: stretch;
+		gap: 2rem;
+
+		@include media-breakpoint-only(xs) {
+			flex-wrap: wrap;
+			align-items: normal;
+		}
+
+		> div {
+			flex: 1 1 auto;
+		}
+
+	}
+
 }
 
 [class*="col-"].col--r-padded {

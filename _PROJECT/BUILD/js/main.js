@@ -526,6 +526,10 @@ $('.block-step-two').on('click', function () {
 
 // configurator side choice
 
+$('#dt0 .sidecheck__l').on('click', function () {
+  $('#dt0 .side-l').show();
+  $('#dt0 .side-r').hide();
+});
 $('#dt1 .sidecheck__l').on('click', function () {
   $('#dt1 .side-l').show();
   $('#dt1 .side-r').hide();
@@ -551,6 +555,10 @@ $('#dt3 .sidecheck__l').on('click', function () {
 $('#dt3 .sidecheck__r').on('click', function () {
   $('#dt3 .side-l').hide();
   $('#dt3 .side-r').show();
+});
+$('#dt4 .sidecheck__r').on('click', function () {
+  $('#dt4 .side-l').hide();
+  $('#dt4 .side-r').show();
 });
 
 

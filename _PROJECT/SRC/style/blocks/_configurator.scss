@@ -328,6 +328,8 @@
   background-color: $c-gray-bk;
   padding: 2rem 3rem;
   height: 100%;
+  width: 100%;
+  max-width: 40rem;
 
   @include media-breakpoint-down(lg) {
     padding: 1.5rem;
