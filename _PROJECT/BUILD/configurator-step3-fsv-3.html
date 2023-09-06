@@ -529,14 +529,13 @@
 <div class="panel-breadcrumb">
 	<div class="container-fluid">
 
-		<div class="breadcrumb__hdr collapsed" role="button" data-bs-toggle="collapse" data-bs-target=".breadcrumb-submenu" aria-expanded="true">Конфигуратор индивидуальных изделий: Шаг 4</div>
+		<div class="breadcrumb__hdr collapsed" role="button" data-bs-toggle="collapse" data-bs-target=".breadcrumb-submenu" aria-expanded="true">Конфигуратор индивидуальных изделий: Шаг 3</div>
 		<div class="breadcrumb-submenu collapse">
 			<div class="dlv"></div>
 			<ul>
 				<li><a href="\">На главную</a></li>
 				<li><a href="configurator-step1.html">Конфигуратор индивидуальных изделий: Шаг 1</a></li>
 				<li><a href="configurator-step2.html">Конфигуратор индивидуальных изделий: Шаг 2</a></li>
-				<li><a href="configurator-step3-fdd.html">Конфигуратор индивидуальных изделий: Шаг 3</a></li>
 			</ul>
 		</div>
 
@@ -560,140 +559,66 @@
 			<li class="stepindicator__arrow"></li>
 			<li><a href="configurator-step2.html">2</a></li>
 			<li class="stepindicator__arrow"></li>
-			<li><a href="configurator-step3-fdd.html">3</a></li>
-			<li class="stepindicator__arrow"></li>
-			<li>4</li>
+			<li>3</li>
 		</ul>
 
 
-		<h3 class="h--centered">Укажите размеры вашей душевой кабины и конфигурацию установочного места</h3>
+		<h3 class="h--centered">Выберите тип перегородки и сторону открывания</h3>
 
 
-		<div class="block-steppic">
-			<div class="block-steppic__img"><img src="img/gallery/forms/fsv-4-size.svg" alt="Душевая перегородка П-образная"></div>
-		</div>
+		<div class="row row--margined plate-step">
 
-
-		<div class="block-stepnote">Укажите общий размер в миллиметрах:<br>
-			От внешнего края традиционного душевого поддона/элемента душевого поддона вровень с полом до облицованной плиткой стены.<br>
-			Для ниши укажите общий размер между двумя плиточными стенами.</div>
-
-
-		<form>
-
-		<div class="row row--horizontal">
-
-			<div class="block-stepcalc">
-					<div class="block-stepcalc__title">Посередине</div>
-
-					<div class="block-stepcalc__input">
-						<label for="id_size-M" class="stepcalc__item-prop">Размер посередине, мм</label>
-						<div class="span--dot"></div>
-						<input type="number" class="form-control" id="id_size-M" value="880">
-					</div>
-					<div class="block-stepcalc__input">
-						<label for="id_size-MH" class="stepcalc__item-prop">Высота, мм</label>
-						<div class="span--dot"></div>
-						<input type="number" class="form-control" id="id_size-MH" value="2000">
-					</div>
-
-					<div class="block-stepcalc__select">
-						<label for="id_size-MCH">Сечение (проекция стены)</label>
-						<select class="form-select" id="id_size-MCH">
-							<option value="0">без выреза</option>
-							<option value="1">внизу слева</option>
-							<option value="2">внизу справа</option>
-						</select>
-						<div class="stepcalc-sizes" id="id_size-MCH1">
-							<div class="stepcalc-sizes__img"><img src="img/gallery/forms/shs-l.svg" alt="Сечение (проекция стены) внизу слева"></div>
-							<div class="stepcalc-sizes__sizes">
-								<div class="sizes__input">
-									<label for="id_size-MCH1-H" class="stepcalc__item-prop">H, мм</label>
-									<div class="span--dot"></div>
-									<input type="number" class="form-control" id="id_size-MCH1-H" value="300">
-								</div>
-								<div class="sizes__input">
-									<label for="id_size-MCH1-B" class="stepcalc__item-prop">B, мм</label>
-									<div class="span--dot"></div>
-									<input type="number" class="form-control" id="id_size-MCH1-B" value="300">
-								</div>
-							</div>
-						</div>
-						<div class="stepcalc-sizes" id="id_size-MCH2">
-							<div class="stepcalc-sizes__img"><img src="img/gallery/forms/shs-r.svg" alt="Сечение (проекция стены) внизу справа"></div>
-							<div class="stepcalc-sizes__sizes">
-								<div class="sizes__input">
-									<label for="id_size-MCH2-H" class="stepcalc__item-prop">H, мм</label>
-									<div class="span--dot"></div>
-									<input type="number" class="form-control" id="id_size-MCH2-H" value="300">
-								</div>
-								<div class="sizes__input">
-									<label for="id_size-MCH2-B" class="stepcalc__item-prop">B, мм</label>
-									<div class="span--dot"></div>
-									<input type="number" class="form-control" id="id_size-MCH2-B" value="300">
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="block-stepcalc__select">
-						<label for="id_size-MCK">Скат крыши</label>
-						<select class="form-select" id="id_size-MCK">
-							<option value="0">без наклона</option>
-							<option value="1">вверху слева</option>
-							<option value="2">вверху справа</option>
-						</select>
-						<div class="stepcalc-sizes" id="id_size-MCK1">
-							<div class="stepcalc-sizes__img"><img src="img/gallery/forms/shc-l.svg" alt="Скат крыши вверху слева"></div>
-							<div class="stepcalc-sizes__sizes">
-								<div class="sizes__input">
-									<label for="id_size-MCK1-H" class="stepcalc__item-prop">H, мм</label>
-									<div class="span--dot"></div>
-									<input type="number" class="form-control" id="id_size-MCK1-H" value="300">
-								</div>
-								<div class="sizes__input">
-									<label for="id_size-MCK1-B" class="stepcalc__item-prop">B, мм</label>
-									<div class="span--dot"></div>
-									<input type="number" class="form-control" id="id_size-MCK1-B" value="300">
-								</div>
-							</div>
-						</div>
-						<div class="stepcalc-sizes" id="id_size-MCK2">
-							<div class="stepcalc-sizes__img"><img src="img/gallery/forms/shc-r.svg" alt="Скат крыши вверху справа"></div>
-							<div class="stepcalc-sizes__sizes">
-								<div class="sizes__input">
-									<label for="id_size-MCK2-H" class="stepcalc__item-prop">H, мм</label>
-									<div class="span--dot"></div>
-									<input type="number" class="form-control" id="id_size-MCK2-H" value="300">
-								</div>
-								<div class="sizes__input">
-									<label for="id_size-MCK2-B" class="stepcalc__item-prop">B, мм</label>
-									<div class="span--dot"></div>
-									<input type="number" class="form-control" id="id_size-MCK2-B" value="300">
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-		</div>
-
-		<div class="block-stepoptions">
-			<div class="block-stepoptions__ignoreh">
-				<div class="form-check">
-					<input class="form-check-input" type="checkbox" name="ignoreh" id="id_ignoreh">
-					<label class="form-check-label" for="id_ignoreh">Игнорировать введенную высоту</label>
+			<div class="col-6 col-sm-4">
+				<div class="block-step block-step--doortype" id="dt1">
+					<div class="block-step__title title--top">Распашная</div>
+					<div class="block-step__img side-l"><img src="img/gallery/forms/a-fsv-3-1.gif" alt="Распашная перегородка"></div>
 				</div>
 			</div>
-		</div>
 
-		</form>
+			<div class="col-6 col-sm-4">
+				<div class="block-step block-step--doortype" id="dt2">
+					<div class="block-step__title title--top">Раздвижная</div>
+					<div class="block-step__img side-l"><img src="img/gallery/forms/a-fsv-3-2-l.gif" alt="Раздвижная перегородка"></div>
+					<div class="block-step__img side-r"><img src="img/gallery/forms/a-fsv-3-2-r.gif" alt="Раздвижная перегородка"></div>
+					<div class="block-step__note">Сторона открывания:</div>
+					<div class="block-step__side">
+						<div class="form-check sidecheck__l">
+							<input class="form-check-input" type="radio" name="sidecheck-dt2" id="sidecheck-dt2__l" checked>
+							<label class="form-check-label label--l" for="sidecheck-dt2__l">левая</label>
+						</div>
+						<div class="form-check sidecheck__r">
+							<label class="form-check-label label--r" for="sidecheck-dt2__r">правая</label>
+							<input class="form-check-input" type="radio" name="sidecheck-dt2" id="sidecheck-dt2__r" >
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-6 col-sm-4">
+				<div class="block-step block-step--doortype" id="dt3">
+					<div class="block-step__title title--top">Складная</div>
+					<div class="block-step__img side-l"><img src="img/gallery/forms/a-fsv-3-3-l.gif" alt="Складная перегородка"></div>
+					<div class="block-step__img side-r"><img src="img/gallery/forms/a-fsv-3-3-r.gif" alt="Складная перегородка"></div>
+					<div class="block-step__note">Сторона открывания:</div>
+					<div class="block-step__side">
+						<div class="form-check sidecheck__l">
+							<input class="form-check-input" type="radio" name="sidecheck-dt3" id="sidecheck-dt3__l" checked>
+							<label class="form-check-label label--l" for="sidecheck-dt3__l">левая</label>
+						</div>
+						<div class="form-check sidecheck__r">
+							<label class="form-check-label label--r" for="sidecheck-dt3__r">правая</label>
+							<input class="form-check-input" type="radio" name="sidecheck-dt3" id="sidecheck-dt3__r" >
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
 
 
 		<div class="block-stepbtn">
-			<a href="configurator-step3-fdd.html" class="b-stepbtn btn--contour" title="Предыдущий Шаг"><i class="fal fa-arrow-left"></i></a>
-			<a href="configurator-step5.html" class="b-stepbtn" title="Следующий Шаг">Дальше&nbsp;<i class="fal fa-arrow-right"></i></a>
+			<a href="configurator-step2.html" class="b-stepbtn btn--contour" title="Предыдущий Шаг"><i class="fal fa-arrow-left"></i></a>
+			<a href="configurator-step4-3s.html" class="b-stepbtn" title="Следующий Шаг">Дальше&nbsp;<i class="fal fa-arrow-right"></i></a>
 		</div>
 
 
