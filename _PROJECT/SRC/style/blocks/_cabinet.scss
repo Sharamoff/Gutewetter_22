@@ -1,0 +1,328 @@
+.block-cabinet-hdrtools {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 4rem;
+
+  @include media-breakpoint-only(xs) {
+    flex-wrap: wrap-reverse;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+  }
+
+  .hdrtools__hdr {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    &-userpic {
+      width: 6rem;
+      height: 6rem;
+      flex: 0 0 auto;
+      min-width: 4rem;
+      min-height: 4rem;
+      border-radius: 50%;
+      background: $c-white url("../img/ibk-user.svg") 50% 50%;
+      background-size: cover;
+      margin-right: 2rem;
+
+      @include media-breakpoint-down(md) {
+        width: 5rem;
+        height: 5rem;
+        margin-right: 1rem;
+      }
+
+      @include media-breakpoint-down(sm) {
+        width: 4rem;
+        height: 4rem;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+      }
+
+    }
+
+    &-username {
+      flex: 1 1 auto;
+      font-size: $font-size-basemax;
+      font-weight: 600;
+      line-height: $line-height-h;
+
+      @include media-breakpoint-down(md) {
+        font-size: $font-size-basemax-md;
+      }
+
+      @include media-breakpoint-down(sm) {
+        font-size: $font-size-basemax-sm;
+      }
+
+    }
+
+  }
+
+  .hdrtools__tool {
+    flex: 1 1 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include media-breakpoint-only(xs) {
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+
+    a {
+      display: block;
+      color: $c-gray-light;
+      font-size: $font-size-basemed;
+      margin-left: 4rem;
+      white-space: nowrap;
+
+      @include media-breakpoint-down(md) {
+        font-size: $font-size-basemed-md;
+      }
+
+      @include media-breakpoint-down(sm) {
+        font-size: $font-size-basemed-sm;
+      }
+
+      @include media-breakpoint-only(xs) {
+        margin-top: 0;
+        margin-bottom: 1rem;
+
+        span {
+          display: none;
+        }
+
+      }
+
+      &:hover {
+        color: $color-link-hover;
+      }
+
+      &.hdrtools__tool-setup {
+
+        @include media-breakpoint-only(xs) {
+          margin-left: 0;
+        }
+
+      }
+
+      i {
+        font-size: $font-size-base;
+
+        @include media-breakpoint-only(xs) {
+          font-size: $font-size-basemax;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+
+.block-cabinetlist {
+  background: $color-bk-gray ;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+
+  @include media-breakpoint-down(md) {
+    padding: 0.1rem 1rem;
+  }
+
+  span {
+    font-weight: 500;
+    font-size: $font-size-basemax;
+
+    @include media-breakpoint-down(md) {
+      font-size: $font-size-basemax-md;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-basemax-sm;
+    }
+
+  }
+
+  .cabinetlist-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-only(xs) {
+      flex-wrap: wrap;
+    }
+
+  }
+
+  .cabinetlist__ordername {
+    color: $c-gray;
+    display: block;
+
+    @include media-breakpoint-only(xs) {
+      flex: 1 1 100%;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: $c-gray;
+
+      span {
+        text-decoration: underline;
+        color: $color-link-hover;
+      }
+
+    }
+
+  }
+
+  .cabinetlist__orderstatus {
+    display: block;
+    font-size: $font-size-basemed;
+    padding: 0.6rem 0.8rem 0.8rem 0.8rem;
+    line-height: 1;
+    background-color: $c-white;
+    color: $c-gray;
+
+    @include media-breakpoint-down(md) {
+      font-size: $font-size-basemed-md;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-basemed-sm;
+    }
+
+    @include media-breakpoint-only(xs) {
+      padding: 0.4rem 0.6rem 0.6rem 0.6rem;
+      margin: 0 0 15px auto;
+    }
+
+  }
+
+  .cabinetlist__ordernote {
+
+    .ordernote-sum {
+      font-size: $font-size-basemax;
+    }
+
+  }
+
+  button {
+    min-width: 25rem;
+    margin: 1rem 0 0 0;
+
+    @include media-breakpoint-only(xs) {
+      margin-top: 2rem;
+    }
+
+  }
+
+  .alink {
+    display: block;
+    font-size: $font-size-base;
+    margin-right: 4rem;
+    margin-top: 1rem;
+
+    @include media-breakpoint-only(xs) {
+      margin-top: 0.5rem;
+    }
+
+  }
+
+}
+
+
+
+.block-cabinetorder {
+  background: $color-bk-gray;
+  padding: 2rem 2rem 0.1rem 2rem;
+  margin-bottom: 6rem;
+  margin-right: 3rem;
+
+  @include media-breakpoint-down(md) {
+    padding: 1rem 1rem 0.1rem 1rem;
+    margin-right: 0;
+  }
+
+  @include media-breakpoint-only(xs) {
+    margin-bottom: 2rem;
+  }
+
+  > .row {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    align-items: baseline;
+
+    @include media-breakpoint-only(xs) {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+  }
+
+  .cabinetorder__prop {
+    color: $c-gray-light;
+    font-size: $font-size-basemed;
+
+    @include media-breakpoint-down(md) {
+      font-size: $font-size-basemed-md;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-basemed-sm;
+    }
+
+  }
+
+  .cabinetorder__val {
+
+  }
+
+}
+
+.block-cabinetsetup {
+  background: $color-bk-gray;
+  padding: 2rem;
+
+  @include media-breakpoint-only(xs) {
+    padding: 1rem;
+  }
+
+  .cabinetsetup__form {
+    margin: 2rem 10%;
+
+    @include media-breakpoint-down(md) {
+      margin: 1rem auto 0 auto;
+    }
+
+    label {
+      text-align: right;
+      font-size: $font-size-basemed;
+
+      @include media-breakpoint-down(md) {
+        font-size: $font-size-basemed-md;
+      }
+
+      @include media-breakpoint-down(sm) {
+        font-size: $font-size-basemed-sm;
+      }
+
+      @include media-breakpoint-only(xs) {
+        margin-bottom: 0.5rem;
+        text-align: left;
+      }
+
+    }
+
+  }
+
+}

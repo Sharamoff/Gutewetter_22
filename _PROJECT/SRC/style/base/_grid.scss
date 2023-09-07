@@ -309,6 +309,14 @@ section {
 }
 
 
+.row--xs-wrap-reverse {
+
+	@include media-breakpoint-only(xs) {
+		flex-wrap: wrap-reverse !important;
+	}
+
+}
+
 
 
 .overlay {

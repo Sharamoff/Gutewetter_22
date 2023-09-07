@@ -118,13 +118,6 @@
   </nav>
 
 
-  <nav class="navbar header__menu menu--user hidden-md-down">
-    <div class="menu-item">
-      <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#id_modal-login" title="Личный кабинет"><i class="fal fa-user-circle"></i><span class="span--overflow">Личный кабинет</span></a>
-    </div>
-  </nav>
-
-
 </div>
 </header>
 
@@ -529,14 +522,12 @@
 <div class="panel-breadcrumb">
 	<div class="container-fluid">
 
-		<div class="breadcrumb__hdr collapsed" role="button" data-bs-toggle="collapse" data-bs-target=".breadcrumb-submenu" aria-expanded="true">Конфигуратор индивидуальных изделий: Шаг 4</div>
+		<div class="breadcrumb__hdr collapsed" role="button" data-bs-toggle="collapse" data-bs-target=".breadcrumb-submenu" aria-expanded="true">Мои заказы</div>
 		<div class="breadcrumb-submenu collapse">
 			<div class="dlv"></div>
 			<ul>
 				<li><a href="/">На главную</a></li>
-				<li><a href="configurator-step1.html">Конфигуратор индивидуальных изделий: Шаг 1</a></li>
-				<li><a href="configurator-step2.html">Конфигуратор индивидуальных изделий: Шаг 2</a></li>
-				<li><a href="configurator-step3-fdd.html">Конфигуратор индивидуальных изделий: Шаг 3</a></li>
+				<li><a href="#">Личный кабинет</a></li>
 			</ul>
 		</div>
 
@@ -546,157 +537,195 @@
 
 
 
-
-<section class="pagesection sc_configurator">
+<section class="pagesection sc_cabinet">
 	<div class="container-fluid">
-
-
-		<h2 class="h--centered">Конфигуратор</h2>
-		<h4 class="h--centered">Смоделируйте уникальное, подходящее только вам решение для ванной комнаты!</h4>
-
-
-		<ul class="block-stepindicator">
-			<li><a href="configurator-step1.html">1</a></li>
-			<li class="stepindicator__arrow"></li>
-			<li><a href="configurator-step2.html">2</a></li>
-			<li class="stepindicator__arrow"></li>
-			<li><a href="configurator-step3-fdd.html">3</a></li>
-			<li class="stepindicator__arrow"></li>
-			<li>4</li>
-		</ul>
-
-
-		<h3 class="h--centered">Укажите размеры вашей душевой кабины и конфигурацию установочного места</h3>
-
-
-		<div class="block-steppic">
-			<div class="block-steppic__img"><img src="img/gallery/forms/fsv-4-size.svg" alt="Душевая перегородка П-образная"></div>
-		</div>
-
-
-		<div class="block-stepnote">Укажите общий размер в миллиметрах:<br>
-			От внешнего края традиционного душевого поддона/элемента душевого поддона вровень с полом до облицованной плиткой стены.<br>
-			Для ниши укажите общий размер между двумя плиточными стенами.</div>
-
-
 		<form>
+		<div class="row">
 
-		<div class="row row--horizontal">
 
-			<div class="block-stepcalc">
-					<div class="block-stepcalc__title">Посередине</div>
 
-					<div class="block-stepcalc__input">
-						<label for="id_size-M" class="stepcalc__item-prop">Размер посередине, мм</label>
-						<div class="span--dot"></div>
-						<input type="number" class="form-control" id="id_size-M" value="880">
-					</div>
-					<div class="block-stepcalc__input">
-						<label for="id_size-MH" class="stepcalc__item-prop">Высота, мм</label>
-						<div class="span--dot"></div>
-						<input type="number" class="form-control" id="id_size-MH" value="2000">
-					</div>
-
-					<div class="block-stepcalc__select">
-						<label for="id_size-MCH">Сечение (проекция стены)</label>
-						<select class="form-select" id="id_size-MCH">
-							<option value="0">без выреза</option>
-							<option value="1">внизу слева</option>
-							<option value="2">внизу справа</option>
-						</select>
-						<div class="stepcalc-sizes" id="id_size-MCH1">
-							<div class="stepcalc-sizes__img"><img src="img/gallery/forms/shs-l.svg" alt="Сечение (проекция стены) внизу слева"></div>
-							<div class="stepcalc-sizes__sizes">
-								<div class="sizes__input">
-									<label for="id_size-MCH1-H" class="stepcalc__item-prop">H, мм</label>
-									<div class="span--dot"></div>
-									<input type="number" class="form-control" id="id_size-MCH1-H" value="300">
-								</div>
-								<div class="sizes__input">
-									<label for="id_size-MCH1-B" class="stepcalc__item-prop">B, мм</label>
-									<div class="span--dot"></div>
-									<input type="number" class="form-control" id="id_size-MCH1-B" value="300">
-								</div>
-							</div>
-						</div>
-						<div class="stepcalc-sizes" id="id_size-MCH2">
-							<div class="stepcalc-sizes__img"><img src="img/gallery/forms/shs-r.svg" alt="Сечение (проекция стены) внизу справа"></div>
-							<div class="stepcalc-sizes__sizes">
-								<div class="sizes__input">
-									<label for="id_size-MCH2-H" class="stepcalc__item-prop">H, мм</label>
-									<div class="span--dot"></div>
-									<input type="number" class="form-control" id="id_size-MCH2-H" value="300">
-								</div>
-								<div class="sizes__input">
-									<label for="id_size-MCH2-B" class="stepcalc__item-prop">B, мм</label>
-									<div class="span--dot"></div>
-									<input type="number" class="form-control" id="id_size-MCH2-B" value="300">
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="block-stepcalc__select">
-						<label for="id_size-MCK">Скат крыши</label>
-						<select class="form-select" id="id_size-MCK">
-							<option value="0">без наклона</option>
-							<option value="1">вверху слева</option>
-							<option value="2">вверху справа</option>
-						</select>
-						<div class="stepcalc-sizes" id="id_size-MCK1">
-							<div class="stepcalc-sizes__img"><img src="img/gallery/forms/shc-l.svg" alt="Скат крыши вверху слева"></div>
-							<div class="stepcalc-sizes__sizes">
-								<div class="sizes__input">
-									<label for="id_size-MCK1-H" class="stepcalc__item-prop">H, мм</label>
-									<div class="span--dot"></div>
-									<input type="number" class="form-control" id="id_size-MCK1-H" value="300">
-								</div>
-								<div class="sizes__input">
-									<label for="id_size-MCK1-B" class="stepcalc__item-prop">B, мм</label>
-									<div class="span--dot"></div>
-									<input type="number" class="form-control" id="id_size-MCK1-B" value="300">
-								</div>
-							</div>
-						</div>
-						<div class="stepcalc-sizes" id="id_size-MCK2">
-							<div class="stepcalc-sizes__img"><img src="img/gallery/forms/shc-r.svg" alt="Скат крыши вверху справа"></div>
-							<div class="stepcalc-sizes__sizes">
-								<div class="sizes__input">
-									<label for="id_size-MCK2-H" class="stepcalc__item-prop">H, мм</label>
-									<div class="span--dot"></div>
-									<input type="number" class="form-control" id="id_size-MCK2-H" value="300">
-								</div>
-								<div class="sizes__input">
-									<label for="id_size-MCK2-B" class="stepcalc__item-prop">B, мм</label>
-									<div class="span--dot"></div>
-									<input type="number" class="form-control" id="id_size-MCK2-B" value="300">
-								</div>
-							</div>
-						</div>
-					</div>
-
+			<div class="block-cabinet-hdrtools">
+				<div class="hdrtools__hdr">
+					<div class="hdrtools__hdr-userpic"></div>
+					<div class="hdrtools__hdr-username">Максимилианов Валентин&nbsp;Владиславович</div>
 				</div>
-
-		</div>
-
-		<div class="block-stepoptions">
-			<div class="block-stepoptions__ignoreh">
-				<div class="form-check">
-					<input class="form-check-input" type="checkbox" name="ignoreh" id="id_ignoreh">
-					<label class="form-check-label" for="id_ignoreh">Игнорировать введенную высоту</label>
+				<div class="hdrtools__tool">
+					<a href="#" class="hdrtools__tool-setup" role="button" title="Настройки"><i class="fal fa-cog"></i><span>&nbsp;&nbsp;Настройки</span></a>
+					<a href="#" class="hdrtools__tool-exit" role="button" title="Выход"><span>Выход&nbsp;&nbsp;</span><i class="fal fa-sign-out"></i></a>
 				</div>
 			</div>
-		</div>
 
+
+
+			<div class="col-md-8">
+
+
+
+
+				<div class="block-cabinetorder">
+
+					<h3>Ваш заказ</h3>
+
+					<div class="row">
+						<div class="col-sm-5 col-md-4"><div class="cabinetorder__prop">Заказ №</div></div>
+						<div class="col-sm-7 col-md-8"><div class="cabinetorder__val"><strong>2764966300</strong></div></div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-5 col-md-4"><div class="cabinetorder__prop">Статус заказа</div></div>
+						<div class="col-sm-7 col-md-8"><div class="cabinetorder__val">В работе, не оплачен</div></div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-5 col-md-4"><div class="cabinetorder__prop">Имя</div></div>
+						<div class="col-sm-7 col-md-8"><div class="cabinetorder__val">Максимилианов Валентин&nbsp;Владиславович</div></div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-5 col-md-4"><div class="cabinetorder__prop">Телефон</div></div>
+						<div class="col-sm-7 col-md-8"><div class="cabinetorder__val">+7 495 669 99 56</div></div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-5 col-md-4"><div class="cabinetorder__prop">Email</div></div>
+						<div class="col-sm-7 col-md-8"><div class="cabinetorder__val">valentin.maximilianoff@yandex.ru</div></div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-5 col-md-4"><div class="cabinetorder__prop">Получение</div></div>
+						<div class="col-sm-7 col-md-8"><div class="cabinetorder__val">Служба доставки</div></div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-5 col-md-4"><div class="cabinetorder__prop">Дата доставки</div></div>
+						<div class="col-sm-7 col-md-8"><div class="cabinetorder__val">25 декабря</div></div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-5 col-md-4"><div class="cabinetorder__prop">Адрес доставки</div></div>
+						<div class="col-sm-7 col-md-8"><div class="cabinetorder__val">Москва, Загороднее шоссе, 10к2, офис&nbsp;635 (подъезд&nbsp;4)</div></div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-5 col-md-4"><div class="cabinetorder__prop">Подъем на лифте</div></div>
+						<div class="col-sm-7 col-md-8"><div class="cabinetorder__val">14 этаж</div></div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-5 col-md-4"><div class="cabinetorder__prop">Дополнительно</div></div>
+						<div class="col-sm-7 col-md-8"><div class="cabinetorder__val">Не кантовать по возможности.</div></div>
+					</div>
+
+				</div>
+
+
+				<h3>Товары заказа</h3>
+
+				<div class="block-cart">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="cartitem__pic">
+								<img src="img/gallery/img-view1.jpg" alt="">
+							</div>
+						</div>
+						<div class="col-sm-8">
+							<div class="cartitem__title">
+								Шторка на ванну <strong>PRACTIC PART GV-413A</strong>
+							</div>
+							<div class="cartitem__note">
+								<p>75x178x150 см, профиль хром матовый, цвет стекла бесцветный, стекло закаленное полистирол lines мм, стекло закаленное полистирол lines мм.</p>
+								<p>Товар в наличии. Поставка от 4 до 6 дней. <br>Предоплата 100%.</p>
+							</div>
+							<div class="cartitem__quantsum">
+								<div class="quantsum-quant">
+									1 шт.
+								</div>
+								<div class="quantsum-sum">
+									<span class="quantsum-sum__ed">33 800 <i class="fal fa-ruble-sign"></i>/ед.</span>
+									33 800 <i class="fal fa-ruble-sign"></i>
+								</div>
+							</div>
+							<div class="cartitem__assembling">
+								<p><strong>Услуга монтажа</strong>Наш партнёр осуществит сборку, монтаж и подключение товаров.</p>
+								<div class="assembling__switchersum">
+									<div class="switchersum-switcher">включена</div>
+									<div class="switchersum-sum">7 000 <i class="fal fa-ruble-sign"></i></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-cart">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="cartitem__pic">
+								<img src="img/gallery/img-view2.jpg" alt="">
+							</div>
+						</div>
+						<div class="col-sm-8">
+							<div class="cartitem__title">
+								Душевой уголок <strong>LUX FESTT GK-001</strong>
+							</div>
+							<div class="cartitem__note">
+								<p>80x80x200 см, профиль хром блестящий, цвет стекла бесцветный, стекло закаленное 6 мм, открывание двери левое.</p>
+								<p>Товар под заказ. Поставка от 10 до 12 дней.<br>Предоплата 100%.</p>
+							</div>
+							<div class="cartitem__quantsum">
+								<div class="quantsum-quant">
+									1 шт.
+								</div>
+								<div class="quantsum-sum">
+									<span class="quantsum-sum__ed">36 000 <i class="fal fa-ruble-sign"></i>/ед.</span>
+									36 000 <i class="fal fa-ruble-sign"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+
+
+			<div class="col-md-4">
+
+				<div class="block-cartsummary sticky-md-top">
+					<div class="cartsummary">
+						<div class="cartsummary__prop">Статус заказа</div>
+						<div class="cartsummary__val">не оплачен</div>
+					</div>
+					<div class="cartsummary">
+						<div class="cartsummary__prop">Товары (2)</div>
+						<div class="cartsummary__val">69 600 <i class="fal fa-ruble-sign"></i></div>
+					</div>
+					<div class="cartsummary">
+						<div class="cartsummary__prop">Скидка по акции (10%)</div>
+						<div class="cartsummary__val">-6 960 <i class="fal fa-ruble-sign"></i></div>
+					</div>
+					<div class="cartsummary">
+						<div class="cartsummary__prop">Монтаж (1)</div>
+						<div class="cartsummary__val">7 000 <i class="fal fa-ruble-sign"></i></div>
+					</div>
+					<div class="cartsummary">
+						<div class="cartsummary__prop">Доставка</div>
+						<div class="cartsummary__val">990 <i class="fal fa-ruble-sign"></i></div>
+					</div>
+					<div class="cartsummary-total">
+						<div class="cartsummary__prop">Всего к оплате</div>
+						<div class="cartsummary__val">77 540 <i class="fal fa-ruble-sign"></i></div>
+					</div>
+					<button class="cartsummary-btn b-btn btn--blue" type="submit" title="Перейти к оплате заказа">Оплатить заказ</button>
+
+				</div>
+
+			</div>
+
+
+
+		</div>
 		</form>
-
-
-		<div class="block-stepbtn">
-			<a href="configurator-step3-fdd.html" class="b-stepbtn btn--contour" title="Предыдущий Шаг"><i class="fal fa-arrow-left"></i></a>
-			<a href="configurator-step5.html" class="b-stepbtn" title="Следующий Шаг">Дальше&nbsp;<i class="fal fa-arrow-right"></i></a>
-		</div>
-
-
 	</div>
 </section>
 

@@ -97,6 +97,10 @@ input[type="radio"] {
 	margin-bottom: 2rem;
 }
 
+.form-group:last-child {
+	margin-bottom: 0;
+}
+
 .form-group.row {
 	align-items: center;
 }

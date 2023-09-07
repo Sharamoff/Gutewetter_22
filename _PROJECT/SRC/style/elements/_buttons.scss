@@ -4,9 +4,10 @@ button {
 
 button.disabled,
 button.disabled:hover {
-	background-color: $c-gray-light;
+	background-color: transparentize($c-gray-light, 0.5) !important;
 	color: $c-black;
 	box-shadow: none;
+	opacity: 0.3;
 }
 
 .b-btn {
