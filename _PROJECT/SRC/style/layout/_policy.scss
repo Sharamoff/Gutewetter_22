@@ -1,0 +1,61 @@
+.policyinfo {
+	position: fixed;
+	z-index: $zindex-fixed;
+	bottom: 6rem;
+	left: 2rem;
+	width: 50%;
+	color: $c-fixbar-gray;
+	font-size: $font-size-basemed;
+	padding: 2rem 6rem 1rem 2rem;
+	background-color: rgba(255, 255, 255, 0.85);
+	backdrop-filter: blur(10px);
+	box-shadow: 0 0 16px 0 rgba(29, 29, 31, 0.15);
+	border: solid 1px $color-border;
+	border-radius: 0;
+
+	@include media-breakpoint-down(md) {
+		bottom: 4rem;
+		left: 0;
+		right: 0;
+		width: 100%;
+		font-size: $font-size-basemed-md;
+	}
+
+	@include media-breakpoint-down(sm) {
+		font-size: $font-size-basemed-sm;
+	}
+
+	p {
+		line-height: $line-height-p;
+	}
+
+	.btn-close {
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

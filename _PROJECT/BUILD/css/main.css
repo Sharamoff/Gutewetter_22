@@ -1727,6 +1727,45 @@ footer {
   content: "";
 }
 
+.policyinfo {
+  position: fixed;
+  z-index: 1030;
+  bottom: 6rem;
+  left: 2rem;
+  width: 50%;
+  color: rgba(29, 29, 31, 0.93);
+  font-size: 1.5rem;
+  padding: 2rem 6rem 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 0 0 16px 0 rgba(29, 29, 31, 0.15);
+  border: solid 1px #C3C3C6;
+  border-radius: 0;
+}
+@media (max-width: 767.98px) {
+  .policyinfo {
+    bottom: 4rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .policyinfo {
+    font-size: 1.3rem;
+  }
+}
+.policyinfo p {
+  line-height: 1.47;
+}
+.policyinfo .btn-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
 p {
   margin-bottom: 1rem;
 }
