@@ -1,0 +1,128 @@
+.block-exhibitionlist {
+  display: block;
+  background-color: $c-gray;
+  color: $c-gray-invert;
+  text-decoration: none !important;
+  max-width: 530px;
+  margin: 0 auto 1rem auto;
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 2rem;
+  }
+
+  &:hover {
+    color: $c-white;
+
+    .exhibitionlist__item-note {
+      color: $c-white;
+    }
+
+    .exhibitionlist__pic {
+
+      img {
+        scale: 1.05;
+      }
+
+    }
+
+  }
+
+  .exhibitionlist__pic {
+    overflow: hidden;
+    min-height: 2rem;
+
+    @include media-breakpoint-down(sm) {
+      min-height: auto;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: $transition-all;
+    }
+
+  }
+
+  .exhibitionlist__item {
+    padding: 0 4rem 4rem 4rem;
+
+    @include media-breakpoint-down(md) {
+      padding: 0 2rem 2rem 2rem;
+    }
+
+    &-title {
+      font-size: $font-size-h2;
+      font-weight: 600;
+      line-height: $line-height-base;
+      margin-bottom: 1.5rem;
+      color: $c-white;
+
+      @include media-breakpoint-down(md) {
+        font-size: $font-size-h2-md;
+        margin-bottom: 1rem;
+      }
+
+      @include media-breakpoint-down(sm) {
+        font-size: $font-size-h2-sm;
+        margin-bottom: 1rem;
+      }
+
+    }
+
+    &-note {
+      line-height: $line-height-p;
+      color: $c-gray-invert;
+      transition: $transition-all;
+    }
+
+  }
+
+}
+
+
+
+ .block-exhibition {
+
+  .exhibition__title {
+    font-size: $font-size-h2;
+    font-weight: 600;
+    line-height: $line-height-base;
+    margin-bottom: 4rem;
+
+    @include media-breakpoint-down(md) {
+      font-size: $font-size-h2-md;
+      margin-bottom: 2rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-h2-sm;
+    }
+
+  }
+
+  .exhibition__note {
+
+    p {
+      line-height: $line-height-p;
+    }
+
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

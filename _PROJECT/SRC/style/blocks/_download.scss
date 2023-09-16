@@ -1,0 +1,64 @@
+.block-download {
+  display: block;
+  font-size: $font-size-basemax;
+  margin: 2rem 3rem 2rem 0;
+  color: $c-gray;
+
+  @include media-breakpoint-down(md) {
+    font-size: $font-size-basemax-md;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-basemax-sm;
+    margin: 1rem 0;
+  }
+
+  &:hover {
+    color: $color-link-hover;
+    text-decoration: none;
+
+    b {
+      text-decoration: underline;
+    }
+
+    .download__type {
+      text-decoration-color: $c-white;
+    }
+
+  }
+
+  b {
+    display: block;
+    font-weight: 500;
+  }
+
+  .download__type {
+    display: block;
+    font-size: $font-size-base;
+    color: $c-gray-light !important;
+    margin-top: 0.3rem;
+    font-weight: 400;
+
+    @include media-breakpoint-down(md) {
+      font-size: $font-size-base-md;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-base-sm;
+      margin-top: 0.1rem;
+    }
+
+    &:before {
+      font-family: $fontawesome;
+      font-size: 20px;
+      font-weight: 300;
+      margin-right: 0.8rem;
+    }
+
+    &.type--xls {&:before {content: '\f1c3';}}
+    &.type--pdf {&:before {content: '\f1c1';}}
+    &.type--zip {&:before {content: '\f1c6';}}
+
+  }
+
+}

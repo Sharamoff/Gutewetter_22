@@ -84,3 +84,30 @@ a[href^="tel"] {
 	}
 
 }
+
+
+.link-telegram {
+	display: block;
+	margin: 0 auto 4rem auto;
+	text-align: center;
+	background: $c-blue url("../img/i-telegram.svg") right no-repeat;
+	height: 41px;
+	border: solid 3px $c-blue;
+	border-radius: 40px;
+	color: $c-white;
+	line-height: 35px;
+	white-space: nowrap;
+	padding: 0 41px 0 16px;
+
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 2rem;
+	}
+
+	&:hover {
+		background-color: $color-link-hover;
+		border-color: $color-link-hover;
+		color: $c-white;
+		text-decoration: none;
+	}
+
+}

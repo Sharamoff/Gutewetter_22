@@ -1,0 +1,102 @@
+.block-bottomnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  > a {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    color: $c-gray-light;
+    line-height: $line-height-min;
+    transition: $transition-all;
+    font-weight: 500;
+    min-width: 20rem;
+
+    @include media-breakpoint-down(md) {
+      min-width: 3rem;
+    }
+
+    &:hover {
+      color: $color-link-hover;
+      text-decoration: none;
+
+      span {
+        text-decoration: underline;
+      }
+
+    }
+
+    &.disabled {
+      pointer-events: none;
+      opacity: 0.33;
+    }
+
+    span {
+
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+
+    }
+
+  }
+
+  i {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .bottomnav__left {
+    text-align: left;
+
+    i {
+      margin-right: 0.8rem;
+
+      @include media-breakpoint-down(md) {
+        margin-right: auto;
+      }
+
+    }
+
+  }
+
+  .bottomnav__center {
+    text-align: center;
+
+    i {
+      margin-right: 0.8rem;
+
+      @include media-breakpoint-down(md) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+    }
+
+  }
+
+  .bottomnav__right {
+    text-align: right;
+
+    i {
+      margin-left: 0.8rem;
+
+      @include media-breakpoint-down(md) {
+        margin-left: auto;
+      }
+
+    }
+
+  }
+
+}
+
+
+
+
+
