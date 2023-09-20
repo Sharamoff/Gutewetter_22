@@ -1761,7 +1761,7 @@ footer {
   width: 50%;
   color: rgba(29, 29, 31, 0.93);
   font-size: 1.5rem;
-  padding: 2rem 6rem 1rem 2rem;
+  padding: 2rem;
   background-color: rgba(255, 255, 255, 0.85);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -1786,10 +1786,16 @@ footer {
 .policyinfo p {
   line-height: 1.47;
 }
-.policyinfo .btn-close {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
+.policyinfo .b-close {
+  background: #1D1D1F;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  border: none;
+  padding: 0.8rem 2rem;
+  margin: 0.5rem 0 0 auto;
+}
+.policyinfo .b-close:hover {
+  background: rgb(0, 0, 0);
 }
 
 p {

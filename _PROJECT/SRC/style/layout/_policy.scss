@@ -6,7 +6,7 @@
 	width: 50%;
 	color: $c-fixbar-gray;
 	font-size: $font-size-basemed;
-	padding: 2rem 6rem 1rem 2rem;
+	padding: 2rem;
 	background-color: rgba(255, 255, 255, 0.85);
 	backdrop-filter: blur(10px);
 	box-shadow: 0 0 16px 0 rgba(29, 29, 31, 0.15);
@@ -29,10 +29,18 @@
 		line-height: $line-height-p;
 	}
 
-	.btn-close {
-		position: absolute;
-		top: 1rem;
-		right: 1rem;
+	.b-close {
+		background: $c-gray;
+		color: $c-white;
+		font-size: $font-size-basemed;
+		border: none;
+		padding: 0.8rem 2rem;
+		margin: 0.5rem 0 0 auto;
+
+		&:hover {
+			background: $c-black;
+		}
+
 	}
 
 }
