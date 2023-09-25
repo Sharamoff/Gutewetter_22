@@ -96,7 +96,6 @@ a[href^="tel"] {
 	border-radius: 40px;
 	color: $c-white;
 	line-height: 35px;
-	white-space: nowrap;
 	padding: 0 41px 0 16px;
 
 	@include media-breakpoint-down(sm) {

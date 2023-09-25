@@ -2575,7 +2575,6 @@ a[href^=tel] {
   border-radius: 40px;
   color: rgb(255, 255, 255);
   line-height: 35px;
-  white-space: nowrap;
   padding: 0 41px 0 16px;
 }
 @media (max-width: 575.98px) {
