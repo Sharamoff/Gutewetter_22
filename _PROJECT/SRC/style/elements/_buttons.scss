@@ -64,6 +64,15 @@ button.disabled:hover {
 
 	}
 
+	&.b--right {
+		margin-left: auto;
+	}
+
+	&.b--centered {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	i {
 		position: relative;
 		top: 1px;
@@ -84,8 +93,6 @@ button.disabled:hover {
 	}
 
 }
-
-
 
 .b-more {
 	display: block;

@@ -51,6 +51,26 @@
 		padding: 2rem;
 		overflow-y: auto;
 		@include clearfix;
+
+		label {
+			margin-top: 0.3rem;
+			margin-bottom: 0.3rem;
+		}
+
+	}
+
+	.modal-body__note {
+		font-size: $font-size-basemed;
+		margin-bottom: 2rem;
+
+		@include media-breakpoint-down(md) {
+			font-size: $font-size-basemed-md;
+		}
+
+		@include media-breakpoint-down(sm) {
+			font-size: $font-size-basemed-sm;
+		}
+
 	}
 
 }

@@ -144,6 +144,7 @@
       <div class="modal-body">
         <div class="container-fluid">
           <div class="row">
+
             <div class="col-lg-3 col-sm-6">
               <div class="menucatalog__menu">
                 <a href="#"><img src="img/ic-1.png" alt="Душевые ограждения"></a>
@@ -156,48 +157,48 @@
                 </ul>
               </div>
             </div>
+
             <div class="col-lg-3 col-sm-6">
               <div class="menucatalog__menu">
-                <a href="#"> <img src="img/ic-5.png" alt="Поддоны для душа"></a>
+                <a href="#"> <img src="img/ic-5.png" alt="Поддоны, трапы, сифоны"></a>
                 <ul>
-                  <li class="menu-hdr"><a href="#">Поддоны для душа</a></li>
-                  <li><a href="#">Квадратные</a></li>
-                  <li><a href="#">Четверть круга</a></li>
-                  <li><a href="#">Пятиугольные</a></li>
-                  <li><a href="#">Прямоугольные</a></li>
-                  <li><a href="#">Полукруглые</a></li>
-                  <li><a href="#">Сифоны для поддонов</a></li>
+                  <li class="menu-hdr"><a href="#">Поддоны, трапы, сифоны</a></li>
+                  <li><a href="#">Поддоны дли душа</a></li>
+                  <li><a href="#">Квадратные трапы</a></li>
+                  <li><a href="#">Линейные трапы</a></li>
+                  <li><a href="#">Сифоны дли поддонов</a></li>
                 </ul>
               </div>
             </div>
+
             <div class="col-lg-3 col-sm-6">
               <div class="menucatalog__menu">
                 <a href="#"><img src="img/ic-6.png" alt="Фурнитура и комплектующие"></a>
                 <ul>
                   <li class="menu-hdr"><a href="#">Фурнитура и комплектующие</a></li>
-                  <li><a href="#">Стекла</a></li>
                   <li><a href="#">Петли</a></li>
                   <li><a href="#">Ручки</a></li>
                   <li><a href="#">Профиль</a></li>
                   <li><a href="#">Ролики</a></li>
-                  <li><a href="#">Полистирол</a></li>
                   <li><a href="#">Уплотнители PVC</a></li>
-                  <li><a href="#">Уголки для защиты стекла</a></li>
+                  <li><a href="#">Защитные уголки</a></li>
                 </ul>
               </div>
             </div>
+
             <div class="col-lg-3 col-sm-6">
               <div class="menucatalog__menu">
-                <a href="#"><img src="img/ic-7.png" alt="Нестандартные решения"></a>
+                <a href="#"><img src="img/ic-10.png" alt="Душевые ограждения по индивидуальным размерам"></a>
                 <ul>
-                  <li class="menu-hdr"><a href="#">Нестандартные решения</a></li>
-                  <li><a href="#">Фотогалерея</a></li>
-                  <li><a href="#">Анимации</a></li>
-                  <li><a href="#">Виды сверху</a></li>
-                  <li><a href="#">Чертежи фурнитуры</a></li>
+                  <li class="menu-hdr"><a href="#">Душевые ограждения по индивидуальным размерам</a></li>
+                  <li><a href="#">Душевые уголки по индивидуальным размерам</a></li>
+                  <li><a href="#">Двери в душевую нишу по индивидуальным размерам</a></li>
+                  <li><a href="#">Душевые перегородки по индивидуальным размерам</a></li>
+                  <li><a href="#">Стеклянные шторки на ванну по индивидуальным размерам</a></li>
                 </ul>
               </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -755,6 +756,51 @@
               <a href="#">Забыли пароль?</a>
             </div>
           </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="id_modal-consult"  tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h3>Заказать консультацию</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть окно"></button>
+      </div>
+
+      <div class="modal-body">
+        <p class="modal-body__note">Заполнив форму ниже, Вы можете быть уверены, что мы свяжемся с Вами.</p>
+        <form name="fm-consult" id="fm-consult" rel="order_form" role="form" method="post" autocomplete="off">
+          <div class="form-group">
+            <label for="fm-consult__name">Ваше имя</label>
+            <input type="text" name="name" id="fm-consult__name" class="form-control input-lg">
+          </div>
+          <div class="form-group">
+            <label for="fm-consult__phone">Ваш телефон</label>
+            <input type="tel" name="phone" id="fm-consult__phone" class="form-control input-lg">
+          </div>
+          <div class="form-group">
+            <label for="fm-consult__note">Комментарий</label>
+            <textarea name="note" id="fm-consult__note" class="form-control" rows="3" maxlength="1000"></textarea>
+          </div>
+          <div class="form-group row">
+            <div class="col">
+              <div id="fm-consult__conditions" class="form-check form-field-container">
+                <input type="checkbox" name="conditions" id="fm-consult__conditions-checkbox" value="1" class="form-check-input">
+                <label for="fm-consult__conditions-checkbox" class="form-check-label modal-body__note">
+                  Я даю свое согласие на обработку персональных данных согласно
+                  <a href="/privacy-policy/" target="_blank">Политике конфиденциальности</a>.
+                </label>
+              </div>
+            </div>
+          </div>
+          <button type="submit" name="b-submit__consult" class="b-btn b--centered">Заказать консультацию</button>
         </form>
       </div>
 

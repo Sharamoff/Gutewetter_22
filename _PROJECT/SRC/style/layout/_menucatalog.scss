@@ -88,7 +88,7 @@
   img {
     height: 33px;
     width: auto;
-    margin-right: 1rem;
+    margin-right: 1.3rem;
   }
 
 }
@@ -96,8 +96,9 @@
 .menucatalog__menu {
   display: flex;
   flex-wrap: nowrap;
-  max-width: 27rem;
+  //max-width: 27rem;
   margin: 0 auto 2rem auto;
+  padding-right: 1.5rem;
 
   @include media-breakpoint-down(md) {
     max-width: none;
@@ -130,7 +131,7 @@
   .menu-hdr {
     font-weight: 700;
     color: $c-white;
-    line-height: $line-height-h;
+    line-height: $line-height-base;
   }
 
 }

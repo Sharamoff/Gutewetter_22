@@ -2,5 +2,11 @@
 figmafig/
 materials/
 pics/
+video/
+
 _PROJECT/node_modules/
 _PROJECT/.idea/
+_PROJECT/SRC/img/custom/gutewetter.mp4
+_PROJECT/DEST/img/custom/gutewetter.mp4
+
+Gutewetter.fig

@@ -20,6 +20,7 @@
       font-weight: 500;
       padding-left: 4rem;
       caret-color: transparent;
+      cursor: pointer;
 
       @include media-breakpoint-down(md) {
         font-size: 1.9rem;
@@ -55,8 +56,12 @@
     }
 
     &-a {
-      margin-left: 4rem;
-      margin-top: 0.6rem;
+      margin-left: 4.2rem;
+      margin-top: 1rem;
+
+      @include media-breakpoint-only(xs) {
+        margin-left: 3rem;
+      }
 
       @include media-breakpoint-only(xs) {
         margin-left: 3rem;

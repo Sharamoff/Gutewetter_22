@@ -47,7 +47,7 @@ h1 {
 h2,
 .mainhdr {
 	font: $font-h2;
-	font-weight: 600 !important;
+	font-weight: 600;
 	color: $c-gray;
 	margin-top: 0;
 	margin-bottom: 3.5rem;
@@ -117,7 +117,7 @@ h3 {
 
 	@include media-breakpoint-down(sm) {
 		font: $font-h3-sm;
-		margin-bottom: $font-size-base-sm;
+		margin-bottom: 1rem;
 	}
 
 }
@@ -144,7 +144,6 @@ h4 {
 		white-space: nowrap;
 	}
 
-
 }
 
 
@@ -162,6 +161,30 @@ h4 {
 		text-align: center;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+}
+
+.h--centered-sm {
+
+	@include media-breakpoint-down(sm) {
+		display: block;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
+
+.h--light {
+	font-weight: 300;
+
+	@include media-breakpoint-down(sm) {
+		font-weight: 400;
+	}
+
+	strong {
+		font-weight: 600;
 	}
 
 }

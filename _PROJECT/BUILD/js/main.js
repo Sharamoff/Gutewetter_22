@@ -375,14 +375,16 @@ $('.productlist__item').hover(function() {
 // FAQ accordion behavior
 
 function behaviorFAQ() {
+  if ($('.block-faq').hasClass('all--collapsed')) return;
   let def_width = $(document).width();
-  if ( def_width < 753) {
+  if (def_width < 753) {
     $('.faq__item-a').collapse('hide');
     $('.faq__item-q').attr('data-bs-toggle', 'collapse');
   } else {
     $('.faq__item-a').collapse('show');
     $('.faq__item-q').removeAttr('data-bs-toggle');
   }
+
 }
 behaviorFAQ();
 $(window).resize(function() {
@@ -731,6 +733,113 @@ $('#id_dealerpic-nav').slick({
   loop: true,
   focusOnSelect: true,
   centerPadding: '50px'
+});
+
+
+
+// custom
+$('#id_cu-glass_images').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  centerMode: false,
+  adaptiveHeight: true,
+  dots: true,
+  arrows: true,
+  infinite: true,
+  autoplay: true,
+  speed: 1000,
+  autoplaySpeed: 5000,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+        centerMode: true,
+        centerPadding: '120px',
+        speed: 100
+      }
+    },
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 3,
+        autoplay: false,
+        arrows: false,
+        centerMode: true,
+        centerPadding: '80px',
+        speed: 100
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        autoplay: false,
+        arrows: false,
+        centerMode: true,
+        centerPadding: '80px',
+        speed: 100
+      }
+    }
+  ]
+});
+
+$('#id_cu-profur_isp__images').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: false,
+  arrows: false,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear',
+  autoplay: true,
+  responsive: true
+});
+
+$('#id_cu-portfolio_images').slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  dots: true,
+  infinite: true,
+  autoplay: true,
+  centerMode: true,
+  centerPadding: '120px',
+  variableWidth: true,
+  adaptiveHeight: true,
+  speed: 1000,
+  autoplaySpeed: 5000,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 769,
+      settings: {
+        arrows: false,
+        centerPadding: '60px',
+        speed: 100,
+        autoplay: false,
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerPadding: '60px',
+        speed: 100,
+        autoplay: false,
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    }
+  ]
 });
 
 
