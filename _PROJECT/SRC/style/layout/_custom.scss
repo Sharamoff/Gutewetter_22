@@ -230,6 +230,11 @@
 
 .block-productcategory-cu {
 
+	> .row {
+		justify-content: center;
+		margin-bottom: 2rem;
+	}
+
 	.productcategory__item {
 		display: block;
 		height: 100%;
@@ -268,26 +273,28 @@
 		&_img {
 			display: block;
 			overflow: hidden;
-			width: 15rem;
+			width: 95%;
+			max-width: 18rem;
 			background-color: $c-white;
 			border: solid 1px $border-color;
 			border-radius: 50%;
 			margin-left: auto;
 			margin-right: auto;
-			margin-bottom: 2rem;
+			margin-bottom: 1.6rem;
 
 			@include media-breakpoint-down(md) {
-				margin-bottom: 1rem;
-			}
-
-			@include media-breakpoint-down(md) {
-				width: 13rem;
+				margin-bottom: 1.2rem;
 			}
 
 			img {
 				width: 100%;
 				height: auto;
 				transition: $transition-all;
+			}
+
+			&.img--square {
+				max-width: 25rem;
+				border-radius: 0;
 			}
 
 		}
@@ -391,8 +398,24 @@
 	width: 45%;
 	min-width: 50rem;
 	height: 100%;
-	background: url("../img/custom/cu_catalogue.png") no-repeat;
+	background: url("../../img/custom/cu_catalogue1.png") no-repeat;
 	background-size: contain;
+
+	&.catalog_pic--pic1 {
+		background: url("../../img/custom/cu_catalogue1.png") no-repeat;
+	}
+
+	&.catalog_pic--pic2 {
+		background: url("../../img/custom/cu_catalogue2.png") no-repeat;
+	}
+
+	&.catalog_pic--pic3 {
+		background: url("../../img/custom/cu_catalogue3.png") no-repeat;
+	}
+
+	&.catalog_pic--pic4 {
+		background: url("../../img/custom/cu_catalogue4.png") no-repeat;
+	}
 
 	@include media-breakpoint-down(xl) {
 		top: 20rem;
@@ -980,10 +1003,28 @@
 
 	}
 
-
-
 }
 
+
+
+.sc_cu-youtubes {
+	padding-top: 0;
+	padding-bottom: 8rem;
+
+	@include media-breakpoint-down(md) {
+		padding-bottom: 6rem;
+	}
+
+	@include media-breakpoint-down(sm) {
+		padding-bottom: 4rem;
+	}
+
+
+	.cu-youtubes__video {
+		margin-bottom: 2rem;
+	}
+
+}
 
 
 
@@ -1110,6 +1151,9 @@
 	}
 
 }
+
+
+
 
 
 

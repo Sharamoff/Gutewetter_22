@@ -73,6 +73,23 @@ button.disabled:hover {
 		margin-right: auto;
 	}
 
+	&.b--icon-lg {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		line-height: 1.1;
+		padding: 1rem 2.5rem 1rem 2rem;
+		text-align: left;
+
+		i {
+			font-size: 4.6rem;
+			margin-right: 1.5rem;
+			position: relative;
+			top: -1px;
+		}
+
+	}
+
 	i {
 		position: relative;
 		top: 1px;

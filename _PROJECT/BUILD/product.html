@@ -608,8 +608,8 @@
 					</div>
 					<div class="productcart-r">
 						<div class="productcart__price">19 000<i class="fal fa-ruble-sign"></i></div>
-						<button class="productcart__tocart b-btn btn--blue">В корзину</button>
-						<button class="productcart__oneclick b-btn btn--contour">Купить в 1 клик</button>
+						<button class="productcart__tocart b-btn btn--blue" data-bs-toggle="modal" data-bs-target="#id_modal-cart">В корзину</button>
+						<button class="productcart__oneclick b-btn btn--contour" data-bs-toggle="modal" data-bs-target="#id_modal-cart-click">Купить в 1 клик</button>
 					</div>
 				</div>
 
@@ -1571,6 +1571,171 @@
 </div>
 </div>
 
+
+
+
+<div class="modal fade modal--cart" id="id_modal-cart" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+
+      <div class="modal-header">
+        <h3>Купить в 1 клик</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть окно"></button>
+      </div>
+
+
+      <div class="modal-body">
+        <form name="fm_buyclick-inner">
+
+          <div class="block-cart">
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="cartitem__pic">
+                  <img src="img/gallery/img-view1.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-sm-9">
+                <div class="cartitem__title">
+                  Шторка на ванну <strong>PRACTIC PART GV-413A</strong>
+                </div>
+                <div class="cartitem__note">
+                  <p>75x178x150 см, профиль хром матовый, цвет стекла бесцветный, стекло закаленное полистирол lines мм, стекло закаленное полистирол lines мм.</p>
+                  <p>Товар в наличии. Поставка от 4 до 6 дней. <br>Предоплата 100%.</p>
+                </div>
+                <div class="cartitem__quantsum">
+                  <div class="quantsum-quant inputnumber">
+                    <button onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                    <input type="number" class="form-control" value="1" min="1">
+                    <button onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                  </div>
+                  <div class="quantsum-sum">
+                    <span class="quantsum-sum__ed">33 800 <i class="fal fa-ruble-sign"></i>/ед.</span>
+                    33 800 <i class="fal fa-ruble-sign"></i>
+                  </div>
+                </div>
+                <div class="cartitem__assembling">
+                  <p><strong>Услуга монтажа</strong>Наш партнёр осуществит сборку, монтаж и подключение товаров.</p>
+                  <div class="assembling__switchersum">
+                    <div class="form-check form-switch switchersum-switcher">
+                      <input class="form-check-input" type="checkbox" role="switch" id="id_assembling-switch2" checked title="Включить/не включать услугу монтажа">
+                      <label class="form-check-label" for="id_assembling-switch2"></label>
+                    </div>
+                    <div class="switchersum-sum">7 000 <i class="fal fa-ruble-sign"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="cartbtns">
+            <div class="row">
+              <div class="col-sm-4 d-sm-flex justify-content-start align-items-sm-center order-1 order-sm-0">
+                <a href="#" class="blink">Продолжить&nbsp;покупки</a>
+              </div>
+              <div class="col-sm-8 d-sm-flex justify-content-end">
+                <button class="b-btn btn--contour">Купить&nbsp;в&nbsp;1&nbsp;клик</button>
+                <button class="b-btn btn--blue">Перейти&nbsp;в&nbsp;корзину</button>
+              </div>
+            </div>
+          </div>
+
+
+
+        </form>
+      </div>
+
+
+    </div>
+
+  </div>
+</div>
+
+
+
+<div class="modal fade modal--cart" id="id_modal-cart-click" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+
+      <div class="modal-header">
+        <h3>Купить в 1 клик</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть окно"></button>
+      </div>
+
+
+      <div class="modal-body">
+        <form name="fm_buyclick-inner">
+
+          <div class="block-cart">
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="cartitem__pic">
+                  <img src="img/gallery/img-view1.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-sm-9">
+                <div class="cartitem__title">
+                  Шторка на ванну <strong>PRACTIC PART GV-413A</strong>
+                </div>
+                <div class="cartitem__note">
+                  <p>75x178x150 см, профиль хром матовый, цвет стекла бесцветный, стекло закаленное полистирол lines мм, стекло закаленное полистирол lines мм.</p>
+                  <p>Товар в наличии. Поставка от 4 до 6 дней. <br>Предоплата 100%.</p>
+                </div>
+                <div class="cartitem__quantsum">
+                  <div class="quantsum-quant inputnumber">
+                    <button onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                    <input type="number" class="form-control" value="1" min="1">
+                    <button onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                  </div>
+                  <div class="quantsum-sum">
+                    <span class="quantsum-sum__ed">33 800 <i class="fal fa-ruble-sign"></i>/ед.</span>
+                    33 800 <i class="fal fa-ruble-sign"></i>
+                  </div>
+                </div>
+                <div class="cartitem__assembling">
+                  <p><strong>Услуга монтажа</strong>Наш партнёр осуществит сборку, монтаж и подключение товаров.</p>
+                  <div class="assembling__switchersum">
+                    <div class="form-check form-switch switchersum-switcher">
+                      <input class="form-check-input" type="checkbox" role="switch" id="id_assembling-switch1" checked title="Включить/не включать услугу монтажа">
+                      <label class="form-check-label" for="id_assembling-switch1"></label>
+                    </div>
+                    <div class="switchersum-sum">7 000 <i class="fal fa-ruble-sign"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="cartbtns">
+            <div class="row">
+              <div class="col-sm-4 d-sm-flex justify-content-start align-items-sm-center order-1 order-sm-0">
+                <a href="#" class="blink">Продолжить&nbsp;покупки</a>
+              </div>
+              <div class="col-sm-8 d-sm-flex justify-content-end">
+                <input type="tel" class="form-control" placeholder="Ваш телефон">
+                <button type="submit" class="b-btn btn--blue">Оформить&nbsp;заказ</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p class="note note--min">Нажимая «Оформить заказ», вы соглашаетесь с условиями <a href="#" target="_blank">Публичной оферты</a> и <a href="#" target="_blank">Политики конфиденциальности</a>.</p>
+              </div>
+            </div>
+          </div>
+
+
+
+        </form>
+      </div>
+
+
+    </div>
+
+  </div>
+</div>
 
 
 

@@ -19,6 +19,14 @@
 		width: 20px;
 		height: 20px;
 		z-index: 9999;
+
+		@include media-breakpoint-down(md) {
+			top: 1.5rem;
+			right: 1.5rem;
+			width: 10px;
+			height: 10px;
+		}
+
 	}
 
 	.modal-content {
@@ -74,5 +82,84 @@
 	}
 
 }
+
+
+
+.modal--cart {
+
+	.modal-dialog {
+		width: 80%;
+		max-width: $m-max;
+
+		@include media-breakpoint-down(lg) {
+			width: 100%;
+		}
+
+		@include media-breakpoint-down(md) {
+			width: auto;
+		}
+
+	}
+
+	.block-cart {
+		padding-top: 0;
+		padding-bottom: 2rem;
+		margin: 0 0 2rem 0;
+	}
+
+	.cartitem__pic {
+		margin-right: 1rem;
+	}
+
+	.cartbtns {
+
+		input[type="tel"] {
+			flex: 1 1 8rem;
+			margin: 0 1rem;
+			max-width: 25rem;
+
+			@include media-breakpoint-down(sm) {
+				width: 100%;
+				height: 4rem;
+				max-width: none;
+				margin: 0 0 1rem 0;
+			}
+
+		}
+
+		.btn--contour {
+			margin-right: 3rem;
+
+			@include media-breakpoint-down(sm) {
+				margin: 0 0 1.5rem 0;
+			}
+
+		}
+
+		.note {
+			margin-top: 2rem;
+		}
+
+		.blink {
+
+			@include media-breakpoint-down(sm) {
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+				margin-top: 2rem;
+			}
+
+		}
+
+	}
+
+}
+
+
+
+
+
+
+
 
 

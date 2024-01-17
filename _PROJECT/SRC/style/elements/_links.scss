@@ -86,6 +86,32 @@ a[href^="tel"] {
 }
 
 
+.blink {
+	display: block;
+	font-weight: 500;
+	font-size: $font-size-basemax;
+
+	@include media-breakpoint-down(md) {
+		font-size: $font-size-basemax-md;
+	}
+
+	@include media-breakpoint-down(sm) {
+		font-size: $font-size-basemax-sm;
+	}
+
+	&:before {
+		font-family: $fontawesome;
+		content: "\f053";
+		margin-right: 0.8rem;
+	}
+
+	&:hover {
+		text-decoration: none;
+	}
+
+}
+
+
 .link-telegram {
 	display: block;
 	margin: 0 auto 4rem auto;

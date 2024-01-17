@@ -28,7 +28,33 @@ p {
     margin-right: 0.6rem;
   }
 
+  &.note--min {
+    font-size: $font-size-basemin;
+
+    @include media-breakpoint-down(md) {
+      font-size: $font-size-basemin-md;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-basemin-sm;
+    }
+
+    a {
+      color: $c-gray;
+      text-decoration: underline;
+
+      &:hover {
+        color: $color-link-hover;
+        text-decoration: none;
+      }
+
+    }
+
+  }
+
 }
+
+
 
 .panel-breadcrumb {
   position: absolute;
