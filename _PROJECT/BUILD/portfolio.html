@@ -546,29 +546,111 @@
 <section class="pagesection sc_productcategory-filter">
 	<div class="container-fluid">
 
-		<div class="block-categoryfilter">
 
-			<a href="#" class="categoryfilter__item">
-				<img src="img/gallery/forms/fdu-1.svg" alt="Душевые уголки">
-				Душевые уголки
-			</a>
-			<a href="#" class="categoryfilter__item">
-				<img src="img/gallery/forms/fdd-1.svg" alt="Двери в душевую нишу">
-				Двери в душевую нишу
-			</a>
-			<a href="#" class="categoryfilter__item">
-				<img src="img/gallery/forms/fdp-1.svg" alt="Душевые перегородки">
-				Душевые перегородки
-			</a>
-			<a href="#" class="categoryfilter__item">
-				<img src="img/gallery/forms/fsv-1.svg" alt="Шторки на ванну">
-				Шторки на ванну
-			</a>
-
+		<div class="block-filter">
+			<div class="flt flt--form">
+				<div class="filter__form slider" id="id_filter-form">
+					<a href="#" class="form__item check" data-toggle="tooltip" title="Душевые уголки">
+						<img src="img/gallery/forms/fdu-1.svg" alt="Душевые уголки">
+						Душевые уголки
+					</a>
+					<a href="#" class="form__item" data-toggle="tooltip" title="Двери в душевую нишу">
+						<img src="img/gallery/forms/fdd-1.svg" alt="Двери в душевую нишу">
+						Двери в душевую нишу
+					</a>
+					<a href="#" class="form__item" data-toggle="tooltip" title="Душевые перегородки">
+						<img src="img/gallery/forms/fdp-1.svg" alt="Душевые перегородки">
+						Душевые перегородки
+					</a>
+					<a href="#" class="form__item" data-toggle="tooltip" title="Шторки на ванну">
+						<img src="img/gallery/forms/fsv-1.svg" alt="Шторки на ванну">
+						Шторки на ванну
+					</a>
+					<a href="#" class="form__item" data-toggle="tooltip" title="Угловые">
+						<img src="img/gallery/forms/fps-1.svg" alt="Шторки на ванну">
+						Полки и шкафчики
+					</a>
+				</div>
+			</div>
 		</div>
+
+
+		<div class="flt dlv hidden-md-up"></div>
+
+
+		<form>
+			<div class="block-dropfilter">
+
+				<div class="select2type selector--nosearch">
+					<select style="width: 100%">
+						<option value=0 selected="">Все Категории</option>
+            <option value=1>Душевые перегородки</option>
+            <option value=11>&nbsp;&nbsp;&nbsp;-&nbsp;Один сегмент</option>
+            <option value=12>&nbsp;&nbsp;&nbsp;-&nbsp;Угловые</option>
+            <option value=13>&nbsp;&nbsp;&nbsp;-&nbsp;Свободный вход</option>
+            <option value=2>Душевые уголки</option>
+            <option value=21>&nbsp;&nbsp;&nbsp;-&nbsp;Прямоугольные</option>
+            <option value=22>&nbsp;&nbsp;&nbsp;-&nbsp;Квадратные</option>
+            <option value=23>&nbsp;&nbsp;&nbsp;-&nbsp;Пятиугольные</option>
+            <option value=24>&nbsp;&nbsp;&nbsp;-&nbsp;Четверть круга</option>
+            <option value=25>&nbsp;&nbsp;&nbsp;-&nbsp;Полукруглые</option>
+            <option value=26>&nbsp;&nbsp;&nbsp;-&nbsp;П-образные</option>
+            <option value=3>Двери в душевую нишу</option>
+            <option value=31>&nbsp;&nbsp;&nbsp;-&nbsp;Распашные</option>
+            <option value=32>&nbsp;&nbsp;&nbsp;-&nbsp;Раздвижные</option>
+            <option value=33>&nbsp;&nbsp;&nbsp;-&nbsp;Складные</option>
+            <option value=34>&nbsp;&nbsp;&nbsp;-&nbsp;Угловые</option>
+            <option value=4>Шторки на ванну</option>
+            <option value=41>&nbsp;&nbsp;&nbsp;-&nbsp;Частичные</option>
+            <option value=42>&nbsp;&nbsp;&nbsp;-&nbsp;В нишу</option>
+            <option value=43>&nbsp;&nbsp;&nbsp;-&nbsp;Угловые</option>
+            <option value=44>&nbsp;&nbsp;&nbsp;-&nbsp;П-образные</option>
+            <option value=5>Полки и шкафчики</option>
+					</select>
+				</div>
+
+        <div class="select2type selector--nosearch">
+					<select style="width: 100%">
+						<option value=0 selected="">Все Типы</option>
+						<option value=1>Серийные изделия</option>
+						<option value=2>Индивидуальные изделия</option>
+					</select>
+				</div>
+
+				<div class="select2type selector--colorchoice selector--nosearch">
+					<select style="width: 100%">
+						<option value="0" data-color="pc--none" selected>Любой Цвет фурнитуры</option>
+						<option value="1" data-color="pc--chrom-brlnt">Хром блестящий</option>
+						<option value="2" data-color="pc--chrom-matte">Хром матовый</option>
+						<option value="3" data-color="pc--black-matte">Черный </option>
+						<option value="4" data-color="pc--white-matte">Белый </option>
+					</select>
+				</div>
+
+				<div class="select2type selector--colorchoice selector--nosearch">
+					<select style="width: 100%">
+						<option value="0" data-color="pc--none" selected>Любой Цвет стекла</option>
+						<option value="1" data-color="pc--uncolored">Прозрачный</option>
+						<option value="2" data-color="pc--matte">Матовый</option>
+					</select>
+				</div>
+
+				<div class="select2type selector--nosearch">
+					<select style="width: 100%">
+						<option value=0 selected="">Орнамент</option>
+						<option value=1>С орнаментом</option>
+						<option value=2>Без орнамента</option>
+					</select>
+				</div>
+
+			</div>
+		</form>
+
 
 	</div>
 </section>
+
+
 
 
 

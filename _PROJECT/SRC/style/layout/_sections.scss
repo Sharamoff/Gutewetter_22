@@ -165,7 +165,12 @@
 .sc_productcategory-filter {
   background: $c-gray-bk;
   padding-top: 5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0.1rem;
+
+  @include media-breakpoint-down(md) {
+    padding-top: 6.2rem;
+  }
+
 }
 
 .sc_portfolio {

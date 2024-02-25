@@ -478,7 +478,8 @@ $('.select2type.selector--colorchoice select').select2({
   width: "100%",
   templateSelection: iformat,
   templateResult: iformat,
-  allowHtml: true
+  allowHtml: true,
+  minimumResultsForSearch: -1
 });
 
 

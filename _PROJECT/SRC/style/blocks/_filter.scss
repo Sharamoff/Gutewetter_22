@@ -1,4 +1,5 @@
-.block-filter {
+.block-filter,
+.block-categoryfilter {
   position: relative;
   font-size: $font-size-basemin;
   margin-left: 15px;
@@ -14,11 +15,7 @@
 
   .flt {
     @include clearfix;
-    margin-bottom: 3rem;
-
-    @include media-breakpoint-down(md) {
-      margin-bottom: 2rem;
-    }
+    margin-bottom: 2rem;
 
     &--form {
 
@@ -84,7 +81,7 @@
       z-index: 9;
       cursor: pointer;
       text-align: center;
-      opacity: 0.7;
+      opacity: 0.8;
       color: $c-black;
 
       @include media-breakpoint-down(md) {
@@ -120,7 +117,7 @@
         height: 80px;
         min-width: 80px;
         padding: 1rem;
-        margin: 0 auto;
+        margin: 0 auto 0.5rem auto;
       }
 
     }
@@ -364,7 +361,38 @@
 
 }
 
+.block-dropfilter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1rem;
 
+  @include media-breakpoint-down(md) {
+    margin-top: 2rem;
+  }
 
+  > div {
+    margin: 0 0.5rem 1rem 0.5rem
+  }
+
+  .select2type {
+    min-width: 20rem;
+    font-size: $font-size-basemed;
+
+    @include media-breakpoint-down(md) {
+      font-size: $font-size-basemed-md;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-basemed-sm;
+    }
+
+    @include media-breakpoint-only(xs) {
+      min-width: 100%;
+    }
+
+  }
+
+}
 
 

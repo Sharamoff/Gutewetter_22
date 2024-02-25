@@ -31,79 +31,152 @@
 
 
 .sc_cu-cl {
+	overflow: hidden;
 	padding: 0;
-	height: 90rem;
-
-	@include media-breakpoint-down(xxl) {
-		height: 78rem;
-	}
-
-	@include media-breakpoint-down(xl) {
-		height: 67rem;
-	}
-
-	@include media-breakpoint-down(lg) {
-		height: 55rem;
-	}
+	height: 60rem;
 
 	@include media-breakpoint-down(md) {
-		height: 42rem;
+		height: 40rem;
 	}
 
 	@include media-breakpoint-down(sm) {
-		height: 32rem;
+		height: 25rem;
 	}
 
-	@media only screen and (max-height: 575.98px) and (orientation: landscape) {
-		height: 100dvh;
-	}
+	&.cl--video {
+		height: 90rem;
 
-	.cu-cl__consult {
-		position: absolute;
-		left: 0;
-		right: 0;
-		bottom: 15rem;
-		z-index: 3;
-		display: flex;
-		justify-content: center;
+		@include media-breakpoint-down(xxl) {
+			height: 78rem;
+		}
+
+		@include media-breakpoint-down(xl) {
+			height: 67rem;
+		}
 
 		@include media-breakpoint-down(lg) {
-			bottom: 12rem;
+			height: 55rem;
 		}
 
 		@include media-breakpoint-down(md) {
-			bottom: 6rem;
+			height: 42rem;
 		}
 
 		@include media-breakpoint-down(sm) {
-			bottom: 0;
+			height: 32rem;
 		}
 
-	}
+		@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+			height: 100dvh;
+		}
 
-	.cu-cl__video {
-		overflow: hidden;
-		z-index: 0;
+		.cu-cl__slogan {
+			bottom: 25rem;
 
-		video {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			z-index: 1;
-			object-fit: cover;
+			@include media-breakpoint-down(md) {
+				bottom: 20rem;
+			}
+
+			@include media-breakpoint-down(sm) {
+				margin-left: -9.2rem;
+				bottom: 10rem;
+			}
+
 		}
 
 	}
 
 }
 
+.cu-cl__slogan {
+	position: absolute;
+	left: 50%;
+	bottom: 22rem;
+	z-index: 3;
+	font-size: 3.8rem;
+	font-weight: 300;
+	line-height: $line-height-base;
+	color: $c-gray;
+	text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+
+	@include media-breakpoint-down(lg) {
+		font-size: 3.2rem;
+	}
+
+	@include media-breakpoint-down(md) {
+		font-size: 2.8rem;
+		margin-left: -5rem;
+		bottom: 18rem;
+	}
+
+	@include media-breakpoint-down(sm) {
+		font-size: 1.9rem;
+		margin-left: -5rem;
+		bottom: 10rem;
+	}
+
+	&.slogan--white {
+		color: $c-white;
+		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+	}
+
+}
+
+.cu-cl__consult {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 6rem;
+	z-index: 3;
+	display: flex;
+	justify-content: center;
+
+	@include media-breakpoint-down(sm) {
+		bottom: 1rem;
+	}
+
+}
+
+.cu-cl__video {
+	overflow: hidden;
+	z-index: 0;
+	height: 100%;
+	background: url("../img/custom/cu_hbk0.jpg");
+	background-size: cover;
+
+	video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		object-fit: cover;
+	}
+
+}
+
+.cu-cl__collage {
+	overflow: hidden;
+	z-index: 0;
+	height: 100%;
+
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		object-fit: cover;
+	}
+
+}
 
 
 .cu-bconsult {
 	padding: 2rem;
-	background-color: transparentize($c-white, 0.66);
+	background-color: transparentize($c-white, 0.85);
 	backdrop-filter: blur(4px);
 
 	@include media-breakpoint-down(md) {
@@ -118,7 +191,7 @@
 		padding: 1.5rem 2rem;
 		min-height: 10rem;
 		min-width: 30rem;
-		background-color: transparentize($c-blue, 0.25);
+		background-color: transparentize($c-blue, 0.33);
 		border-radius: 0;
 		border: none;
 		color: $c-white;
@@ -398,23 +471,23 @@
 	width: 45%;
 	min-width: 50rem;
 	height: 100%;
-	background: url("../../img/custom/cu_catalogue1.png") no-repeat;
+	background: url("../img/custom/cu_catalogue1.png") no-repeat;
 	background-size: contain;
 
 	&.catalog_pic--pic1 {
-		background: url("../../img/custom/cu_catalogue1.png") no-repeat;
+		background: url("../img/custom/cu_catalogue1.png") no-repeat;
 	}
 
 	&.catalog_pic--pic2 {
-		background: url("../../img/custom/cu_catalogue2.png") no-repeat;
+		background: url("../img/custom/cu_catalogue2.png") no-repeat;
 	}
 
 	&.catalog_pic--pic3 {
-		background: url("../../img/custom/cu_catalogue3.png") no-repeat;
+		background: url("../img/custom/cu_catalogue3.png") no-repeat;
 	}
 
 	&.catalog_pic--pic4 {
-		background: url("../../img/custom/cu_catalogue4.png") no-repeat;
+		background: url("../img/custom/cu_catalogue4.png") no-repeat;
 	}
 
 	@include media-breakpoint-down(xl) {
@@ -1018,7 +1091,6 @@
 	@include media-breakpoint-down(sm) {
 		padding-bottom: 4rem;
 	}
-
 
 	.cu-youtubes__video {
 		margin-bottom: 2rem;

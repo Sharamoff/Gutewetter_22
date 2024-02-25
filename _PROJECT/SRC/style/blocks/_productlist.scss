@@ -507,11 +507,23 @@
   }
 
   .productlistmini__item-pics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: $c-white;
+    overflow: hidden;
+
+    &.pics--bordered {
+      border: solid 1px $color-border;
+    }
 
     img {
       width: 100%;
       height: auto;
+      object-fit: cover;
     }
 
   }

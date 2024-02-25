@@ -136,3 +136,25 @@ a[href^="tel"] {
 	}
 
 }
+
+
+.link-blocklist {
+	text-decoration: none !important;
+
+	h3 {
+		color: $color-hdr !important;
+		transition: $transition-all;
+	}
+
+	&:hover, &:hover div {
+		color: $color-text !important;
+
+		h3 {
+			color: $c-blue !important;
+		}
+
+	}
+
+
+
+}
