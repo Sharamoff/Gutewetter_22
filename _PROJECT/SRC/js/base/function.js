@@ -841,3 +841,28 @@ $('#id_cu-portfolio_images').slick({
 });
 
 
+
+//dropfilter
+function checkButtonDisabled() {
+  var allFirstOptionsSelected = true;
+  $('#fm_dropfilter select').each(function(){
+    if ($(this).val() !== $(this).find('option:first').val()) {
+      allFirstOptionsSelected = false;
+      return false;
+    }
+  });
+  if (allFirstOptionsSelected) {
+    $('#btn-dropfilter-reset').addClass('disabled');
+  } else {
+    $('#btn-dropfilter-reset').removeClass('disabled');
+  }
+}
+$('#fm_dropfilter select').on('change', function(){
+  checkButtonDisabled();
+});
+$('#btn-dropfilter-reset').click(function(){
+  $('#fm_dropfilter select').each(function(){
+    $(this).val($(this).find('option:first').val()).trigger('change.select2');
+  });
+  checkButtonDisabled();
+});

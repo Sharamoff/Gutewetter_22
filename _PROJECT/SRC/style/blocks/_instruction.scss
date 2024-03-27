@@ -1,0 +1,88 @@
+.block-instruction-pdf {
+  margin-bottom: 4rem;
+  text-align: center;
+
+  > a:hover {
+    text-decoration: none;
+
+    b {
+      color: $color-link;
+    }
+
+  }
+
+  .block-download {
+    margin-top :1rem;
+    text-align: center;
+
+    .download__type {
+      margin-top: 0.5rem;
+    }
+
+    &:hover {
+
+      b {
+        text-decoration: none;
+      }
+
+    }
+
+  }
+
+}
+
+.block-instruction-pdf__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px $color-border;
+  background: $c-gray-bk;
+  min-height: 28rem;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+.block-instruction-pdf__button {
+  display: block;
+  padding: 2rem;
+  background: $c-blue;
+  color: $c-white !important;
+  text-align: center;
+  margin-bottom: 2rem;
+  transition: $transition-all;
+
+  &:hover {
+    background: $color-link-hover
+  }
+
+}
+
+.block-instruction-video {
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+
+  @include media-breakpoint-down(md) {
+    margin-right: 1rem;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-right: 0;
+  }
+
+}
+
+.block-instruction-video__note {
+  margin-top: 1rem;
+  line-height: $line-height-p;
+
+  strong {
+    font-weight: 600;
+  }
+
+
+}
+

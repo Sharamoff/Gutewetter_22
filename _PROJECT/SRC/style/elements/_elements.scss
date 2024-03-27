@@ -10,6 +10,10 @@ p {
   overflow: hidden;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 .note {
   font-size: $font-size-basemed;
   color: $c-gray-light;
@@ -472,3 +476,6 @@ p {
 }
 
 
+.ratio {
+  border: solid 1px $color-border;
+}

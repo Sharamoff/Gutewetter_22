@@ -3024,6 +3024,10 @@ p {
   overflow: hidden;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 .note {
   font-size: 1.5rem;
   color: #6E6E73;
@@ -3418,6 +3422,10 @@ p {
   color: rgb(255, 255, 255);
 }
 
+.ratio {
+  border: solid 1px #C3C3C6;
+}
+
 h1 {
   font-weight: 500;
   line-height: 1.1;
@@ -3616,6 +3624,7 @@ button.disabled:hover {
   color: rgb(0, 0, 0);
   box-shadow: none;
   opacity: 0.3;
+  cursor: default;
 }
 
 .b-btn {
@@ -5479,7 +5488,7 @@ OL.ol--cont > li:before {
   margin: 0 0.5rem 1rem 0.5rem;
 }
 .block-dropfilter .select2type {
-  min-width: 20rem;
+  min-width: 16rem;
   font-size: 1.5rem;
 }
 @media (max-width: 767.98px) {
@@ -5494,7 +5503,19 @@ OL.ol--cont > li:before {
 }
 @media (max-width: 575.98px) {
   .block-dropfilter .select2type {
-    min-width: 100%;
+    min-width: 100% !important;
+  }
+}
+.block-dropfilter .b-btn {
+  font-size: 1.5rem;
+  border-radius: 0.4rem;
+  height: 3.5rem;
+  padding: 0.8rem;
+  min-width: auto;
+}
+@media (max-width: 575.98px) {
+  .block-dropfilter .b-btn {
+    width: 10rem !important;
   }
 }
 
@@ -10032,13 +10053,14 @@ OL.ol--cont > li:before {
   text-decoration: underline;
 }
 .block-download:hover .download__type {
-  text-decoration-color: rgb(255, 255, 255);
+  text-decoration-color: rgb(255, 255, 255) !important;
 }
 .block-download b {
   display: block;
   font-weight: 500;
 }
-.block-download .download__type {
+
+.download__type {
   display: block;
   font-size: 1.7rem;
   color: #6E6E73 !important;
@@ -10046,29 +10068,29 @@ OL.ol--cont > li:before {
   font-weight: 400;
 }
 @media (max-width: 767.98px) {
-  .block-download .download__type {
+  .download__type {
     font-size: 1.5rem;
   }
 }
 @media (max-width: 575.98px) {
-  .block-download .download__type {
+  .download__type {
     font-size: 1.5rem;
     margin-top: 0.1rem;
   }
 }
-.block-download .download__type:before {
+.download__type:before {
   font-family: "Font Awesome 5 Pro";
   font-size: 20px;
   font-weight: 300;
   margin-right: 0.8rem;
 }
-.block-download .download__type.type--xls:before {
+.download__type.type--xls:before {
   content: "\f1c3";
 }
-.block-download .download__type.type--pdf:before {
+.download__type.type--pdf:before {
   content: "\f1c1";
 }
-.block-download .download__type.type--zip:before {
+.download__type.type--zip:before {
   content: "\f1c6";
 }
 
@@ -10126,4 +10148,74 @@ OL.ol--cont > li:before {
 }
 .block-videotxt span {
   white-space: nowrap;
+}
+
+.block-instruction-pdf {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.block-instruction-pdf > a:hover {
+  text-decoration: none;
+}
+.block-instruction-pdf > a:hover b {
+  color: #008BD2;
+}
+.block-instruction-pdf .block-download {
+  margin-top: 1rem;
+  text-align: center;
+}
+.block-instruction-pdf .block-download .download__type {
+  margin-top: 0.5rem;
+}
+.block-instruction-pdf .block-download:hover b {
+  text-decoration: none;
+}
+
+.block-instruction-pdf__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #C3C3C6;
+  background: #F5F5F6;
+  min-height: 28rem;
+}
+.block-instruction-pdf__img img {
+  width: 100%;
+  height: auto;
+}
+
+.block-instruction-pdf__button {
+  display: block;
+  padding: 2rem;
+  background: #008BD2;
+  color: rgb(255, 255, 255) !important;
+  text-align: center;
+  margin-bottom: 2rem;
+  transition: 0.3s;
+}
+.block-instruction-pdf__button:hover {
+  background: rgb(0, 0, 0);
+}
+
+.block-instruction-video {
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 767.98px) {
+  .block-instruction-video {
+    margin-right: 1rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .block-instruction-video {
+    margin-right: 0;
+  }
+}
+
+.block-instruction-video__note {
+  margin-top: 1rem;
+  line-height: 1.47;
+}
+.block-instruction-video__note strong {
+  font-weight: 600;
 }

@@ -8,6 +8,7 @@ button.disabled:hover {
 	color: $c-black;
 	box-shadow: none;
 	opacity: 0.3;
+	cursor: default;
 }
 
 .b-btn {

@@ -21,14 +21,14 @@ const path = {
 	},
 	src: {
 		html:   'SRC/*.html',
-		js:     'SRC/js/*.js',
+		js:     'SRC/js/*.*js',
 		style:  'SRC/style/*.scss',
 		img:    'SRC/img/**/*.*',
 		fonts:  'SRC/fonts/**/*.*'
 	},
 	watch: {
 		html:   'SRC/**/*.html',
-		js:     'SRC/js/**/*.js',
+		js:     'SRC/js/**/*.*js',
 		style:  'SRC/style/**/*.scss',
 		img:    'SRC/img/**/*.*',
 		fonts:  'SRC/fonts/**/*.*'

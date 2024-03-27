@@ -376,7 +376,7 @@
   }
 
   .select2type {
-    min-width: 20rem;
+    min-width: 16rem;
     font-size: $font-size-basemed;
 
     @include media-breakpoint-down(md) {
@@ -388,7 +388,20 @@
     }
 
     @include media-breakpoint-only(xs) {
-      min-width: 100%;
+      min-width: 100% !important;
+    }
+
+  }
+
+  .b-btn {
+    font-size: $font-size-basemed;
+    border-radius: $border-radius;
+    height: 3.5rem;
+    padding: 0.8rem;
+    min-width: auto;
+
+    @include media-breakpoint-only(xs) {
+      width: 10rem !important;
     }
 
   }

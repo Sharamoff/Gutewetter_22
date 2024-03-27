@@ -22,7 +22,7 @@
     }
 
     .download__type {
-      text-decoration-color: $c-white;
+      text-decoration-color: $c-white !important;
     }
 
   }
@@ -32,33 +32,34 @@
     font-weight: 500;
   }
 
-  .download__type {
-    display: block;
-    font-size: $font-size-base;
-    color: $c-gray-light !important;
-    margin-top: 0.3rem;
-    font-weight: 400;
+}
 
-    @include media-breakpoint-down(md) {
-      font-size: $font-size-base-md;
-    }
+.download__type {
+  display: block;
+  font-size: $font-size-base;
+  color: $c-gray-light !important;
+  margin-top: 0.3rem;
+  font-weight: 400;
 
-    @include media-breakpoint-down(sm) {
-      font-size: $font-size-base-sm;
-      margin-top: 0.1rem;
-    }
-
-    &:before {
-      font-family: $fontawesome;
-      font-size: 20px;
-      font-weight: 300;
-      margin-right: 0.8rem;
-    }
-
-    &.type--xls {&:before {content: '\f1c3';}}
-    &.type--pdf {&:before {content: '\f1c1';}}
-    &.type--zip {&:before {content: '\f1c6';}}
-
+  @include media-breakpoint-down(md) {
+    font-size: $font-size-base-md;
   }
 
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-base-sm;
+    margin-top: 0.1rem;
+  }
+
+  &:before {
+    font-family: $fontawesome;
+    font-size: 20px;
+    font-weight: 300;
+    margin-right: 0.8rem;
+  }
+
+  &.type--xls {&:before {content: '\f1c3';}}
+  &.type--pdf {&:before {content: '\f1c1';}}
+  &.type--zip {&:before {content: '\f1c6';}}
+
 }
+

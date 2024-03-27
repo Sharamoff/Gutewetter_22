@@ -81,27 +81,48 @@
 
 		<div class="flt dlv hidden-md-up"></div>
 
-		<form>
+
+
+		<form id="fm_dropfilter">
 			<div class="block-dropfilter">
 
-				<div class="select2type selector--nosearch">
+				<div class="select2type selector--nosearch" style="min-width: 20rem;">
+
 					<select style="width: 100%">
-						<option value=0 selected="">Категория</option>
-						<option value=1>Один сегмент</option>
-						<option value=2>Угловые</option>
-						<option value=3>Свободный вход</option>
+						<option value=0 selected>Категория</option>
+						<option value=10><b>Душевые перегородки</b></option>
+						<option value=11>&nbsp;&nbsp;&nbsp;&ndash;&nbsp;Один сегмент</option>
+						<option value=12>&nbsp;&nbsp;&nbsp;&ndash;&nbsp;Угловые</option>
+						<option value=13>&nbsp;&nbsp;&nbsp;&ndash;&nbsp;Свободный вход</option>
+						<option value=20>Душевые уголки</option>
+						<option value=21>&nbsp;&nbsp;&nbsp;&ndash;&nbsp;Прямоугольные</option>
+						<option value=22>&nbsp;&nbsp;&nbsp;&ndash;&nbsp;Квадратные</option>
+						<option value=23>&nbsp;&nbsp;&nbsp;&ndash;&nbsp;Пятиугольные</option>
+						<option value=24>&nbsp;&nbsp;&nbsp;&ndash;&nbsp;Четверть круга</option>
+						<option value=25>&nbsp;&nbsp;&nbsp;&ndash;&nbsp;Полукруглые</option>
+						<option value=26>&nbsp;&nbsp;&nbsp;&ndash;&nbsp;П-образные</option>
+						<option value=30>Двери в душевую нишу</option>
+						<option value=31>&nbsp;&nbsp;&nbsp;&ndash;&nbsp;Распашные</option>
+						<option value=32>&nbsp;&nbsp;&nbsp;&ndash;&nbsp;Раздвижные</option>
+						<option value=33>&nbsp;&nbsp;&nbsp;&ndash;&nbsp;Складные</option>
+						<option value=34>&nbsp;&nbsp;&nbsp;&ndash;&nbsp;Угловые</option>
+						<option value=40>Шторки на ванну</option>
+						<option value=41>&nbsp;&nbsp;&nbsp;&ndash;&nbsp;Частичные</option>
+						<option value=42>&nbsp;&nbsp;&nbsp;&ndash;&nbsp;В нишу</option>
+						<option value=43>&nbsp;&nbsp;&nbsp;&ndash;&nbsp;Угловые</option>
+						<option value=44>&nbsp;&nbsp;&nbsp;&ndash;&nbsp;П-образные</option>
 					</select>
 				</div>
 
-				<div class="select2type selector--nosearch">
+				<div class="select2type selector--nosearch" style="min-width: 20rem;">
 					<select style="width: 100%">
-						<option value=0 selected="">Тип</option>
+						<option value=0 selected>Тип</option>
 						<option value=1>Серийные изделия</option>
 						<option value=2>Индивидуальные изделия</option>
 					</select>
 				</div>
 
-				<div class="select2type selector--colorchoice selector--nosearch">
+				<div class="select2type selector--colorchoice selector--nosearch" style="min-width: 18rem;">
 					<select style="width: 100%">
 						<option value="0" data-color="pc--none" selected>Цвет фурнитуры</option>
 						<option value="1" data-color="pc--chrom-brlnt">Хром блестящий</option>
@@ -111,7 +132,7 @@
 					</select>
 				</div>
 
-				<div class="select2type selector--colorchoice selector--nosearch">
+				<div class="select2type selector--colorchoice selector--nosearch" style="min-width: 18rem;">
 					<select style="width: 100%">
 						<option value="0" data-color="pc--none" selected>Цвет стекла</option>
 						<option value="1" data-color="pc--uncolored">Прозрачный</option>
@@ -119,16 +140,19 @@
 					</select>
 				</div>
 
-				<div class="select2type selector--nosearch">
+				<div class="select2type selector--nosearch" style="min-width: 16rem;">
 					<select style="width: 100%">
-						<option value=0 selected="">Орнамент</option>
+						<option value=0 selected>Орнамент</option>
 						<option value=1>С орнаментом</option>
 						<option value=2>Без орнамента</option>
 					</select>
 				</div>
 
+				<button id="btn-dropfilter-reset" class="b-btn disabled" type="reset">Сбросить</button>
+
 			</div>
 		</form>
+
 
 
 	</div>
