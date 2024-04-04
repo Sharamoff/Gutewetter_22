@@ -1,0 +1,39 @@
+
+
+.clflex-images {
+  overflow: hidden;
+  margin: 3px 3px 0 5px;
+
+  @include media-breakpoint-down(md) {
+    margin: 0 0 0 2px;
+  }
+
+  .item {
+    margin: 5px;
+    display: inline-block;
+    float: left;
+    box-sizing: content-box;
+    overflow: hidden;
+    position: relative;
+
+    @include media-breakpoint-down(md) {
+      margin: 2px;
+    }
+
+    img {
+      display: block;
+      width: auto;
+      height: 100%;
+      object-fit: cover;
+    }
+
+  }
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+.block-paintprice {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  max-width: 50rem;
+
+  &:nth-child(even) {
+    margin-right: 0;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin: 1rem auto;
+  }
+
+  img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-right: 2rem;
+
+    @include media-breakpoint-down(lg) {
+      width: 100px;
+      height: 100px;
+    }
+
+  }
+
+  .paintprice__text {
+    overflow: hidden;
+
+    h3 {
+      font-weight: 600;
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+
+      @include media-breakpoint-down(lg) {
+        font-size: 2.1rem;
+      }
+
+    }
+
+    strong {
+      white-space: nowrap;
+      font-size: $font-size-basemax;
+
+      @include media-breakpoint-down(md) {
+        font-size: $font-size-basemax-md;
+      }
+
+      @include media-breakpoint-down(sm) {
+        font-size: $font-size-basemax-sm;
+      }
+
+    }
+
+    i {
+      font-size: $font-size-base;
+      font-weight: 600;
+
+      @include media-breakpoint-down(md) {
+        font-size: $font-size-base-md;
+      }
+
+      @include media-breakpoint-down(sm) {
+        font-size: $font-size-base-sm;
+      }
+
+    }
+
+
+  }
+
+}
+
+
+
+

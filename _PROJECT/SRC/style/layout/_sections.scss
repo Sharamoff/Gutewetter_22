@@ -229,3 +229,20 @@
 .sc_downloadlist {
   min-height: 60vh;
 }
+
+.sc_pagematrix {
+  padding-bottom: 0;
+}
+
+.sc_clflex {
+  overflow: hidden;
+  padding: 0;
+}
+
+@include media-breakpoint-down(md) {
+
+  .sc_clflex + .pagesection {
+    padding-top: 3rem;
+  }
+
+}

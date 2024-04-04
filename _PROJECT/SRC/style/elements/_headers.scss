@@ -47,7 +47,7 @@ h1 {
 h2,
 .mainhdr {
 	font: $font-h2;
-	font-weight: 600;
+	font-weight: 600 !important;
 	color: $c-gray;
 	margin-top: 0;
 	margin-bottom: 3.5rem;

@@ -866,3 +866,30 @@ $('#btn-dropfilter-reset').click(function(){
   });
   checkButtonDisabled();
 });
+
+
+
+// flex collage
+function clflexImages() {
+  $('.clflex-images').flexImages({
+    rowHeight: 200,
+    maxRows: 2
+  });
+  if ($(document).width() < 768) {
+    $('.clflex-images').flexImages({
+      rowHeight: 150,
+      maxRows: 2
+    });
+  } else
+  if ($(document).width() < 576) {
+    $('.clflex-images').flexImages({
+      rowHeight: 100,
+      maxRows: 2
+    });
+  }
+}
+clflexImages();
+$(window).resize(function() {
+  clflexImages();
+});
+

@@ -156,6 +156,11 @@ BODY.modal-open {
 .header-compensator {
   height: 4.4rem;
 }
+@media (max-width: 767.98px) {
+  .header-compensator {
+    height: 4rem;
+  }
+}
 
 .breadcrumb-compensator {
   height: 8.8rem;
@@ -1430,6 +1435,20 @@ header a:hover {
   min-height: 60vh;
 }
 
+.sc_pagematrix {
+  padding-bottom: 0;
+}
+
+.sc_clflex {
+  overflow: hidden;
+  padding: 0;
+}
+
+@media (max-width: 767.98px) {
+  .sc_clflex + .pagesection {
+    padding-top: 3rem;
+  }
+}
 footer {
   background: #F5F5F6;
   padding: 3rem 15px 8rem 15px;
@@ -3469,7 +3488,7 @@ h1 .h1--small {
 h2,
 .mainhdr {
   font: 4.8rem Inter, Arial, Helvetica, sans-serif;
-  font-weight: 600;
+  font-weight: 600 !important;
   color: #1D1D1F;
   margin-top: 0;
   margin-bottom: 3.5rem;
@@ -5685,6 +5704,27 @@ OL.ol--cont > li:before {
   .block-matrix-idx .matrix__link:after {
     font-size: 1.4rem;
   }
+}
+
+.block-matrix {
+  margin-bottom: 10px;
+  position: relative;
+  background: #F5F5F6;
+}
+.block-matrix img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: 0.3s;
+}
+.block-matrix a {
+  display: block;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.block-matrix a:hover img {
+  scale: 1.02;
 }
 
 .block-signs {
@@ -10218,4 +10258,105 @@ OL.ol--cont > li:before {
 }
 .block-instruction-video__note strong {
   font-weight: 600;
+}
+
+.clflex-images {
+  overflow: hidden;
+  margin: 3px 3px 0 5px;
+}
+@media (max-width: 767.98px) {
+  .clflex-images {
+    margin: 0 0 0 2px;
+  }
+}
+.clflex-images .item {
+  margin: 5px;
+  display: inline-block;
+  float: left;
+  box-sizing: content-box;
+  overflow: hidden;
+  position: relative;
+}
+@media (max-width: 767.98px) {
+  .clflex-images .item {
+    margin: 2px;
+  }
+}
+.clflex-images .item img {
+  display: block;
+  width: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.block-paintprice {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  max-width: 50rem;
+}
+.block-paintprice:nth-child(even) {
+  margin-right: 0;
+}
+@media (max-width: 575.98px) {
+  .block-paintprice {
+    margin: 1rem auto;
+  }
+}
+.block-paintprice img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin-right: 2rem;
+}
+@media (max-width: 991.98px) {
+  .block-paintprice img {
+    width: 100px;
+    height: 100px;
+  }
+}
+.block-paintprice .paintprice__text {
+  overflow: hidden;
+}
+.block-paintprice .paintprice__text h3 {
+  font-weight: 600;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 991.98px) {
+  .block-paintprice .paintprice__text h3 {
+    font-size: 2.1rem;
+  }
+}
+.block-paintprice .paintprice__text strong {
+  white-space: nowrap;
+  font-size: 2.1rem;
+}
+@media (max-width: 767.98px) {
+  .block-paintprice .paintprice__text strong {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .block-paintprice .paintprice__text strong {
+    font-size: 1.7rem;
+  }
+}
+.block-paintprice .paintprice__text i {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+@media (max-width: 767.98px) {
+  .block-paintprice .paintprice__text i {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .block-paintprice .paintprice__text i {
+    font-size: 1.5rem;
+  }
 }

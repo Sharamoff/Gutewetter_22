@@ -38,3 +38,30 @@
 
 }
 
+.block-matrix {
+  margin-bottom: 10px;
+  position: relative;
+  background: $color-bk-gray;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: $transition-all;
+  }
+
+  a {
+    display: block;
+    overflow: hidden;
+    transition: $transition-all;
+  }
+
+  a:hover {
+
+    img {
+      scale: 1.02;
+    }
+
+  }
+
+}

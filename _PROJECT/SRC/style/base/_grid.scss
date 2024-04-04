@@ -37,6 +37,11 @@ BODY {
 
 .header-compensator {
 	height: 4.4rem;
+
+	@include media-breakpoint-down(md) {
+		height: 4.0rem;
+	}
+
 }
 
 .breadcrumb-compensator {
