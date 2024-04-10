@@ -897,4 +897,19 @@ $(window).resize(function() {
 });
 
 
+
+$('.wrongsetup-slider.slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: true,
+  arrows: false,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear',
+  autoplay: true,
+  responsive: true
+});
+
+
 });

@@ -2,7 +2,8 @@ p {
   margin-bottom: 1rem;
 }
 
-.p {
+.p,
+div.p > p {
   line-height: $line-height-p;
 }
 

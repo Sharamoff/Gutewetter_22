@@ -3035,7 +3035,8 @@ p {
   margin-bottom: 1rem;
 }
 
-.p {
+.p,
+div.p > p {
   line-height: 1.47;
 }
 
@@ -10359,4 +10360,56 @@ OL.ol--cont > li:before {
   .block-paintprice .paintprice__text i {
     font-size: 1.5rem;
   }
+}
+
+.block-wrongsetup {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+.block-wrongsetup h3 {
+  line-height: 1.2;
+}
+.block-wrongsetup h4 {
+  font-size: 2.1rem;
+  font-weight: 400;
+}
+@media (max-width: 767.98px) {
+  .block-wrongsetup h4 {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .block-wrongsetup h4 {
+    font-size: 1.7rem;
+  }
+}
+.block-wrongsetup .wrongsetup__l {
+  background: #F5F5F6;
+  padding: 2rem;
+  height: 100%;
+}
+.block-wrongsetup .wrongsetup__l img {
+  width: 100%;
+  max-width: 49rem;
+  height: auto;
+}
+.block-wrongsetup .wrongsetup__r {
+  background: #1D1D1F;
+  color: rgb(255, 255, 255);
+  padding: 2rem;
+}
+.block-wrongsetup .wrongsetup__r img {
+  width: 100%;
+  height: auto;
+}
+.block-wrongsetup .wrongsetup__r .wrongsetup-slider {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  max-width: 50rem;
+}
+.block-wrongsetup .wrongsetup__r .wrongsetup-slider .slick-list {
+  margin-bottom: 4rem;
+}
+.block-wrongsetup .wrongsetup__r .wrongsetup-slider .slick-dots li button:before {
+  color: rgb(255, 255, 255);
 }
