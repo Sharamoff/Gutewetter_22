@@ -16,21 +16,37 @@
     display: block;
     text-align: center;
     color: $c-gray;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 
-    img {
-      width: 100%;
-      max-width: 220px;
-      height: auto;
-      margin: 0 auto 2rem auto;
+    .reference__item_img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      background: #ffffff;
+
+      img {
+        width: 100%;
+        height: auto;
+        max-width: 220px;
+        filter: grayscale(1);
+        transition: $transition-all;
+
+        @include media-breakpoint-down(md) {
+          filter: none;
+        }
+
+      }
+
     }
 
     .reference__item_hdr {
       font-weight: 500;
       color: $c-gray;
       text-align: center;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
+      transition: $transition-all;
     }
 
     .reference__item_note {
@@ -51,6 +67,10 @@
     &:hover {
       text-decoration: none;
 
+      img {
+        filter: none;
+      }
+
       .reference__item_hdr {
         color: $c-blue !important;
       }
@@ -61,3 +81,298 @@
 
 }
 
+
+.block-reference {
+  margin-bottom: 4rem;
+}
+
+.block-reference__collage {
+  margin-bottom: 1rem;
+
+  @include media-breakpoint-only(xs) {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+}
+
+.block-reference__refplate {
+  display: flex;
+  gap: 1rem;
+
+  @include media-breakpoint-only(xs) {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .refplate-pics {
+    flex: 1 0 35rem;
+    display: block;
+    position: relative;
+    width: 35rem;
+    cursor: pointer;
+
+    @include media-breakpoint-down(lg) {
+      flex: 1 0 28rem;
+      width: 28rem;
+    }
+
+    @include media-breakpoint-down(md) {
+      flex: 1 0 20rem;
+      width: 20rem;
+    }
+
+    @include media-breakpoint-only(xs) {
+      width: inherit;
+      min-width: inherit;
+      order: 1;
+
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+
+      @include media-breakpoint-only(xs) {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+      }
+
+    }
+
+    .refplate-pics__slide {
+
+      @include media-breakpoint-down(md) {
+        margin-bottom: 1rem;
+      }
+
+      @include media-breakpoint-only(xs) {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+
+      .slick-list {
+        margin-bottom: 0;
+
+        @include media-breakpoint-down(md) {
+          margin-bottom: 2.5rem;
+        }
+
+      }
+
+      .slick-dots {
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: nowrap;
+
+        @include media-breakpoint-down(md) {
+          display: inline-block !important;
+          bottom: -2.3rem;
+        }
+
+        li {
+          margin: 1px;
+          width: 100%;
+
+          @include media-breakpoint-down(md) {
+            width: 3rem;
+          }
+
+        }
+
+        button {
+          height: 2rem;
+          padding: 0;
+        }
+
+        button:before {
+          color: $c-gray;
+          content: "";
+          font-weight: bold;
+          border-bottom: solid 4px transparentize($c-gray, 0.5);
+          width: 100%;
+
+          @include media-breakpoint-down(md) {
+            font-family: $fontawesome;
+            color: $c-gray-light;
+            content: "\f111";
+            border-bottom: none;
+            font-size: 7px;
+          }
+
+        }
+
+        button:hover {
+
+          &:before {
+            border-color: transparentize($c-gray, 0.3);
+
+            @include media-breakpoint-down(md) {
+              color: $c-gray;
+            }
+
+          }
+
+        }
+
+        .slick-active button:before {
+          color: $c-gray;
+          opacity: 0.5;
+          border-color: $c-gray;
+
+          @include media-breakpoint-down(md) {
+            color: $c-gray;
+          }
+
+        }
+
+      }
+
+    }
+
+    .refplate-pics__once {
+      display: block;
+
+      @include media-breakpoint-only(xs) {
+        margin-left: 45px;
+        margin-right: 45px;
+        margin-bottom: 1rem;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+    }
+
+    .refplate-pics__hoverbar {
+      position: absolute;
+      z-index: 2;
+      display: flex;
+      flex-wrap: nowrap;
+      width: 100%;
+      height: 100%;
+
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+
+      > div {
+        width: 100%;
+      }
+
+    }
+
+  }
+
+  .refplate-descript {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    background: $color-bk-gray;
+
+    @include media-breakpoint-down(lg) {
+      padding: 2rem;
+    }
+
+    @include media-breakpoint-only(xs) {
+      padding: 2rem 0;
+      background: none;
+      order: 2;
+    }
+
+    .descript__text {
+
+      a {
+        text-decoration: underline;
+        color: $color-text;
+
+        &:hover {
+          text-decoration: none;
+          color: $color-link-hover;
+        }
+
+      }
+
+    }
+
+
+    .text_hdr {
+      font: $font-h2;
+      font-weight: 600 !important;
+      color: $c-gray;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      line-height: $line-height-h;
+
+      @include media-breakpoint-down(md) {
+        font: $font-h2-md;
+      }
+
+      @include media-breakpoint-down(sm) {
+        font: $font-h2-sm;
+      }
+
+      @include media-breakpoint-only(xs) {
+        text-align: center;
+      }
+
+    }
+
+    .text_subhdr {
+      font: $font-h3;
+      font-weight: 500;
+      line-height: $line-height-h;
+      margin-bottom: 1.5rem;
+
+      @include media-breakpoint-down(md) {
+        font: $font-h3-md;
+      }
+
+      @include media-breakpoint-down(sm) {
+        font: $font-h3-sm;
+      }
+
+      @include media-breakpoint-only(xs) {
+        text-align: center;
+      }
+
+    }
+
+  }
+
+  .descript__link {
+    display: inline-block;
+    margin-top: 2rem;
+    font-weight: 500;
+
+    @include media-breakpoint-down(md) {
+      margin-top: 0.5rem;
+    }
+
+    @include media-breakpoint-only(xs) {
+      text-align: center;
+    }
+
+    &:after {
+      display: inline-block;
+      font-family: $fontawesome;
+      content: "\f08e";
+      margin-left: 1rem;
+      font-weight: 200;
+      color: $c-gray-invert;
+    }
+
+  }
+
+}

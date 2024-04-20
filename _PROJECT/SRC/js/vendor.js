@@ -13,3 +13,5 @@
 //= vendor/flex-images.min.js
 
 //= vendor/dragscroll.js
+
+//= vendor/fancybox.umd.js

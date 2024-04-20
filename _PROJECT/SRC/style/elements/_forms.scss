@@ -269,7 +269,44 @@ input[type="radio"] {
 }
 
 
+.div-form-check {
+	margin-top: 2.5rem !important;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
 
+	input[type="checkbox"] {
+		margin: 0 1.5rem 0 0 ;
+	}
+
+	label {
+		color: $c-gray;
+		margin: 0;
+
+		a {
+			color: $c-black;
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+				color: $color-link-hover;
+			}
+
+		}
+
+	}
+
+}
+
+.div-form-btn {
+	margin-top: 2.5rem !important;
+
+	> button {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
 
 
 

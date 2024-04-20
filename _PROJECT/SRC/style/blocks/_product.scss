@@ -523,7 +523,7 @@
 
 .product-tabs {
   max-width: $m-max;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: stretch;
   flex-wrap: nowrap;
   margin-left: auto;
@@ -535,8 +535,8 @@
   @include media-breakpoint-down(md) {
     justify-content: center;
     flex-wrap: wrap;
+    gap: 1rem;
   }
-
 
   > li {
     margin: 0;
@@ -552,16 +552,12 @@
       border-top: solid 2px transparent;
       border-left: solid 1px transparent;
       border-right: solid 1px transparent;
-      line-height: 1.1;
+      line-height: 1;
       height: 100%;
 
       @include media-breakpoint-down(md) {
         padding: 0.8rem 1.5rem;
-        margin: 0 1rem;
-      }
-
-      @include media-breakpoint-only(xs) {
-        margin: 0 0.5rem;
+        border: solid 1px #e3e3e6;
       }
 
       &:hover {

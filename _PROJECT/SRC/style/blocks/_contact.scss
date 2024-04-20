@@ -41,3 +41,36 @@
 
 }
 
+.block-contactform {
+  padding: 4rem 4rem 2rem 4rem;
+  background-color: $c-gray-bk;
+
+  @include media-breakpoint-down(md) {
+    padding: 2rem 2rem 1rem 2rem;
+  }
+
+  form > div {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  input,
+  textarea {
+    padding: 1rem;
+  }
+
+  label {
+    font-size: $font-size-basemed;
+    color: $c-gray-light;
+
+    @include media-breakpoint-down(md) {
+      font-size: $font-size-basemed-md;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-basemed-sm;
+    }
+
+  }
+
+}
