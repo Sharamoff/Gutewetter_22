@@ -3,6 +3,10 @@
 	color: $c-gray;
 	border-color: $c-tool-border;
 
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 2rem;
+	}
+
 	th {
 		padding: 1.2rem;
 		background-color: $c-tool-border;
@@ -201,7 +205,9 @@
 
 }
 
-
+.td--left {text-align: left !important;}
+.td--centered {text-align: center !important;}
+.td--right {text-align: right !important;}
 
 .tr--empty td {
 	background: none !important;

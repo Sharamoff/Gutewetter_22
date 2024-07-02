@@ -355,6 +355,18 @@
 
   }
 
+  a.productcart__serv-dlvr span,
+  a.productcart__serv-mntge span {
+    border-bottom: dotted 1px $c-gray-light;
+    padding-bottom: 0;
+    margin-bottom: -3px;
+  }
+
+  a.productcart__serv-dlvr:hover span,
+  a.productcart__serv-mntge:hover span {
+    border-color: transparent;
+  }
+
 }
 
 .productcart__price {

@@ -629,10 +629,10 @@
 							<i class="fal fa-map-marker-alt"></i><span>Набережные Челны</span>
 						</a>
 						<div class="productcart__serv">
-							<a href="#" class="productcart__serv-dlvr"><i class="fal fa-truck"></i><span>Доставка:</span>от&nbsp;<strong>1 000</strong><i class="fal fa-ruble-sign"></i></a>
+							<a href="#" class="productcart__serv-dlvr" data-bs-toggle="modal" data-bs-target="#id_modal-delivery" rel="nav-delivery"><i class="fal fa-truck"></i><span>Доставка:</span>от&nbsp;<strong>1 000</strong><i class="fal fa-ruble-sign"></i></a>
 							<div class="productcart__serv-dlvr"><i class="fal fa-shipping-timed"></i><span>Можем доставить за 72 часа</span></div>
 							<div class="productcart__serv-dlvr"><i class="fal fa-person-carry"></i><span>Самовывоз:</span>бесплатно</div>
-							<a href="#" class="productcart__serv-mntge"><i class="fal fa-tools"></i><span>Монтаж:</span><strong>7 500</strong><i class="fal fa-ruble-sign"></i></a>
+							<a href="#" class="productcart__serv-mntge" data-bs-toggle="modal" data-bs-target="#id_modal-delivery" rel="nav-install"><i class="fal fa-tools"></i><span>Монтаж:</span><strong>7 500</strong><i class="fal fa-ruble-sign"></i></a>
 						</div>
 					</div>
 					<div class="productcart-r">
@@ -1765,7 +1765,277 @@
 
   </div>
 </div>
+<div class="modal fade modal--delivery" id="id_modal-delivery" tabindex="-1" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			
+			
+			<div class="modal-header">
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation">
+						<button class="active" id="nav-delivery-tab" data-bs-toggle="tab" data-bs-target="#nav-delivery" type="button" role="tab" aria-controls="nav-delivery" aria-selected="true"><img src="img/ti-dlvr1.svg" width="36" height="30" alt="Доставка">Доставка</button>
+					</li>
+					<li role="presentation">
+						<button id="nav-install-tab" data-bs-toggle="tab" data-bs-target="#nav-install" type="button" role="tab" aria-controls="nav-install" aria-selected="false"><img src="img/ti-dlvr2.svg" width="36" height="30" alt="Монтаж">Монтаж</button>
+					</li>
+					<li role="presentation">
+						<button id="nav-pay-tab" data-bs-toggle="tab" data-bs-target="#nav-pay" type="button" role="tab" aria-controls="nav-pay" aria-selected="false"><img src="img/ti-dlvr3.svg" width="36" height="30" alt="Оплата">Оплата</button>
+					</li>
+				</ul>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть окно"></button>
+			</div>
+			
+			
+			<div class="modal-body">
+				<div class="tab-content" id="nav-tabcontent">
 
+
+
+					<div class="tab-pane fade active show" id="nav-delivery" role="tabpanel" aria-labelledby="nav-delivery-tab">
+
+						<h2>Доставка</h2>
+						<h3>Душевой уголок <strong>PRACTIC RECTAN GK-422</strong></h3>
+
+						<div class="block-productwarn warn--blue">
+							<i class="fas fa-exclamation-circle"></i>Товар в наличии. Поставка от 2 до 4 дней. Предоплата&nbsp;100%.
+						</div>
+
+						<div class="dlvr-plane">
+							<h3>Доставка по Москве и Московской Области</h3>
+							<p><strong>Стоимость доставки</strong></p>
+							<div class="table-responsive">
+								<table class="table table-hover">
+									<tbody>
+									<tr>
+										<th class="td--centered"><strong>УСЛУГА</strong></th>
+										<th class="td--centered"><strong>ТАРИФ «БАЗОВЫЙ»</strong> <br>(дата и время назначается в порядке очереди)</th>
+										<th class="td--centered"><strong>ТАРИФ «СТАНДАРТ</strong> <br>(назначенный клиентом день)</th>
+										<th class="td--centered"><strong>ТАРИФ «ПРЕМИУМ</strong> <br>(назначенный клиентом день и час +-30 минут)</th>
+									</tr>
+									<tr>
+										<td>Доставка в пределах МКАД</td>
+										<td class="td--centered">1 000 руб.</td>
+										<td class="td--centered">2 000 руб.</td>
+										<td class="td--centered">4 000 руб.</td>
+									</tr>
+									<tr>
+										<td>Доставка за МКАД в пределах 10 км.</td>
+										<td class="td--centered">1 700 руб.</td>
+										<td class="td--centered">3 700 руб.</td>
+										<td class="td--centered">6 700 руб.</td>
+									</tr>
+									<tr>
+										<td>Доставка за МКАД в пределах малого бетонного кольца</td>
+										<td class="td--centered">3 700 руб.</td>
+										<td class="td--centered">7 700 руб.</td>
+										<td class="td--centered">11 700 руб.</td>
+									</tr>
+									<tr>
+										<td>Доставка за МКАД в пределах большого бетонного кольца</td>
+										<td class="td--centered">7 700 руб.</td>
+										<td class="td--centered">15 700 руб.</td>
+										<td class="td--centered">23 700 руб.</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="card card--warn">
+								<div class="card-header">Обратите внимание!</div>
+								<div class="card-body">
+									<p>Доставка заказов по Москве и области осуществляется водителем к подъезду, воротам или к месту ближайшей парковки.<br>
+										При доставке на территорию с оплачиваемым въездом или на платную городскую парковку, покупатель оплачивает стоимость въезда/парковки, в иных случаях доставка осуществляется только до места платного въезда.</p>
+									<p>Тарифы не включает в себя услугу разгрузки и подъема товаров на этаж и заноса в квартиру/дом.</p>
+								</div>
+							</div>
+							<br>
+							<p><strong>Стоимость разгрузки и подъема товаров на этаж и заноса в квартиру/дом</strong></p>
+							<div class="table-responsive">
+								<table class="table table-hover">
+									<tbody>
+										<tr>
+											<th class="td--centered"><strong>ВЕС ТОВАРА</strong></th>
+											<th class="td--centered"><strong>РАЗГРУЗКА</strong></th>
+											<th class="td--centered"><strong>ПОДЪЕМ НА ЭТАЖ НА ЛИФТЕ И ЗАНОС В КВАРТИРУ</strong></th>
+											<th class="td--centered"><strong>ПОДЪЕМ НА ЭТАЖ <span style="color:#b3494f;">БЕЗ ЛИФТА</span> И ЗАНОС В КВАРТИРУ</strong></th>
+										</tr>
+										<tr>
+											<td class="td--centered"><strong>до 20 кг</strong><br><br></td>
+											<td class="td--centered">200 руб</td>
+											<td class="td--centered">700 руб</td>
+											<td class="td--centered">400 руб за этаж</td>
+										</tr>
+										<tr>
+											<td class="td--centered"><strong>20&nbsp;&mdash;&nbsp;30 кг</strong></td>
+											<td class="td--centered">300 руб</td>
+											<td class="td--centered">1 000 руб</td>
+											<td class="td--centered">500 руб за этаж</td>
+										</tr>
+										<tr>
+											<td class="td--centered"><strong>30&nbsp;&mdash;&nbsp;50 кг</strong></td>
+											<td class="td--centered">400 руб</td>
+											<td class="td--centered">1 200 руб</td>
+											<td class="td--centered">600 руб за этаж</td>
+										</tr>
+										<tr>
+											<td class="td--centered"><strong>50&nbsp;&mdash;&nbsp;80 кг</strong></td>
+											<td class="td--centered">600 руб</td>
+											<td class="td--centered">1 400 руб</td>
+											<td class="td--centered">700 руб за этаж</td>
+										</tr>
+										<tr>
+											<td class="td--centered"><strong>80&nbsp;&mdash;&nbsp;100 кг</strong></td>
+											<td class="td--centered">1 000 руб</td>
+											<td class="td--centered">2 000 руб</td>
+											<td class="td--centered">1 000 руб за этаж</td>
+										</tr>
+										<tr>
+											<td class="td--centered"><strong>100&nbsp;&mdash;&nbsp;130 кг</strong></td>
+											<td class="td--centered">1 000 руб</td>
+											<td class="td--centered">3 000 руб</td>
+											<td class="td--centered">1 500 руб за этаж</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<p><strong> Мы также осуществляем отправку заказов через транспортные компании: ЦАП, ПЭК, Деловые линии.</strong></p>
+							<ul class="ul--links">
+								<li>Стоимость доставки транспортной компанией (ТК) рассчитывается по тарифам ТК и оплачивается получателем заказа в транспортной компании.</li>
+								<li>Доставка до склада транспортной компании в пределах МКАД – бесплатно.</li>
+							</ul>
+						</div>
+
+						<div class="dlvr-plane">
+							<h3>Доставка для Физических лиц по всей России</h3>
+							<p><strong>Интернет-магазин осуществляет отправку заказов по всей России через транспортные компании: ЦАП, ПЭК, Деловые линии.</strong></p>
+							<ul>
+								<li>Стоимость доставки транспортной компанией (ТК) рассчитывается по тарифам ТК и оплачивается получателем заказа в транспортной компании. Ориентировочная стоимость доставки груза транспортной компанией в регионы средней полосы России составляет <strong>1500 - 3000руб.</strong> Стоимость доставки в  отдаленные и труднодоступные регионы может быть существенно выше. Точную стоимость доставки уточняйте у менеджера.</li>
+								<li>Доставка осуществляется во все крупные города России.</li>
+								<li>Товар доставляется на склад Транспортной Компании.</li>
+								<li>Доставка до склада транспортной компании в пределах МКАД – бесплатно.</li>
+								<li>Заказ Вы забираете самостоятельно.</li>
+								<li>По факту прибытия товара на склад ТК Вы можете заказать услугу доставки на дом.</li>
+								<li>Услугу доставки вы оплачиваете отдельно и по факту.</li>
+							</ul>
+							<br>
+							<div class="card card--warn">
+								<div class="card-header">Возврат</div>
+								<div class="card-body">
+									<p>В соответствии с «Законом о защите прав Потребителей» (статья 26.1), клиент может обменять качественный товар в течение 7 (семи) дней с момента получения. Транспортные расходы, понесенные на возврат товара поставщику, оплачивает клиент:</p>
+									<ul>
+										<li>Возврат товара надлежащего качества возможен в случае, если сохранены его товарный вид, потребительские свойства, не распакованная упаковка, а также документ, подтверждающий факт и условия покупки указанного товара.</li>
+										<li>Потребитель не вправе отказаться от товара надлежащего качества, имеющего индивидуально-определенные свойства, если указанный товар может быть использован исключительно приобретающим его потребителем.</li>
+										<li>При отказе потребителя от товара продавец должен возвратить ему денежную сумму, уплаченную потребителем по договору, за исключением расходов продавца на доставку от потребителя возвращенного товара, не позднее чем через 10 (десять) дней со дня предъявления потребителем соответствующего требования.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+
+
+					<div class="tab-pane fade" id="nav-install" role="tabpanel" aria-labelledby="nav-install-tab">
+						<h2>Монтаж</h2>
+						<h3>Душевой уголок <strong>PRACTIC RECTAN GK-422</strong></h3>
+						<div class="install-plane">
+							<div class="install-plane__itemprice">
+								<div class="itemprice_item">Монтаж двери в душевую нишу</div>
+								<div class="itemprice_price"><span style="font-weight: normal;">от</span> 7 500руб</div>
+							</div>
+							</div><div class="install-plane__plane">
+							<div class="row">
+								<div class="col-sm-6">
+									<p>Монтаж <strong><i>включает</i></strong> в себя следующие работы:</p>
+									<ul>
+										<li>распаковка осмотр и проверка комплектации</li>
+										<li>сборка каркаса изделия строго согласно инструкции</li>
+										<li>подготовка места монтажа и обезжиривание поверхностей</li>
+										<li>установка на место эксплуатации основного каркаса изделия</li>
+										<li>сборка и монтаж всех подвижных элементов ограждения</li>
+										<li>регулировка положения дверей и стопоров согласно инструкции</li>
+										<li>герметизация швов примыкания каркаса со стенами и полом</li>
+										<li>все расходные материалы: герметик, саморезы, инструменты и т.п.</li>
+									</ul>
+								</div>
+								<div class="col-sm-6">
+									<p>Монтаж <strong><i>не включает</i></strong> в себя следующие работы:</p>
+									<ul>
+										<li>разборка и демонтаж старого изделия при наличии такого</li>
+										<li>подрезка плитки и декоративных бортов плитки и т.п.</li>
+										<li>монтаж душевого поддона или иной сантехники</li>
+										<li>монтаж сантехнической арматуры или иных предметов</li>
+										<li>любые строительные работы</li>
+									</ul>
+								</div>
+							</div>
+							<div class="card card--warn">
+								<div class="card-header">Обязанности и ответственность заказчика</div>
+								<div class="card-body">
+									<ul>
+										<li>при наличии старых душевых ограждений демонтировать их</li>
+										<li>заранее проинформировать монтажную бригаду о готовности места монтажа</li>
+										<li>подготовить место монтажа убрав все посторонние предметы мешающие монтажу</li>
+										<li>обеспечить монтажную бригаду информацией о наличии скрытых коммуникаций которые могут быть повреждены при сверлении отверстий под саморезы</li>
+										<li>в случае не готовности места монтажа и ложного вызова бригады заказчик оплачивает расходы связанные с простоем монтажников</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						</div>
+
+
+
+					<div class="tab-pane fade" id="nav-pay" role="tabpanel" aria-labelledby="nav-pay-tab">
+						<h2>Оплата</h2>
+						<h3>Душевой уголок <strong>PRACTIC RECTAN GK-422</strong></h3>
+						<div class="row">
+							<div class="col-sm-4 col-md-4">
+								<div class="tab-plane">
+									<p class="hdr">Картой на сайте</p>
+									<img src="img/ti-pay2.svg" alt="" width="80" height="80">
+									<p class="subhdr">При любых способах получения заказа</p>
+									<p>Оплатите заказ в личном кабинете после подтверждения заказа менеджером интернет-магазина.</p>
+									<p>Все операции по карте осуществляются при полном соблюдении требований компаний VISA International и Mastercard Worldwide.</p>
+									<p>Безопасность обработки интернет-платежей гарантирована международным сертификатом безопасности PCI DSS. Оплата происходит через ПАО «Сбербанк».</p>
+									<p><a href="/payment/description-of-the-data-transfer-process/" target="_blank">Описание процесса передачи данных</a></p>
+								</div>
+							</div>
+							<div class="col-sm-4 col-md-4">
+								<div class="tab-plane">
+									<p class="hdr">Сбербанк Онлайн</p>
+									<img src="img/ti-pay4.svg" width="80" height="80" alt="">
+									<p class="subhdr">При любых способах получения заказа</p>
+									<p>Оплата сбербанк онлайн производится путем перевода денежных средств с карточки покупателя на номер карты поставщика. Вам требуется войти в личный кабинет обслуживающего вас банка. Создаете перевод «Клиенту Сбербанка» по номеру карты <nobr>2202 2061 5747 1934</nobr> владелец Пириев Азиз Джамалович. В комментарии к платежу указываете номер счета, по которому проводите платеж.</p>
+								</div>
+							</div>
+							<div class="col-sm-4 col-md-4">
+								<div class="tab-plane">
+									<p class="hdr">Безналичным платежом</p>
+									<img src="img/ti-pay3.svg" width="80" height="80" alt="">
+									<p class="subhdr">При любых способах получения заказа</p>
+									<p>Оплата безналичным платежом на расчетный счет организации поставщика, производится методом перечисления средств с расчетного счета покупателя на основании выставленного счета. Вам требуется войти в личный кабинет обслуживающего вас банка. Создаете перевод/платеж «Организации» с указанием реквизитов организации из присланного на почту счета (Наименование организации, ИНН  (КПП у индивидуального предпринимателя нет, поле не заполняете), БИК, номер расчетного счета). В назначение платежа указываете номер счета, по которому проводите платеж (Пример: Оплата счета №0000 от 00.00.0000г. за душевое ограждение).</p>
+								</div>
+							</div>
+						</div>
+						<div class="card card--warn">
+							<div class="card-header">При оплате через Сбербанк Онлайн и Безналичным платежом</div>
+							<div class="card-body">
+								<ul>
+									<li>Счет на оплату придет на электронную почту</li>
+									<li>После оплаты отправьте информацию о проведенном платеже на почту, с которой поступил счет на оплату</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+
+
+				</div>
+			</div></div>
+		
+		
+	</div>
+</div>
 
 
 

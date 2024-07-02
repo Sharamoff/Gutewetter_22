@@ -989,3 +989,13 @@ $('.block-reference').hover(function() {
 
 //fancybox run
 Fancybox.bind('[data-fancybox]', {});
+
+
+
+
+// контроль ухода со страницы
+$(document).mouseleave(function(e) {
+  if (e.clientY < 10) {
+    $("#id_modal-pageclose").modal('show');
+  }
+});
