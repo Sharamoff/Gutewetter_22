@@ -5641,22 +5641,21 @@ OL.ol--cont > li:before {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  overflow: hidden;
-  height: 3rem;
+  min-height: 3rem;
 }
 .block-filter .inputslider__popval .popval-val,
 .block-categoryfilter .inputslider__popval .popval-val {
   color: #1D1D1F;
   background: rgba(195, 195, 198, 0.5);
   padding: 0.6rem 0.8rem 0.5rem 0.8rem;
-  margin: 0 1rem 2rem 0;
+  margin: 0 1rem 1rem 0;
   cursor: pointer;
   caret-color: transparent;
 }
 @media (max-width: 767.98px) {
   .block-filter .inputslider__popval .popval-val,
   .block-categoryfilter .inputslider__popval .popval-val {
-    margin: 0 0.5rem 2rem 0;
+    margin: 0 0.5rem 0.5rem 0;
   }
 }
 .block-filter .inputslider__popval .popval-val:hover,
