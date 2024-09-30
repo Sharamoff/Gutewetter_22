@@ -247,7 +247,24 @@
 
 }
 
-
 .sc_contactform {
   padding-top: 0;
+}
+
+.sc_invpr {
+  padding: 1rem 0.5rem 0 0.5rem;
+}
+
+.sc_invprdoc {
+  padding-top: 6rem;
+  padding-bottom: 9rem;
+
+  @include media-breakpoint-down(md) {
+    padding-top: 4rem;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 3rem;
+  }
+
 }

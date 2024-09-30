@@ -1,0 +1,256 @@
+.block-invpr {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 40% repeat(2, 29%);
+  grid-template-rows: repeat(2, min-content);
+  gap: 1rem;
+
+  @include media-breakpoint-down(lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media-breakpoint-down(md) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, min-content);
+  }
+
+  .invpr__pic-main {
+    grid-area: 1 / 1 / 3 / 2;
+    background: url("../img/invpr-pic1.jpg") bottom right no-repeat;
+    background-size: cover;
+
+    @include media-breakpoint-down(lg) {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+
+    @include media-breakpoint-down(md) {
+      grid-area: 1 / 1 / 2 / 3;
+      height: 25rem;
+    }
+
+  }
+
+  .invpr__descript {
+    grid-area: 1 / 2 / 2 / 4;
+    min-height: 50rem;
+    padding: 4rem 4rem 2rem 4rem;
+
+    @include media-breakpoint-down(lg) {
+      grid-area: 1 / 2 / 2 / 3;
+      padding: 2rem;
+      min-height: auto;
+    }
+
+    @include media-breakpoint-down(md) {
+      grid-area: 3 / 1 / 4 / 3;
+      padding: 1rem 0;
+    }
+
+    h2 {
+      font-size: $font-size-h3;
+      color: $color-hdr;
+
+      @include media-breakpoint-down(lg) {
+        font-size: $font-size-h3-md;
+      }
+
+      @include media-breakpoint-down(md) {
+        font-size: $font-size-h3-sm;
+        text-align: center;
+      }
+
+      > span {
+        display: block;
+        font-size: 3.8rem;
+        font-weight: 900;
+        color: $color-hdr;
+        text-transform: uppercase;
+
+        @include media-breakpoint-down(lg) {
+          font-size: $font-size-h2-md;
+        }
+
+        @include media-breakpoint-down(md) {
+          font-size: $font-size-h2-sm;
+        }
+
+      }
+
+    }
+
+    .invpr__descript_icons {
+      margin-top: 6rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 2rem;
+      max-width: 65rem;
+
+      @include media-breakpoint-down(md) {
+        margin-top: 2rem;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+    }
+
+    .descript_icons__item {
+      flex: 1 1 auto;
+    }
+
+    .icons__item-pic {
+      width: 15rem;
+      text-align: center;
+      margin: 0 auto;
+
+      @include media-breakpoint-down(lg) {
+        width: 10rem;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+    }
+
+    .icons__item-txt {
+      text-align: center;
+      margin-top: 1rem;
+
+      > span {
+        display: block;
+        font-size: 2.1rem;
+        font-weight: 900;
+        white-space: nowrap;
+
+        @include media-breakpoint-down(md) {
+          font-size: 1.7rem;
+        }
+
+      }
+
+    }
+
+    .invpr__descript_logos {
+      margin-top: 6rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+      max-width: 61rem;
+
+      @include media-breakpoint-down(md) {
+        margin-top: 4rem;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .descript_logos-gw {
+      width: 30rem;
+
+      @include media-breakpoint-down(lg) {
+        width: 100%;
+      }
+
+    }
+
+    .descript_logos-q {
+      width: 10rem;
+    }
+
+    .descript_logos-podolsk {
+      width: 12rem;
+      margin-top: -1rem;
+    }
+
+  }
+
+
+
+  .invpr__pic-left {
+    grid-area: 2 / 2 / 3 / 3;
+    height: 25rem;
+    background: url("../img/invpr-pic2.jpg") center bottom no-repeat;
+    background-size: cover;
+
+    @include media-breakpoint-down(lg) {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+
+    @include media-breakpoint-down(md) {
+      grid-area: 2 / 1 / 3 / 2;
+      height: 12rem;
+    }
+
+  }
+
+  .invpr__pic-right {
+    grid-area: 2 / 3 / 3 / 4;
+    height: 25rem;
+    background: url("../img/invpr-pic3.jpg") center bottom no-repeat;
+    background-size: cover;
+
+    @include media-breakpoint-down(lg) {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+
+    @include media-breakpoint-down(md) {
+      grid-area: 2 / 2 / 3 / 3;
+      height: 12rem;
+    }
+
+  }
+
+}
+
+
+
+.block-invprdoc {
+
+  .invprdoc__item {
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    color: $c-black;
+    margin-bottom: 3rem;
+
+    span {
+      display: block;
+      background: $c-gray-bk url("../img/invpr-ipdf.svg") center center no-repeat;
+      aspect-ratio: 1 / 1;
+      margin-bottom: 1rem;
+
+      @include media-breakpoint-down(md) {
+        aspect-ratio: auto;
+        height: 18rem;
+      }
+
+    }
+
+    &:hover {
+      color: $c-blue !important;
+      text-decoration: none !important;
+
+      span {
+        background-color: $c-gray-light;
+        transition: all 0.5s;
+      }
+
+    }
+
+  }
+
+}
+
