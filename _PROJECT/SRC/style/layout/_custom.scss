@@ -476,18 +476,22 @@
 
 	&.catalog_pic--pic1 {
 		background: url("../img/custom/cu_catalogue1.png") no-repeat;
+		background-size: contain;
 	}
 
 	&.catalog_pic--pic2 {
 		background: url("../img/custom/cu_catalogue2.png") no-repeat;
+		background-size: contain;
 	}
 
 	&.catalog_pic--pic3 {
 		background: url("../img/custom/cu_catalogue3.png") no-repeat;
+		background-size: contain;
 	}
 
 	&.catalog_pic--pic4 {
 		background: url("../img/custom/cu_catalogue4.png") no-repeat;
+		background-size: contain;
 	}
 
 	@include media-breakpoint-down(xl) {
@@ -505,12 +509,17 @@
 
 	@include media-breakpoint-down(sm) {
 		width: 90%;
-		top: 15rem;
+		top: 17rem;
 		left: 2rem;
 		right: 2rem;
 	}
 
 }
+
+
+
+
+
 
 .cu-catalog_txt {
 	max-width: 60%;
@@ -1101,6 +1110,23 @@
 
 
 
+.sc_cu-videos {
+	padding-top: 0;
+	padding-bottom: 8rem;
+
+	@include media-breakpoint-down(md) {
+		padding-bottom: 6rem;
+	}
+
+	@include media-breakpoint-down(sm) {
+		padding-bottom: 4rem;
+	}
+
+}
+
+
+
+
 
 .cu-block {
 	position: relative;
@@ -1202,8 +1228,9 @@
 	}
 
 	label.note {
-		color: $c-gray-invert;
+		color: $c-gray-invert !important;
 		margin-top: 2rem;
+		font-size: $font-size-basemed;
 
 		a {
 			color: $c-white;

@@ -25,8 +25,25 @@
 
 
 
-//= layout/_header-idx.html
-<div class="header-compensator"></div>
+//= layout/_header.html
+
+
+
+
+
+<div class="panel-breadcrumb">
+	<div class="container-fluid">
+		<div class="breadcrumb__hdr collapsed" role="button" data-bs-toggle="collapse" data-bs-target=".breadcrumb-submenu" aria-expanded="false">Душевые уголки</div>
+		<div class="breadcrumb-submenu collapse" style="">
+			<div class="dlv"></div>
+			<ul>
+				<li><a href="/">Главная</a></li>
+				<li><a href="/catalog/">Каталог</a></li>
+				<li><a href="/catalog/custom/">Душевые ограждения по индивидуальным размерам</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
 
 
 
@@ -96,26 +113,52 @@
 
 
 
-<section class="pagecontent sc_cu-youtubes">
+<section class="pagecontent sc_cu-videos">
 	<div class="container-fluid">
 
-		<div class="row">
+		<div class="block-videolist">
+			<div class="row row--margined">
 
-			<div class="col-md-6">
-				<div class="cu-youtubes__video ratio ratio-16x9">
-					<iframe src="https://www.youtube.com/embed/LH_hjhFIngk?si=pCtz8F1jAvqxE6sa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<div class="col-sm-3 col-6">
+					<div class="block-video">
+						<div class="video__i-play"></div>
+						<video class="ratio ratio-9x16" poster="_video/video1_cover.jpg" preload="auto">
+							<source src="_video/video1.mp4" type="video/mp4">
+						</video>
+					</div>
 				</div>
-			</div>
 
-			<div class="col-md-6">
-				<div class="cu-youtubes__video ratio ratio-16x9">
-					<iframe src="https://www.youtube.com/embed/XQcIT6e73F0?si=QxEF-TeDBG7ZNsiQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<div class="col-sm-3 col-6">
+					<div class="block-video">
+						<div class="video__i-play"></div>
+						<video class="ratio ratio-9x16" poster="_video/video2_cover.jpg" preload="auto">
+							<source src="_video/video2.mp4" type="video/mp4">
+						</video>
+					</div>
 				</div>
-			</div>
 
+				<div class="col-sm-3 col-6">
+					<div class="block-video">
+						<div class="video__i-play"></div>
+						<video class="ratio ratio-9x16" poster="_video/video3_cover.jpg" preload="auto">
+							<source src="_video/video3.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+
+				<div class="col-sm-3 col-6">
+					<div class="block-video">
+						<div class="video__i-play"></div>
+						<video class="ratio ratio-9x16" poster="_video/video4_cover.jpg" preload="auto">
+							<source src="_video/video4.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+
+			</div>
 		</div>
 
-		<button class="b-btn btn--blue b--centered b--icon-lg"><i class="fab fa-youtube"></i>Посмотреть все видео на YouTube</button>
+		<button onclick="location.href='catalog/video-installation/'" class="b-btn btn--blue b--centered b--videolist"><i class="far fa-video"></i>Еще больше видео</button>
 
 	</div>
 </section>
@@ -339,8 +382,11 @@
 				</div>
 
 				<div class="col-sm-6">
-					<div class="cu-glass_note__video ratio ratio-16x9">
-						<iframe src="https://www.youtube.com/embed/yP4SCwxCGUQ?si=d9oDAZlp0itXF5b9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					<div class="block-video cu-glass_note__video ratio ratio-16x9">
+						<div class="video__i-play"></div>
+						<video poster="_video/video0_cover.jpg" preload="auto">
+							<source src="_video/video0.mp4" type="video/mp4">
+						</video>
 					</div>
 					<div class="cu-glass_note__videotxt">
 						Демонстрация закаленного стекла душевых ограждений фабрики GuteWetter

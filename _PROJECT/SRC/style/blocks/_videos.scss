@@ -16,6 +16,11 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 290px;
+
+    &.ratio-16x9 {
+      max-width: none;
+    }
+
   }
 
   .video__i-play {
@@ -27,7 +32,7 @@
     margin-left: -30px;
     width: 60px;
     height: 60px;
-    opacity: 0.75;
+    opacity: 0.66;
     background: url("../img/i-play.svg");
     background-size: cover;
     transition: 0.5s;

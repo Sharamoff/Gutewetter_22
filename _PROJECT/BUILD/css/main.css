@@ -2644,15 +2644,19 @@ footer {
 }
 .cu-catalog_pic.catalog_pic--pic1 {
   background: url("../img/custom/cu_catalogue1.png") no-repeat;
+  background-size: contain;
 }
 .cu-catalog_pic.catalog_pic--pic2 {
   background: url("../img/custom/cu_catalogue2.png") no-repeat;
+  background-size: contain;
 }
 .cu-catalog_pic.catalog_pic--pic3 {
   background: url("../img/custom/cu_catalogue3.png") no-repeat;
+  background-size: contain;
 }
 .cu-catalog_pic.catalog_pic--pic4 {
   background: url("../img/custom/cu_catalogue4.png") no-repeat;
+  background-size: contain;
 }
 @media (max-width: 1199.98px) {
   .cu-catalog_pic {
@@ -2672,7 +2676,7 @@ footer {
 @media (max-width: 575.98px) {
   .cu-catalog_pic {
     width: 90%;
-    top: 15rem;
+    top: 17rem;
     left: 2rem;
     right: 2rem;
   }
@@ -3202,6 +3206,21 @@ footer {
   margin-bottom: 2rem;
 }
 
+.sc_cu-videos {
+  padding-top: 0;
+  padding-bottom: 8rem;
+}
+@media (max-width: 767.98px) {
+  .sc_cu-videos {
+    padding-bottom: 6rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .sc_cu-videos {
+    padding-bottom: 4rem;
+  }
+}
+
 .cu-block {
   position: relative;
   margin-bottom: 1rem;
@@ -3301,8 +3320,9 @@ footer {
   background-color: black;
 }
 .cu-form label.note {
-  color: #C3C3C6;
+  color: #C3C3C6 !important;
   margin-top: 2rem;
+  font-size: 1.5rem;
 }
 .cu-form label.note a {
   color: white;
@@ -4001,9 +4021,7 @@ button.disabled:hover {
   top: -1px;
 }
 .b-btn i {
-  position: relative;
-  top: 1px;
-  margin-right: 0.6rem;
+  margin-right: 0.8rem;
 }
 .b-btn .fa-chevron-left {
   margin-right: 1rem !important;
@@ -11113,6 +11131,9 @@ OL.ol--cont > li:before {
     margin-right: auto;
     max-width: 290px;
   }
+  .block-video.ratio-16x9 {
+    max-width: none;
+  }
 }
 .block-video .video__i-play {
   position: absolute;
@@ -11123,7 +11144,7 @@ OL.ol--cont > li:before {
   margin-left: -30px;
   width: 60px;
   height: 60px;
-  opacity: 0.75;
+  opacity: 0.66;
   background: url("../img/i-play.svg");
   background-size: cover;
   transition: 0.5s;

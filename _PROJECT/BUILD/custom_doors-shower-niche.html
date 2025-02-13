@@ -25,7 +25,7 @@
 
 
 
-<header class="header fixed-top">
+<header class="header">
 <div class="container-fluid">
 
 
@@ -561,7 +561,24 @@
     </div>
   </div>
 </div>
-<div class="header-compensator"></div>
+
+
+
+
+
+<div class="panel-breadcrumb">
+	<div class="container-fluid">
+		<div class="breadcrumb__hdr collapsed" role="button" data-bs-toggle="collapse" data-bs-target=".breadcrumb-submenu" aria-expanded="false">Двери в душевую нишу</div>
+		<div class="breadcrumb-submenu collapse" style="">
+			<div class="dlv"></div>
+			<ul>
+				<li><a href="/">Главная</a></li>
+				<li><a href="/catalog/">Каталог</a></li>
+				<li><a href="/catalog/custom/">Душевые ограждения по индивидуальным размерам</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
 
 
 
@@ -631,26 +648,52 @@
 
 
 
-<section class="pagecontent sc_cu-youtubes">
+<section class="pagecontent sc_cu-videos">
 	<div class="container-fluid">
 
-		<div class="row">
+		<div class="block-videolist">
+			<div class="row row--margined">
 
-			<div class="col-md-6">
-				<div class="cu-youtubes__video ratio ratio-16x9">
-					<iframe src="https://www.youtube.com/embed/KCcnBBgcGw8?si=LRE0IxgGZGIPauNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<div class="col-sm-3 col-6">
+					<div class="block-video">
+						<div class="video__i-play"></div>
+						<video class="ratio ratio-9x16" poster="_video/video1_cover.jpg" preload="auto">
+							<source src="_video/video1.mp4" type="video/mp4">
+						</video>
+					</div>
 				</div>
-			</div>
 
-			<div class="col-md-6">
-				<div class="cu-youtubes__video ratio ratio-16x9">
-					<iframe src="https://www.youtube.com/embed/viz2hxfaSeI?si=SEONLe4HEzo4JNsy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<div class="col-sm-3 col-6">
+					<div class="block-video">
+						<div class="video__i-play"></div>
+						<video class="ratio ratio-9x16" poster="_video/video2_cover.jpg" preload="auto">
+							<source src="_video/video2.mp4" type="video/mp4">
+						</video>
+					</div>
 				</div>
-			</div>
 
+				<div class="col-sm-3 col-6">
+					<div class="block-video">
+						<div class="video__i-play"></div>
+						<video class="ratio ratio-9x16" poster="_video/video3_cover.jpg" preload="auto">
+							<source src="_video/video3.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+
+				<div class="col-sm-3 col-6">
+					<div class="block-video">
+						<div class="video__i-play"></div>
+						<video class="ratio ratio-9x16" poster="_video/video4_cover.jpg" preload="auto">
+							<source src="_video/video4.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+
+			</div>
 		</div>
 
-		<button class="b-btn btn--blue b--centered b--icon-lg"><i class="fab fa-youtube"></i>Посмотреть все видео на YouTube</button>
+		<button onclick="location.href='catalog/video-installation/'" class="b-btn btn--blue b--centered b--videolist"><i class="far fa-video"></i>Еще больше видео</button>
 
 	</div>
 </section>
@@ -713,15 +756,9 @@
 
 
 <section class="pagesection sc_cu-catalog">
-
-
 	<div class="cu-catalog_pic catalog_pic--pic2"></div>
-
-
 	<div class="container-fluid">
-
 		<h2 class="h--light">У нас <strong>более&nbsp;2500 готовых&nbsp;вариантов</strong><br>оформления дверей для душа</h2>
-
 		<div class="cu-catalog_txt">
 			<p class="cu-catalog__title">Получите полный каталог с ценами и характеристиками:</p>
 			<ul class="cu-catalog__ul">
@@ -734,20 +771,17 @@
 				<li><i class="fal fa-arrow-circle-right"></i>Работаем по всей России, бережно упаковываем и доставляем пятью удобными для Вас способами.</li>
 			</ul>
 		</div>
-
-		<form class="cu-catalog_form cu-form">
+		<form name="fm-catalogue-ready" id="fm-catalogue-ready" rel="order_form" class="cu-catalog_form cu-form">
 			<div class="row">
-				<div class="form-group col-lg-4 col-md-6"><input type="email" class="form-control" placeholder="Ваш e-mail" title="Ваш email"></div>
-				<div class="form-group col-lg-4 col-md-6"><input type="tel" class="form-control" placeholder="Ваш телефон" title="Ваш телефон"></div>
+				<div class="form-group col-lg-4 col-md-6"><input type="email" name="email" id="fm-catalogue-ready__email" class="form-control" placeholder="Ваш e-mail" title="Ваш email"></div>
+				<div class="form-group col-lg-4 col-md-6"><input type="tel" name="phone" id="fm-catalogue-ready__phone" class="form-control" placeholder="Ваш телефон" title="Ваш телефон"></div>
 				<div class="form-group col-lg-4"><button>Получить каталог</button></div>
 			</div>
-			<label class="note"><input type="checkbox" checked>Я даю свое согласие на обработку персональных данных согласно <a href="#">Политике конфиденциальности</a>.</label>
+			<div id="fm-catalogue-ready__conditions" class="form-check form-field-container">
+				<label class="note">Нажимая на кнопку «Получить каталог», вы даете согласие на обработку персональных данных согласно <a href="/privacy-policy/" target="_blank">Политике конфиденциальности</a>.</label>
+			</div>
 		</form>
-
-
 	</div>
-
-
 </section>
 
 
@@ -820,8 +854,11 @@
 				</div>
 
 				<div class="col-sm-6">
-					<div class="cu-glass_note__video ratio ratio-16x9">
-						<iframe src="https://www.youtube.com/embed/yP4SCwxCGUQ?si=d9oDAZlp0itXF5b9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					<div class="block-video cu-glass_note__video ratio ratio-16x9">
+						<div class="video__i-play"></div>
+						<video poster="_video/video0_cover.jpg" preload="auto">
+							<source src="_video/video0.mp4" type="video/mp4">
+						</video>
 					</div>
 					<div class="cu-glass_note__videotxt">
 						Демонстрация закаленного стекла душевых ограждений фабрики GuteWetter
