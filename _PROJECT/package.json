@@ -5,17 +5,16 @@
   "description": "gutewetter.ru",
   "moduleType": "globals",
   "author": "Promoting",
-  "license": "ISC",
-  "dependencies": {
-    "browser-sync": "^2.29.3",
+  "license": "Proprietary",
+  "devDependencies": {
+    "browser-sync": "^3.0.3",
     "gulp": "^4.0.2",
-    "gulp-cli": "^2.3.0",
     "gulp-autoprefixer": "^8.0.0",
-    "gulp-cache": "^1.1.3",
+    "gulp-cache": "^1.1.1",
     "gulp-plumber": "^1.2.1",
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^5.1.0",
-    "rimraf": "^5.0.1",
-    "sass": "^1.63.6"
+    "rimraf": "^6.0.1",
+    "sass": "~1.32.6"
   }
 }
