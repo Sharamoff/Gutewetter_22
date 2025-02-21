@@ -7,5 +7,6 @@ video/
 
 _PROJECT/node_modules/
 _PROJECT/.idea/
+_PROJECT/*/**/_video/
 
 Gutewetter.fig

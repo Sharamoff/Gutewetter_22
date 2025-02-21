@@ -489,22 +489,47 @@ $('.select2type.selector--colorchoice select').select2({
 });
 
 
-// videosound off
-$('.block-video video').prop('muted', true);
 
-// run video on hover
+// Запуск видео
 function hoverVideo(e) {
-  $('.video__i-play', this).css('opacity', '0');
-  $('video', this).get(0).play();
-  $('video', this).get(0).setAttribute('controls','controls');
+  $(this).find('video').attr('controls', 'controls');
 }
 function hideVideo(e) {
-  $('.video__i-play', this).css('opacity', '0.66');
-  $('video', this).get(0).pause();
-  $('video', this).get(0).removeAttribute('controls','controls');
+  $(this).find('video').removeAttr('controls');
 }
-$('.block-video').hover(hoverVideo, hideVideo);
-$('.block-video').on('touchstart', hoverVideo, function (e) {$('video', this).get(0).pause()});
+
+function togglePlayButton(video) {
+  let playButton = $(video).siblings('.video__i-play');
+  if (video.paused) {
+    playButton.css('opacity', '0.33');
+  } else {
+    playButton.css('opacity', '0');
+  }
+}
+
+function startVideo() {
+  // Выключаем звук на видео
+  $('.block-video video').prop('muted', true);
+  
+  $('.block-video').hover(hoverVideo, hideVideo);
+  
+  $('.block-video video').on('play pause', function() {
+    togglePlayButton(this);
+  });
+  
+  $('.video__i-play').on('click', function() {
+    let video = $(this).siblings('video')[0];
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
+  
+}
+
+startVideo();
+
 
 
 // wtb filter button click
