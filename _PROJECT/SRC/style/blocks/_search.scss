@@ -37,15 +37,20 @@
 
     &__btn {
       height: 5.5rem;
-      width: 5rem;
+      width: 6rem;
       background: $c-white url("../img/lupa-catalog.svg") center center no-repeat;
       border: solid 1px $color-border;
-      border-right: none;
-      border-radius: $border-radius 0 0 $border-radius;
+      border-radius: $border-radius;
+      margin-left: 0.5rem;
+      transition: $transition-all;
 
       @include media-breakpoint-down(md) {
         height: 5rem;
-        width: 4rem;
+        width: 5.5rem;
+      }
+
+      &:hover {
+        background-color: #f3f3f4;
       }
 
     }
@@ -55,8 +60,7 @@
       width: 100%;
       background: $c-white;
       border: solid 1px $color-border;
-      border-left: none;
-      border-radius: 0 $border-radius $border-radius 0;
+      border-radius: $border-radius;
       font-size: $font-size-base;
       padding-left: 1rem;
 

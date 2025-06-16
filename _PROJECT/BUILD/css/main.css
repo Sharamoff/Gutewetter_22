@@ -1602,10 +1602,10 @@ footer {
   -webkit-appearance: none;
   height: 3.6rem;
   width: 99%;
+  padding-left: 1rem;
   background: white;
   border: solid 1px #C3C3C6;
-  border-left: none;
-  border-radius: 0 0.4rem 0.4rem 0;
+  border-radius: 0.4rem;
   font-size: 1.5rem;
 }
 @media (max-width: 767.98px) {
@@ -1632,11 +1632,14 @@ footer {
 }
 .footer__codesearch-form .codesearch-form__search {
   height: 3.6rem;
-  width: 3.2rem;
-  background: white url("../img/lupa-menu.svg") center right no-repeat;
+  width: 4rem;
+  background: #ffffff url("../img/lupa-menu.svg") center no-repeat;
   border: solid 1px #C3C3C6;
-  border-right: none;
-  border-radius: 0.4rem 0 0 0.4rem;
+  border-radius: 0.4rem;
+  margin-left: 0.3rem;
+}
+.footer__codesearch-form .codesearch-form__search:hover {
+  background-color: #f3f3f4;
 }
 
 .footer__copy {
@@ -5508,25 +5511,28 @@ OL.ol--cont > li:before {
 }
 .block-search__catalog-form__btn {
   height: 5.5rem;
-  width: 5rem;
+  width: 6rem;
   background: white url("../img/lupa-catalog.svg") center center no-repeat;
   border: solid 1px #C3C3C6;
-  border-right: none;
-  border-radius: 0.4rem 0 0 0.4rem;
+  border-radius: 0.4rem;
+  margin-left: 0.5rem;
+  transition: 0.3s;
 }
 @media (max-width: 767.98px) {
   .block-search__catalog-form__btn {
     height: 5rem;
-    width: 4rem;
+    width: 5.5rem;
   }
+}
+.block-search__catalog-form__btn:hover {
+  background-color: #f3f3f4;
 }
 .block-search__catalog-form__fld {
   height: 5.5rem;
   width: 100%;
   background: white;
   border: solid 1px #C3C3C6;
-  border-left: none;
-  border-radius: 0 0.4rem 0.4rem 0;
+  border-radius: 0.4rem;
   font-size: 1.7rem;
   padding-left: 1rem;
 }

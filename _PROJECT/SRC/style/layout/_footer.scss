@@ -82,10 +82,10 @@ footer {
     -webkit-appearance: none;
     height: 3.6rem;
     width: 99%;
+    padding-left: 1rem;
     background: $c-white;
     border: solid 1px $color-border;
-    border-left: none;
-    border-radius: 0 $border-radius $border-radius 0;
+    border-radius: $border-radius;
     font-size: $font-size-basemed;
 
     @include media-breakpoint-down(md) {
@@ -104,11 +104,16 @@ footer {
 
   .codesearch-form__search {
     height: 3.6rem;
-    width: 3.2rem;
-    background: $c-white url("../img/lupa-menu.svg") center right no-repeat;
+    width: 4rem;
+    background: #ffffff url("../img/lupa-menu.svg") center no-repeat;
     border: solid 1px $color-border;
-    border-right: none;
-    border-radius: $border-radius 0 0 $border-radius;
+    border-radius: $border-radius;
+    margin-left: 0.3rem;
+
+    &:hover {
+      background-color: #f3f3f4;
+    }
+
   }
 
 }
