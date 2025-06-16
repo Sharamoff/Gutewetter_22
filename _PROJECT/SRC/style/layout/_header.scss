@@ -12,6 +12,7 @@ header {
 
   &.showsearch {
     background-color: $c-black;
+    overflow: hidden;
   }
 
   @include media-breakpoint-down(md) {
@@ -363,8 +364,13 @@ header {
   align-items: center;
   background-color: $c-black;
   transition: 0.5s;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
+
+  @include media-breakpoint-down(lg) {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
 
   &.active {
     display: flex;
@@ -381,13 +387,41 @@ header {
 
   .mainsearch-form__search {
     height: 3.6rem;
-    width: 4rem;
-    background: $c-black url("../img/lupa-menu.svg") center center no-repeat;
+    width: 6rem;
+    background: #333 url("../img/lupa-menu.svg") center center no-repeat;
     border: none;
-    border-radius: $border-radius 0 0 $border-radius;
+    border-radius: $border-radius;
+    transition: $transition-all;
+
+    &:hover {
+      background: #444 url("../img/lupa-menu_.svg") center center no-repeat;
+    }
+
+  }
+
+  .mainsearch-form__radios {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 2rem;
+
+    input[type="radio"] {
+      width: 1.4rem;
+      height: 1.4rem;
+    }
+
+    label {
+      margin-right: 2rem;
+      font-size: $font-size-basemin;
+      white-space: nowrap;
+    }
+
   }
 
   .mainsearch-form__close {
+    position: absolute;
+    top: 0.4rem;
+    right: -1.5rem;
+    z-index: $zindex-fixed + 2;
     height: 3.6rem;
     width: 4rem;
     background: $c-black url("../img/i-x-search.svg") center center no-repeat;

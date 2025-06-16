@@ -429,6 +429,7 @@ header {
 }
 header.showsearch {
   background-color: black;
+  overflow: hidden;
 }
 @media (max-width: 767.98px) {
   header {
@@ -690,8 +691,14 @@ header a:hover {
   align-items: center;
   background-color: black;
   transition: 0.5s;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+@media (max-width: 991.98px) {
+  .header__mainsearch-form {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
 }
 .header__mainsearch-form.active {
   display: flex;
@@ -706,12 +713,34 @@ header a:hover {
 }
 .header__mainsearch-form .mainsearch-form__search {
   height: 3.6rem;
-  width: 4rem;
-  background: black url("../img/lupa-menu.svg") center center no-repeat;
+  width: 6rem;
+  background: #333 url("../img/lupa-menu.svg") center center no-repeat;
   border: none;
-  border-radius: 0.4rem 0 0 0.4rem;
+  border-radius: 0.4rem;
+  transition: 0.3s;
+}
+.header__mainsearch-form .mainsearch-form__search:hover {
+  background: #444 url("../img/lupa-menu_.svg") center center no-repeat;
+}
+.header__mainsearch-form .mainsearch-form__radios {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 2rem;
+}
+.header__mainsearch-form .mainsearch-form__radios input[type=radio] {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.header__mainsearch-form .mainsearch-form__radios label {
+  margin-right: 2rem;
+  font-size: 1.3rem;
+  white-space: nowrap;
 }
 .header__mainsearch-form .mainsearch-form__close {
+  position: absolute;
+  top: 0.4rem;
+  right: -1.5rem;
+  z-index: 1032;
   height: 3.6rem;
   width: 4rem;
   background: black url("../img/i-x-search.svg") center center no-repeat;
@@ -846,10 +875,30 @@ header a:hover {
 }
 .menumain__search .search-btn {
   height: 3.6rem;
-  width: 3.6rem;
-  background: #1d1d1f url("../img/lupa-menu.svg") center right no-repeat;
+  width: 6rem;
+  background: #333 url("../img/lupa-menu.svg") center center no-repeat;
   border: none;
-  border-radius: 0.4rem 0 0 0.4rem;
+  border-radius: 0.4rem;
+  margin-left: 0.5rem;
+  transition: 0.3s;
+}
+.menumain__search .search-btn:hover {
+  background: #444 url("../img/lupa-menu_.svg") center center no-repeat;
+}
+
+.menumain__search__radios {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.menumain__search__radios input[type=radio] {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.menumain__search__radios label {
+  margin-right: 3rem;
+  white-space: nowrap;
 }
 
 .menumain__regionuser {

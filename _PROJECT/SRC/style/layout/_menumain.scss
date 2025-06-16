@@ -135,13 +135,40 @@
 
   .search-btn {
     height: 3.6rem;
-    width: 3.6rem;
-    background: $color-bk-search url("../img/lupa-menu.svg") center right no-repeat;
+    width: 6rem;
+    background: #333 url("../img/lupa-menu.svg") center center no-repeat;
     border: none;
-    border-radius: $border-radius 0 0 $border-radius;
+    border-radius: $border-radius;
+    margin-left: 0.5rem;
+    transition: $transition-all;
+
+    &:hover {
+      background: #444 url("../img/lupa-menu_.svg") center center no-repeat;
+    }
+
   }
 
 }
+
+.menumain__search__radios {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: 4rem;
+
+  input[type="radio"] {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  label {
+    margin-right: 3rem;
+    white-space: nowrap;
+  }
+
+}
+
+
 
 .menumain__regionuser {
   display: flex;
