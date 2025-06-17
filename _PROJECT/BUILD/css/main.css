@@ -429,7 +429,6 @@ header {
 }
 header.showsearch {
   background-color: black;
-  overflow: hidden;
 }
 @media (max-width: 767.98px) {
   header {
@@ -696,8 +695,8 @@ header a:hover {
 }
 @media (max-width: 991.98px) {
   .header__mainsearch-form {
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 .header__mainsearch-form.active {
@@ -705,7 +704,7 @@ header a:hover {
 }
 .header__mainsearch-form input[type=search] {
   height: 3.6rem;
-  width: 100%;
+  width: 75%;
   background: black;
   border: none;
   font-size: 1.5rem;
@@ -713,28 +712,55 @@ header a:hover {
 }
 .header__mainsearch-form .mainsearch-form__search {
   height: 3.6rem;
-  width: 6rem;
-  background: #333 url("../img/lupa-menu.svg") center center no-repeat;
+  padding: 0 1rem;
+  color: #C3C3C6;
+  background: #333;
   border: none;
   border-radius: 0.4rem;
   transition: 0.3s;
 }
 .header__mainsearch-form .mainsearch-form__search:hover {
-  background: #444 url("../img/lupa-menu_.svg") center center no-repeat;
+  background: #444;
+  color: white;
+}
+.header__mainsearch-form .mainsearch-form__drop {
+  height: 3.6rem;
+  width: 4rem;
+  color: #C3C3C6;
+  background: #1D1D1F url("../img/i-stype.svg") center center no-repeat;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.3s;
+  margin: 2px 0 0 0.5rem;
+}
+.header__mainsearch-form .mainsearch-form__drop:hover {
+  background: #333 url("../img/i-stype.svg") center center no-repeat;
 }
 .header__mainsearch-form .mainsearch-form__radios {
-  display: flex;
-  flex-wrap: nowrap;
-  margin-left: 2rem;
+  margin-top: 2px !important;
+  padding: 0.5rem 2rem 0.5rem 1.2rem;
+  min-width: 15rem;
+  background: #1D1D1F;
+  border: none;
+  border-radius: 0 0 0.4rem 0.4rem;
 }
 .header__mainsearch-form .mainsearch-form__radios input[type=radio] {
   width: 1.4rem;
   height: 1.4rem;
 }
 .header__mainsearch-form .mainsearch-form__radios label {
-  margin-right: 2rem;
-  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
   white-space: nowrap;
+  font-size: 1.5rem;
+  color: white;
+}
+.header__mainsearch-form .mainsearch-form__radios > li {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 .header__mainsearch-form .mainsearch-form__close {
   position: absolute;
@@ -859,7 +885,7 @@ header a:hover {
   font-size: 1.5rem;
   color: white;
   padding-left: 1rem;
-  border-radius: 0 0.4rem 0.4rem 0;
+  border-radius: 0.4rem;
 }
 .menumain__search ::-webkit-input-placeholder {
   color: #C3C3C6;
@@ -875,15 +901,17 @@ header a:hover {
 }
 .menumain__search .search-btn {
   height: 3.6rem;
-  width: 6rem;
-  background: #333 url("../img/lupa-menu.svg") center center no-repeat;
+  padding: 0 1rem;
+  background: #333335;
+  color: #C3C3C6;
   border: none;
   border-radius: 0.4rem;
   margin-left: 0.5rem;
   transition: 0.3s;
 }
 .menumain__search .search-btn:hover {
-  background: #444 url("../img/lupa-menu_.svg") center center no-repeat;
+  background: #444447;
+  color: white;
 }
 
 .menumain__search__radios {
@@ -1632,14 +1660,17 @@ footer {
 }
 .footer__codesearch-form .codesearch-form__search {
   height: 3.6rem;
-  width: 4rem;
-  background: #ffffff url("../img/lupa-menu.svg") center no-repeat;
+  padding: 0 1rem;
+  background: #ffffff;
+  color: #6E6E73;
   border: solid 1px #C3C3C6;
   border-radius: 0.4rem;
   margin-left: 0.3rem;
+  transition: 0.3s;
 }
 .footer__codesearch-form .codesearch-form__search:hover {
   background-color: #f3f3f4;
+  color: #1D1D1F;
 }
 
 .footer__copy {
@@ -5511,8 +5542,9 @@ OL.ol--cont > li:before {
 }
 .block-search__catalog-form__btn {
   height: 5.5rem;
-  width: 6rem;
-  background: white url("../img/lupa-catalog.svg") center center no-repeat;
+  width: 8rem;
+  color: #6E6E73;
+  background: white;
   border: solid 1px #C3C3C6;
   border-radius: 0.4rem;
   margin-left: 0.5rem;
@@ -5526,6 +5558,7 @@ OL.ol--cont > li:before {
 }
 .block-search__catalog-form__btn:hover {
   background-color: #f3f3f4;
+  color: #1D1D1F;
 }
 .block-search__catalog-form__fld {
   height: 5.5rem;

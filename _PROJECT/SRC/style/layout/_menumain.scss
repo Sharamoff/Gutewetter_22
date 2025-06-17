@@ -126,7 +126,7 @@
     font-size: $font-size-basemed;
     color: $c-white;
     padding-left: 1rem;
-    border-radius: 0 $border-radius $border-radius 0;
+    border-radius: $border-radius;
   }
 
   @include placeholder {
@@ -135,15 +135,17 @@
 
   .search-btn {
     height: 3.6rem;
-    width: 6rem;
-    background: #333 url("../img/lupa-menu.svg") center center no-repeat;
+    padding: 0 1rem;
+    background: #333335;
+    color: $c-gray-invert;
     border: none;
     border-radius: $border-radius;
     margin-left: 0.5rem;
     transition: $transition-all;
 
     &:hover {
-      background: #444 url("../img/lupa-menu_.svg") center center no-repeat;
+      background: #444447;
+      color: $c-white;
     }
 
   }

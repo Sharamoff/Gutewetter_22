@@ -37,8 +37,9 @@
 
     &__btn {
       height: 5.5rem;
-      width: 6rem;
-      background: $c-white url("../img/lupa-catalog.svg") center center no-repeat;
+      width: 8rem;
+      color: $c-gray-light;
+      background: $c-white;
       border: solid 1px $color-border;
       border-radius: $border-radius;
       margin-left: 0.5rem;
@@ -51,6 +52,7 @@
 
       &:hover {
         background-color: #f3f3f4;
+        color: $c-gray;
       }
 
     }

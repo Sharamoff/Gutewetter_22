@@ -90,13 +90,18 @@
     <button class="mainsearch-btn" role="button" title="Найти на сайте"></button>
   </div>
   <form class="header__mainsearch-form hidden-md-down animate__animated animate__faster animate__fadeIn">
-    <input id="fld_mainsearch" type="search" class="animate__animated animate__faster animate__fadeInRight" placeholder="Найти на сайте" autocomplete="off">
-    <input type="submit" class="mainsearch-form__search animate__animated animate__faster animate__fadeInLeft" title="Найти" value="">
-    <div class="mainsearch-form__radios">
-      <input type="radio" name="mainsearch-form__radio" id="mainsearch-form__radio_all" autocomplete="off">
-      <label for="mainsearch-form__radio_all">везде</label>
-      <input type="radio" name="mainsearch-form__radio" id="mainsearch-form__radio_catalog" autocomplete="off" checked>
-      <label for="mainsearch-form__radio_catalog">в каталоге</label>
+    <input id="fld_mainsearch" type="search" placeholder="Поиск по сайту" autocomplete="off">
+    <input type="submit" class="mainsearch-form__search animate__animated animate__faster animate__fadeInLeft" title="Найти" value="Найти">
+    <div class="dropdown">
+      <button class="mainsearch-form__drop animate__animated animate__faster animate__fadeInRight" data-bs-toggle="dropdown" aria-expanded="false" title="Выберите тип поиска"></button>
+      <ul class="mainsearch-form__radios dropdown-menu fadeIn">
+        <li>
+          <label><input type="radio" name="mainsearch-form__radio" id="mainsearch-form__radio_all" autocomplete="off">искать везде</label>
+        </li>
+        <li>
+          <label><input type="radio" name="mainsearch-form__radio" id="mainsearch-form__radio_catalog" autocomplete="off" checked>искать в каталоге</label>
+        </li>
+      </ul>
     </div>
     <button class="mainsearch-form__close animate__animated animate__faster animate__fadeInRight" title="Закрыть поиск по сайту"></button>
   </form>
@@ -274,14 +279,14 @@
 
   <form>
     <div class="menumain__search">
-      <input id="fld_search" type="search" placeholder="Найти на сайте">
-      <input type="submit" class="search-btn" title="Найти" value="">
+      <input id="fld_search" type="search" placeholder="Поиск по сайту">
+      <input type="submit" class="search-btn" value="Найти">
     </div>
     <div class="menumain__search__radios">
       <input type="radio" name="menumain__search__radio" id="menumain__search__radio_all" autocomplete="off">
-      <label for="menumain__search__radio_all">везде</label>
+      <label for="menumain__search__radio_all">искать везде</label>
       <input type="radio" name="menumain__search__radio" id="menumain__search__radio_catalog" autocomplete="off" checked>
-      <label for="menumain__search__radio_catalog">в каталоге</label>
+      <label for="menumain__search__radio_catalog">искать в каталоге</label>
     </div>
   </form>
 
@@ -1674,8 +1679,8 @@
     <div class="col-md-6">&nbsp;</div>
     <div class="col-md-6">
       <form class="footer__codesearch-form">
-        <input id="fld_codesearch" type="search" placeholder="Найти по коду товара">
-        <input type="submit" class="codesearch-form__search" title="Найти" value="">
+        <input id="fld_codesearch" type="search" placeholder="Поиск по коду товара">
+        <input type="submit" class="codesearch-form__search" value="Найти">
       </form>
     </div>
   </div>
