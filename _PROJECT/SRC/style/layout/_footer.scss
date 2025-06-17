@@ -104,14 +104,17 @@ footer {
 
   .codesearch-form__search {
     height: 3.6rem;
-    width: 4rem;
-    background: #ffffff url("../img/lupa-menu.svg") center no-repeat;
+    padding: 0 1rem;
+    background: #ffffff;
+    color: $c-gray-light;
     border: solid 1px $color-border;
     border-radius: $border-radius;
     margin-left: 0.3rem;
+    transition: $transition-all;
 
     &:hover {
       background-color: #f3f3f4;
+      color: $c-gray;
     }
 
   }

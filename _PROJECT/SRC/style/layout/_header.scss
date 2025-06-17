@@ -12,7 +12,7 @@ header {
 
   &.showsearch {
     background-color: $c-black;
-    overflow: hidden;
+    //overflow: hidden;
   }
 
   @include media-breakpoint-down(md) {
@@ -368,8 +368,8 @@ header {
   padding-right: 10%;
 
   @include media-breakpoint-down(lg) {
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   &.active {
@@ -378,7 +378,7 @@ header {
 
   input[type="search"] {
     height: 3.6rem;
-    width: 100%;
+    width: 75%;
     background: $c-black;
     border: none;
     font-size: $font-size-basemed;
@@ -387,22 +387,45 @@ header {
 
   .mainsearch-form__search {
     height: 3.6rem;
-    width: 6rem;
-    background: #333 url("../img/lupa-menu.svg") center center no-repeat;
+    padding: 0 1rem;
+    color: $c-gray-invert;
+    background: #333;
     border: none;
     border-radius: $border-radius;
     transition: $transition-all;
 
     &:hover {
-      background: #444 url("../img/lupa-menu_.svg") center center no-repeat;
+      background: #444;
+      color: $c-white;
+    }
+
+  }
+
+
+
+  .mainsearch-form__drop {
+    height: 3.6rem;
+    width: 4rem;
+    color: $c-gray-invert;
+    background: $c-gray url("../img/i-stype.svg") center center no-repeat;
+    border: none;
+    border-radius: $border-radius;
+    transition: $transition-all;
+    margin: 2px 0 0 0.5rem;
+
+    &:hover {
+      background: #333 url("../img/i-stype.svg") center center no-repeat;
     }
 
   }
 
   .mainsearch-form__radios {
-    display: flex;
-    flex-wrap: nowrap;
-    margin-left: 2rem;
+    margin-top: 2px !important;
+    padding: 0.5rem 2rem 0.5rem 1.2rem;
+    min-width: 15rem;
+    background: $c-gray;
+    border: none;
+    border-radius: 0 0 $border-radius $border-radius;
 
     input[type="radio"] {
       width: 1.4rem;
@@ -410,9 +433,19 @@ header {
     }
 
     label {
-      margin-right: 2rem;
-      font-size: $font-size-basemin;
+      display: flex;
+      align-items: center;
       white-space: nowrap;
+      font-size: $font-size-basemed;
+      color: $c-white;
+    }
+
+    > li {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      padding-top: 0.4rem;
+      padding-bottom: 0.4rem;
     }
 
   }

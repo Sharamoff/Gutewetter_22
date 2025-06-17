@@ -1024,3 +1024,6 @@ $(document).mouseleave(function(e) {
     $("#id_modal-pageclose").modal('show');
   }
 });
+
+
+
