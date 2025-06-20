@@ -1027,3 +1027,32 @@ $(document).mouseleave(function(e) {
 
 
 
+// поиски
+
+$('.ani--search-fld').on('focus', function() {
+  $('.ani--search-btn').addClass('active');
+});
+$('.ani--search-fld').on('blur', function() {
+  $('.ani--search-btn').removeClass('active');
+});
+
+$('.header__mainsearch-form #slt_mainsearch').select2({
+  minimumResultsForSearch: -1,
+  dropdownParent: $('.header__mainsearch-form'),
+  templateResult: formatOption
+});
+function formatOption(option) {
+  if (!option.id) return option.text;
+  return $('<span><span class="select2-selected-icon">✓</span>' + option.text + '</span>');
+}
+
+$('.menummain__search #slt_menusearch').select2({
+  minimumResultsForSearch: -1,
+  dropdownParent: $('.menummain__search'),
+  width: '4rem',
+  templateResult: formatOption
+});
+function formatOption(option) {
+  if (!option.id) return option.text;
+  return $('<span><span class="select2-selected-icon">✓</span>' + option.text + '</span>');
+}

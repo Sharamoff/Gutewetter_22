@@ -36,35 +36,48 @@
 
 
     &__btn {
-      height: 5.5rem;
+      height: 5rem;
       width: 8rem;
-      color: $c-gray-light;
-      background: $c-white;
-      border: solid 1px $color-border;
-      border-radius: $border-radius;
-      margin-left: 0.5rem;
-      transition: $transition-all;
+      background: transparent url("../img/lupa-catalog.svg") 70% center no-repeat;
+      color: transparent;
+      border: none;
+      border-radius: 3px;
+      margin-left: -8.3rem;
+      transition: background-color $transition-all, color $transition-all;
 
       @include media-breakpoint-down(md) {
-        height: 5rem;
-        width: 5.5rem;
+        height: 4.4rem;
+        width: 6rem;
+        margin-left: -6.3rem;
       }
 
       &:hover {
-        background-color: #f3f3f4;
-        color: $c-gray;
+        background: $color-bk-hover;
+        color: $color-link-hover;
+      }
+
+      &.active {
+        background: $color-link;
+        color: $c-white;
+
+        &:hover {
+          background: $color-link-hover;
+          color: $c-white;
+        }
+
       }
 
     }
 
     &__fld {
-      height: 5.5rem;
+      height: 5.6rem;
       width: 100%;
       background: $c-white;
       border: solid 1px $color-border;
       border-radius: $border-radius;
       font-size: $font-size-base;
       padding-left: 1rem;
+      padding-right: 8rem;
 
       @include media-breakpoint-down(md) {
         height: 5rem;

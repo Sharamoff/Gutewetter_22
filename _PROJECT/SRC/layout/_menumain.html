@@ -12,20 +12,16 @@
       <li title="Viber"><a href="#"><img src="img/if-socviber.svg" alt="Viber"></a></li>
       <li title="Telegram"><a href="#"><img src="img/if-soctg.svg" alt="Telegram"></a></li>
     </ul>
- </div>
+  </div>
 
 
-  <form>
-    <div class="menumain__search">
-      <input id="fld_search" type="search" placeholder="Поиск по сайту">
-      <input type="submit" class="search-btn" value="Найти">
-    </div>
-    <div class="menumain__search__radios">
-      <input type="radio" name="menumain__search__radio" id="menumain__search__radio_all" autocomplete="off">
-      <label for="menumain__search__radio_all">искать везде</label>
-      <input type="radio" name="menumain__search__radio" id="menumain__search__radio_catalog" autocomplete="off" checked>
-      <label for="menumain__search__radio_catalog">искать в каталоге</label>
-    </div>
+  <form class="menummain__search">
+    <input id="fld_menusearch" class=" ani--search-fld" type="search" placeholder="Поиск по сайту" autocomplete="off">
+    <input id="btn_menusearch" class=" ani--search-btn" type="submit" title="Найти" value="Найти">
+    <select id="slt_menusearch">
+      <option value="all">искать везде</option>
+      <option value="catalog" selected>искать в каталоге</option>
+    </select>
   </form>
 
 
