@@ -5743,6 +5743,11 @@ OL.ol--cont > li:before {
   margin-right: 2rem;
   padding: 0.5rem 0;
 }
+.block-filter .flt--inlinecheck .flt__body label input,
+.block-categoryfilter .flt--inlinecheck .flt__body label input {
+  position: relative;
+  top: -1px;
+}
 .block-filter .flt .flt__hdr,
 .block-categoryfilter .flt .flt__hdr {
   font-size: 1.5rem;
@@ -5761,6 +5766,16 @@ OL.ol--cont > li:before {
 .block-categoryfilter .flt .flt__hdr {
     font-size: 1.3rem;
   }
+}
+.block-filter .flt .flt__hdr a,
+.block-categoryfilter .flt .flt__hdr a {
+  color: #1D1D1F;
+  text-decoration: underline;
+}
+.block-filter .flt .flt__hdr a:hover,
+.block-categoryfilter .flt .flt__hdr a:hover {
+  color: black;
+  text-decoration: none;
 }
 .block-filter .filter__form,
 .block-categoryfilter .filter__form {
@@ -5819,7 +5834,7 @@ OL.ol--cont > li:before {
   height: 80px;
   min-width: 80px;
   padding: 1rem;
-  margin: 0 auto 0.5rem auto;
+  margin: 0 auto 1rem auto;
 }
 .block-filter .filter__form .slick-list,
 .block-categoryfilter .filter__form .slick-list {
@@ -5903,9 +5918,17 @@ OL.ol--cont > li:before {
     margin: 0 0.5rem 0.5rem 0;
   }
 }
+.block-filter .inputslider__popval .popval-val a,
+.block-categoryfilter .inputslider__popval .popval-val a {
+  color: #1D1D1F;
+  text-decoration: none;
+}
+.block-filter .inputslider__popval .popval-val a:hover,
+.block-categoryfilter .inputslider__popval .popval-val a:hover {
+  color: black;
+}
 .block-filter .inputslider__popval .popval-val:hover,
 .block-categoryfilter .inputslider__popval .popval-val:hover {
-  color: black;
   background: #C3C3C6;
 }
 .block-filter .inputslider,
@@ -6094,6 +6117,57 @@ OL.ol--cont > li:before {
   .block-dropfilter .b-btn {
     width: 10rem !important;
   }
+}
+
+.b-filter-submit {
+  text-align: center;
+  padding: 1.5rem;
+  background: #F5F5F6;
+}
+@media (max-width: 767.98px) {
+  .b-filter-submit {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 4rem;
+    z-index: 999;
+    background-color: rgba(227, 227, 231, 0.2);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+  }
+}
+.b-filter-submit button {
+  min-width: 30rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  background: #008BD2;
+  text-align: center;
+  color: white;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+@media (max-width: 767.98px) {
+  .b-filter-submit button {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+}
+@media (max-width: 575.98px) {
+  .b-filter-submit button {
+    font-size: 1.5rem;
+  }
+}
+.b-filter-submit button:after {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 400;
+  content: "";
+  margin-left: 0.8rem;
+}
+.b-filter-submit button:hover {
+  color: black;
+  background: #C3C3C6;
 }
 
 .block-actions-idx .actions__item img {
