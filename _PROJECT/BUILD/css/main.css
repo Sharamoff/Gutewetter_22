@@ -20,6 +20,11 @@
   src: url("../fonts/Inter-SemiBold.woff2") format("woff2"), url("../fonts/Inter-SemiBold.woff") format("woff");
   font-weight: 600;
 }
+@font-face {
+  font-family: "Kaushan Script";
+  src: url("../fonts/KaushanScript-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
 * {
   letter-spacing: -0.03em;
 }
@@ -7983,6 +7988,65 @@ OL.ol--cont > li:before {
 .block-productgallery .productgallery__label .label_action.label_action--sale {
   background: url("../img/ipl-sale.png") no-repeat;
 }
+.block-productgallery .productgallery__label .label_prcsale {
+  position: absolute;
+  width: 170px;
+  height: 120px;
+  top: 0;
+  left: 0;
+  background: url("../img/ipl-prcsale.png") top left no-repeat;
+  background-size: cover;
+  border-left: solid 1px #C3C3C6;
+  border-top: solid 1px #C3C3C6;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 600;
+  font-style: normal;
+  color: #B42D5B;
+  font-size: 2.3rem;
+  line-height: 1;
+}
+@media (max-width: 767.98px) {
+  .block-productgallery .productgallery__label .label_prcsale {
+    border: none;
+    left: 5px;
+    width: 120px;
+    height: 80px;
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .block-productgallery .productgallery__label .label_prcsale {
+    left: -10px;
+  }
+}
+@media (max-width: 575.98px) {
+  .block-productgallery .productgallery__label .label_prcsale {
+    left: 40px;
+  }
+}
+.block-productgallery .productgallery__label .label_prcsale > div {
+  position: relative;
+  transform: rotate(-30deg);
+  text-align: center;
+  top: 1.5rem;
+  left: -3.5rem;
+}
+@media (max-width: 767.98px) {
+  .block-productgallery .productgallery__label .label_prcsale > div {
+    top: 1rem;
+    left: -2.5rem;
+  }
+}
+.block-productgallery .productgallery__label .label_prcsale span {
+  font-weight: 400;
+  display: block;
+  font-size: 4rem;
+}
+@media (max-width: 767.98px) {
+  .block-productgallery .productgallery__label .label_prcsale span {
+    font-size: 3rem;
+  }
+}
 .block-productgallery .productgallery__label .label_72h {
   position: absolute;
   width: 50px;
@@ -7994,7 +8058,7 @@ OL.ol--cont > li:before {
           backdrop-filter: blur(4px);
   border-radius: 50%;
   border: solid 1px white;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 }
 .block-productgallery .productgallery__pic-72h {
   display: inline-block;
@@ -8575,6 +8639,33 @@ OL.ol--cont > li:before {
     width: 80%;
     margin-bottom: 0.5rem;
   }
+}
+
+.block-warnsuper {
+  margin: 3rem 0;
+  padding: 1rem 10rem 1rem 1rem;
+  background-color: #B42D5B;
+  color: white;
+  font-size: 1.5rem;
+}
+@media (max-width: 767.98px) {
+  .block-warnsuper {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .block-warnsuper {
+    font-size: 1.3rem;
+    margin: 1.5rem 0;
+  }
+}
+.block-warnsuper p {
+  margin: 0.5rem 0;
+}
+.block-warnsuper.warnsuper--discount {
+  background: #F0D5DE url("../img/ws-discount.png") top right no-repeat;
+  color: #B42D5B;
 }
 
 .block-compilation {

@@ -30,6 +30,65 @@
 
     }
 
+    .label_prcsale {
+      position: absolute;
+      width: 170px;
+      height: 120px;
+      top: 0;
+      left: 0;
+      background: url("../img/ipl-prcsale.png") top left no-repeat;
+      background-size: cover;
+      border-left: solid 1px $c-border;
+      border-top: solid 1px $c-border;
+      font-family: "Kaushan Script", cursive;
+      font-weight: 600;
+      font-style: normal;
+      color: $c-red;
+      font-size: 2.3rem;
+      line-height: 1;
+
+      @include media-breakpoint-down(md) {
+        border: none;
+        left: 5px;
+        width: 120px;
+        height: 80px;
+        font-size: 1.6rem;
+      }
+
+      @include media-breakpoint-down(sm) {
+        left: -10px;
+      }
+      @include media-breakpoint-only(xs) {
+        left: 40px;
+      }
+
+      > div {
+        position: relative;
+        transform: rotate(-30deg);
+        text-align: center;
+        top: 1.5rem;
+        left: -3.5rem;
+
+        @include media-breakpoint-down(md) {
+          top: 1rem;
+          left: -2.5rem;
+        }
+
+      }
+
+      span {
+        font-weight: 400;
+        display: block;
+        font-size: 4rem;
+
+        @include media-breakpoint-down(md) {
+          font-size: 3rem;
+        }
+
+      }
+
+    }
+
     .label_72h {
       position: absolute;
       width: 50px;
@@ -40,7 +99,7 @@
       backdrop-filter: blur(4px);
       border-radius: 50%;
       border: solid 1px $c-white;
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
     }
 
   }
@@ -679,11 +738,37 @@
 
   }
 
-
-
-
 }
 
+
+
+.block-warnsuper {
+  margin: 3rem 0;
+  padding: 1rem 10rem 1rem 1rem;
+  background-color: $c-red;
+  color: $c-white;
+  font-size: $font-size-basemed;
+
+  @include media-breakpoint-down(md) {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    font-size: $font-size-basemed-md;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-basemed-sm;
+    margin: 1.5rem 0;
+  }
+
+  p {
+    margin: 0.5rem 0;
+  }
+
+  &.warnsuper--discount {
+    background: #F0D5DE url("../img/ws-discount.png") top right no-repeat;
+    color: $c-red;
+  }
+
+}
 
 
 
